@@ -1,0 +1,66 @@
+---
+type Variant =
+  | "primary"
+  | "secondary"
+  | "contrast"
+  | "contrastAlt"
+  | "primaryAlt"
+  | "secondaryAlt";
+
+const {
+  variant = "primary",
+  disabled = false,
+  icon = null,
+} = Astro.props as {
+  variant?: Variant;
+  disabled?: boolean;
+  icon?: any;
+};
+
+const baseClasses =
+  "inline-flex items-center justify-center font-semibold px-4 py-2 rounded text-sm transition-colors duration-200";
+
+const variantClasses = {
+  primary: `
+    bg-[var(--color-brand-primary)] text-white
+    hover:bg-[var(--color-brand-blue-2)]
+    disabled:bg-[var(--color-brand-blue-4)] disabled:text-white disabled:opacity-60 disabled:cursor-not-allowed
+  `,
+  secondary: `
+    bg-[var(--color-brand-yellow-3)] text-black
+    hover:bg-[var(--color-brand-yellow-2)]
+    disabled:bg-[var(--color-brand-yellow-4)] disabled:opacity-60 disabled:cursor-not-allowed
+  `,
+  contrast: `
+    bg-[var(--color-brand-primary-black)] text-white
+    hover:bg-neutral-700
+    disabled:bg-neutral-400 disabled:text-white disabled:cursor-not-allowed
+  `,
+  contrastAlt: `
+    bg-white text-black border border-black
+    hover:bg-neutral-100
+    disabled:bg-neutral-100 disabled:text-black disabled:opacity-60 disabled:cursor-not-allowed
+  `,
+
+  primaryAlt: `
+    bg-white text-[var(--color-brand-primary)] border border-[var(--color-brand-primary)]
+    hover:bg-[var(--color-brand-blue-5)]
+    disabled:bg-neutral-100 disabled:text-[var(--color-brand-blue-4)] disabled:border-[var(--color-brand-blue-4)] disabled:opacity-60 disabled:cursor-not-allowed
+  `,
+
+  secondaryAlt: `
+    bg-white text-[var(--color-brand-yellow-3)] border border-[var(--color-brand-yellow-3)]
+    hover:bg-[var(--color-brand-yellow-5)]
+    disabled:bg-neutral-100 disabled:text-[var(--color-brand-yellow-4)] disabled:border-[var(--color-brand-yellow-4)] disabled:opacity-60 disabled:cursor-not-allowed
+  `,
+};
+
+const buttonClasses = `${baseClasses} ${variantClasses[variant]}`
+  .replace(/\s+/g, " ")
+  .trim();
+---
+
+<button class={buttonClasses} disabled={disabled}>
+  {icon && <span class="mr-2">{icon}</span>}
+  <slot />
+</button>

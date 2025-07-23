@@ -1,0 +1,5 @@
+const socialLinks = [
+  {
+    name: "LinkedIn",
+  },
+];
