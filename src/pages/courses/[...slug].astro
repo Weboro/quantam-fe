@@ -1,0 +1,92 @@
+---
+import courses from "@/data/courses";
+import ContainerLayout from "@/layouts/ContainerLayout.astro";
+import Layout from "@/layouts/Layout.astro";
+
+// Static paths generator
+export async function getStaticPaths() {
+  return courses.map((course) => ({
+    params: { slug: course.slug },
+    props: { course },
+  }));
+}
+
+// Props
+const { course } = Astro.props;
+---
+
+<Layout
+  title={course.name}
+  description={course.description}
+  slug={`courses/${course.slug}`}
+>
+  <ContainerLayout>
+    <h1 class="text-3xl font-bold mb-4">{course.name}</h1>
+    <p class="text-gray-600 mb-6">{course.description}</p>
+
+    <img
+      src={course.heroImage}
+      alt={course.name}
+      class="w-full h-64 object-cover rounded-lg mb-8"
+    />
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div>
+        <h3 class="font-semibold mb-2">Course Details</h3>
+        <p><strong>Level:</strong> {course.level}</p>
+        <p><strong>Duration:</strong> {course.duration}</p>
+        <p>
+          <strong>Published:</strong>
+          {new Date(course.publishedDate).toLocaleDateString()}
+        </p>
+      </div>
+
+      <div>
+        <h3 class="font-semibold mb-2">Tags</h3>
+        <div class="flex flex-wrap gap-2">
+          {
+            course.tags.map((tag) => (
+              <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded text-sm">
+                {tag}
+              </span>
+            ))
+          }
+        </div>
+      </div>
+    </div>
+
+    <div class="mt-8 prose max-w-none">
+      <div set:html={course.richText} />
+    </div>
+
+    {
+      course.syllabus && (
+        <div class="mt-10">
+          <h3 class="font-semibold text-lg mb-3">Syllabus</h3>
+          <ol class="list-decimal list-inside space-y-1">
+            {course.syllabus.map((item) => (
+              <li>{item}</li>
+            ))}
+          </ol>
+        </div>
+      )
+    }
+
+    {
+      course.images.length > 0 && (
+        <div class="mt-10">
+          <h3 class="font-semibold text-lg mb-3">Course Gallery</h3>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            {course.images.map((image) => (
+              <img
+                src={image}
+                alt={`${course.name} preview`}
+                class="w-full h-48 object-cover rounded-lg"
+              />
+            ))}
+          </div>
+        </div>
+      )
+    }
+  </ContainerLayout>
+</Layout>

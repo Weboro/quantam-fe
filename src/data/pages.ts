@@ -1,4 +1,5 @@
-// data.js;
+// data.js
+
 interface Ipage {
   name: string;
   slug: string;
@@ -6,6 +7,13 @@ interface Ipage {
   description: string;
   lastUpdated: string;
   seo: ISeo;
+  subPages?: ISubpage[];
+}
+
+interface ISubpage {
+  name: string;
+  slug: string;
+  icon: string; // flaticon class (e.g. 'fi fi-brain')
 }
 
 interface ISeo {
@@ -49,6 +57,28 @@ const pages: Ipage[] = [
       title: "Courses — MySite",
       description: "Check out our full catalog of courses and learning paths.",
     },
+    subPages: [
+      {
+        name: "UI/UX Design",
+        slug: "ui-ux-design",
+        icon: "fi fi-br-pencil-ruler",
+      },
+      {
+        name: "Full-Stack Development",
+        slug: "full-stack-dev",
+        icon: "fi fi-br-code",
+      },
+      {
+        name: "Digital Marketing",
+        slug: "digital-marketing",
+        icon: "fi fi-br-megaphone",
+      },
+      {
+        name: "Data Science",
+        slug: "data-science",
+        icon: "fi fi-brain",
+      },
+    ],
     lastUpdated: "2025-07-01",
   },
   {
@@ -64,4 +94,5 @@ const pages: Ipage[] = [
     lastUpdated: "2025-05-30",
   },
 ];
+
 export default pages;
