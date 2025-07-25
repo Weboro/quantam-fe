@@ -1,7 +1,11 @@
 ---
 import ContainerLayout from "@/layouts/ContainerLayout.astro";
+import FaqCard from "../cards/FaqCard.jsx";
+import faq from "@/data/faq";
 ---
 
 <ContainerLayout>
-  <!-- Add Key dates data here -->
+  {faq.map(item => (
+    <FaqCard client:load  question={item.question} answer={item.answer} />
+  ))}
 </ContainerLayout>
