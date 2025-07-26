@@ -1,6 +1,5 @@
 ---
 import type { IKeyDate } from "@/data/keyDates";
-import ContainerLayout from "@/layouts/ContainerLayout.astro";
 
 interface Props {
   keyDate: IKeyDate;
@@ -9,7 +8,7 @@ interface Props {
 const { keyDate } = Astro.props;
 ---
 
-<div class="flex bg-surface-1 rounded-xl overflow-hidden container">
+<div class="flex bg-surface-1 rounded-xl overflow-hidden">
   <div
     class="bg-brand-yellow-3 text-black gap-4 flex flex-col items-center justify-center min-w-[200px] text-primary"
   >

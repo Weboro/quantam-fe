@@ -67,15 +67,3 @@ html,
 body {
   @apply overflow-x-hidden;
 }
-
-@layer base {
-  p {
-    @apply text-md text-semibold text-brand-primary-black text-left font-secondary;
-  }
-}
-
-@layer components {
-  .custom-container {
-    @apply max-w-[90%] mx-auto;
-  }
-}

@@ -6,12 +6,12 @@ import Button from "@/components/ui/Button.astro";
 ---
 
 <ContainerLayout>
-  <div class="flex flex-col gap-4 md:flex-row md:items-center">
+  <div class="flex flex-col gap-4 md:flex-row md:items-center mb-8">
     <div class="flex flex-col gap-4 flex-1">
       <h2 class="text-3xl font-bold font-primary text-brand-primary-black">
         Key Dates
       </h2>
-      <!-- <Button variant="secondary" class="text-sm text-semibold w-auto">All Key Dates</Button> -->
+
       <button
         type="button"
         class="bg-brand-primary-yellow text-brand-primary-black font-semibold rounded-md hover:brightness-95 transition text-sm py-3 max-w-[100px]"
@@ -30,12 +30,11 @@ import Button from "@/components/ui/Button.astro";
       </p>
     </div>
   </div>
-  <div class="my-8 grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-4">
+
+  <div class="space-y-4">
     {
-      keyDates.slice(0, 6).map((keyDate, index) => (
-        <div class={`${index > 2 ? "hidden lg:block " : ""}`}>
+      keyDates.slice(0, 3).map((keyDate, ) => (
           <KeyDatesCard keyDate={keyDate} />
-        </div>
       ))
     }
   </div>
