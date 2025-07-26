@@ -10,8 +10,11 @@ const {
 };
 ---
 
-<div
+<!-- <div
   class={`${size === "sm" ? "container-sm" : "container"} ${isCenter && "mx-auto"} ${className} px-4`}
 >
+  <slot />
+</div> -->
+<div class="custom-container">
   <slot />
 </div>

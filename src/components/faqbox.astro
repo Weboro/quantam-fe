@@ -1,0 +1,44 @@
+---
+import type { IFaqBox } from "@/data/faqbox";
+import Button from "@/components/ui/Button.astro";
+
+interface Props {
+  faqBoxData: IFaqBox;
+}
+
+const { faqBoxData } = Astro.props;
+---
+
+<div class="rounded-2xl border border-surface-2 p-6
+ flex flex-col items-start">
+  <div class="mb-2 font-primary">
+    <h3 class="text-2xl font-bold text-text">
+      {faqBoxData.title}
+    </h3>
+    <h4 class="text-xl font-semibold text-text">
+      {faqBoxData.subtitle}
+    </h4>
+  </div>
+
+  <p class="mb-8 text-text leading-relaxed font-primary flex items-start">
+    {faqBoxData.description}
+  </p>
+  <div class="font-bold font-secondary">
+    <Button
+      variant="primaryAlt"
+      className="font-bold flex items-center! gap-1 border-2 mb-4   "
+      ><span class="font-bold relative top-0.5"
+        ><i class="fi fi-rr-envelope font-bold mt-1"></i></span
+      ><span class="font-bold">{faqBoxData.email}</span></Button
+    >
+    <Button
+      variant="secondary"
+      className="font-bold flex items-center! gap-1 border-2 border-brand-primary-yellow text-text!"
+    >
+      <span class="font-bold mr-1 rotate-90"
+        ><i class="fi fi-rr-phone-flip font-black!"></i>
+      </span>
+      <span class="font-bold">Contact Us</span>
+    </Button>
+  </div>
+</div>

@@ -1,4 +1,4 @@
-interface IKeyDate {
+export interface IKeyDate {
   id: string;
   title: string;
   description: string;
@@ -46,7 +46,54 @@ const keyDates: IKeyDate[] = [
     category: ["Undergraduate", "Post-graduate"],
     learnMoreUrl: "#",
   },
+  {
+    id: "4",
+    title:
+      "Quantum welcomes you with all with warm greetings and lorem insup floral.",
+    description:
+      "A modal dialog that interrupts the user with important content and expects a response. A modal dialog that interrupts the user.",
+    date: "2025-01-30",
+    month: "JAN",
+    day: "30",
+    category: ["Undergraduate", "Post-graduate"],
+    learnMoreUrl: "#",
+  },
+  {
+    id: "5",
+    title:
+      "Quantum welcomes you with all with warm greetings and lorem insup floral.",
+    description:
+      "A modal dialog that interrupts the user with important content and expects a response. A modal dialog that interrupts the user.",
+    date: "2025-01-30",
+    month: "JAN",
+    day: "30",
+    category: ["Undergraduate", "Post-graduate"],
+    learnMoreUrl: "#",
+  },
+  {
+    id: "6",
+    title:
+      "Quantum welcomes you with all with warm greetings and lorem insup floral.",
+    description:
+      "A modal dialog that interrupts the user with important content and expects a response. A modal dialog that interrupts the user.",
+    date: "2025-01-30",
+    month: "JAN",
+    day: "30",
+    category: ["Undergraduate", "Post-graduate"],
+    learnMoreUrl: "#",
+  },
+  {
+    id: "7",
+    title:
+      "Quantum welcomes you with all with warm greetings and lorem insup floral.",
+    description:
+      "A modal dialog that interrupts the user with important content and expects a response. A modal dialog that interrupts the user.",
+    date: "2025-01-30",
+    month: "JAN",
+    day: "30",
+    category: ["Undergraduate", "Post-graduate"],
+    learnMoreUrl: "#",
+  },
 ];
 
 export default keyDates;
-export type { IKeyDate };

@@ -1,0 +1,27 @@
+---
+import { AstroFont } from "astro-font";
+---
+
+<AstroFont
+  config={[
+    {
+      name: "Futura Hv BT",
+      src: [
+        {
+          weight: "400",
+          style: "normal",
+          src: "/fonts/FutuHv.ttf",
+        },
+        {
+          weight: "700",
+          style: "normal",
+          src: "/fonts/FuturaHeavyBT.ttf",
+        },
+      ],
+      preload: true,
+      display: "swap",
+      selector: ".futura-font",
+      fallback: "sans-serif",
+    },
+  ]}
+/>

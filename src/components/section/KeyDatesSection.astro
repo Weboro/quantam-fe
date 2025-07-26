@@ -6,28 +6,37 @@ import Button from "@/components/ui/Button.astro";
 ---
 
 <ContainerLayout>
-  <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-8 w-full">
-    
-    <div class="flex flex-col gap-4 min-w-[180px]">
-      <h2 class="text-3xl font-bold font-primary  text-brand-primary-black ">Key Dates</h2>
+  <div class="flex flex-col gap-4 md:flex-row md:items-center">
+    <div class="flex flex-col gap-4 flex-1">
+      <h2 class="text-3xl font-bold font-primary text-brand-primary-black">
+        Key Dates
+      </h2>
       <!-- <Button variant="secondary" class="text-sm text-semibold w-auto">All Key Dates</Button> -->
       <button
-            type="button"
-            class="bg-brand-primary-yellow text-brand-primary-black font-semibold  rounded-md  hover:brightness-95 transition text-sm py-3 max-w-[100px]"
-          >
-            All Key Dates
+        type="button"
+        class="bg-brand-primary-yellow text-brand-primary-black font-semibold rounded-md hover:brightness-95 transition text-sm py-3 max-w-[100px]"
+      >
+        All Key Dates
       </button>
     </div>
-    
-  <div class="w-[500px] h-[80px] flex items-center justify-center">
-    <p class="text-md text-semibold text-brand-primary-black text-left font-secondary">
-      A modal dialog that interrupts the user with important content and expects a response. A modal dialog that interrupts the user with important content and expects a response.
-    </p>
+
+    <div class="flex-1">
+      <p
+        class="text-md text-semibold text-brand-primary-black text-left font-secondary"
+      >
+        A modal dialog that interrupts the user with important content and
+        expects a response. A modal dialog that interrupts the user with
+        important content and expects a response.
+      </p>
+    </div>
   </div>
-  </div>
-  <div class="mt-8 space-y-4">
-    {keyDates.map((keyDate) => (
-      <KeyDatesCard keyDate={keyDate} />
-    ))}
+  <div class="my-8 grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-4">
+    {
+      keyDates.slice(0, 6).map((keyDate, index) => (
+        <div class={`${index > 2 ? "hidden lg:block " : ""}`}>
+          <KeyDatesCard keyDate={keyDate} />
+        </div>
+      ))
+    }
   </div>
 </ContainerLayout>

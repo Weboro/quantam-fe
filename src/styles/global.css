@@ -1,7 +1,8 @@
 @import "tailwindcss";
 
 @theme {
-  --color-background: hsl(0 0% 95%);
+  /* --color-background: hsl(0 0% 95%); */
+  --color-background: [#FFFFFF];
   --color-text: hsl(222 40% 15%);
   --color-surface: hsl(0 0% 95%);
   --color-surface-1: hsl(0 0% 91%);
@@ -65,4 +66,16 @@ body {
 html,
 body {
   @apply overflow-x-hidden;
+}
+
+@layer base {
+  p {
+    @apply text-md text-semibold text-brand-primary-black text-left font-secondary;
+  }
+}
+
+@layer components {
+  .custom-container {
+    @apply max-w-[90%] mx-auto;
+  }
 }

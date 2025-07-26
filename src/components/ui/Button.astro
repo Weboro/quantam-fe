@@ -11,10 +11,12 @@ const {
   variant = "primary",
   disabled = false,
   icon = null,
+  className = "",
 } = Astro.props as {
   variant?: Variant;
   disabled?: boolean;
   icon?: any;
+  className?: string;
 };
 
 const baseClasses =
@@ -60,7 +62,7 @@ const buttonClasses = `${baseClasses} ${variantClasses[variant]}`
   .trim();
 ---
 
-<button class={buttonClasses} disabled={disabled}>
+<button class={`${buttonClasses} ${className}`} disabled={disabled}>
   {icon && <span class="mr-2">{icon}</span>}
   <slot />
 </button>

@@ -2,10 +2,30 @@
 import ContainerLayout from "@/layouts/ContainerLayout.astro";
 import FaqCard from "../cards/FaqCard.jsx";
 import faq from "@/data/faq";
+import FaqBox from "../faqbox.astro";
+import { faqBoxData } from "@/data/faqbox";
+import Faqquestion from "../faqquestion.astro";
 ---
 
 <ContainerLayout>
-  {faq.map(item => (
-    <FaqCard client:load  question={item.question} answer={item.answer} />
-  ))}
+  <div class="flex flex-col gap-12">
+    <Faqquestion />
+
+    <div class="flex flex-col gap-12 w-full">
+      <div>
+        {
+          faq.map((item) => (
+            <FaqCard
+              client:load
+              question={item.question}
+              answer={item.answer}
+            />
+          ))
+        }
+      </div>
+      <div>
+        <FaqBox faqBoxData={faqBoxData} />
+      </div>
+    </div>
+  </div>
 </ContainerLayout>
