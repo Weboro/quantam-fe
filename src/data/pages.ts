@@ -1,5 +1,3 @@
-// data.js
-
 interface Ipage {
   name: string;
   slug: string;
@@ -13,7 +11,7 @@ interface Ipage {
 interface ISubpage {
   name: string;
   slug: string;
-  icon: string; // flaticon class (e.g. 'fi fi-brain')
+  icon: string;
 }
 
 interface ISeo {
