@@ -4,10 +4,10 @@ import NavBar from "./NavBar";
 
 const index = () => {
   return (
-    <div>
+    <header className="bg-background text-text shadow">
       <TopNav />
       <NavBar />
-    </div>
+    </header>
   );
 };
 

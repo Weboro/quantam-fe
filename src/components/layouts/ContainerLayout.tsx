@@ -1,15 +1,15 @@
 import React, { type ReactNode } from "react";
 
 interface ContainerLayoutProps {
-  size: "sm" | "base";
-  isCenter: boolean;
-  className: string;
+  size?: "sm" | "base";
+  isCenter?: boolean;
+  className?: string;
   children: ReactNode;
 }
 
 const ContainerLayout: React.FC<ContainerLayoutProps> = ({
   size = "sm",
-  isCenter,
+  isCenter = true,
   children,
   className,
 }) => {

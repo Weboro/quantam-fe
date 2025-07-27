@@ -64,7 +64,7 @@ const pages: Ipage[] = [
       {
         name: "Full-Stack Development",
         slug: "full-stack-dev",
-        icon: "fi fi-br-code",
+        icon: "fi fi-br-terminal",
       },
       {
         name: "Digital Marketing",
@@ -74,7 +74,7 @@ const pages: Ipage[] = [
       {
         name: "Data Science",
         slug: "data-science",
-        icon: "fi fi-brain",
+        icon: "fi fi-br-terminal",
       },
     ],
     lastUpdated: "2025-07-01",
