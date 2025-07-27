@@ -12,11 +12,16 @@ const {
   disabled = false,
   icon = null,
   className = "",
+  href = "#",
+  id = undefined,
+  ...rest
 } = Astro.props as {
   variant?: Variant;
   disabled?: boolean;
   icon?: any;
   className?: string;
+  href?: string;
+  id?: string;
 };
 
 const baseClasses =
@@ -62,7 +67,28 @@ const buttonClasses = `${baseClasses} ${variantClasses[variant]}`
   .trim();
 ---
 
-<button class={`${buttonClasses} ${className}`} disabled={disabled}>
-  {icon && <span class="mr-2">{icon}</span>}
-  <slot />
-</button>
+<div>
+  {
+    Astro.props.href ? (
+      <a
+        class={`${buttonClasses} ${className}`}
+        href={Astro.props.href}
+        id={id}
+        {...rest}
+      >
+        {icon && <span class="mr-2">{icon}</span>}
+        <slot />
+      </a>
+    ) : (
+      <button
+        class={`${buttonClasses} ${className}`}
+        disabled={disabled}
+        id={id}
+        {...rest}
+      >
+        {icon && <span class="mr-2">{icon}</span>}
+        <slot />
+      </button>
+    )
+  }
+</div>
