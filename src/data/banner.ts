@@ -15,6 +15,6 @@ export const quantumBanner: BannerProps = {
     "At Quantum Institute of Higher Education (QIHE), we are dedicated to providing quality education that empowers our students to succeed in a dynamic and evolving world.",
   buttonText: "Get Started",
   buttonLink: "/get-started",
-  imageUrl: "/public/banner.png",
+  imageUrl: "/banner.png",
   textAlign: "left",
 };
