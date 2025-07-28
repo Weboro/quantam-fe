@@ -4,7 +4,7 @@ import NavBar from "./NavBar";
 
 const index = () => {
   return (
-    <header className="bg-background text-text shadow">
+    <header className="bg-background text-text shadow relative z-[10000]">
       <TopNav />
       <NavBar />
     </header>

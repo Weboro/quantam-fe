@@ -36,6 +36,7 @@ const AboutUsInfo: React.FC = () => (
           {description}
         </p>
       </div>
+
       {buttonText && buttonLink && (
         <div className="flex flex-col  items-start md:items-end flex-1 mt-6 md:mt-0 md:gap-30 gap-8">
           <a href={buttonLink}>

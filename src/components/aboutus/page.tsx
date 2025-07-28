@@ -11,8 +11,6 @@ export default function AboutUsPage() {
       <AboutUsInfo />
 
       <AboutUsCard />
-
-      <AboutComponent4 />
     </div>
   );
 }

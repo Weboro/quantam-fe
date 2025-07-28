@@ -1,24 +1,36 @@
+import AboutComponent4 from "@/components/aboutus/aboutcomponent4";
 import AboutUsPage from "@/components/aboutus/page";
 import AllCourses from "@/components/allcourses/page";
-import Banner from "@/components/banner/page";
 import FaqBox from "@/components/faqbox";
 import HomeKeyDates from "@/components/homekeydates";
-import HomeNewsSection from "@/components/homenewsection";
 import { faqBoxData } from "@/data/faqbox";
-import KeyDates from "@/feature/KeyDates";
-import React from "react";
+import HomeNewsSection from "@/components/sections/NewsSection";
+import HeroSection from "@/components/sections/HeroSection";
+import { quantumBanner } from "@/data/banner";
 
 const HomePage = () => {
   return (
-    <div className="space-y-12">
-      <Banner />
+    <div className="space-y-32">
+      <HeroSection
+        title={quantumBanner.title}
+        subtitle={quantumBanner.subtitle}
+        description={quantumBanner.description}
+        buttonText={quantumBanner.buttonText}
+        buttonLink={quantumBanner.buttonLink}
+        imageUrl={quantumBanner.imageUrl}
+        textAlign={"center"}
+      />
+
       <AboutUsPage />
+
+      <AboutComponent4 />
+
       <HomeKeyDates />
-      {/* <KeyDates /> */}
+
       <HomeNewsSection />
-      <div className="m-8">
-        <FaqBox faqBoxData={faqBoxData} />
-      </div>
+
+      <FaqBox faqBoxData={faqBoxData} />
+
       <AllCourses />
     </div>
   );

@@ -4,6 +4,7 @@ import type { IFaqBox } from "../data/faqbox";
 import Button from "./ui/Button";
 import ContainerLayout from "./layouts/ContainerLayout";
 import { useState } from "react";
+import Link from "next/link";
 
 interface Props {
   faqBoxData: IFaqBox;
@@ -22,9 +23,6 @@ export default function FaqBox({ faqBoxData }: Props) {
     });
   };
 
-  const handleEmailClick = () => {
-    window.location.href = `mailto:${faqBoxData.email}`;
-  };
   return (
     <ContainerLayout>
       <div
@@ -53,32 +51,20 @@ export default function FaqBox({ faqBoxData }: Props) {
           {faqBoxData.description}
         </p>
         <div className="md:font-bold text-secondary md:flex-row  flex gap-4  flex-col   z-10 mt-5 md:mt-0">
-          <Button
-            variant="primaryAlt"
-            as="a"
-            href={`mailto:${faqBoxData.email}`}
-            className="cursor-pointer"
-          >
-            <span className="font-bold relative top-0.5">
-              <i className="fi fi-br-envelope"></i>
-            </span>
-            <span className="font-bold">{faqBoxData.email}</span>
-          </Button>
-          <div className="relative">
-            {showCopied && (
-              <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded">
-                Copied!
-              </div>
-            )}
-            <div onClick={handleContactClick} className="cursor-pointer">
-              <Button variant="secondary">
-                <span className="font-bold mr-1 rotate-90">
-                  <i className="fi fi-br-phone-flip"></i>
-                </span>
-                <span className="font-bold">Contact Us</span>
-              </Button>
-            </div>
-          </div>
+          <Link href="mailto:sayuj@gmail.com">
+            <Button
+              variant="primaryAlt"
+              icon="fi fi-br-envelope"
+              className="cursor-pointer"
+            >
+              <span className="font-bold">{faqBoxData.email}</span>
+            </Button>
+          </Link>
+          <Link href={"tel:+98193847489"}>
+            <Button icon="fi fi-br-phone-flip" variant="secondary">
+              Contact Us
+            </Button>
+          </Link>
         </div>
       </div>
     </ContainerLayout>
