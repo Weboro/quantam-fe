@@ -10,7 +10,7 @@ export interface AboutUsCardRef {
   scrollRight: () => void;
 }
 
-const SingleCard: React.FC<AboutUsCardProps> = ({ card }) => (
+const AboutSliderCard: React.FC<AboutUsCardProps> = ({ card }) => (
   <div className="min-w-[250px] max-w-[320px] w-auto bg-background rounded-xl overflow-hidden flex-shrink-0 border-2 p-4  border-surface-2  ">
     <div className="h-[200px] w-full relative  rounded-xl overflow-hidden mb-4">
       <Image src={card.image} alt={card.title} fill className="object-cover" />
@@ -27,6 +27,7 @@ const SingleCard: React.FC<AboutUsCardProps> = ({ card }) => (
         className="flex items-center text-brand-primary font-medium text-sm justify-between "
       >
         <span>Learn More</span>
+
         <span className=" size-6 rounded-full border border-0.5 border-surface-2 items-center justify-center flex ">
           <i className="fi fi-br-arrow-small-right mt-1"></i>
         </span>
@@ -35,13 +36,13 @@ const SingleCard: React.FC<AboutUsCardProps> = ({ card }) => (
   </div>
 );
 
-const AboutUsCard: React.FC = () => {
+const AboutSlider: React.FC = () => {
   return (
     <div className="w-full py-4 md:ml-32">
       <div className="overflow-x-auto scrollbar-hide">
         <div className="flex gap-8 px-6" style={{ width: "max-content" }}>
           {aboutUsCards.map((card, index) => (
-            <SingleCard key={index} card={card} />
+            <AboutSliderCard key={index} card={card} />
           ))}
         </div>
       </div>
@@ -58,4 +59,4 @@ const AboutUsCard: React.FC = () => {
   );
 };
 
-export default AboutUsCard;
+export default AboutSlider;

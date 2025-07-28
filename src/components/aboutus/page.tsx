@@ -2,7 +2,7 @@
 
 import React from "react";
 import AboutUsInfo from "./aboutusinfo";
-import AboutUsCard from "./aboutuscard";
+import AboutUsCard from "./AboutSlider";
 
 export default function AboutUsPage() {
   return (

@@ -7,6 +7,7 @@ import { faqBoxData } from "@/data/faqbox";
 import HomeNewsSection from "@/components/sections/NewsSection";
 import HeroSection from "@/components/sections/HeroSection";
 import { quantumBanner } from "@/data/banner";
+import AboutSection from "@/components/sections/AboutSection";
 
 const HomePage = () => {
   return (
@@ -21,7 +22,7 @@ const HomePage = () => {
         textAlign={"center"}
       />
 
-      <AboutUsPage />
+      <AboutSection />
 
       <AboutComponent4 />
 

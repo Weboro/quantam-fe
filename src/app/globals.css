@@ -12,6 +12,8 @@
   --color-error: hsl(0 70% 58%);
   --color-success: hsl(142 50% 45%);
 
+  --color-powder-blue: #edf5ff;
+
   --color-brand-primary: #002a5c;
   --color-brand-primary-yellow: #f3bd1c;
   --color-brand-primary-black: #111111;
@@ -64,7 +66,4 @@ body {
   }
 }
 
-html,
-body {
-  @apply overflow-x-hidden;
-}
+/* * {outline: 1px solid red;} */

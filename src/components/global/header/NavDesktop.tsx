@@ -15,7 +15,7 @@ const NavDesktop = () => {
                 <p className="flex items-center gap-1 cursor-pointer">
                   <span>{page.name}</span>
 
-                  <i className="fi fi-br-angle-small-down flex rotate-180 group-hover:rotate-360 transition-all"></i>
+                  <i className="fi fi-br-angle-small-up flex rotate-180 group-hover:rotate-360 transition-all"></i>
                 </p>
                 <div className="hidden group-hover:block group-hover:absolute left-1/2 -translate-x-1/2 right-0 w-full ">
                   <div className="bg-background shadow px-2 pt-6 pb-3 mt-6">

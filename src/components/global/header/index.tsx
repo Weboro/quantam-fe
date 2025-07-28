@@ -2,13 +2,14 @@ import React from "react";
 import TopNav from "./TopNav";
 import NavBar from "./NavBar";
 
-const index = () => {
+const Header = () => {
   return (
-    <header className="bg-background text-text shadow relative z-[10000]">
+    <header className="sticky top-0 bg-background text-text shadow z-[10000]">
       <TopNav />
+
       <NavBar />
     </header>
   );
 };
 
-export default index;
+export default Header;
