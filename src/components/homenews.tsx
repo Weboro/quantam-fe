@@ -17,7 +17,7 @@ export default function HomeNews() {
           {homeNews.map((item) => (
             <p
               key={item.id}
-              className="text-brand-primary-black text-base font-primary text-left font-medium"
+              className="text-brand-primary-black text-base font-primary text-left font-medium mt-4 md:mt-0"
             >
               {item.summary}
             </p>

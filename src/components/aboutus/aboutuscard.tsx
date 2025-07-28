@@ -1,9 +1,13 @@
-import React from "react";
 import Image from "next/image";
 import { aboutUsCards, IAboutUsCard } from "../../data/aboutuscard";
 
 interface AboutUsCardProps {
   card: IAboutUsCard;
+}
+
+export interface AboutUsCardRef {
+  scrollLeft: () => void;
+  scrollRight: () => void;
 }
 
 const SingleCard: React.FC<AboutUsCardProps> = ({ card }) => (

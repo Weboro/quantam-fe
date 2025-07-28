@@ -31,7 +31,7 @@ const AboutComponent4: React.FC<Props> = ({ data = aboutComponent4Data }) => {
         <div
           className={`flex flex-col  ${isImageRight ? "lg:flex-row" : "lg:flex-row-reverse"} items-center gap-12 lg:gap-16 max-w-7xl mx-auto`}
         >
-          <div className="flex-1 space-y-6 text-brand-primary-black">
+          <div className="flex-1 max-md:order-2 space-y-6 text-brand-primary-black">
             <div className="space-y-2">
               <span className="text-muted text-sm font-medium uppercase tracking-wide">
                 {sectionTitle}
@@ -61,8 +61,17 @@ const AboutComponent4: React.FC<Props> = ({ data = aboutComponent4Data }) => {
           </div>
 
           {/* photo eta */}
-          <div className="flex-1 relative">
-            <div className="relative w-full min-h-[300px]  max-h-[600px] rounded-2xl overflow-hidden">
+          <div className="flex-1 relative h-full">
+            <Image
+              src={image.src}
+              alt={image.alt}
+              priority
+              layout="responsive"
+              width={1000}
+              height={1000}
+              className="w-full h-auto rounded-2xl object-cover"
+            />
+            {/* <div className="relative w-full min-h-[300px]  max-h-[600px] rounded-2xl overflow-hidden">
               <Image
                 src={image.src}
                 alt={image.alt}
@@ -70,7 +79,7 @@ const AboutComponent4: React.FC<Props> = ({ data = aboutComponent4Data }) => {
                 className="object-cover"
                 priority
               />
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

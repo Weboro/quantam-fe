@@ -28,7 +28,7 @@ export default function FaqBox({ faqBoxData }: Props) {
   return (
     <ContainerLayout>
       <div
-        className="rounded-sm p-4 flex flex-col items-start relative overflow-hidden m-16"
+        className="rounded-sm px-4 md:py-4  flex flex-col items-start relative overflow-hidden md:m-16 aspect-[3/4] md:aspect-auto py-28"
         style={{
           backgroundImage: "url('/banner.png')",
           backgroundSize: "cover",
@@ -43,16 +43,16 @@ export default function FaqBox({ faqBoxData }: Props) {
             opacity: 0.7,
           }}
         />
-        <div className="mb-2 font-primary relative z-10">
+        <div className="md:mb-2 font-primary relative z-10">
           <h3 className="text-2xl font-bold text-white">{faqBoxData.title}</h3>
           <h4 className="text-xl font-semibold text-white">
             {faqBoxData.subtitle}
           </h4>
         </div>
-        <p className="mb-8 text-white leading-relaxed font-primary flex items-start relative z-10">
+        <p className="md:mb-8 text-white leading-relaxed font-primary flex items-start relative z-10">
           {faqBoxData.description}
         </p>
-        <div className="font-bold text-secondary flex gap-2 relative z-10">
+        <div className="md:font-bold text-secondary md:flex-row  flex gap-4  flex-col   z-10 mt-5 md:mt-0">
           <Button
             variant="primaryAlt"
             as="a"

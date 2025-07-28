@@ -2,6 +2,7 @@ import React from "react";
 import ContainerLayout from "../components/layouts/ContainerLayout";
 import KeyDatesCard from "../components/cards/keydatescard";
 import keyDates from "../data/keyDates";
+import KeyDates from "@/feature/KeyDates";
 
 const HomeKeyDates: React.FC = () => (
   <ContainerLayout>
@@ -25,11 +26,7 @@ const HomeKeyDates: React.FC = () => (
         </p>
       </div>
     </div>
-    <div className="space-y-4">
-      {keyDates.slice(0, 3).map((keyDate) => (
-        <KeyDatesCard key={keyDate.id} keyDate={keyDate} />
-      ))}
-    </div>
+    <KeyDates />
   </ContainerLayout>
 );
 

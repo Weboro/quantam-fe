@@ -7,7 +7,7 @@ interface Props {
 }
 
 const NewsCard: React.FC<Props> = ({ card }) => (
-  <div className=" max-w-xs w-full flex flex-col overflow-hidden font-primary">
+  <div className="  w-full flex flex-col overflow-hidden font-primary">
     <Image
       src={card.imageUrl}
       alt={card.title}
@@ -16,7 +16,7 @@ const NewsCard: React.FC<Props> = ({ card }) => (
       className="w-full h-48 object-cover rounded-2xl"
     />
     <div className=" flex flex-col gap-1">
-      <div className="flex items-center gap-4 text-muted text-sm mt-2 justify-between">
+      <div className="flex items-center gap-4 text-muted  text-sm mt-2 justify-between">
         <span className="flex items-center gap-1">
           {" "}
           <i className="fi fi-br-calendar-day"></i>
@@ -46,7 +46,7 @@ const NewsCard: React.FC<Props> = ({ card }) => (
 
 const HomeNewsCard = () => (
   <div className="w-full mb-4">
-    <div className="flex  justify-center gap-8">
+    <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
       {homeNewsCards.map((card) => (
         <NewsCard key={card.id} card={card} />
       ))}

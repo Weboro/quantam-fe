@@ -7,7 +7,7 @@ interface Props {
 
 const KeyDatesCard: React.FC<Props> = ({ keyDate }) => (
   <div className="flex bg-surface-1 rounded-xl overflow-hidden">
-    <div className="bg-brand-yellow-3 text-black gap-4 flex flex-col items-center justify-center min-w-[190px] text-primary ">
+    <div className="bg-brand-yellow-3 text-black gap-4 flex flex-col items-center justify-center text-primary ">
       <div className="text-3xl font-bold uppercase tracking-wide">
         {keyDate.month}
       </div>
