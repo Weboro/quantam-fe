@@ -1,0 +1,127 @@
+interface Course {
+  name: string;
+  slug: string;
+  description: string;
+  richText: string;
+  heroImage: string;
+  images: string[];
+  level: "Beginner" | "Intermediate" | "Advanced";
+  duration: string;
+  tags: string[];
+  publishedDate: string;
+  syllabus?: string[];
+}
+
+const courses: Course[] = [
+  {
+    name: "UI/UX Design",
+    slug: "ui-ux-design",
+    description:
+      "Master the art of creating user-centered designs with our comprehensive UI/UX course.",
+    richText: `
+      <p>Learn the foundations of design thinking, wireframing, prototyping, and user testing.</p>
+      <ul>
+        <li>Tools: Figma, Adobe XD</li>
+        <li>Focus: Usability, accessibility, and creativity</li>
+      </ul>
+    `,
+    heroImage: "/images/courses/ui-ux/hero.jpg",
+    images: [
+      "/images/courses/ui-ux/1.jpg",
+      "/images/courses/ui-ux/2.jpg",
+      "/images/courses/ui-ux/3.jpg",
+    ],
+    level: "Intermediate",
+    duration: "6 weeks",
+    tags: ["Design", "Figma", "Prototyping"],
+    publishedDate: "2025-06-20",
+    syllabus: [
+      "Introduction to Design Thinking",
+      "User Research & Personas",
+      "Wireframes & Mockups",
+      "Prototyping in Figma",
+      "Usability Testing",
+    ],
+  },
+  {
+    name: "Full-Stack Development",
+    slug: "full-stack-dev",
+    description:
+      "Become a full-stack developer by mastering both frontend and backend technologies.",
+    richText: `
+      <p>This course covers everything from HTML, CSS, JavaScript, React to Node.js, Express and MongoDB.</p>
+      <p>By the end, you’ll build and deploy your own full-stack apps.</p>
+    `,
+    heroImage: "/images/courses/full-stack/hero.jpg",
+    images: [
+      "/images/courses/full-stack/1.jpg",
+      "/images/courses/full-stack/2.jpg",
+    ],
+    level: "Advanced",
+    duration: "12 weeks",
+    tags: ["JavaScript", "React", "Node.js"],
+    publishedDate: "2025-05-10",
+    syllabus: [
+      "HTML/CSS Foundations",
+      "JavaScript & ES6+",
+      "React & Component Architecture",
+      "Node.js + Express",
+      "MongoDB & Mongoose",
+      "Deploying to Vercel & Render",
+    ],
+  },
+  {
+    name: "Digital Marketing",
+    slug: "digital-marketing",
+    description:
+      "Learn SEO, content strategy, analytics and ad campaigns to grow any brand online.",
+    richText: `
+      <p>This course helps you understand audience behavior and run effective digital campaigns.</p>
+      <p>Ideal for marketing enthusiasts and business owners.</p>
+    `,
+    heroImage: "/images/courses/digital-marketing/hero.jpg",
+    images: [
+      "/images/courses/digital-marketing/1.jpg",
+      "/images/courses/digital-marketing/2.jpg",
+    ],
+    level: "Beginner",
+    duration: "4 weeks",
+    tags: ["SEO", "Content", "Ads", "Analytics"],
+    publishedDate: "2025-04-01",
+    syllabus: [
+      "Intro to Digital Marketing",
+      "SEO Basics",
+      "Content Creation Strategy",
+      "Google Ads & Meta Ads",
+      "Analytics & Tracking",
+    ],
+  },
+  {
+    name: "Data Science",
+    slug: "data-science",
+    description:
+      "Dive into statistics, machine learning, and data visualization with real-world projects.",
+    richText: `
+      <p>Cover Python, Pandas, Scikit-learn, and visualization tools like Matplotlib and Tableau.</p>
+      <p>Build predictive models and dashboards from scratch.</p>
+    `,
+    heroImage: "/images/courses/data-science/hero.jpg",
+    images: [
+      "/images/courses/data-science/1.jpg",
+      "/images/courses/data-science/2.jpg",
+    ],
+    level: "Advanced",
+    duration: "10 weeks",
+    tags: ["Python", "ML", "Data Viz"],
+    publishedDate: "2025-03-15",
+    syllabus: [
+      "Intro to Python for Data",
+      "Statistics & Probability",
+      "Pandas & Numpy",
+      "Modeling with Scikit-learn",
+      "Data Visualization",
+    ],
+  },
+];
+
+export default courses;
