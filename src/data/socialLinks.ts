@@ -1,5 +1,0 @@
-const socialLinks = [
-  {
-    name: "LinkedIn",
-  },
-];
