@@ -11,18 +11,6 @@ interface Props {
 }
 
 export default function FaqBox({ faqBoxData }: Props) {
-  const [showCopied, setShowCopied] = useState(false);
-  const phoneNumber = "+1234567890";
-
-  const handleContactClick = () => {
-    navigator.clipboard.writeText(phoneNumber).then(() => {
-      setShowCopied(true);
-      setTimeout(() => {
-        setShowCopied(false);
-      }, 2000);
-    });
-  };
-
   return (
     <ContainerLayout>
       <div

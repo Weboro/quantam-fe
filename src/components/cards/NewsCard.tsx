@@ -1,6 +1,5 @@
 import React from "react";
 import Image from "next/image";
-import { homeNewsCards, HomeNewsCardItem } from "../../data/homenewscard";
 
 const NewsCard: React.FC = ({
   imageUrl,
