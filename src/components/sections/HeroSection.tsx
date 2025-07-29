@@ -1,5 +1,6 @@
 import ContainerLayout from "@/components/layouts/ContainerLayout";
 import Button from "@/components/ui/Button";
+import Heading from "../ui/Heading";
 
 interface HeroSectionProps {
   title: string;
@@ -33,24 +34,24 @@ const HeroSection: React.FC<HeroSectionProps> = ({
       <div className="absolute inset-0 bg-gradient-to-r from-[#002B5C] to-transparent"></div>
 
       <ContainerLayout
-        className={`relative z-10 h-full flex flex-col justify-center font-primary max-w-2xl space-y-8 ${alignClass}`}
+        className={`relative z-10 h-full flex flex-col justify-center max-w-2xl ${alignClass}`}
       >
-        <h1 className="text-white  md:text-3xl lg:text-4xl font-extrabold leading-tight">
+        <Heading level={1} className="text-background">
           {title}
-        </h1>
+        </Heading>
 
         {subtitle && (
-          <h2 className="text-white text-xl md:text-2xl font-medium">
+          <h2 className="text-background text-xl md:text-2xl font-medium mb-2">
             {subtitle}
           </h2>
         )}
 
-        <p className="text-white text-base md:text-lg  leading-relaxed opacity-90 max-w-lg">
+        <p className="text-background text-base md:text-lg  leading-relaxed opacity-90 max-w-lg mt-3">
           {description}
         </p>
 
         {buttonText && buttonLink && (
-          <a href={buttonLink} className="font-medium">
+          <a href={buttonLink} className="font-medium block mt-8">
             <Button variant="secondary">{buttonText}</Button>
           </a>
         )}

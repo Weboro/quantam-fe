@@ -28,7 +28,7 @@ const Button: React.FC<ButtonProps> = ({
   onClick,
 }) => {
   const baseClasses =
-    "flex items-center gap-2 px-4 py-2 rounded text-sm transition-colors duration-200";
+    "flex items-center gap-2 px-4 py-2 rounded text-sm transition-colors duration-200 cursor-pointer";
 
   const variantClasses = {
     primary: `
@@ -47,17 +47,17 @@ const Button: React.FC<ButtonProps> = ({
       disabled:bg-neutral-400 disabled:text-white disabled:cursor-not-allowed
     `,
     contrastAlt: `
-      bg-white text-black border border-black
+      bg-background text-black border-2 border-black
       ${interaction && "hover:bg-neutral-100"}
       disabled:bg-neutral-100 disabled:text-black disabled:opacity-60 disabled:cursor-not-allowed
     `,
     primaryAlt: `
-      bg-white text-[var(--color-brand-primary)] border border-[var(--color-brand-primary)]
+      bg-background text-[var(--color-brand-primary)] border-2 border-[var(--color-brand-primary)]
       ${interaction && "hover:bg-[var(--color-brand-blue-5)]"}
       disabled:bg-neutral-100 disabled:text-[var(--color-brand-blue-4)] disabled:border-[var(--color-brand-blue-4)] disabled:opacity-60 disabled:cursor-not-allowed
     `,
     secondaryAlt: `
-      bg-white text-[var(--color-brand-yellow-3)] border border-[var(--color-brand-yellow-3)]
+      bg-background text-[var(--color-brand-yellow-3)] border-2 border-[var(--color-brand-yellow-3)]
       ${interaction && "hover:bg-[var(--color-brand-yellow-5)]"}
       disabled:bg-neutral-100 disabled:text-[var(--color-brand-yellow-4)] disabled:border-[var(--color-brand-yellow-4)] disabled:opacity-60 disabled:cursor-not-allowed
     `,
@@ -75,7 +75,7 @@ const Button: React.FC<ButtonProps> = ({
     >
       {icon && <i className={`${icon} flex`} />}
 
-      {children}
+      {children && children}
     </button>
   );
 };

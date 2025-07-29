@@ -29,7 +29,9 @@ const AboutComponent4: React.FC<Props> = ({ data = aboutComponent4Data }) => {
     <ContainerLayout>
       <div className="w-full py-16 ">
         <div
-          className={`flex flex-col  ${isImageRight ? "lg:flex-row" : "lg:flex-row-reverse"} items-center gap-12 lg:gap-16 max-w-7xl mx-auto`}
+          className={`flex flex-col  ${
+            isImageRight ? "lg:flex-row" : "lg:flex-row-reverse"
+          } items-center gap-12 lg:gap-16 max-w-7xl mx-auto`}
         >
           <div className="flex-1 max-md:order-2 space-y-6 text-brand-primary-black">
             <div className="space-y-2">

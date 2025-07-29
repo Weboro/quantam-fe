@@ -11,40 +11,48 @@ const NavDesktop = () => {
         {pages.map((page, i) => (
           <React.Fragment key={i}>
             {page.subPages ? (
-              <div className=" group">
+              <div className="group">
                 <p className="flex items-center gap-1 cursor-pointer">
-                  <span>{page.name}</span>
+                  <span className="group-hover:underline group-hover:text-brand-primary transition-all">
+                    {page.name}
+                  </span>
 
-                  <i className="fi fi-br-angle-small-up flex rotate-180 group-hover:rotate-360 transition-all"></i>
+                  <i className="fi fi-rr-angle-small-up flex rotate-180 group-hover:rotate-360 transition-all group-hover:text-brand-primary"></i>
                 </p>
+
                 <div className="hidden group-hover:block group-hover:absolute left-1/2 -translate-x-1/2 right-0 w-full ">
                   <div className="bg-background shadow px-2 pt-6 pb-3 mt-6">
                     <ContainerLayout>
-                      <h3 className="text-2xl font-bold">{page.title}</h3>
-                      <hr className="mt-1 mb-3 opacity-50 border-brand-primary" />
+                      <div className="mt-2 space-y-1">
+                        <h3 className="text-3xl font-bold text-brand-primary mb-3">
+                          {page.title}
+                        </h3>
 
-                      <nav className="space-y-2">
                         {page.subPages.map((subPage) => (
                           <Link
                             href={`/${page.slug}/${subPage.slug}`}
                             key={subPage.slug}
-                            className="flex items-center gap-1 group/navLink"
+                            className="flex items-center gap-3 py-2 w-fit"
                           >
                             <i
-                              className={`${subPage.icon} w-8 aspect-square bg-brand-blue-3 text-background rounded-lg grid place-items-center `}
+                              className={`${subPage.icon} w-8 h-8 bg-brand-blue-3 text-background rounded-lg flex items-center justify-center text-sm flex-shrink-0`}
                             />
-                            <span className="font-[600] group/navLink:hover:text-brand-blue-3">
+                            <span className="font-semibold text-gray-700 hover:text-brand-blue-3 transition-colors">
                               {subPage.name}
                             </span>
                           </Link>
                         ))}
-                      </nav>
+                      </div>
                     </ContainerLayout>
                   </div>
                 </div>
               </div>
             ) : (
-              <Link key={i} href={`/${page.slug}`}>
+              <Link
+                key={i}
+                className="hover:underline hover:text-brand-primary transition-all"
+                href={`/${page.slug}`}
+              >
                 {page.name}
               </Link>
             )}

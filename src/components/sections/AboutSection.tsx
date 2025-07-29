@@ -4,6 +4,7 @@ import ContainerLayout from "../layouts/ContainerLayout";
 import Link from "next/link";
 import Button from "../ui/Button";
 import AboutUsCard, { AboutUsCardRef } from "../cards/AboutSlider";
+import Heading from "../ui/Heading";
 
 const AboutSection = () => {
   const sliderRef = useRef<AboutUsCardRef>(null);
@@ -23,9 +24,9 @@ const AboutSection = () => {
           <span className="text-muted text-base font-medium mb-0.5">
             About Us
           </span>
-          <h2 className="text-3xl font-bold text-brand-primary-black leading-tight mb-4">
+          <Heading className="mb-3" level={2}>
             About Our Programs and our course of action.
-          </h2>
+          </Heading>
           <p className=" text-brand-primary-black font-normal max-w-2xl">
             A modal dialog that interrupts the user with important content and
             expects a response. A modal dialog that interrupts the user.
