@@ -1,6 +1,5 @@
-import AboutComponent4 from "@/components/aboutus/aboutcomponent4";
-import AboutUsPage from "@/components/aboutus/page";
-import AllCourses from "@/components/allcourses/page";
+import AboutComponent4 from "@/components/AboutUsExplore";
+
 import FaqBox from "@/components/faqbox";
 import HomeKeyDates from "@/components/homekeydates";
 import { faqBoxData } from "@/data/faqbox";
@@ -11,7 +10,7 @@ import AboutSection from "@/components/sections/AboutSection";
 
 const HomePage = () => {
   return (
-    <div className="space-y-32">
+    <div className="space-y-22">
       <HeroSection
         title={quantumBanner.title}
         subtitle={quantumBanner.subtitle}
@@ -19,7 +18,7 @@ const HomePage = () => {
         buttonText={quantumBanner.buttonText}
         buttonLink={quantumBanner.buttonLink}
         imageUrl={quantumBanner.imageUrl}
-        textAlign={"center"}
+        textAlign="left"
       />
 
       <AboutSection />
@@ -31,8 +30,6 @@ const HomePage = () => {
       <HomeNewsSection />
 
       <FaqBox faqBoxData={faqBoxData} />
-
-      <AllCourses />
     </div>
   );
 };

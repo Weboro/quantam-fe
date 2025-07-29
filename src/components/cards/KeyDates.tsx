@@ -51,9 +51,9 @@ const KeyDateCard = ({
                 Learn More
               </Link>
             </span>
-            <span className="text-brand-primary text-sm size-6 rounded-full border border-surface-2 items-center ">
+            <span className="text-brand-primary text-sm size-6 rounded-full border border-surface-2 items-center pt-1 pl-0.5">
               <Link href={learnMoreUrl}>
-                <i className="fi fi-br-arrow-small-right mt-4 ml-0.5"></i>
+                <i className="fi fi-br-arrow-small-right  ml-0.5"></i>
               </Link>
             </span>
           </div>
