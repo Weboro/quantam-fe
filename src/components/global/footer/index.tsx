@@ -1,11 +1,16 @@
 import ContainerLayout from "@/components/layouts/ContainerLayout";
+import courses from "@/data/courses";
+import pages from "@/data/pages";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
 const Footer = () => {
+  const pageData = pages.filter((item) => item.slug !== "courses");
+  const courseData = pages.find((item) => item.slug === "courses");
+
   return (
-    <footer className="">
+    <footer>
       <div className="bg-powder-blue pt-16 pb-12 space-y-4">
         <ContainerLayout
           size="base"
@@ -34,33 +39,52 @@ const Footer = () => {
           size="base"
           className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4"
         >
-          {Array.from({ length: 4 }).map((el, i) => (
+          <div className="mb-8 lg:mb-0">
+            <h4 className="text-xl md:text-3xl font-semibold font-primary">
+              Information
+            </h4>
+
+            {pageData.map((page) => (
+              <Link
+                className="block mt-1.5 hover:text-brand-primary transition-all hover:underline"
+                href={`/${page.slug}`}
+                key={page.slug}
+              >
+                {page.name}
+              </Link>
+            ))}
+          </div>
+          <div className="mb-8 lg:mb-0">
+            <h4 className="text-xl md:text-3xl font-semibold font-primary">
+              Courses
+            </h4>
+
+            {courseData?.subPages?.map((page) => (
+              <Link
+                className="block mt-1.5 hover:text-brand-primary transition-all hover:underline"
+                href={`/${courseData.slug}/${page.slug}`}
+                key={page.slug}
+              >
+                {page.name}
+              </Link>
+            ))}
+          </div>
+
+          {Array.from({ length: 2 }).map((el, i) => (
             <div key={i} className="mb-8 lg:mb-0">
-              <h4 className="text-xl font-semibold">Courses</h4>
-              <Link
-                className="block mt-2 hover:text-brand-primary transition-all"
-                href={"#"}
-              >
-                Accounting Major
-              </Link>
-              <Link
-                className="block mt-2 hover:text-brand-primary transition-all"
-                href={"#"}
-              >
-                Major in Information Systems
-              </Link>
-              <Link
-                className="block mt-2 hover:text-brand-primary transition-all"
-                href={"#"}
-              >
-                Major in Hospitality
-              </Link>
-              <Link
-                className="block mt-2 hover:text-brand-primary transition-all"
-                href={"#"}
-              >
-                Major in Management
-              </Link>
+              <h4 className="text-xl md:text-3xl font-semibold font-primary">
+                Pages
+              </h4>
+
+              {Array.from({ length: 2 }).map((_, i) => (
+                <Link
+                  className="block mt-1.5 hover:text-brand-primary transition-all hover:underline"
+                  href={"#"}
+                  key={i}
+                >
+                  Dummy Page
+                </Link>
+              ))}
             </div>
           ))}
         </ContainerLayout>

@@ -5,7 +5,7 @@ import React from "react";
 
 const TopNav = () => {
   return (
-    <div className="bg-brand-primary text-background/95">
+    <div className="bg-brand-primary">
       <ContainerLayout
         size="base"
         className="py-2 flex items-center gap-2 justify-between"
@@ -15,7 +15,7 @@ const TopNav = () => {
             <Link
               href={`${link.url}`}
               target="_blank"
-              className="hover:text-brand-primary-yellow transition-all flex items-center gap-1"
+              className="text-neutral-300 hover:text-brand-primary-yellow transition-all flex items-center gap-1"
               key={i}
             >
               <i className={`${link.icon} flex`} />
@@ -24,12 +24,12 @@ const TopNav = () => {
           ))}
         </nav>
 
-        <nav className="text-xs hidden md:flex items-center text-background/95 gap-2">
+        <nav className="text-xs hidden md:flex items-center gap-2">
           {topLinks.map((link, i) => (
             <Link
               href={`${link.url}`}
               target="_blank"
-              className="hover:text-background transition-all"
+              className="text-neutral-300 hover:text-background hover:underline transition-all"
               key={i}
             >
               {link.name}
