@@ -1,8 +1,7 @@
 import React from "react";
 import ContainerLayout from "../components/layouts/ContainerLayout";
-import KeyDatesCard from "../components/cards/keydatescard";
-import keyDates from "../data/keyDates";
-import KeyDates from "@/feature/KeyDates";
+
+import KeyDates from "@/components/cards/KeyDates";
 
 const HomeKeyDates: React.FC = () => (
   <ContainerLayout>
@@ -19,7 +18,7 @@ const HomeKeyDates: React.FC = () => (
         </a>
       </div>
       <div className="flex-1">
-        <p className="text-md text-semibold text-brand-primary-black text-left font-secondary">
+        <p className="text-md text-semibold text-brand-primary-black text-left font-secondary ">
           A modal dialog that interrupts the user with important content and
           expects a response. A modal dialog that interrupts the user with
           important content and expects a response.

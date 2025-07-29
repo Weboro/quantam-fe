@@ -1,11 +1,21 @@
 "use client";
-import React from "react";
+import React, { useRef } from "react";
 import ContainerLayout from "../layouts/ContainerLayout";
 import Link from "next/link";
 import Button from "../ui/Button";
-import AboutUsCard from "../aboutus/AboutSlider";
+import AboutUsCard, { AboutUsCardRef } from "../cards/AboutSlider";
 
 const AboutSection = () => {
+  const sliderRef = useRef<AboutUsCardRef>(null);
+
+  const handlePrevSlide = () => {
+    sliderRef.current?.scrollLeft();
+  };
+
+  const handleNextSlide = () => {
+    sliderRef.current?.scrollRight();
+  };
+
   return (
     <div>
       <ContainerLayout className="flex flex-col md:flex-row md:items-start justify-between w-full py-4">
@@ -28,14 +38,24 @@ const AboutSection = () => {
           </Link>
 
           <div className="flex items-center gap-4 ">
-            <Button variant="contrastAlt" icon="fi fi-br-angle-small-left" />
-            <Button variant="contrastAlt" icon="fi fi-br-angle-small-right" />
+            <Button
+              variant="secondary"
+              icon="fi fi-br-angle-small-left"
+              className="rounded-full px-1! py-1!"
+              onClick={handlePrevSlide}
+            />
+            <Button
+              variant="secondary"
+              icon="fi fi-br-angle-small-right"
+              className="rounded-full px-1! py-1!"
+              onClick={handleNextSlide}
+            />
           </div>
         </div>
       </ContainerLayout>
 
       <div className="w-full overflow-x-hidden">
-        <AboutUsCard />
+        <AboutUsCard ref={sliderRef} />
       </div>
     </div>
   );

@@ -3,7 +3,7 @@
 import type { IFaqBox } from "../data/faqbox";
 import Button from "./ui/Button";
 import ContainerLayout from "./layouts/ContainerLayout";
-import { useState } from "react";
+
 import Link from "next/link";
 
 interface Props {
@@ -14,7 +14,7 @@ export default function FaqBox({ faqBoxData }: Props) {
   return (
     <ContainerLayout>
       <div
-        className="rounded-sm px-4 md:py-4  flex flex-col items-start relative overflow-hidden md:m-16 aspect-[3/4] md:aspect-auto py-28"
+        className="rounded-sm px-4 md:py-4  flex flex-col items-start relative overflow-hidden md:m-16  md:aspect-auto py-28"
         style={{
           backgroundImage: "url('/banner.png')",
           backgroundSize: "cover",
@@ -29,7 +29,7 @@ export default function FaqBox({ faqBoxData }: Props) {
             opacity: 0.7,
           }}
         />
-        <div className="md:mb-2 font-primary relative z-10">
+        <div className="md:mb-2 font-primary relative z-10 md:leading-1">
           <h3 className="text-2xl font-bold text-white">{faqBoxData.title}</h3>
           <h4 className="text-xl font-semibold text-white">
             {faqBoxData.subtitle}
@@ -44,12 +44,13 @@ export default function FaqBox({ faqBoxData }: Props) {
               variant="primaryAlt"
               icon="fi fi-br-envelope"
               className="cursor-pointer"
+              interaction={false}
             >
               <span className="font-bold">{faqBoxData.email}</span>
             </Button>
           </Link>
           <Link href={"tel:+98193847489"}>
-            <Button icon="fi fi-br-phone-flip" variant="secondary">
+            <Button icon="fi fi-br-phone-flip rotate-90" variant="secondary">
               Contact Us
             </Button>
           </Link>

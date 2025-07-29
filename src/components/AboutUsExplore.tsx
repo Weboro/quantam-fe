@@ -1,11 +1,11 @@
 import React from "react";
 import Image from "next/image";
-import Button from "../ui/Button";
+import Button from "./ui/Button";
 import {
   aboutComponent4Data,
   AboutComponent4Props,
-} from "../../data/aboutcomponent4";
-import ContainerLayout from "../layouts/ContainerLayout";
+} from "../data/aboutcomponent4";
+import ContainerLayout from "./layouts/ContainerLayout";
 
 interface Props {
   data?: AboutComponent4Props;
@@ -71,15 +71,6 @@ const AboutComponent4: React.FC<Props> = ({ data = aboutComponent4Data }) => {
               height={1000}
               className="w-full h-auto rounded-2xl object-cover"
             />
-            {/* <div className="relative w-full min-h-[300px]  max-h-[600px] rounded-2xl overflow-hidden">
-              <Image
-                src={image.src}
-                alt={image.alt}
-                fill
-                className="object-cover"
-                priority
-              />
-            </div> */}
           </div>
         </div>
       </div>

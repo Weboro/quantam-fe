@@ -1,7 +1,17 @@
 import ContainerLayout from "@/components/layouts/ContainerLayout";
 import Button from "@/components/ui/Button";
 
-const HeroSection = ({
+interface HeroSectionProps {
+  title: string;
+  subtitle?: string;
+  description: string;
+  buttonText?: string;
+  buttonLink?: string;
+  imageUrl?: string;
+  textAlign?: "left" | "center";
+}
+
+const HeroSection: React.FC<HeroSectionProps> = ({
   title,
   subtitle,
   description,
@@ -17,7 +27,7 @@ const HeroSection = ({
 
   return (
     <div
-      className="relative w-full h-[55vh] bg-cover bg-center bg-no-repeat grid place-items-center"
+      className="relative w-full h-[60vh] bg-cover bg-center bg-no-repeat grid place-items-center"
       style={{ backgroundImage: `url('${imageUrl}')` }}
     >
       <div className="absolute inset-0 bg-gradient-to-r from-[#002B5C] to-transparent"></div>
@@ -25,7 +35,7 @@ const HeroSection = ({
       <ContainerLayout
         className={`relative z-10 h-full flex flex-col justify-center font-primary max-w-2xl space-y-8 ${alignClass}`}
       >
-        <h1 className="text-white  md:text-3xl lg:text-3xl font-extrabold leading-tight">
+        <h1 className="text-white  md:text-3xl lg:text-4xl font-extrabold leading-tight">
           {title}
         </h1>
 

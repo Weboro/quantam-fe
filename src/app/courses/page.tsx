@@ -1,7 +1,7 @@
 import React from "react";
 
 const CoursesPage = () => {
-  return <div>CoursesPage</div>;
+  return <div></div>;
 };
 
 export default CoursesPage;

@@ -1,7 +1,16 @@
 import React from "react";
 import Image from "next/image";
 
-const NewsCard: React.FC = ({
+interface NewsCardProps {
+  imageUrl: string;
+  date: string;
+  readTime: string;
+  title: string;
+  url: string;
+  summary: string;
+}
+
+const NewsCard: React.FC<NewsCardProps> = ({
   imageUrl,
   date,
   readTime,
@@ -40,8 +49,8 @@ const NewsCard: React.FC = ({
         className="font-bold text-brand-primary flex items-center gap-2"
       >
         Learn More{" "}
-        <span>
-          <i className="fi fi-br-arrow-right mt-2"></i>
+        <span className="pt-1.5">
+          <i className="fi fi-br-arrow-right "></i>
         </span>
       </a>
     </div>

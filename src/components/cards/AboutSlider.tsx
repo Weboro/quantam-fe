@@ -1,3 +1,4 @@
+import React, { useRef, forwardRef, useImperativeHandle } from "react";
 import Image from "next/image";
 import { aboutUsCards, IAboutUsCard } from "../../data/aboutuscard";
 
@@ -36,10 +37,31 @@ const AboutSliderCard: React.FC<AboutUsCardProps> = ({ card }) => (
   </div>
 );
 
-const AboutSlider: React.FC = () => {
+const AboutSlider = forwardRef<AboutUsCardRef>((props, ref) => {
+  const containerRef = useRef<HTMLDivElement>(null);
+
+  useImperativeHandle(ref, () => ({
+    scrollLeft: () => {
+      if (containerRef.current) {
+        containerRef.current.scrollBy({
+          left: -350, // Scroll by approximately one card width
+          behavior: "smooth",
+        });
+      }
+    },
+    scrollRight: () => {
+      if (containerRef.current) {
+        containerRef.current.scrollBy({
+          left: 350, // Scroll by approximately one card width
+          behavior: "smooth",
+        });
+      }
+    },
+  }));
+
   return (
-    <div className="w-full py-4 md:ml-32">
-      <div className="overflow-x-auto scrollbar-hide">
+    <div className="w-full py-4 md:ml-32 ">
+      <div className="overflow-x-auto scrollbar-hide" ref={containerRef}>
         <div className="flex gap-8 px-6" style={{ width: "max-content" }}>
           {aboutUsCards.map((card, index) => (
             <AboutSliderCard key={index} card={card} />
@@ -57,6 +79,8 @@ const AboutSlider: React.FC = () => {
       `}</style>
     </div>
   );
-};
+});
+
+AboutSlider.displayName = "AboutSlider";
 
 export default AboutSlider;
