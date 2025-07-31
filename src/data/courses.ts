@@ -1,4 +1,5 @@
-interface Course {
+export interface ICourse {
+  id: string;
   name: string;
   slug: string;
   description: string;
@@ -10,21 +11,25 @@ interface Course {
   tags: string[];
   publishedDate: string;
   syllabus?: string[];
+  price: number;
+  isFeatured: boolean;
+  url: string;
+  location?: string;
+  studyLevel?: "Undergraduate" | "Postgraduate" | "Diploma" | "Certificate";
+  intakes?: string[];
+  deliveryMode?: ("Face-to-face" | "Online" | "Blended")[];
+  CRICOSCourseCode?: string;
 }
 
-const courses: Course[] = [
+const courses: ICourse[] = [
   {
+    id: "crs001",
     name: "UI/UX Design",
     slug: "ui-ux-design",
     description:
       "Master the art of creating user-centered designs with our comprehensive UI/UX course.",
     richText: `
-      <p>Learn the foundations of design thinking, wireframing, prototyping, and user testing.</p>
-      <ul>
-        <li>Tools: Figma, Adobe XD</li>
-        <li>Focus: Usability, accessibility, and creativity</li>
-      </ul>
-    `,
+      <p>Learn the foundations of design thinking, wireframing, prototyping, and user testing.</p><ul><li>Tools: Figma, Adobe XD</li><li>Focus: Usability, accessibility, and creativity</li></ul>`,
     heroImage: "/courses/ui-ux/hero.jpg",
     images: [
       "/courses/ui-ux/1.jpg",
@@ -42,8 +47,17 @@ const courses: Course[] = [
       "Prototyping in Figma",
       "Usability Testing",
     ],
+    price: 15000,
+    isFeatured: true,
+    url: "/courses/ui-ux-design",
+    location: "Online",
+    studyLevel: "Certificate",
+    intakes: ["August 2025", "November 2025"],
+    deliveryMode: ["Online", "Blended"],
+    CRICOSCourseCode: undefined,
   },
   {
+    id: "crs002",
     name: "Full-Stack Development",
     slug: "full-stack-dev",
     description:
@@ -66,8 +80,17 @@ const courses: Course[] = [
       "MongoDB & Mongoose",
       "Deploying to Vercel & Render",
     ],
+    price: 30000,
+    isFeatured: true,
+    url: "/courses/full-stack-dev",
+    location: "Kathmandu Campus",
+    studyLevel: "Diploma",
+    intakes: ["September 2025", "January 2026"],
+    deliveryMode: ["Face-to-face", "Online"],
+    CRICOSCourseCode: undefined,
   },
   {
+    id: "crs003",
     name: "Digital Marketing",
     slug: "digital-marketing",
     description:
@@ -92,8 +115,17 @@ const courses: Course[] = [
       "Google Ads & Meta Ads",
       "Analytics & Tracking",
     ],
+    price: 12000,
+    isFeatured: false,
+    url: "/courses/digital-marketing",
+    location: "Online",
+    studyLevel: "Certificate",
+    intakes: ["October 2025", "February 2026"],
+    deliveryMode: ["Online"],
+    CRICOSCourseCode: undefined,
   },
   {
+    id: "crs004",
     name: "Data Science",
     slug: "data-science",
     description:
@@ -115,6 +147,14 @@ const courses: Course[] = [
       "Modeling with Scikit-learn",
       "Data Visualization",
     ],
+    price: 25000,
+    isFeatured: true,
+    url: "/courses/data-science",
+    location: "Online",
+    studyLevel: "Certificate",
+    intakes: ["November 2025", "March 2026"],
+    deliveryMode: ["Online", "Blended"],
+    CRICOSCourseCode: undefined,
   },
 ];
 

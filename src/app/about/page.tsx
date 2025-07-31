@@ -7,7 +7,7 @@ const AboutPage = () => {
       <HeroSection
         title="About Us"
         description="Learn More Quantum Institute"
-        imageUrl="/banner.png"
+        imageUrl="/banner.jpg"
       />
 
       <div className="my-32 text-center">TBD</div>

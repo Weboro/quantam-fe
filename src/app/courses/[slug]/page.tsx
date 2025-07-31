@@ -1,27 +1,47 @@
-import HeroSection from "@/components/sections/HeroSection";
+import Breadcrumbs from "@/components/global/Breadcrumbs";
+import ContainerLayout from "@/components/layouts/ContainerLayout";
+import CourseDetailsSection from "@/components/sections/course/CourseDetailsSection";
+import FaqSection from "@/components/sections/FaqSection";
+import Heading from "@/components/ui/Heading";
 import { getCourse } from "@/utils/getCourses";
 import { notFound } from "next/navigation";
 import React from "react";
 
-interface CoursePageProps {
+interface ICoursePage {
   params: Promise<{ slug: string }>;
 }
 
-const CoursePage: React.FC<CoursePageProps> = async ({ params }) => {
+const CoursePage: React.FC<ICoursePage> = async ({ params }) => {
   const { slug } = await params;
+
   const course = await getCourse(slug);
 
   if (!course) notFound();
 
   return (
     <>
-      <HeroSection
-        title={course.name}
+      <Breadcrumbs />
+
+      <ContainerLayout className="mt-4 mb-8">
+        <Heading level={1}>{course.name}</Heading>
+      </ContainerLayout>
+
+      <CourseDetailsSection
+        name={course.name}
         description={course.description}
-        imageUrl={course.heroImage}
+        richText={course.richText}
+        heroImage={course.heroImage}
+        duration={course?.duration}
+        location={course?.location}
+        studyLevel={course?.studyLevel}
+        intakes={course?.intakes}
+        deliveryMode={course?.deliveryMode}
+        CRICOSCourseCode={course?.CRICOSCourseCode}
       />
 
-      <div className="my-32 text-center">TBD</div>
+      <div className="mt-24">
+        <FaqSection />
+      </div>
     </>
   );
 };

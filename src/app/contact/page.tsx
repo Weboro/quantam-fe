@@ -7,7 +7,7 @@ const ContactPage = () => {
       <HeroSection
         title="Contact Us"
         description="Learn More Quantum Institute"
-        imageUrl="/banner.png"
+        imageUrl="/banner.jpg"
       />
 
       <div className="my-32 text-center">TBD</div>

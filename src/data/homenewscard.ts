@@ -11,7 +11,7 @@ export interface HomeNewsCardItem {
 export const homeNewsCards: HomeNewsCardItem[] = [
   {
     id: 1,
-    imageUrl: "/banner.png",
+    imageUrl: "/banner.jpg",
     date: "Jul 15, 2025",
     readTime: "3 mins readtime",
     title:
@@ -22,7 +22,7 @@ export const homeNewsCards: HomeNewsCardItem[] = [
   },
   {
     id: 2,
-    imageUrl: "/banner.png",
+    imageUrl: "/banner.jpg",
     date: "Jul 15, 2025",
     readTime: "3 mins readtime",
     title:
@@ -33,7 +33,7 @@ export const homeNewsCards: HomeNewsCardItem[] = [
   },
   {
     id: 3,
-    imageUrl: "/banner.png",
+    imageUrl: "/banner.jpg",
     date: "Jul 15, 2025",
     readTime: "3 mins readtime",
     title:

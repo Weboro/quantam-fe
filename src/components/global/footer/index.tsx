@@ -1,5 +1,4 @@
 import ContainerLayout from "@/components/layouts/ContainerLayout";
-import courses from "@/data/courses";
 import pages from "@/data/pages";
 import Image from "next/image";
 import Link from "next/link";
@@ -10,7 +9,7 @@ const Footer = () => {
   const courseData = pages.find((item) => item.slug === "courses");
 
   return (
-    <footer>
+    <footer className="mt-24">
       <div className="bg-powder-blue pt-16 pb-12 space-y-4">
         <ContainerLayout
           size="base"

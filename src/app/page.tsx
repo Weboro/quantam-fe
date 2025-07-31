@@ -14,7 +14,7 @@ const HomePage = () => {
         description="At Quantum Institute of Higher Education (QIHE), we are dedicated to providing quality education that empowers our students to succeed in a dynamic and evolving world."
         buttonText="Get Started"
         buttonLink="/get-started"
-        imageUrl="/banner.png"
+        imageUrl="/banner.jpg"
         textAlign="left"
       />
 

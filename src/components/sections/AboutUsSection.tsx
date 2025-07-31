@@ -52,7 +52,7 @@ const AboutUsSection = () => {
         </div>
 
         <Image
-          src={"/banner.png"}
+          src={"/banner.jpg"}
           width={700}
           height={700}
           alt="About section detgails"
