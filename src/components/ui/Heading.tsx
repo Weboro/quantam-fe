@@ -22,7 +22,7 @@ const Heading = ({ level = 1, children, className = "" }: HeadingProps) => {
   }
 
   if (level === 4) {
-    return <h4 className={`${baseStyles} text-lg`}>{children}</h4>;
+    return <h4 className={`${baseStyles} text-lg md:text-xl`}>{children}</h4>;
   }
 
   return <h5 className={`${baseStyles} text-base`}>{children}</h5>;

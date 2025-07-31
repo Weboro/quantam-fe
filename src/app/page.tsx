@@ -1,35 +1,32 @@
-import AboutComponent4 from "@/components/AboutUsExplore";
-
-import FaqBox from "@/components/faqbox";
-import HomeKeyDates from "@/components/homekeydates";
-import { faqBoxData } from "@/data/faqbox";
+import KeyDatesSection from "@/components/sections/KeyDatesSection";
 import HomeNewsSection from "@/components/sections/NewsSection";
 import HeroSection from "@/components/sections/HeroSection";
-import { quantumBanner } from "@/data/banner";
-import AboutSection from "@/components/sections/AboutSection";
+import CoursesSections from "@/components/sections/CoursesSections";
+import AboutUsSection from "@/components/sections/AboutUsSection";
+import FaqSection from "@/components/sections/FaqSection";
 
 const HomePage = () => {
   return (
-    <div className="space-y-22">
+    <div className="space-y-28 mb-24">
       <HeroSection
-        title={quantumBanner.title}
-        subtitle={quantumBanner.subtitle}
-        description={quantumBanner.description}
-        buttonText={quantumBanner.buttonText}
-        buttonLink={quantumBanner.buttonLink}
-        imageUrl={quantumBanner.imageUrl}
+        title="Welcome to Quantum Institute of Higher Education"
+        subtitle=""
+        description="At Quantum Institute of Higher Education (QIHE), we are dedicated to providing quality education that empowers our students to succeed in a dynamic and evolving world."
+        buttonText="Get Started"
+        buttonLink="/get-started"
+        imageUrl="/banner.png"
         textAlign="left"
       />
 
-      <AboutSection />
+      <CoursesSections />
 
-      <AboutComponent4 />
+      <AboutUsSection />
 
-      <HomeKeyDates />
+      <KeyDatesSection />
 
       <HomeNewsSection />
 
-      <FaqBox faqBoxData={faqBoxData} />
+      <FaqSection />
     </div>
   );
 };

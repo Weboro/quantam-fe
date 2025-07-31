@@ -25,11 +25,11 @@ const courses: Course[] = [
         <li>Focus: Usability, accessibility, and creativity</li>
       </ul>
     `,
-    heroImage: "/images/courses/ui-ux/hero.jpg",
+    heroImage: "/courses/ui-ux/hero.jpg",
     images: [
-      "/images/courses/ui-ux/1.jpg",
-      "/images/courses/ui-ux/2.jpg",
-      "/images/courses/ui-ux/3.jpg",
+      "/courses/ui-ux/1.jpg",
+      "/courses/ui-ux/2.jpg",
+      "/courses/ui-ux/3.jpg",
     ],
     level: "Intermediate",
     duration: "6 weeks",
@@ -52,11 +52,8 @@ const courses: Course[] = [
       <p>This course covers everything from HTML, CSS, JavaScript, React to Node.js, Express and MongoDB.</p>
       <p>By the end, you’ll build and deploy your own full-stack apps.</p>
     `,
-    heroImage: "/images/courses/full-stack/hero.jpg",
-    images: [
-      "/images/courses/full-stack/1.jpg",
-      "/images/courses/full-stack/2.jpg",
-    ],
+    heroImage: "/courses/full-stack/hero.jpg",
+    images: ["/courses/full-stack/1.jpg", "/courses/full-stack/2.jpg"],
     level: "Advanced",
     duration: "12 weeks",
     tags: ["JavaScript", "React", "Node.js"],
@@ -79,10 +76,10 @@ const courses: Course[] = [
       <p>This course helps you understand audience behavior and run effective digital campaigns.</p>
       <p>Ideal for marketing enthusiasts and business owners.</p>
     `,
-    heroImage: "/images/courses/digital-marketing/hero.jpg",
+    heroImage: "/courses/digital-marketing/hero.jpg",
     images: [
-      "/images/courses/digital-marketing/1.jpg",
-      "/images/courses/digital-marketing/2.jpg",
+      "/courses/digital-marketing/1.jpg",
+      "/courses/digital-marketing/2.jpg",
     ],
     level: "Beginner",
     duration: "4 weeks",
@@ -105,11 +102,8 @@ const courses: Course[] = [
       <p>Cover Python, Pandas, Scikit-learn, and visualization tools like Matplotlib and Tableau.</p>
       <p>Build predictive models and dashboards from scratch.</p>
     `,
-    heroImage: "/images/courses/data-science/hero.jpg",
-    images: [
-      "/images/courses/data-science/1.jpg",
-      "/images/courses/data-science/2.jpg",
-    ],
+    heroImage: "/courses/data-science/hero.jpg",
+    images: ["/courses/data-science/1.jpg", "/courses/data-science/2.jpg"],
     level: "Advanced",
     duration: "10 weeks",
     tags: ["Python", "ML", "Data Viz"],

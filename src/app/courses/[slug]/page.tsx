@@ -18,7 +18,7 @@ const CoursePage: React.FC<CoursePageProps> = async ({ params }) => {
       <HeroSection
         title={course.name}
         description={course.description}
-        imageUrl={"/banner.png"}
+        imageUrl={course.heroImage}
       />
 
       <div className="my-32 text-center">TBD</div>
