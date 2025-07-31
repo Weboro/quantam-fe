@@ -35,9 +35,9 @@ const CourseDetailsSection: React.FC<ICourseDetailsSection> = ({
     { label: "Location", value: location },
     { label: "Study Level", value: studyLevel },
     { label: "Duration", value: duration },
-    { label: "Intakes", value: intakes },
     { label: "Delivery Mode", value: deliveryMode },
     { label: "CRICOS Course Code", value: CRICOSCourseCode },
+    { label: "Intakes", value: intakes },
   ];
 
   return (

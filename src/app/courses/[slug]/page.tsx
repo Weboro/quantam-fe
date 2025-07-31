@@ -2,6 +2,7 @@ import Breadcrumbs from "@/components/global/Breadcrumbs";
 import ContainerLayout from "@/components/layouts/ContainerLayout";
 import CourseDetailsSection from "@/components/sections/course/CourseDetailsSection";
 import FaqSection from "@/components/sections/FaqSection";
+import NewsLetterSection from "@/components/sections/NewsLetterSection";
 import Heading from "@/components/ui/Heading";
 import { getCourse } from "@/utils/getCourses";
 import { notFound } from "next/navigation";
@@ -22,25 +23,28 @@ const CoursePage: React.FC<ICoursePage> = async ({ params }) => {
     <>
       <Breadcrumbs />
 
-      <ContainerLayout className="mt-4 mb-8">
+      <ContainerLayout className="mt-4">
         <Heading level={1}>{course.name}</Heading>
       </ContainerLayout>
 
-      <CourseDetailsSection
-        name={course.name}
-        description={course.description}
-        richText={course.richText}
-        heroImage={course.heroImage}
-        duration={course?.duration}
-        location={course?.location}
-        studyLevel={course?.studyLevel}
-        intakes={course?.intakes}
-        deliveryMode={course?.deliveryMode}
-        CRICOSCourseCode={course?.CRICOSCourseCode}
-      />
+      <div className="mt-12 space-y-24">
+        <CourseDetailsSection
+          name={course.name}
+          description={course.description}
+          richText={course.richText}
+          heroImage={course.heroImage}
+          duration={course?.duration}
+          location={course?.location}
+          studyLevel={course?.studyLevel}
+          intakes={course?.intakes}
+          deliveryMode={course?.deliveryMode}
+          CRICOSCourseCode={course?.CRICOSCourseCode}
+        />
 
-      <div className="mt-24">
+        <div className="my-32 text-center">TBD - Tabbed Pane Section</div>
+
         <FaqSection />
+        <NewsLetterSection />
       </div>
     </>
   );

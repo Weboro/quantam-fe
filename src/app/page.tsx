@@ -3,6 +3,7 @@ import HomeNewsSection from "@/components/sections/NewsSection";
 import HeroSection from "@/components/sections/HeroSection";
 import CoursesSections from "@/components/sections/CoursesSections";
 import AboutUsSection from "@/components/sections/AboutUsSection";
+import NewsLetterSection from "@/components/sections/NewsLetterSection";
 import FaqSection from "@/components/sections/FaqSection";
 
 const HomePage = () => {
@@ -27,6 +28,8 @@ const HomePage = () => {
       <HomeNewsSection />
 
       <FaqSection />
+
+      <NewsLetterSection />
     </div>
   );
 };
