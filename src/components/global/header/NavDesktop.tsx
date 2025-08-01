@@ -62,10 +62,19 @@ const NavDesktop = () => {
       </nav>
 
       <div className="hidden lg:flex items-center gap-2">
-        <Button className="font-medium" variant="secondary">
-          Get Started
-        </Button>
-        <Button className="font-medium">Get Started</Button>
+        <Link href={"/contact"}>
+          <Button
+            className="font-medium flex-row-reverse"
+            variant="secondary"
+            icon="fi fi-rr-phone-flip scale-x-[-1]"
+          >
+            Get in Touch
+          </Button>
+        </Link>
+
+        <Link href={"/apply"}>
+          <Button className="font-medium">Get Started</Button>
+        </Link>
       </div>
     </>
   );

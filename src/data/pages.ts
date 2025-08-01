@@ -80,18 +80,6 @@ const pages: Ipage[] = [
     lastUpdated: "2025-07-01",
   },
   {
-    name: "Contact",
-    slug: "contact",
-    title: "Contact Us",
-    description:
-      "Get in touch with us via email, phone, or our social media channels.",
-    seo: {
-      title: "Contact — MySite",
-      description: "We'd love to hear from you—reach out today!",
-    },
-    lastUpdated: "2025-05-30",
-  },
-  {
     name: "Find Agent",
     slug: "find-agent",
     title: "Find an Agent",
