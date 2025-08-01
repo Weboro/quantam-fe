@@ -7,35 +7,39 @@ export interface IFaq {
 const faq: IFaq[] = [
   {
     id: 1,
-    question: "Is it accessible",
+    question: "What programs does QIHE offer?",
     answer:
-      "Yes it is accessible for sure.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis tenetur, sint delectus dolorem velit aperiam? Nihil vel maiores eius est. Provident aliquam, explicabo obcaecati sint cupiditate odio at voluptatum deleniti voluptate magnam quo ipsa! Expedita, consequuntur eum? Suscipit quisquam vero temporibus et quibusdam? Maiores eaque ipsa in consequatur. Accusantium harum laboriosam vitae numquam esse totam modi optio officia animi veniam nostrum cupiditate iusto nemo ad doloremque repudiandae voluptatem unde possimus, suscipit in qui. Autem ex quo dolorum et nemo. Doloribus eligendi itaque labore porro nulla, dolores placeat reprehenderit beatae, sed consectetur repudiandae necessitatibus perspiciatis adipisci eius molestiae! Quisquam, ipsam modi.",
+      "QIHE currently offers undergraduate programs in Business and Information Technology with majors such as Accounting, Information Systems, and Hospitality Management.",
   },
   {
     id: 2,
-    question: "is it styled",
-    answer: "Yes it is styled for sure.",
+    question: "Is QIHE accredited in Australia?",
+    answer:
+      "Yes, QIHE is accredited under the Australian Qualifications Framework (AQF) and operates under TEQSA regulations. All programs meet national quality standards.",
   },
   {
     id: 3,
-    question: "is it styled",
+    question: "Can international students apply to QIHE?",
     answer:
-      "Yes it is styled for sure. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis tenetur, sint delectus dolorem velit aperiam? Nihil vel maiores eius est. Provident aliquam, explicabo obcaecati sint cupiditate odio at voluptatum deleniti voluptate magnam quo ipsa! Expedita, consequuntur eum? Suscipit quisquam vero temporibus et quibusdam? Maiores eaque ipsa in consequatur. Accusantium harum laboriosam vitae numquam esse totam modi optio officia animi ven",
+      "Absolutely. International students are welcome and supported throughout the admissions, visa, and enrollment processes.",
   },
   {
     id: 4,
-    question: "is it styled",
-    answer: "Yes it is styled for sure.",
+    question: "What are the English language requirements?",
+    answer:
+      "QIHE accepts IELTS (Academic) with a minimum overall score of 6.0 and no band below 5.5. TOEFL and PTE scores are also accepted. Please check the latest English Language Policy for details.",
   },
   {
     id: 5,
-    question: "is it styled",
-    answer: "Yes it is styled for sure.",
+    question: "Does QIHE offer scholarships or financial aid?",
+    answer:
+      "Currently, QIHE offers merit-based scholarships for outstanding applicants. Additional financial support options may be available based on eligibility and intake.",
   },
   {
     id: 6,
-    question: "Is it anymated",
-    answer: "Yes it is anymated for sure.",
+    question: "What support services are available for students?",
+    answer:
+      "QIHE provides academic advising, career guidance, counselling, and access to learning resources both on campus and online through its Student Services team.",
   },
 ];
 

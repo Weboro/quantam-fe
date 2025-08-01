@@ -27,7 +27,7 @@ const NavMobile = () => {
       </div>
 
       {isOpen && (
-        <section className="md:hidden fixed top-0 left-0 w-screen h-screen py-4 bg-background z-50 overflow-y-auto">
+        <section className="md:hidden fixed top-0 left-0 w-screen h-screen py-4 pb-16 bg-background z-50 overflow-y-auto">
           <ContainerLayout size="base">
             <div className="flex items-center gap-2 justify-between mb-4">
               <Link className="block h-10" href={"/"} onClick={closeNav}>

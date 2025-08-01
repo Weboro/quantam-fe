@@ -76,6 +76,26 @@ const pages: Ipage[] = [
         slug: "bachelor-information-technology",
         name: "Bachelor of Information Technology",
       },
+      {
+        icon: "",
+        slug: "bachelor-informaassd2tion-technology",
+        name: "Bachelor of Information Technology",
+      },
+      {
+        icon: "",
+        slug: "bachelor-infor1231321sadmation-technology",
+        name: "Bachelor of Information Technology",
+      },
+      {
+        icon: "",
+        slug: "bachelor-infasdasf34ormation-technology",
+        name: "Bachelor of Information Technology",
+      },
+      {
+        icon: "",
+        slug: "bachelor-informaasd9astion-technology",
+        name: "Bachelor of Information Technology",
+      },
     ],
     lastUpdated: "2025-07-01",
   },

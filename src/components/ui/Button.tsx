@@ -28,7 +28,7 @@ const Button: React.FC<ButtonProps> = ({
   onClick,
 }) => {
   const baseClasses =
-    "flex items-center gap-2 px-4 py-2 rounded text-sm transition-colors duration-200 cursor-pointer";
+    "flex items-center gap-2 px-4 py-2 rounded text-sm transition-colors duration-200 font-medium cursor-pointer leading-4.5";
 
   const variantClasses = {
     primary: `

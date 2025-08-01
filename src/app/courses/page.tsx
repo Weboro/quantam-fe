@@ -1,14 +1,20 @@
 import Breadcrumbs from "@/components/global/Breadcrumbs";
 import CourseFilterSection from "@/components/sections/course/CourseFilterSection";
+import FaqSection from "@/components/sections/FaqSection";
+import NewsLetterSection from "@/components/sections/NewsLetterSection";
 
 const CoursesPage = () => {
   return (
     <>
       <Breadcrumbs />
 
-      <CourseFilterSection />
+      <div className="space-y-28 mt-6">
+        <CourseFilterSection />
 
-      <div className="my-32 text-center">TBD</div>
+        <FaqSection />
+
+        <NewsLetterSection />
+      </div>
     </>
   );
 };
