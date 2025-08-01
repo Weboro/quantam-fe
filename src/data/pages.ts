@@ -91,6 +91,19 @@ const pages: Ipage[] = [
     },
     lastUpdated: "2025-05-30",
   },
+  {
+    name: "Find Agent",
+    slug: "find-agent",
+    title: "Find an Agent",
+    description:
+      "Locate certified agents near you for expert guidance and support.",
+    seo: {
+      title: "Find an Agent — MySite",
+      description:
+        "Browse our list of verified agents to get personalized assistance.",
+    },
+    lastUpdated: "2025-08-01",
+  },
 ];
 
 export default pages;

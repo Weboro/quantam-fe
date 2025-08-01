@@ -11,11 +11,11 @@ const CourseInfoBlock = ({
 
   return (
     <div>
-      <Heading level={4} className="font-semibold">
+      <Heading level={5} className="font-semibold">
         {label}
       </Heading>
 
-      <p className="text-muted">
+      <p className="text-muted text-sm -mt-0.5">
         {Array.isArray(value) ? value.join("\n") : value}
       </p>
     </div>

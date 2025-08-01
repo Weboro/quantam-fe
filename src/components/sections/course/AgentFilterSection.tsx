@@ -1,22 +1,22 @@
 "use client";
-import DetailedCourseCard from "@/components/cards/DetailedCourseCard";
+import AgentCard from "@/components/cards/AgentCard";
 import ContainerLayout from "@/components/layouts/ContainerLayout";
 import Button from "@/components/ui/Button";
 import Heading from "@/components/ui/Heading";
-import courses from "@/data/courses";
-import useSearchCourse from "@/hooks/useSearchCourse";
+import { agents } from "@/data/agents";
+import useSearchAgent from "@/hooks/useSearchAgent";
 import React from "react";
 
-const CourseFilterSection = () => {
+const AgentFilterSection = () => {
   const { results, searchQuery, handleInputChange, handleSearch } =
-    useSearchCourse(courses);
+    useSearchAgent(agents);
 
   return (
     <>
       <ContainerLayout>
-        <section className="mt-2 grid lg:grid-cols-2 gap-4">
+        <section className="mt-2 grid lg:grid-cols-2 gap-4 mb-8">
           <div className="">
-            <Heading level={2}>Find A Course</Heading>
+            <Heading level={2}>Find Agent</Heading>
             <p className="text-muted">
               Looking for the perfect course? Explore from our wide range of
               undergraduate, postgraduate and research programs.
@@ -52,20 +52,16 @@ const CourseFilterSection = () => {
         </section>
 
         {results.length > 0 ? (
-          <section className="space-y-6 mt-10">
-            {results.map((course) => (
-              <DetailedCourseCard
-                key={course.slug}
-                slug={course.slug}
-                heroImage={course.heroImage}
-                description={course.description}
-                name={course.name}
-                location={course.location}
-                duration={course.duration}
-                studyLevel={course.studyLevel}
-                intakes={course.intakes}
-                deliveryMode={course.deliveryMode}
-                CRICOSCourseCode={course.CRICOSCourseCode}
+          <section className="grid grid-cols-1  gap-4 md:grid-cols-2 lg:grid-cols-3">
+            {results.map((agent) => (
+              <AgentCard
+                key={agent.email}
+                companyImage={agent.companyImage}
+                companyName={agent.companyName}
+                agentName={agent.agentName}
+                phone={agent.phone}
+                email={agent.email}
+                url={agent.url}
               />
             ))}
           </section>
@@ -85,4 +81,4 @@ const CourseFilterSection = () => {
   );
 };
 
-export default CourseFilterSection;
+export default AgentFilterSection;
