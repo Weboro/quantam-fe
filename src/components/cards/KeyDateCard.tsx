@@ -1,5 +1,4 @@
 import { type IKeyDate } from "@/data/keyDates";
-import Link from "next/link";
 import Heading from "../ui/Heading";
 import Pill from "../Pills";
 
@@ -9,7 +8,6 @@ const KeyDateCard: React.FC<IKeyDate> = ({
   month,
   day,
   category,
-  learnMoreUrl,
 }) => (
   <div className="overflow-hidden rounded-xl grid md:grid-cols-6 border border-surface-2">
     <div className="bg-brand-primary-yellow p-2 h-full grid place-items-center">

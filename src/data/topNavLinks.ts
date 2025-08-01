@@ -27,7 +27,7 @@ interface topLink {
   url: string;
 }
 
-export const topLinks = [
+export const topLinks: topLink[] = [
   {
     name: "Programs",
     url: "#",

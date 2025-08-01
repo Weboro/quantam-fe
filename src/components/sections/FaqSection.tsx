@@ -2,7 +2,6 @@ import faq from "@/data/faq";
 import ContainerLayout from "../layouts/ContainerLayout";
 import Heading from "../ui/Heading";
 import Accordion from "../accordion";
-import NewsLetterSection from "./NewsLetterSection";
 
 const FaqSection: React.FC = () => {
   return (

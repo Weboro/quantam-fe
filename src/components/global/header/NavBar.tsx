@@ -1,6 +1,4 @@
 import ContainerLayout from "@/components/layouts/ContainerLayout";
-import Button from "@/components/ui/Button";
-import pages from "@/data/pages";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
