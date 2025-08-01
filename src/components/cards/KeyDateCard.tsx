@@ -1,8 +1,17 @@
 import { type IKeyDate } from "@/data/keyDates";
 import Heading from "../ui/Heading";
 import Pill from "../Pills";
+import { type IKeyDate } from "@/data/keyDates";
+
+import Heading from "../ui/Heading";
+import Pill from "../Pills";
 
 const KeyDateCard: React.FC<IKeyDate> = ({
+  title,
+  description,
+  month,
+  day,
+  category,
   title,
   description,
   month,

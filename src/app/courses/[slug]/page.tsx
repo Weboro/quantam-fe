@@ -7,7 +7,7 @@ import Heading from '@/components/ui/Heading';
 import { getCourse } from '@/utils/getCourses';
 import { notFound } from 'next/navigation';
 import React from 'react';
-import Tabbed from './Tabbed';
+import Tabbed from '../../../components/tabbedpane/Tabbed';
 
 interface ICoursePage {
 	params: Promise<{ slug: string }>;
@@ -43,8 +43,7 @@ const CoursePage: React.FC<ICoursePage> = async ({ params }) => {
 					CRICOSCourseCode={course?.CRICOSCourseCode}
 				/>
 
-				{/* <div className='my-32 text-center'>TBD - Tabbed Pane Section</div> */}
-				<Tabbed />
+				<Tabbed tabbedPaneData={course.tabbedPaneData || []} />
 
 				<FaqSection />
 				<NewsLetterSection />
