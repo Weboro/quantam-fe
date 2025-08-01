@@ -43,7 +43,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
 
         {subtitle && (
           <Heading
-            level={5}
+            level={4}
             className="text-background font-normal lg:max-w-3xl mb-2"
           >
             {subtitle}
@@ -51,7 +51,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
         )}
 
         <Heading
-          level={5}
+          level={4}
           className="text-neutral-200 font-normal hidden md:block lg:max-w-3xl"
         >
           {description}

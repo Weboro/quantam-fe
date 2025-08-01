@@ -4,6 +4,7 @@ import keyDates from "@/data/keyDates";
 import KeyDateCard from "@/components/cards/KeyDateCard";
 import Button from "../ui/Button";
 import Link from "next/link";
+import Heading from "../ui/Heading";
 
 interface IKeyDatesSection {
   showAll?: boolean;
@@ -13,9 +14,8 @@ const KeyDatesSection: React.FC<IKeyDatesSection> = ({ showAll = false }) => (
   <ContainerLayout>
     <div className="flex flex-col gap-4 md:flex-row md:items-center mb-8">
       <div className="flex flex-col gap-4 flex-1">
-        <h2 className="text-3xl font-bold font-primary text-brand-primary-black">
-          Key Dates
-        </h2>
+        <Heading level={3}>Key Dates</Heading>
+
         {!showAll && (
           <Link href="/all-key-dates">
             <Button variant="secondary">All Key Dates </Button>
@@ -24,7 +24,7 @@ const KeyDatesSection: React.FC<IKeyDatesSection> = ({ showAll = false }) => (
       </div>
 
       <div className="flex-1">
-        <p className="text-md text-semibold text-brand-primary-black text-left font-secondary ">
+        <p className="text-md text-semibold text-muted text-left font-secondary ">
           A modal dialog that interrupts the user with important content and
           expects a response. A modal dialog that interrupts the user with
           important content and expects a response.
