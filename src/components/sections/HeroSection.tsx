@@ -1,6 +1,7 @@
 import ContainerLayout from "@/components/layouts/ContainerLayout";
 import Button from "@/components/ui/Button";
 import Heading from "../ui/Heading";
+import Link from "next/link";
 
 interface HeroSectionProps {
   title: string;
@@ -28,32 +29,38 @@ const HeroSection: React.FC<HeroSectionProps> = ({
 
   return (
     <div
-      className="relative w-full h-[60vh] bg-cover bg-center bg-no-repeat grid place-items-center"
+      className="relative w-full h-[65vh] bg-cover bg-center bg-no-repeat grid place-items-center"
       style={{ backgroundImage: `url('${imageUrl}')` }}
     >
       <div className="absolute inset-0 bg-gradient-to-r from-[#002B5C] to-transparent"></div>
 
       <ContainerLayout
-        className={`relative z-10 h-full flex flex-col justify-center max-w-2xl ${alignClass}`}
+        className={`relative z-10 h-full flex flex-col justify-center ${alignClass}`}
       >
-        <Heading level={1} className="text-background">
+        <Heading level={1} className="text-background lg:max-w-3xl mb-4">
           {title}
         </Heading>
 
         {subtitle && (
-          <h2 className="text-background text-xl md:text-2xl font-medium mb-2">
+          <Heading
+            level={4}
+            className="text-background font-normal lg:max-w-3xl mb-2"
+          >
             {subtitle}
-          </h2>
+          </Heading>
         )}
 
-        <p className="text-background text-base md:text-lg  leading-relaxed opacity-90 max-w-lg mt-3">
+        <Heading
+          level={4}
+          className="text-neutral-200 font-normal lg:max-w-3xl"
+        >
           {description}
-        </p>
+        </Heading>
 
         {buttonText && buttonLink && (
-          <a href={buttonLink} className="font-medium block mt-8">
+          <Link href={buttonLink} className="font-medium block mt-8">
             <Button variant="secondary">{buttonText}</Button>
-          </a>
+          </Link>
         )}
       </ContainerLayout>
     </div>

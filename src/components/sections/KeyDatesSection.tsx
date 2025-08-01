@@ -31,6 +31,7 @@ const KeyDatesSection: React.FC<IKeyDatesSection> = ({ showAll = false }) => (
         </p>
       </div>
     </div>
+
     <div className="grid grid-cols-1 gap-4 md:gap-6 lg:gap-8">
       {keyDates
         .slice(0, showAll ? keyDates.length : 3)

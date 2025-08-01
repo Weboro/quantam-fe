@@ -3,6 +3,7 @@ import ContainerLayout from "../layouts/ContainerLayout";
 import Image from "next/image";
 import Heading from "../ui/Heading";
 import Button from "../ui/Button";
+import Link from "next/link";
 
 const AboutUsSection = () => {
   return (
@@ -39,7 +40,7 @@ const AboutUsSection = () => {
               </Button>
             </a>
 
-            <a href={``}>
+            <Link href={`/courses`}>
               <Button
                 variant="primary"
                 icon="fi fi-br-arrow-small-right"
@@ -47,7 +48,7 @@ const AboutUsSection = () => {
               >
                 Explore Programs
               </Button>
-            </a>
+            </Link>
           </div>
         </div>
 

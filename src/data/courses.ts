@@ -11,8 +11,7 @@ export interface ICourse {
   tags: string[];
   publishedDate: string;
   syllabus?: string[];
-  price: number;
-  isFeatured: boolean;
+  price?: number;
   url: string;
   location?: string;
   studyLevel?: "Undergraduate" | "Postgraduate" | "Diploma" | "Certificate";
@@ -23,138 +22,88 @@ export interface ICourse {
 
 const courses: ICourse[] = [
   {
-    id: "crs001",
-    name: "UI/UX Design",
-    slug: "ui-ux-design",
+    id: "bachelor-business-accounting",
+    name: "Bachelor of Business – Accounting",
+    slug: "bachelor-business-accounting",
     description:
-      "Master the art of creating user-centered designs with our comprehensive UI/UX course.",
-    richText: `
-      <p>Learn the foundations of design thinking, wireframing, prototyping, and user testing.</p><ul><li>Tools: Figma, Adobe XD</li><li>Focus: Usability, accessibility, and creativity</li></ul>`,
-    heroImage: "/courses/ui-ux/hero.jpg",
-    images: [
-      "/courses/ui-ux/1.jpg",
-      "/courses/ui-ux/2.jpg",
-      "/courses/ui-ux/3.jpg",
-    ],
-    level: "Intermediate",
-    duration: "6 weeks",
-    tags: ["Design", "Figma", "Prototyping"],
-    publishedDate: "2025-06-20",
-    syllabus: [
-      "Introduction to Design Thinking",
-      "User Research & Personas",
-      "Wireframes & Mockups",
-      "Prototyping in Figma",
-      "Usability Testing",
-    ],
-    price: 15000,
-    isFeatured: true,
-    url: "/courses/ui-ux-design",
-    location: "Online",
-    studyLevel: "Certificate",
-    intakes: ["August 2025", "November 2025"],
-    deliveryMode: ["Online", "Blended"],
-    CRICOSCourseCode: undefined,
-  },
-  {
-    id: "crs002",
-    name: "Full-Stack Development",
-    slug: "full-stack-dev",
-    description:
-      "Become a full-stack developer by mastering both frontend and backend technologies.",
-    richText: `
-      <p>This course covers everything from HTML, CSS, JavaScript, React to Node.js, Express and MongoDB.</p>
-      <p>By the end, you’ll build and deploy your own full-stack apps.</p>
-    `,
-    heroImage: "/courses/full-stack/hero.jpg",
-    images: ["/courses/full-stack/1.jpg", "/courses/full-stack/2.jpg"],
-    level: "Advanced",
-    duration: "12 weeks",
-    tags: ["JavaScript", "React", "Node.js"],
-    publishedDate: "2025-05-10",
-    syllabus: [
-      "HTML/CSS Foundations",
-      "JavaScript & ES6+",
-      "React & Component Architecture",
-      "Node.js + Express",
-      "MongoDB & Mongoose",
-      "Deploying to Vercel & Render",
-    ],
-    price: 30000,
-    isFeatured: true,
-    url: "/courses/full-stack-dev",
-    location: "Kathmandu Campus",
-    studyLevel: "Diploma",
-    intakes: ["September 2025", "January 2026"],
-    deliveryMode: ["Face-to-face", "Online"],
-    CRICOSCourseCode: undefined,
-  },
-  {
-    id: "crs003",
-    name: "Digital Marketing",
-    slug: "digital-marketing",
-    description:
-      "Learn SEO, content strategy, analytics and ad campaigns to grow any brand online.",
-    richText: `
-      <p>This course helps you understand audience behavior and run effective digital campaigns.</p>
-      <p>Ideal for marketing enthusiasts and business owners.</p>
-    `,
-    heroImage: "/courses/digital-marketing/hero.jpg",
-    images: [
-      "/courses/digital-marketing/1.jpg",
-      "/courses/digital-marketing/2.jpg",
-    ],
+      "The Accounting major equips students with the knowledge and skills to interpret, analyse, and report financial and non-financial information critical to effective decision-making.",
+    richText:
+      "<ul><li>Gain expertise to analyse financial data and create value for stakeholders</li><li>Prepare for CPA Australia and CAANZ eligibility</li><li>Explore sustainability and forensic accounting</li></ul>",
+    heroImage: "/courses/accounting/hero.jpg",
+    images: ["/courses/accounting/1.jpg"],
     level: "Beginner",
-    duration: "4 weeks",
-    tags: ["SEO", "Content", "Ads", "Analytics"],
-    publishedDate: "2025-04-01",
-    syllabus: [
-      "Intro to Digital Marketing",
-      "SEO Basics",
-      "Content Creation Strategy",
-      "Google Ads & Meta Ads",
-      "Analytics & Tracking",
-    ],
-    price: 12000,
-    isFeatured: false,
-    url: "/courses/digital-marketing",
-    location: "Online",
-    studyLevel: "Certificate",
-    intakes: ["October 2025", "February 2026"],
-    deliveryMode: ["Online"],
-    CRICOSCourseCode: undefined,
+    duration: "3 years, Full-Time",
+    tags: ["Accounting", "Business"],
+    publishedDate: "2025-08-01",
+    url: "/courses/bachelor-business-accounting",
+    location: "Parramatta",
+    studyLevel: "Undergraduate",
+    intakes: ["March", "July", "November"],
+    deliveryMode: ["Face-to-face"],
+    CRICOSCourseCode: "_TBA_",
   },
   {
-    id: "crs004",
-    name: "Data Science",
-    slug: "data-science",
+    id: "bachelor-business-information-systems",
+    name: "Bachelor of Business – Information Systems",
+    slug: "bachelor-business-information-systems",
     description:
-      "Dive into statistics, machine learning, and data visualization with real-world projects.",
-    richText: `
-      <p>Cover Python, Pandas, Scikit-learn, and visualization tools like Matplotlib and Tableau.</p>
-      <p>Build predictive models and dashboards from scratch.</p>
-    `,
-    heroImage: "/courses/data-science/hero.jpg",
-    images: ["/courses/data-science/1.jpg", "/courses/data-science/2.jpg"],
-    level: "Advanced",
-    duration: "10 weeks",
-    tags: ["Python", "ML", "Data Viz"],
-    publishedDate: "2025-03-15",
-    syllabus: [
-      "Intro to Python for Data",
-      "Statistics & Probability",
-      "Pandas & Numpy",
-      "Modeling with Scikit-learn",
-      "Data Visualization",
-    ],
-    price: 25000,
-    isFeatured: true,
-    url: "/courses/data-science",
-    location: "Online",
-    studyLevel: "Certificate",
-    intakes: ["November 2025", "March 2026"],
-    deliveryMode: ["Online", "Blended"],
-    CRICOSCourseCode: undefined,
+      "Bridges the gap between technology and business, enabling students to harness technology for strategic decision-making.",
+    richText:
+      "<ul><li>Gain skills in software development, cybersecurity, and data management</li><li>Address real-world challenges with innovative solutions</li></ul>",
+    heroImage: "/courses/information-systems/hero.jpg",
+    images: ["/courses/information-systems/1.jpg"],
+    level: "Beginner",
+    duration: "3 years, Full-Time",
+    tags: ["Information Systems", "Business"],
+    publishedDate: "2025-08-01",
+    url: "/courses/bachelor-business-information-systems",
+    location: "Parramatta",
+    studyLevel: "Undergraduate",
+    intakes: ["March", "July", "November"],
+    deliveryMode: ["Face-to-face"],
+    CRICOSCourseCode: "_TBA_",
+  },
+  {
+    id: "bachelor-business-hospitality",
+    name: "Bachelor of Business – Hospitality",
+    slug: "bachelor-business-hospitality",
+    description:
+      "Prepares students for leadership in the dynamic hospitality industry through hospitality management, event planning, and sustainability.",
+    richText:
+      "<ul><li>Develop customer experience and hospitality operations management skills</li><li>Learn event planning, food and beverage management</li></ul>",
+    heroImage: "/courses/hospitality/hero.jpg",
+    images: ["/courses/hospitality/1.jpg"],
+    level: "Beginner",
+    duration: "3 years, Full-Time",
+    tags: ["Hospitality", "Business"],
+    publishedDate: "2025-08-01",
+    url: "/courses/bachelor-business-hospitality",
+    location: "Parramatta",
+    studyLevel: "Undergraduate",
+    intakes: ["March", "July", "November"],
+    deliveryMode: ["Face-to-face"],
+    CRICOSCourseCode: "_TBA_",
+  },
+  {
+    id: "bachelor-information-technology",
+    name: "Bachelor of Information Technology",
+    slug: "bachelor-information-technology",
+    description:
+      "Equips students to thrive in the digital world with expertise in emerging tech, ethical IT practices, and business-focused problem-solving.",
+    richText:
+      "<ul><li>Learn AI, cloud computing, cybersecurity, and IoT</li><li>Prepare for diverse IT careers</li><li>Curriculum meets industry demands</li></ul>",
+    heroImage: "/courses/information-technology/hero.jpg",
+    images: ["/courses/information-technology/1.jpg"],
+    level: "Beginner",
+    duration: "3 years, Full-Time",
+    tags: ["IT", "Technology"],
+    publishedDate: "2025-08-01",
+    url: "/courses/bachelor-information-technology",
+    location: "Parramatta",
+    studyLevel: "Undergraduate",
+    intakes: ["March", "July", "November"],
+    deliveryMode: ["Face-to-face"],
+    CRICOSCourseCode: "_TBA_",
   },
 ];
 

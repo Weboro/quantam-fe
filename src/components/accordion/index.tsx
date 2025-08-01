@@ -29,7 +29,9 @@ const Accordion: React.FC<IAccordion> = ({ data }) => {
             />
           </div>
 
-          {selectedId === item.id && <p className="pb-2">{item.answer}</p>}
+          {selectedId === item.id && (
+            <p className="pb-2 text-neutral-700">{item.answer}</p>
+          )}
         </div>
       ))}
     </div>

@@ -22,7 +22,7 @@ const KeyDateCard: React.FC<IKeyDate> = ({
     </div>
     <div className="bg-background md:col-span-5 p-3">
       <div className="flex gap-2 items-center mb-1">
-        {category.map((item, index: number) => (
+        {category.map((item: string, index: number) => (
           <Pill key={index} value={item} />
         ))}
       </div>
@@ -31,11 +31,11 @@ const KeyDateCard: React.FC<IKeyDate> = ({
         {title}
       </Heading>
 
-      <p className="mb-3 line-clamp-3 md:max-w-[80%] text-muted">
+      <p className={`mb-3 md:max-w-2xl text-muted line-clamp-4`}>
         {description}
       </p>
 
-      <div className="flex items-center justify-between w-full mt-2">
+      {/* <div className="flex items-center justify-between w-full mt-2">
         <span>
           <Link
             className="text-brand-primary text-sm font-semibold"
@@ -49,7 +49,7 @@ const KeyDateCard: React.FC<IKeyDate> = ({
             <i className="fi fi-br-arrow-small-right scale-125 ml-0.5"></i>
           </Link>
         </span>
-      </div>
+      </div> */}
     </div>
   </div>
 );

@@ -23,7 +23,7 @@ const CoursesSections = () => {
       <ContainerLayout className="flex flex-col md:flex-row md:items-start justify-between w-full py-4">
         <div className={`flex flex-col flex-1 items-start text-left`}>
           <span className="text-muted text-base font-medium mb-0.5">
-            About Us
+            Our Programs
           </span>
           <Heading className="mb-3" level={2}>
             About Our Programs and our course of action.
@@ -35,7 +35,7 @@ const CoursesSections = () => {
         </div>
 
         <div className="flex flex-col  items-start md:items-end flex-1 mt-6 md:mt-0 md:gap-30 gap-8">
-          <Link href={"/about"}>
+          <Link href={"/courses"}>
             <Button variant="secondary" className="text-lg font-semibold">
               Learn More
             </Button>

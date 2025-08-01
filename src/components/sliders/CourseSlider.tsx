@@ -33,7 +33,7 @@ const CourseSlider = forwardRef<AboutUsCardRef>((props, ref) => {
     <div className="w-full py-4 md:ml-32">
       <div className="overflow-x-auto scrollbar-hide" ref={containerRef}>
         <div className="flex gap-4 px-4 w-max">
-          {[...courses, ...courses].map((course, index) => (
+          {courses.map((course, index) => (
             <CourseCard
               key={index}
               image={course.heroImage}

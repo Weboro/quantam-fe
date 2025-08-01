@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Heading from "../ui/Heading";
 
 interface NewsCardProps {
   imageUrl: string;
@@ -18,42 +19,40 @@ const NewsCard: React.FC<NewsCardProps> = ({
   url,
   summary,
 }) => (
-  <div className="w-full flex flex-col overflow-hidden font-primary">
-    <Image
-      src={imageUrl}
-      alt={title}
-      width={400}
-      height={192}
-      className="w-full h-48 object-cover rounded-2xl"
-    />
-
-    <div className=" flex flex-col gap-1">
-      <div className="flex items-center gap-4 text-muted  text-sm mt-2 justify-between">
-        <span className="flex items-center gap-1">
-          <i className="fi fi-br-calendar-day"></i>
-          {date}
-        </span>
-        <span className="flex items-center gap-1">
-          <i className="fi fi-br-hourglass"></i>
-          {readTime}
-        </span>
-      </div>
-      <h3 className="font-bold text-lg text-brand-primary-black leading-snug mb-2">
-        {title}
-      </h3>
-
-      <p className="text-muted text-base mb-4">{summary}</p>
-
-      <a
-        href={url}
-        className="font-bold text-brand-primary flex items-center gap-2"
-      >
-        Learn More{" "}
-        <span className="pt-1.5">
-          <i className="fi fi-br-arrow-right "></i>
-        </span>
-      </a>
+  <div className="relative overflow-hidden">
+    <div className="group/image w-full aspect-[4.5/3] overflow-hidden rounded-2xl">
+      <Image
+        src={imageUrl}
+        alt={title}
+        width={400}
+        height={192}
+        className="w-full h-full object-cover group-hover/image:scale-110 transition-all"
+      />
     </div>
+
+    <div className="flex items-center gap-4 text-sm text-muted mt-2 mb-3 justify-between">
+      <span className="flex items-center gap-1">
+        <i className="fi fi-br-calendar-day flex" />
+        {date}
+      </span>
+      <span className="flex items-center gap-1">
+        <i className="fi fi-br-hourglass flex" />
+        {readTime}
+      </span>
+    </div>
+
+    <Heading level={4} className="mb-3.5">
+      {title}
+    </Heading>
+
+    <p className="text-muted text-base mb-4">{summary}</p>
+
+    <a
+      href={url}
+      className="font-bold text-brand-primary text-sm flex items-center gap-2"
+    >
+      <span>Learn More</span> <i className="fi fi-br-arrow-right flex"></i>
+    </a>
   </div>
 );
 

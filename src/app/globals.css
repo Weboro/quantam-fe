@@ -69,8 +69,6 @@ body {
   }
 }
 
-/* * {outline: 1px solid red;} */
-
 /*  */
 /*  */
 @keyframes fadeIn {
@@ -102,3 +100,5 @@ body {
 .fade-out {
   animation: fadeOut 0.3s forwards;
 }
+
+/* * {outline: 1px solid red;} */
