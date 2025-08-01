@@ -3,9 +3,11 @@ import React, { useRef } from "react";
 import ContainerLayout from "../layouts/ContainerLayout";
 import Link from "next/link";
 import Button from "../ui/Button";
-import AboutUsCard, { AboutUsCardRef } from "../cards/AboutSlider";
+import { AboutUsCardRef } from "../sliders/CourseSlider";
+import Heading from "../ui/Heading";
+import CourseSlider from "../sliders/CourseSlider";
 
-const AboutSection = () => {
+const CoursesSections = () => {
   const sliderRef = useRef<AboutUsCardRef>(null);
 
   const handlePrevSlide = () => {
@@ -21,11 +23,11 @@ const AboutSection = () => {
       <ContainerLayout className="flex flex-col md:flex-row md:items-start justify-between w-full py-4">
         <div className={`flex flex-col flex-1 items-start text-left`}>
           <span className="text-muted text-base font-medium mb-0.5">
-            About Us
+            Our Programs
           </span>
-          <h2 className="text-3xl font-bold text-brand-primary-black leading-tight mb-4">
+          <Heading className="mb-3" level={2}>
             About Our Programs and our course of action.
-          </h2>
+          </Heading>
           <p className=" text-brand-primary-black font-normal max-w-2xl">
             A modal dialog that interrupts the user with important content and
             expects a response. A modal dialog that interrupts the user.
@@ -33,8 +35,10 @@ const AboutSection = () => {
         </div>
 
         <div className="flex flex-col  items-start md:items-end flex-1 mt-6 md:mt-0 md:gap-30 gap-8">
-          <Link href={"/about"}>
-            <Button variant="secondary">About Us</Button>
+          <Link href={"/courses"}>
+            <Button variant="secondary" className="text-lg font-semibold">
+              Learn More
+            </Button>
           </Link>
 
           <div className="flex items-center gap-4 ">
@@ -55,10 +59,10 @@ const AboutSection = () => {
       </ContainerLayout>
 
       <div className="w-full overflow-x-hidden">
-        <AboutUsCard ref={sliderRef} />
+        <CourseSlider ref={sliderRef} />
       </div>
     </div>
   );
 };
 
-export default AboutSection;
+export default CoursesSections;

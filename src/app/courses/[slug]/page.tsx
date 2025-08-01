@@ -1,0 +1,56 @@
+import Breadcrumbs from '@/components/global/Breadcrumbs';
+import ContainerLayout from '@/components/layouts/ContainerLayout';
+import CourseDetailsSection from '@/components/sections/course/CourseDetailsSection';
+import FaqSection from '@/components/sections/FaqSection';
+import NewsLetterSection from '@/components/sections/NewsLetterSection';
+import Heading from '@/components/ui/Heading';
+import { getCourse } from '@/utils/getCourses';
+import { notFound } from 'next/navigation';
+import React from 'react';
+import Tabbed from './Tabbed';
+
+interface ICoursePage {
+	params: Promise<{ slug: string }>;
+}
+
+const CoursePage: React.FC<ICoursePage> = async ({ params }) => {
+	const { slug } = await params;
+	console.log(slug);
+
+	const course = await getCourse(slug);
+
+	if (!course) notFound();
+
+	return (
+		<>
+			<Breadcrumbs />
+
+			<ContainerLayout className='mt-4'>
+				<Heading level={1}>{course.name}</Heading>
+			</ContainerLayout>
+
+			<div className='mt-12 space-y-24'>
+				<CourseDetailsSection
+					name={course.name}
+					description={course.description}
+					richText={course.richText}
+					heroImage={course.heroImage}
+					duration={course?.duration}
+					location={course?.location}
+					studyLevel={course?.studyLevel}
+					intakes={course?.intakes}
+					deliveryMode={course?.deliveryMode}
+					CRICOSCourseCode={course?.CRICOSCourseCode}
+				/>
+
+				{/* <div className='my-32 text-center'>TBD - Tabbed Pane Section</div> */}
+				<Tabbed />
+
+				<FaqSection />
+				<NewsLetterSection />
+			</div>
+		</>
+	);
+};
+
+export default CoursePage;

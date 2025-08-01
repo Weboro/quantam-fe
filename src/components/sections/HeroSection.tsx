@@ -1,5 +1,7 @@
 import ContainerLayout from "@/components/layouts/ContainerLayout";
 import Button from "@/components/ui/Button";
+import Heading from "../ui/Heading";
+import Link from "next/link";
 
 interface HeroSectionProps {
   title: string;
@@ -27,32 +29,38 @@ const HeroSection: React.FC<HeroSectionProps> = ({
 
   return (
     <div
-      className="relative w-full h-[60vh] bg-cover bg-center bg-no-repeat grid place-items-center"
+      className="relative w-full h-[65vh] bg-cover bg-center bg-no-repeat grid place-items-center"
       style={{ backgroundImage: `url('${imageUrl}')` }}
     >
       <div className="absolute inset-0 bg-gradient-to-r from-[#002B5C] to-transparent"></div>
 
       <ContainerLayout
-        className={`relative z-10 h-full flex flex-col justify-center font-primary max-w-2xl space-y-8 ${alignClass}`}
+        className={`relative z-10 h-full flex flex-col justify-center ${alignClass}`}
       >
-        <h1 className="text-white  md:text-3xl lg:text-4xl font-extrabold leading-tight">
+        <Heading level={1} className="text-background lg:max-w-3xl mb-4">
           {title}
-        </h1>
+        </Heading>
 
         {subtitle && (
-          <h2 className="text-white text-xl md:text-2xl font-medium">
+          <Heading
+            level={4}
+            className="text-background font-normal lg:max-w-3xl mb-2"
+          >
             {subtitle}
-          </h2>
+          </Heading>
         )}
 
-        <p className="text-white text-base md:text-lg  leading-relaxed opacity-90 max-w-lg">
+        <Heading
+          level={4}
+          className="text-neutral-200 font-normal lg:max-w-3xl"
+        >
           {description}
-        </p>
+        </Heading>
 
         {buttonText && buttonLink && (
-          <a href={buttonLink} className="font-medium">
+          <Link href={buttonLink} className="font-medium block mt-8">
             <Button variant="secondary">{buttonText}</Button>
-          </a>
+          </Link>
         )}
       </ContainerLayout>
     </div>

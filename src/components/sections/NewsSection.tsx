@@ -1,37 +1,28 @@
-// import HomeNews from "../homenews";
-// import HomeNewsCard from "../cards/NewsCard";
-// import ContainerLayout from "../layouts/ContainerLayout";
-
-import { homeNewsCards } from "@/data/homenewscard";
-import NewsCard from "../cards/NewsCard";
 import ContainerLayout from "../layouts/ContainerLayout";
 import Link from "next/link";
 import Button from "../ui/Button";
+import { news } from "@/data/news";
+import NewsCard from "../cards/NewsCard";
+import Heading from "../ui/Heading";
 
-const NewsSection = () => (
+const NewsSection = ({ showAll = false }) => (
   <ContainerLayout>
-    <section className="w-full py-8">
-      <div className="  py-6 flex md:flex-row flex-col items-start md:gap-46 ">
-        <div className="flex flex-col space-y-4 min-w-[200px]">
-          <h2 className="font-bold text-2xl text-brand-primary-black">
-            News & Articles
-          </h2>
-          <Link href="/blog" className="font-semibold">
-            <Button variant="secondary">More Blogs</Button>
-          </Link>
-        </div>
-        <div className="md:flex-1 md:flex md:flex-col justify-start flex-row">
-          <p className="text-brand-primary-black text-base font-primary text-left font-medium mt-4 md:mt-0">
-            A modal dialog that interrupts the user with important content and
-            expects a response. A modal dialog that interrupts the user with
-            important content and expects a response.
-          </p>
-        </div>
+    <ContainerLayout className="grid md:grid-cols-2 gap-4 mt-4 mb-12">
+      <div className="">
+        <Heading level={2}>News & Articles</Heading>
+        <Link href="/news" className="font-semibold">
+          <Button variant="secondary">More Blogs</Button>
+        </Link>
       </div>
-    </section>
+      <p className="text-muted">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis
+        provident temporibus dolore corrupti quae dolores consequuntur adipisci.
+        Nemo fugit qui sapiente! Voluptates.
+      </p>
+    </ContainerLayout>
 
     <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-      {homeNewsCards.map((card) => (
+      {news.slice(0, showAll ? news.length : 3).map((card) => (
         <NewsCard
           key={card.id}
           imageUrl={card.imageUrl}
@@ -39,7 +30,7 @@ const NewsSection = () => (
           readTime={card.readTime}
           title={card.title}
           summary={card.summary}
-          url={card.url}
+          url={`/news/${card.slug}`}
         />
       ))}
     </div>

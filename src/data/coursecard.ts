@@ -13,7 +13,7 @@ export interface CourseCardProps {
 
 export const courseCards: CourseCardProps[] = [
   {
-    imageUrl: "./banner.png",
+    imageUrl: "./banner.jpg",
     title:
       "Quantum welcomes you with all with warm greetings and lorem insup floral.",
     location: "City Campus",
