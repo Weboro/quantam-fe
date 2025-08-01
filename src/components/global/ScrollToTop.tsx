@@ -22,11 +22,11 @@ const ScrollToTop = () => {
   return (
     <div
       onClick={handleScrollToTop}
-      className="fixed right-6 bottom-6 scale-[75%] fade-in"
+      className="fixed right-3 bottom-3 md:right-6 md:bottom-6 scale-[65%] md:scale-[75%] fade-in"
     >
       <Button
         icon="fi fi-br-angle-small-up"
-        variant="contrastAlt"
+        variant="primaryAlt"
         className="py-4 text-xl rounded-full"
       />
     </div>
