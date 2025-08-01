@@ -1,4 +1,3 @@
-
 export interface ICourse {
 	id: string;
 	name: string;
@@ -50,180 +49,89 @@ const courses: ICourse[] = [
 			{
 				title: 'Program Overview',
 				richText: `
-          <div class="space-y-6">
-            <p class="text-muted leading-relaxed">The Accounting major equips students with the knowledge and skills to interpret, analyse, and report financial and non-financial information critical to effective decision-making.</p>
+          <div class="rich_text">
+            <p>The Accounting major equips students with the knowledge and skills to interpret, analyse, and report financial and non-financial information critical to effective decision-making.</p>
             
-            <div class="space-y-4">
-              <h3 class="text-lg font-semibold text-gray-900">Core Learning Outcomes</h3>
-              <ul class="space-y-2">
-                <li class="flex items-start text-muted">
-                  <span class="inline-block w-2 h-2 bg-gray-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                  <span class="leading-relaxed">Master financial reporting standards and principles</span>
-                </li>
-                <li class="flex items-start text-muted">
-                  <span class="inline-block w-2 h-2 bg-gray-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                  <span class="leading-relaxed">Develop advanced analytical and problem-solving skills</span>
-                </li>
-                <li class="flex items-start text-muted">
-                  <span class="inline-block w-2 h-2 bg-gray-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                  <span class="leading-relaxed">Understand taxation and regulatory compliance</span>
-                </li>
-              </ul>
-            </div>
+            <h3>Core Learning Outcomes</h3>
+            <ul>
+              <li>Master financial reporting standards and principles</li>
+              <li>Develop advanced analytical and problem-solving skills</li>
+              <li>Understand taxation and regulatory compliance</li>
+            </ul>
 
-            <div class="space-y-4">
-              <h3 class="text-lg font-semibold text-gray-900">Professional Recognition</h3>
-              <ul class="space-y-2">
-                <li class="flex items-start text-muted">
-                  <span class="inline-block w-2 h-2 bg-gray-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                  <span class="leading-relaxed">Pathway to CPA Australia membership</span>
-                </li>
-                <li class="flex items-start text-muted">
-                  <span class="inline-block w-2 h-2 bg-gray-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                  <span class="leading-relaxed">CAANZ accreditation eligibility</span>
-                </li>
-                <li class="flex items-start text-muted">
-                  <span class="inline-block w-2 h-2 bg-gray-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                  <span class="leading-relaxed">Industry-recognized qualifications</span>
-                </li>
-              </ul>
-            </div>
+            <h3>Professional Recognition</h3>
+            <ul>
+              <li>Pathway to CPA Australia membership</li>
+              <li>CAANZ accreditation eligibility</li>
+              <li>Industry-recognized qualifications</li>
+            </ul>
           </div>
         `,
 			},
 			{
 				title: 'Why Choose This Program?',
 				richText: `
-          <div class="space-y-6">
-            <p class="text-muted leading-relaxed">Our accounting program provides a comprehensive foundation in financial analysis, reporting, and strategic decision-making.</p>
+          <div class="rich_text">
+            <p>Our accounting program provides a comprehensive foundation in financial analysis, reporting, and strategic decision-making.</p>
             
-            <div class="space-y-4">
-              <h3 class="text-lg font-semibold text-gray-900">Industry-Relevant Curriculum</h3>
-              <ul class="space-y-2">
-                <li class="flex items-start text-muted">
-                  <span class="inline-block w-2 h-2 bg-gray-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                  <span class="leading-relaxed">Modern accounting software and technology integration</span>
-                </li>
-                <li class="flex items-start text-muted">
-                  <span class="inline-block w-2 h-2 bg-gray-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                  <span class="leading-relaxed">Real-world case studies and practical applications</span>
-                </li>
-                <li class="flex items-start text-muted">
-                  <span class="inline-block w-2 h-2 bg-gray-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                  <span class="leading-relaxed">Sustainability and forensic accounting specializations</span>
-                </li>
-              </ul>
-            </div>
+            <h3>Industry-Relevant Curriculum</h3>
+            <ul>
+              <li>Modern accounting software and technology integration</li>
+              <li>Real-world case studies and practical applications</li>
+              <li>Sustainability and forensic accounting specializations</li>
+            </ul>
 
-            <div class="space-y-4">
-              <h3 class="text-lg font-semibold text-gray-900">Expert Faculty & Support</h3>
-              <ul class="space-y-2">
-                <li class="flex items-start text-muted">
-                  <span class="inline-block w-2 h-2 bg-gray-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                  <span class="leading-relaxed">Learn from industry-experienced accounting professionals</span>
-                </li>
-                <li class="flex items-start text-muted">
-                  <span class="inline-block w-2 h-2 bg-gray-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                  <span class="leading-relaxed">Small class sizes for personalized attention</span>
-                </li>
-                <li class="flex items-start text-muted">
-                  <span class="inline-block w-2 h-2 bg-gray-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                  <span class="leading-relaxed">Comprehensive career guidance and mentorship</span>
-                </li>
-              </ul>
-            </div>
+            <h3>Expert Faculty & Support</h3>
+            <ul>
+              <li>Learn from industry-experienced accounting professionals</li>
+              <li>Small class sizes for personalized attention</li>
+              <li>Comprehensive career guidance and mentorship</li>
+            </ul>
           </div>
         `,
 			},
 			{
 				title: 'Career Outcomes',
 				richText: `
-          <div class="space-y-6">
-            <p class="text-muted leading-relaxed">Graduates are prepared for diverse accounting and finance roles across various industries.</p>
+          <div class="rich_text">
+            <p>Graduates are prepared for diverse accounting and finance roles across various industries.</p>
             
-            <div class="space-y-4">
-              <h3 class="text-lg font-semibold text-gray-900">Career Opportunities</h3>
-              <ul class="space-y-2">
-                <li class="flex items-start text-muted">
-                  <span class="inline-block w-2 h-2 bg-gray-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                  <span class="leading-relaxed">Public Practice Accountant</span>
-                </li>
-                <li class="flex items-start text-muted">
-                  <span class="inline-block w-2 h-2 bg-gray-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                  <span class="leading-relaxed">Management Accountant</span>
-                </li>
-                <li class="flex items-start text-muted">
-                  <span class="inline-block w-2 h-2 bg-gray-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                  <span class="leading-relaxed">Financial Analyst</span>
-                </li>
-                <li class="flex items-start text-muted">
-                  <span class="inline-block w-2 h-2 bg-gray-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                  <span class="leading-relaxed">Taxation Specialist</span>
-                </li>
-              </ul>
-            </div>
+            <h3>Career Opportunities</h3>
+            <ul>
+              <li>Public Practice Accountant</li>
+              <li>Management Accountant</li>
+              <li>Financial Analyst</li>
+              <li>Taxation Specialist</li>
+            </ul>
 
-            <div class="space-y-4">
-              <h3 class="text-lg font-semibold text-gray-900">Graduate Success</h3>
-              <ul class="space-y-2">
-                <li class="flex items-start text-muted">
-                  <span class="inline-block w-2 h-2 bg-gray-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                  <span class="leading-relaxed">92% employment rate within 6 months of graduation</span>
-                </li>
-                <li class="flex items-start text-muted">
-                  <span class="inline-block w-2 h-2 bg-gray-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                  <span class="leading-relaxed">Average starting salary of $65,000+</span>
-                </li>
-                <li class="flex items-start text-muted">
-                  <span class="inline-block w-2 h-2 bg-gray-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                  <span class="leading-relaxed">Strong alumni network in Big 4 and mid-tier firms</span>
-                </li>
-              </ul>
-            </div>
+            <h3>Graduate Success</h3>
+            <ul>
+              <li>92% employment rate within 6 months of graduation</li>
+              <li>Average starting salary of $65,000+</li>
+              <li>Strong alumni network in Big 4 and mid-tier firms</li>
+            </ul>
           </div>
         `,
 			},
 			{
 				title: 'Admission Requirements',
 				richText: `
-          <div class="space-y-6">
-            <p class="text-muted leading-relaxed">We welcome applications from students who demonstrate academic excellence and a passion for accounting and finance.</p>
+          <div class="rich_text">
+            <p>We welcome applications from students who demonstrate academic excellence and a passion for accounting and finance.</p>
             
-            <div class="space-y-4">
-              <h3 class="text-lg font-semibold text-gray-900">Academic Requirements</h3>
-              <ul class="space-y-2">
-                <li class="flex items-start text-muted">
-                  <span class="inline-block w-2 h-2 bg-gray-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                  <span class="leading-relaxed">Completion of Year 12 or equivalent</span>
-                </li>
-                <li class="flex items-start text-muted">
-                  <span class="inline-block w-2 h-2 bg-gray-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                  <span class="leading-relaxed">Minimum ATAR score of 65 (or equivalent)</span>
-                </li>
-                <li class="flex items-start text-muted">
-                  <span class="inline-block w-2 h-2 bg-gray-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                  <span class="leading-relaxed">Mathematics (preferably Methods or Specialist) recommended</span>
-                </li>
-              </ul>
-            </div>
+            <h3>Academic Requirements</h3>
+            <ul>
+              <li>Completion of Year 12 or equivalent</li>
+              <li>Minimum ATAR score of 65 (or equivalent)</li>
+              <li>Mathematics (preferably Methods or Specialist) recommended</li>
+            </ul>
 
-            <div class="space-y-4">
-              <h3 class="text-lg font-semibold text-gray-900">Application Process</h3>
-              <ul class="space-y-2">
-                <li class="flex items-start text-muted">
-                  <span class="inline-block w-2 h-2 bg-gray-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                  <span class="leading-relaxed">Complete online application form</span>
-                </li>
-                <li class="flex items-start text-muted">
-                  <span class="inline-block w-2 h-2 bg-gray-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                  <span class="leading-relaxed">Submit official academic transcripts</span>
-                </li>
-                <li class="flex items-start text-muted">
-                  <span class="inline-block w-2 h-2 bg-gray-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                  <span class="leading-relaxed">English language proficiency (IELTS 6.0 or equivalent for international students)</span>
-                </li>
-              </ul>
-            </div>
+            <h3>Application Process</h3>
+            <ul>
+              <li>Complete online application form</li>
+              <li>Submit official academic transcripts</li>
+              <li>English language proficiency (IELTS 6.0 or equivalent for international students)</li>
+            </ul>
           </div>
         `,
 			},
@@ -253,180 +161,89 @@ const courses: ICourse[] = [
 			{
 				title: 'Program Overview',
 				richText: `
-          <div class="space-y-6">
-            <p class="text-muted leading-relaxed">The Information Systems major bridges the gap between technology and business, enabling students to harness technology for strategic decision-making.</p>
+          <div class="rich_text">
+            <p>The Information Systems major bridges the gap between technology and business, enabling students to harness technology for strategic decision-making.</p>
             
-            <div class="space-y-4">
-              <h3 class="text-lg font-semibold text-gray-900">Technical Expertise</h3>
-              <ul class="space-y-2">
-                <li class="flex items-start text-muted">
-                  <span class="inline-block w-2 h-2 bg-gray-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                  <span class="leading-relaxed">Software development and programming fundamentals</span>
-                </li>
-                <li class="flex items-start text-muted">
-                  <span class="inline-block w-2 h-2 bg-gray-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                  <span class="leading-relaxed">Cybersecurity principles and threat management</span>
-                </li>
-                <li class="flex items-start text-muted">
-                  <span class="inline-block w-2 h-2 bg-gray-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                  <span class="leading-relaxed">Database design and data management systems</span>
-                </li>
-              </ul>
-            </div>
+            <h3>Technical Expertise</h3>
+            <ul>
+              <li>Software development and programming fundamentals</li>
+              <li>Cybersecurity principles and threat management</li>
+              <li>Database design and data management systems</li>
+            </ul>
 
-            <div class="space-y-4">
-              <h3 class="text-lg font-semibold text-gray-900">Business Integration</h3>
-              <ul class="space-y-2">
-                <li class="flex items-start text-muted">
-                  <span class="inline-block w-2 h-2 bg-gray-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                  <span class="leading-relaxed">Business process analysis and optimization</span>
-                </li>
-                <li class="flex items-start text-muted">
-                  <span class="inline-block w-2 h-2 bg-gray-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                  <span class="leading-relaxed">Strategic technology implementation</span>
-                </li>
-                <li class="flex items-start text-muted">
-                  <span class="inline-block w-2 h-2 bg-gray-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                  <span class="leading-relaxed">Digital transformation leadership</span>
-                </li>
-              </ul>
-            </div>
+            <h3>Business Integration</h3>
+            <ul>
+              <li>Business process analysis and optimization</li>
+              <li>Strategic technology implementation</li>
+              <li>Digital transformation leadership</li>
+            </ul>
           </div>
         `,
 			},
 			{
 				title: 'Why Choose This Program?',
 				richText: `
-          <div class="space-y-6">
-            <p class="text-muted leading-relaxed">Our Information Systems program combines technical expertise with business acumen to prepare versatile IT professionals.</p>
+          <div class="rich_text">
+            <p>Our Information Systems program combines technical expertise with business acumen to prepare versatile IT professionals.</p>
             
-            <div class="space-y-4">
-              <h3 class="text-lg font-semibold text-gray-900">Cutting-Edge Technology</h3>
-              <ul class="space-y-2">
-                <li class="flex items-start text-muted">
-                  <span class="inline-block w-2 h-2 bg-gray-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                  <span class="leading-relaxed">Latest programming languages and frameworks</span>
-                </li>
-                <li class="flex items-start text-muted">
-                  <span class="inline-block w-2 h-2 bg-gray-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                  <span class="leading-relaxed">Advanced cybersecurity tools and methodologies</span>
-                </li>
-                <li class="flex items-start text-muted">
-                  <span class="inline-block w-2 h-2 bg-gray-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                  <span class="leading-relaxed">Cloud computing and enterprise solutions</span>
-                </li>
-              </ul>
-            </div>
+            <h3>Cutting-Edge Technology</h3>
+            <ul>
+              <li>Latest programming languages and frameworks</li>
+              <li>Advanced cybersecurity tools and methodologies</li>
+              <li>Cloud computing and enterprise solutions</li>
+            </ul>
 
-            <div class="space-y-4">
-              <h3 class="text-lg font-semibold text-gray-900">Practical Experience</h3>
-              <ul class="space-y-2">
-                <li class="flex items-start text-muted">
-                  <span class="inline-block w-2 h-2 bg-gray-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                  <span class="leading-relaxed">Industry partnerships and internship opportunities</span>
-                </li>
-                <li class="flex items-start text-muted">
-                  <span class="inline-block w-2 h-2 bg-gray-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                  <span class="leading-relaxed">Real-world project-based learning</span>
-                </li>
-                <li class="flex items-start text-muted">
-                  <span class="inline-block w-2 h-2 bg-gray-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                  <span class="leading-relaxed">Professional certification pathways</span>
-                </li>
-              </ul>
-            </div>
+            <h3>Practical Experience</h3>
+            <ul>
+              <li>Industry partnerships and internship opportunities</li>
+              <li>Real-world project-based learning</li>
+              <li>Professional certification pathways</li>
+            </ul>
           </div>
         `,
 			},
 			{
 				title: 'Career Outcomes',
 				richText: `
-          <div class="space-y-6">
-            <p class="text-muted leading-relaxed">Graduates are equipped for diverse technology roles that bridge business and IT domains.</p>
+          <div class="rich_text">
+            <p>Graduates are equipped for diverse technology roles that bridge business and IT domains.</p>
             
-            <div class="space-y-4">
-              <h3 class="text-lg font-semibold text-gray-900">Career Opportunities</h3>
-              <ul class="space-y-2">
-                <li class="flex items-start text-muted">
-                  <span class="inline-block w-2 h-2 bg-gray-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                  <span class="leading-relaxed">IT Consultant</span>
-                </li>
-                <li class="flex items-start text-muted">
-                  <span class="inline-block w-2 h-2 bg-gray-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                  <span class="leading-relaxed">Systems Analyst</span>
-                </li>
-                <li class="flex items-start text-muted">
-                  <span class="inline-block w-2 h-2 bg-gray-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                  <span class="leading-relaxed">Cybersecurity Specialist</span>
-                </li>
-                <li class="flex items-start text-muted">
-                  <span class="inline-block w-2 h-2 bg-gray-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                  <span class="leading-relaxed">Business Intelligence Analyst</span>
-                </li>
-              </ul>
-            </div>
+            <h3>Career Opportunities</h3>
+            <ul>
+              <li>IT Consultant</li>
+              <li>Systems Analyst</li>
+              <li>Cybersecurity Specialist</li>
+              <li>Business Intelligence Analyst</li>
+            </ul>
 
-            <div class="space-y-4">
-              <h3 class="text-lg font-semibold text-gray-900">Industry Demand</h3>
-              <ul class="space-y-2">
-                <li class="flex items-start text-muted">
-                  <span class="inline-block w-2 h-2 bg-gray-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                  <span class="leading-relaxed">95% employment rate within 4 months of graduation</span>
-                </li>
-                <li class="flex items-start text-muted">
-                  <span class="inline-block w-2 h-2 bg-gray-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                  <span class="leading-relaxed">Average starting salary of $70,000+</span>
-                </li>
-                <li class="flex items-start text-muted">
-                  <span class="inline-block w-2 h-2 bg-gray-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                  <span class="leading-relaxed">High growth potential in emerging tech sectors</span>
-                </li>
-              </ul>
-            </div>
+            <h3>Industry Demand</h3>
+            <ul>
+              <li>95% employment rate within 4 months of graduation</li>
+              <li>Average starting salary of $70,000+</li>
+              <li>High growth potential in emerging tech sectors</li>
+            </ul>
           </div>
         `,
 			},
 			{
 				title: 'Admission Requirements',
 				richText: `
-          <div class="space-y-6">
-            <p class="text-muted leading-relaxed">We seek students with strong analytical skills and an interest in technology and business integration.</p>
+          <div class="rich_text">
+            <p>We seek students with strong analytical skills and an interest in technology and business integration.</p>
             
-            <div class="space-y-4">
-              <h3 class="text-lg font-semibold text-gray-900">Academic Requirements</h3>
-              <ul class="space-y-2">
-                <li class="flex items-start text-muted">
-                  <span class="inline-block w-2 h-2 bg-gray-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                  <span class="leading-relaxed">Completion of Year 12 or equivalent</span>
-                </li>
-                <li class="flex items-start text-muted">
-                  <span class="inline-block w-2 h-2 bg-gray-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                  <span class="leading-relaxed">Minimum ATAR score of 65 (or equivalent)</span>
-                </li>
-                <li class="flex items-start text-muted">
-                  <span class="inline-block w-2 h-2 bg-gray-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                  <span class="leading-relaxed">Mathematics and IT subjects preferred</span>
-                </li>
-              </ul>
-            </div>
+            <h3>Academic Requirements</h3>
+            <ul>
+              <li>Completion of Year 12 or equivalent</li>
+              <li>Minimum ATAR score of 65 (or equivalent)</li>
+              <li>Mathematics and IT subjects preferred</li>
+            </ul>
 
-            <div class="space-y-4">
-              <h3 class="text-lg font-semibold text-gray-900">Application Process</h3>
-              <ul class="space-y-2">
-                <li class="flex items-start text-muted">
-                  <span class="inline-block w-2 h-2 bg-gray-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                  <span class="leading-relaxed">Submit online application with portfolio (optional)</span>
-                </li>
-                <li class="flex items-start text-muted">
-                  <span class="inline-block w-2 h-2 bg-gray-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                  <span class="leading-relaxed">Provide academic transcripts and references</span>
-                </li>
-                <li class="flex items-start text-muted">
-                  <span class="inline-block w-2 h-2 bg-gray-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                  <span class="leading-relaxed">English proficiency requirements for international students</span>
-                </li>
-              </ul>
-            </div>
+            <h3>Application Process</h3>
+            <ul>
+              <li>Submit online application with portfolio (optional)</li>
+              <li>Provide academic transcripts and references</li>
+              <li>English proficiency requirements for international students</li>
+            </ul>
           </div>
         `,
 			},
@@ -456,180 +273,89 @@ const courses: ICourse[] = [
 			{
 				title: 'Program Overview',
 				richText: `
-          <div class="space-y-6">
-            <p class="text-muted leading-relaxed">The Hospitality major prepares students for leadership in the dynamic hospitality industry through comprehensive management training and practical experience.</p>
+          <div class="rich_text">
+            <p>The Hospitality major prepares students for leadership in the dynamic hospitality industry through comprehensive management training and practical experience.</p>
             
-            <div class="space-y-4">
-              <h3 class="text-lg font-semibold text-gray-900">Core Competencies</h3>
-              <ul class="space-y-2">
-                <li class="flex items-start text-muted">
-                  <span class="inline-block w-2 h-2 bg-gray-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                  <span class="leading-relaxed">Hospitality operations and service excellence</span>
-                </li>
-                <li class="flex items-start text-muted">
-                  <span class="inline-block w-2 h-2 bg-gray-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                  <span class="leading-relaxed">Event planning and venue management</span>
-                </li>
-                <li class="flex items-start text-muted">
-                  <span class="inline-block w-2 h-2 bg-gray-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                  <span class="leading-relaxed">Food and beverage operations</span>
-                </li>
-              </ul>
-            </div>
+            <h3>Core Competencies</h3>
+            <ul>
+              <li>Hospitality operations and service excellence</li>
+              <li>Event planning and venue management</li>
+              <li>Food and beverage operations</li>
+            </ul>
 
-            <div class="space-y-4">
-              <h3 class="text-lg font-semibold text-gray-900">Industry Focus</h3>
-              <ul class="space-y-2">
-                <li class="flex items-start text-muted">
-                  <span class="inline-block w-2 h-2 bg-gray-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                  <span class="leading-relaxed">Sustainable tourism and hospitality practices</span>
-                </li>
-                <li class="flex items-start text-muted">
-                  <span class="inline-block w-2 h-2 bg-gray-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                  <span class="leading-relaxed">Digital hospitality technologies</span>
-                </li>
-                <li class="flex items-start text-muted">
-                  <span class="inline-block w-2 h-2 bg-gray-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                  <span class="leading-relaxed">Cross-cultural hospitality management</span>
-                </li>
-              </ul>
-            </div>
+            <h3>Industry Focus</h3>
+            <ul>
+              <li>Sustainable tourism and hospitality practices</li>
+              <li>Digital hospitality technologies</li>
+              <li>Cross-cultural hospitality management</li>
+            </ul>
           </div>
         `,
 			},
 			{
 				title: 'Why Choose This Program?',
 				richText: `
-          <div class="space-y-6">
-            <p class="text-muted leading-relaxed">Our hospitality program offers hands-on experience and industry connections to launch your career in this exciting field.</p>
+          <div class="rich_text">
+            <p>Our hospitality program offers hands-on experience and industry connections to launch your career in this exciting field.</p>
             
-            <div class="space-y-4">
-              <h3 class="text-lg font-semibold text-gray-900">Hands-On Learning</h3>
-              <ul class="space-y-2">
-                <li class="flex items-start text-muted">
-                  <span class="inline-block w-2 h-2 bg-gray-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                  <span class="leading-relaxed">On-campus training restaurant and hotel facilities</span>
-                </li>
-                <li class="flex items-start text-muted">
-                  <span class="inline-block w-2 h-2 bg-gray-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                  <span class="leading-relaxed">Industry placements with leading hospitality brands</span>
-                </li>
-                <li class="flex items-start text-muted">
-                  <span class="inline-block w-2 h-2 bg-gray-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                  <span class="leading-relaxed">Real event planning and execution projects</span>
-                </li>
-              </ul>
-            </div>
+            <h3>Hands-On Learning</h3>
+            <ul>
+              <li>On-campus training restaurant and hotel facilities</li>
+              <li>Industry placements with leading hospitality brands</li>
+              <li>Real event planning and execution projects</li>
+            </ul>
 
-            <div class="space-y-4">
-              <h3 class="text-lg font-semibold text-gray-900">Industry Connections</h3>
-              <ul class="space-y-2">
-                <li class="flex items-start text-muted">
-                  <span class="inline-block w-2 h-2 bg-gray-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                  <span class="leading-relaxed">Guest lectures from industry executives</span>
-                </li>
-                <li class="flex items-start text-muted">
-                  <span class="inline-block w-2 h-2 bg-gray-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                  <span class="leading-relaxed">Networking events and career fairs</span>
-                </li>
-                <li class="flex items-start text-muted">
-                  <span class="inline-block w-2 h-2 bg-gray-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                  <span class="leading-relaxed">Mentorship programs with hospitality leaders</span>
-                </li>
-              </ul>
-            </div>
+            <h3>Industry Connections</h3>
+            <ul>
+              <li>Guest lectures from industry executives</li>
+              <li>Networking events and career fairs</li>
+              <li>Mentorship programs with hospitality leaders</li>
+            </ul>
           </div>
         `,
 			},
 			{
 				title: 'Career Outcomes',
 				richText: `
-          <div class="space-y-6">
-            <p class="text-muted leading-relaxed">Graduates pursue diverse leadership roles across the global hospitality and tourism industry.</p>
+          <div class="rich_text">
+            <p>Graduates pursue diverse leadership roles across the global hospitality and tourism industry.</p>
             
-            <div class="space-y-4">
-              <h3 class="text-lg font-semibold text-gray-900">Career Opportunities</h3>
-              <ul class="space-y-2">
-                <li class="flex items-start text-muted">
-                  <span class="inline-block w-2 h-2 bg-gray-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                  <span class="leading-relaxed">Hotel Manager</span>
-                </li>
-                <li class="flex items-start text-muted">
-                  <span class="inline-block w-2 h-2 bg-gray-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                  <span class="leading-relaxed">Event Coordinator</span>
-                </li>
-                <li class="flex items-start text-muted">
-                  <span class="inline-block w-2 h-2 bg-gray-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                  <span class="leading-relaxed">Restaurant Manager</span>
-                </li>
-                <li class="flex items-start text-muted">
-                  <span class="inline-block w-2 h-2 bg-gray-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                  <span class="leading-relaxed">Tourism Development Manager</span>
-                </li>
-              </ul>
-            </div>
+            <h3>Career Opportunities</h3>
+            <ul>
+              <li>Hotel Manager</li>
+              <li>Event Coordinator</li>
+              <li>Restaurant Manager</li>
+              <li>Tourism Development Manager</li>
+            </ul>
 
-            <div class="space-y-4">
-              <h3 class="text-lg font-semibold text-gray-900">Industry Prospects</h3>
-              <ul class="space-y-2">
-                <li class="flex items-start text-muted">
-                  <span class="inline-block w-2 h-2 bg-gray-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                  <span class="leading-relaxed">89% employment rate within 6 months</span>
-                </li>
-                <li class="flex items-start text-muted">
-                  <span class="inline-block w-2 h-2 bg-gray-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                  <span class="leading-relaxed">Average starting salary of $55,000+</span>
-                </li>
-                <li class="flex items-start text-muted">
-                  <span class="inline-block w-2 h-2 bg-gray-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                  <span class="leading-relaxed">Rapid career progression opportunities</span>
-                </li>
-              </ul>
-            </div>
+            <h3>Industry Prospects</h3>
+            <ul>
+              <li>89% employment rate within 6 months</li>
+              <li>Average starting salary of $55,000+</li>
+              <li>Rapid career progression opportunities</li>
+            </ul>
           </div>
         `,
 			},
 			{
 				title: 'Admission Requirements',
 				richText: `
-          <div class="space-y-6">
-            <p class="text-muted leading-relaxed">We welcome passionate individuals who are committed to delivering exceptional customer experiences.</p>
+          <div class="rich_text">
+            <p>We welcome passionate individuals who are committed to delivering exceptional customer experiences.</p>
             
-            <div class="space-y-4">
-              <h3 class="text-lg font-semibold text-gray-900">Academic Requirements</h3>
-              <ul class="space-y-2">
-                <li class="flex items-start text-muted">
-                  <span class="inline-block w-2 h-2 bg-gray-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                  <span class="leading-relaxed">Completion of Year 12 or equivalent</span>
-                </li>
-                <li class="flex items-start text-muted">
-                  <span class="inline-block w-2 h-2 bg-gray-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                  <span class="leading-relaxed">Minimum ATAR score of 65 (or equivalent)</span>
-                </li>
-                <li class="flex items-start text-muted">
-                  <span class="inline-block w-2 h-2 bg-gray-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                  <span class="leading-relaxed">English and business studies recommended</span>
-                </li>
-              </ul>
-            </div>
+            <h3>Academic Requirements</h3>
+            <ul>
+              <li>Completion of Year 12 or equivalent</li>
+              <li>Minimum ATAR score of 65 (or equivalent)</li>
+              <li>English and business studies recommended</li>
+            </ul>
 
-            <div class="space-y-4">
-              <h3 class="text-lg font-semibold text-gray-900">Personal Attributes</h3>
-              <ul class="space-y-2">
-                <li class="flex items-start text-muted">
-                  <span class="inline-block w-2 h-2 bg-gray-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                  <span class="leading-relaxed">Strong communication and interpersonal skills</span>
-                </li>
-                <li class="flex items-start text-muted">
-                  <span class="inline-block w-2 h-2 bg-gray-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                  <span class="leading-relaxed">Customer service orientation and cultural awareness</span>
-                </li>
-                <li class="flex items-start text-muted">
-                  <span class="inline-block w-2 h-2 bg-gray-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                  <span class="leading-relaxed">Leadership potential and team collaboration skills</span>
-                </li>
-              </ul>
-            </div>
+            <h3>Personal Attributes</h3>
+            <ul>
+              <li>Strong communication and interpersonal skills</li>
+              <li>Customer service orientation and cultural awareness</li>
+              <li>Leadership potential and team collaboration skills</li>
+            </ul>
           </div>
         `,
 			},
@@ -659,180 +385,89 @@ const courses: ICourse[] = [
 			{
 				title: 'Program Overview',
 				richText: `
-          <div class="space-y-6">
-            <p class="text-muted leading-relaxed">The Information Technology major equips students to thrive in the digital world with expertise in emerging technologies, ethical IT practices, and business-focused problem-solving.</p>
+          <div class="rich_text">
+            <p>The Information Technology major equips students to thrive in the digital world with expertise in emerging technologies, ethical IT practices, and business-focused problem-solving.</p>
             
-            <div class="space-y-4">
-              <h3 class="text-lg font-semibold text-gray-900">Emerging Technologies</h3>
-              <ul class="space-y-2">
-                <li class="flex items-start text-muted">
-                  <span class="inline-block w-2 h-2 bg-gray-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                  <span class="leading-relaxed">Artificial Intelligence and Machine Learning</span>
-                </li>
-                <li class="flex items-start text-muted">
-                  <span class="inline-block w-2 h-2 bg-gray-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                  <span class="leading-relaxed">Cloud Computing and Infrastructure</span>
-                </li>
-                <li class="flex items-start text-muted">
-                  <span class="inline-block w-2 h-2 bg-gray-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                  <span class="leading-relaxed">Internet of Things (IoT) and Edge Computing</span>
-                </li>
-              </ul>
-            </div>
+            <h3>Emerging Technologies</h3>
+            <ul>
+              <li>Artificial Intelligence and Machine Learning</li>
+              <li>Cloud Computing and Infrastructure</li>
+              <li>Internet of Things (IoT) and Edge Computing</li>
+            </ul>
 
-            <div class="space-y-4">
-              <h3 class="text-lg font-semibold text-gray-900">Professional Skills</h3>
-              <ul class="space-y-2">
-                <li class="flex items-start text-muted">
-                  <span class="inline-block w-2 h-2 bg-gray-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                  <span class="leading-relaxed">Cybersecurity and risk management</span>
-                </li>
-                <li class="flex items-start text-muted">
-                  <span class="inline-block w-2 h-2 bg-gray-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                  <span class="leading-relaxed">Project management and agile methodologies</span>
-                </li>
-                <li class="flex items-start text-muted">
-                  <span class="inline-block w-2 h-2 bg-gray-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                  <span class="leading-relaxed">Ethical technology practices and governance</span>
-                </li>
-              </ul>
-            </div>
+            <h3>Professional Skills</h3>
+            <ul>
+              <li>Cybersecurity and risk management</li>
+              <li>Project management and agile methodologies</li>
+              <li>Ethical technology practices and governance</li>
+            </ul>
           </div>
         `,
 			},
 			{
 				title: 'Why Choose This Program?',
 				richText: `
-          <div class="space-y-6">
-            <p class="text-muted leading-relaxed">Our IT program combines technical excellence with business understanding to prepare future technology leaders.</p>
+          <div class="rich_text">
+            <p>Our IT program combines technical excellence with business understanding to prepare future technology leaders.</p>
             
-            <div class="space-y-4">
-              <h3 class="text-lg font-semibold text-gray-900">Industry-Leading Curriculum</h3>
-              <ul class="space-y-2">
-                <li class="flex items-start text-muted">
-                  <span class="inline-block w-2 h-2 bg-gray-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                  <span class="leading-relaxed">Curriculum aligned with industry 4.0 requirements</span>
-                </li>
-                <li class="flex items-start text-muted">
-                  <span class="inline-block w-2 h-2 bg-gray-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                  <span class="leading-relaxed">State-of-the-art labs and development environments</span>
-                </li>
-                <li class="flex items-start text-muted">
-                  <span class="inline-block w-2 h-2 bg-gray-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                  <span class="leading-relaxed">Regular curriculum updates reflecting tech trends</span>
-                </li>
-              </ul>
-            </div>
+            <h3>Industry-Leading Curriculum</h3>
+            <ul>
+              <li>Curriculum aligned with industry 4.0 requirements</li>
+              <li>State-of-the-art labs and development environments</li>
+              <li>Regular curriculum updates reflecting tech trends</li>
+            </ul>
 
-            <div class="space-y-4">
-              <h3 class="text-lg font-semibold text-gray-900">Career Preparation</h3>
-              <ul class="space-y-2">
-                <li class="flex items-start text-muted">
-                  <span class="inline-block w-2 h-2 bg-gray-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                  <span class="leading-relaxed">Industry certifications and professional development</span>
-                </li>
-                <li class="flex items-start text-muted">
-                  <span class="inline-block w-2 h-2 bg-gray-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                  <span class="leading-relaxed">Capstone projects with industry partners</span>
-                </li>
-                <li class="flex items-start text-muted">
-                  <span class="inline-block w-2 h-2 bg-gray-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                  <span class="leading-relaxed">Career services and job placement support</span>
-                </li>
-              </ul>
-            </div>
+            <h3>Career Preparation</h3>
+            <ul>
+              <li>Industry certifications and professional development</li>
+              <li>Capstone projects with industry partners</li>
+              <li>Career services and job placement support</li>
+            </ul>
           </div>
         `,
 			},
 			{
 				title: 'Career Outcomes',
 				richText: `
-          <div class="space-y-6">
-            <p class="text-muted leading-relaxed">Graduates are prepared for high-demand technology roles across diverse industries and sectors.</p>
+          <div class="rich_text">
+            <p>Graduates are prepared for high-demand technology roles across diverse industries and sectors.</p>
             
-            <div class="space-y-4">
-              <h3 class="text-lg font-semibold text-gray-900">Career Opportunities</h3>
-              <ul class="space-y-2">
-                <li class="flex items-start text-muted">
-                  <span class="inline-block w-2 h-2 bg-gray-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                  <span class="leading-relaxed">Software Developer</span>
-                </li>
-                <li class="flex items-start text-muted">
-                  <span class="inline-block w-2 h-2 bg-gray-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                  <span class="leading-relaxed">Systems Analyst</span>
-                </li>
-                <li class="flex items-start text-muted">
-                  <span class="inline-block w-2 h-2 bg-gray-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                  <span class="leading-relaxed">IT Project Manager</span>
-                </li>
-                <li class="flex items-start text-muted">
-                  <span class="inline-block w-2 h-2 bg-gray-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                  <span class="leading-relaxed">Cloud Solutions Architect</span>
-                </li>
-              </ul>
-            </div>
+            <h3>Career Opportunities</h3>
+            <ul>
+              <li>Software Developer</li>
+              <li>Systems Analyst</li>
+              <li>IT Project Manager</li>
+              <li>Cloud Solutions Architect</li>
+            </ul>
 
-            <div class="space-y-4">
-              <h3 class="text-lg font-semibold text-gray-900">Market Outlook</h3>
-              <ul class="space-y-2">
-                <li class="flex items-start text-muted">
-                  <span class="inline-block w-2 h-2 bg-gray-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                  <span class="leading-relaxed">97% employment rate within 3 months of graduation</span>
-                </li>
-                <li class="flex items-start text-muted">
-                  <span class="inline-block w-2 h-2 bg-gray-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                  <span class="leading-relaxed">Average starting salary of $75,000+</span>
-                </li>
-                <li class="flex items-start text-muted">
-                  <span class="inline-block w-2 h-2 bg-gray-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                  <span class="leading-relaxed">Excellent advancement opportunities in tech sector</span>
-                </li>
-              </ul>
-            </div>
+            <h3>Market Outlook</h3>
+            <ul>
+              <li>97% employment rate within 3 months of graduation</li>
+              <li>Average starting salary of $75,000+</li>
+              <li>Excellent advancement opportunities in tech sector</li>
+            </ul>
           </div>
         `,
 			},
 			{
 				title: 'Admission Requirements',
 				richText: `
-          <div class="space-y-6">
-            <p class="text-muted leading-relaxed">We seek innovative thinkers with strong problem-solving abilities and a passion for technology.</p>
+          <div class="rich_text">
+            <p>We seek innovative thinkers with strong problem-solving abilities and a passion for technology.</p>
             
-            <div class="space-y-4">
-              <h3 class="text-lg font-semibold text-gray-900">Academic Requirements</h3>
-              <ul class="space-y-2">
-                <li class="flex items-start text-muted">
-                  <span class="inline-block w-2 h-2 bg-gray-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                  <span class="leading-relaxed">Completion of Year 12 or equivalent</span>
-                </li>
-                <li class="flex items-start text-muted">
-                  <span class="inline-block w-2 h-2 bg-gray-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                  <span class="leading-relaxed">Minimum ATAR score of 65 (or equivalent)</span>
-                </li>
-                <li class="flex items-start text-muted">
-                  <span class="inline-block w-2 h-2 bg-gray-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                  <span class="leading-relaxed">Mathematics and computing subjects highly recommended</span>
-                </li>
-              </ul>
-            </div>
+            <h3>Academic Requirements</h3>
+            <ul>
+              <li>Completion of Year 12 or equivalent</li>
+              <li>Minimum ATAR score of 65 (or equivalent)</li>
+              <li>Mathematics and computing subjects highly recommended</li>
+            </ul>
 
-            <div class="space-y-4">
-              <h3 class="text-lg font-semibold text-gray-900">Selection Criteria</h3>
-              <ul class="space-y-2">
-                <li class="flex items-start text-muted">
-                  <span class="inline-block w-2 h-2 bg-gray-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                  <span class="leading-relaxed">Problem-solving aptitude and logical thinking</span>
-                </li>
-                <li class="flex items-start text-muted">
-                  <span class="inline-block w-2 h-2 bg-gray-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                  <span class="leading-relaxed">Interest in technology innovation and development</span>
-                </li>
-                <li class="flex items-start text-muted">
-                  <span class="inline-block w-2 h-2 bg-gray-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                  <span class="leading-relaxed">English proficiency for effective communication</span>
-                </li>
-              </ul>
-            </div>
+            <h3>Selection Criteria</h3>
+            <ul>
+              <li>Problem-solving aptitude and logical thinking</li>
+              <li>Interest in technology innovation and development</li>
+              <li>English proficiency for effective communication</li>
+            </ul>
           </div>
         `,
 			},
