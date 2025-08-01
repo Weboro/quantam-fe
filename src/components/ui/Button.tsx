@@ -1,49 +1,49 @@
-import React from "react";
+import React from 'react';
 
 type Variant =
-  | "primary"
-  | "secondary"
-  | "contrast"
-  | "contrastAlt"
-  | "primaryAlt"
-  | "secondaryAlt";
+	| 'primary'
+	| 'secondary'
+	| 'contrast'
+	| 'contrastAlt'
+	| 'primaryAlt'
+	| 'secondaryAlt';
 
 interface ButtonProps {
-  variant?: Variant;
-  disabled?: boolean;
-  icon?: string;
-  className?: string;
-  children?: React.ReactNode;
-  interaction?: boolean;
-  onClick?: () => void;
+	variant?: Variant;
+	disabled?: boolean;
+	icon?: string;
+	className?: string;
+	children?: React.ReactNode;
+	interaction?: boolean;
+	onClick?: () => void;
 }
 
 const Button: React.FC<ButtonProps> = ({
-  variant = "primary",
-  disabled = false,
-  icon = null,
-  children,
-  className,
-  interaction = true,
-  onClick,
+	variant = 'primary',
+	disabled = false,
+	icon = null,
+	children,
+	className,
+	interaction = true,
+	onClick,
 }) => {
   const baseClasses =
     "flex items-center gap-2 px-4 py-2 rounded text-sm transition-colors duration-200 font-medium cursor-pointer leading-4.5";
 
-  const variantClasses = {
-    primary: `
+	const variantClasses = {
+		primary: `
       bg-[var(--color-brand-primary)] text-white
-      ${interaction && "hover:bg-[var(--color-brand-blue-2)]"}
+      ${interaction && 'hover:bg-[var(--color-brand-blue-2)]'}
       disabled:bg-[var(--color-brand-blue-4)] disabled:text-white disabled:opacity-60 disabled:cursor-not-allowed
     `,
-    secondary: `
+		secondary: `
       bg-[var(--color-brand-yellow-3)] text-black
-      ${interaction && "hover:bg-[var(--color-brand-yellow-2)]"}
+      ${interaction && 'hover:bg-[var(--color-brand-yellow-2)]'}
       disabled:bg-[var(--color-brand-yellow-4)] disabled:opacity-60 disabled:cursor-not-allowed
     `,
-    contrast: `
+		contrast: `
       bg-[var(--color-brand-primary-black)] text-white
-      ${interaction && "hover:bg-neutral-700"}
+      ${interaction && 'hover:bg-neutral-700'}
       disabled:bg-neutral-400 disabled:text-white disabled:cursor-not-allowed
     `,
     contrastAlt: `
@@ -61,11 +61,11 @@ const Button: React.FC<ButtonProps> = ({
       ${interaction && "hover:bg-[var(--color-brand-yellow-5)]"}
       disabled:bg-neutral-100 disabled:text-[var(--color-brand-yellow-4)] disabled:border-[var(--color-brand-yellow-4)] disabled:opacity-60 disabled:cursor-not-allowed
     `,
-  };
+	};
 
-  const buttonClasses = `${baseClasses} ${variantClasses[variant]}`
-    .replace(/\s+/g, " ")
-    .trim();
+	const buttonClasses = `${baseClasses} ${variantClasses[variant]}`
+		.replace(/\s+/g, ' ')
+		.trim();
 
   return (
     <button
