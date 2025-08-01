@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { ICourse } from "@/data/courses";
 
 const useSearchCourse = (courseData: ICourse[]) => {
@@ -26,10 +26,13 @@ const useSearchCourse = (courseData: ICourse[]) => {
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const value = e.target.value.trimStart();
 
-    if (!value) setResults(courseData);
-
     setSearchQuery(value);
   };
+
+  //
+  useEffect(() => {
+    handleSearch();
+  }, [searchQuery]);
 
   return {
     searchQuery,
