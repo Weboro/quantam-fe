@@ -10,7 +10,7 @@ const AboutUsSection = () => {
     <>
       <ContainerLayout className="grid lg:grid-cols-2 gap-12 items-center">
         <div className="">
-          <span className="text-muted text-sm font-medium capitalize tracking-wide">
+          <span className="text-muted text-sm font-medium capitalize">
             About Us
           </span>
 
@@ -18,19 +18,19 @@ const AboutUsSection = () => {
             Your Journey Starts Here
           </Heading>
 
-          <p className="leading-relaxed">
+          <p className="leading-relaxed text-muted">
             Explore our programs, discover our campus, and take the first step
             toward your future with QIHE.
           </p>
 
-          <p className="leading-relaxed">
+          <p className="leading-relaxed text-muted">
             A modal dialog that interrupts the user with important content and
             expects a response. A modal dialog that interrupts the user with
             important content and expects a response.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 mt-6">
-            <a href={``} className="font-semibold">
+            <Link href={``} className="">
               <Button
                 variant="secondary"
                 icon="fi fi-br-arrow-small-right"
@@ -38,7 +38,7 @@ const AboutUsSection = () => {
               >
                 Apply Now
               </Button>
-            </a>
+            </Link>
 
             <Link href={`/courses`}>
               <Button
