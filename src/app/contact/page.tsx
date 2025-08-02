@@ -16,8 +16,11 @@ const ContactPage = () => {
         <Heading level={1}>Contact QIHE</Heading>
 
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 mt-6">
-          {contact.map((item) => (
-            <div className="border border-muted/50 shadow rounded-xl p-3">
+          {contact.map((item, i) => (
+            <div
+              key={i}
+              className="border border-muted/50 shadow rounded-xl p-3"
+            >
               <p className="w-14 aspect-square bg-brand-primary/10 rounded-full grid place-items-center">
                 <i
                   className={`${item.icon} flex text-3xl text-brand-primary`}

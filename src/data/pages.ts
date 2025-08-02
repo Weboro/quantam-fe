@@ -10,7 +10,6 @@ interface Ipage {
 interface ISubpage {
   name: string;
   slug: string;
-  icon: string;
 }
 
 interface ISeo {
@@ -31,22 +30,18 @@ const pages: Ipage[] = [
     },
     subPages: [
       {
-        icon: "",
         slug: "bachelor-business-accounting",
         name: "Bachelor of Business – Accounting",
       },
       {
-        icon: "",
         slug: "bachelor-business-information-systems",
         name: "Bachelor of Business – Information Systems",
       },
       {
-        icon: "",
         slug: "bachelor-business-hospitality",
         name: "Bachelor of Business – Hospitality",
       },
       {
-        icon: "",
         slug: "bachelor-information-technology",
         name: "Bachelor of Information Technology",
       },

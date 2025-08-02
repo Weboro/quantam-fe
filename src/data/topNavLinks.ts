@@ -31,7 +31,7 @@ export const socialLinks: ISocialLink[] = [
 export const topLinks: ITopLink[] = [
   {
     name: "Programs",
-    url: "/courses",
+    url: "/programs",
     redirect: false,
   },
   {
@@ -41,10 +41,12 @@ export const topLinks: ITopLink[] = [
   },
   {
     name: "QHIE Students",
-    url: "",
+    url: "qihe-students",
+    redirect: false,
   },
   {
     name: "Discover QHIE",
-    url: "",
+    url: "discover-qihe",
+    redirect: false,
   },
 ];

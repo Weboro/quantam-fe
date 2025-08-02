@@ -14,7 +14,7 @@ const NavDesktop = () => {
               <div className="group/nav">
                 <p className="flex items-center gap-1 cursor-pointer">
                   <span className="group-hover/nav:underline group-hover/nav:text-brand-primary transition-all">
-                    {page.name}
+                    <Link href={`/${page.slug}`}>{page.title}</Link>
                   </span>
 
                   <i className="fi fi-rr-angle-small-up flex rotate-180 group-hover/nav:rotate-360 transition-all group-hover/nav:text-brand-primary"></i>
@@ -25,21 +25,17 @@ const NavDesktop = () => {
                     <ContainerLayout>
                       <div className="mt-2 pb-6 space-y-1">
                         <h3 className="text-3xl font-bold text-brand-primary mb-3">
-                          {page.title}
+                          <Link href={`/${page.slug}`}>{page.title}</Link>
                         </h3>
-                        <div className="xl:grid xl:grid-cols-2 gap-2">
+
+                        <div className="xl:grid xl:grid-cols-2 gap-3">
                           {page.subPages.map((subPage) => (
                             <Link
                               href={`/${page.slug}/${subPage.slug}`}
                               key={subPage.slug}
-                              className="flex items-center gap-3 py-2 group/item "
+                              className="block mt-3 xl:mt-0 font-semibold text-gray-700 hover:text-brand-blue-3 transition-all"
                             >
-                              <i
-                                className={`${subPage.icon} w-8 h-8 bg-brand-blue-3 group-hover/item:bg-brand-blue-2 transition-all  text-background rounded-lg flex items-center justify-center text-sm flex-shrink-0`}
-                              />
-                              <span className="font-semibold text-gray-700 group-hover/item:text-brand-blue-3 transition-all">
-                                {subPage.name}
-                              </span>
+                              {subPage.name}
                             </Link>
                           ))}
                         </div>
