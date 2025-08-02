@@ -18,7 +18,6 @@ const FaqSection: React.FC = () => {
       <br />
 
       <Accordion data={faq} />
-      <br />
     </ContainerLayout>
   );
 };

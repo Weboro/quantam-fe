@@ -1,3 +1,5 @@
+import { siteLinks } from "@/extra/siteLinks";
+
 interface ISocialLink {
   name: string;
   icon: string;
@@ -31,7 +33,7 @@ export const socialLinks: ISocialLink[] = [
 export const topLinks: ITopLink[] = [
   {
     name: "Programs",
-    url: "/programs",
+    url: siteLinks.programs,
     redirect: false,
   },
   {

@@ -1,4 +1,5 @@
 import ContainerLayout from "@/components/layouts/ContainerLayout";
+import { siteLinks } from "@/extra/siteLinks";
 import pages from "@/data/pages";
 import Image from "next/image";
 import Link from "next/link";
@@ -25,7 +26,7 @@ const Footer = () => {
             />
           </Link>
 
-          <div className="flex flex-col md:items-end text-text font-[500]">
+          <div className="flex flex-col md:items-end text-text font-[250  ]">
             <p>CRICOS Provider Code 04082E</p>
             <p>TEQSA Provider Number PRV14305</p>
             <p>ABN 91 612 507 141</p>
@@ -93,23 +94,18 @@ const Footer = () => {
               ))}
           </div>
 
-          {Array.from({ length: 1 }).map((_, i) => (
-            <div key={i} className="mb-8 lg:mb-0">
-              <h4 className="text-xl md:text-3xl font-semibold font-primary">
-                Pages
-              </h4>
+          <div className="mb-8 lg:mb-0">
+            <h4 className="text-xl md:text-3xl font-semibold font-primary">
+              Links
+            </h4>
 
-              {Array.from({ length: 2 }).map((_, i) => (
-                <Link
-                  className="block mt-1.5 hover:text-brand-primary transition-all hover:underline"
-                  href={"#"}
-                  key={i}
-                >
-                  Dummy Page
-                </Link>
-              ))}
-            </div>
-          ))}
+            <Link
+              className="block mt-1.5 hover:text-brand-primary transition-all hover:underline"
+              href={siteLinks.contact}
+            >
+              Contact
+            </Link>
+          </div>
         </ContainerLayout>
       </div>
 
@@ -120,18 +116,18 @@ const Footer = () => {
               src={"/flag-a.png"}
               alt="footer flag image"
               className="w-22"
-              width={500}
-              height={500}
+              width={250}
+              height={250}
             />
             <Image
               src={"/flag-b.png"}
               alt="footer flag image"
               className="w-22"
-              width={500}
-              height={500}
+              width={250}
+              height={250}
             />
           </div>
-          <p className="md:w-2/4 mx-auto text-center leading-4.5 text-sm">
+          <p className="md:w-2/4 mx-auto text-center leading-4.5 text-sm text-neutral-300">
             Quantam Institute of Higher Education acknowledges Aboriginal and
             Torres Strait Islander people as the Traditional Custodians of the
             land and acknowledges and pays respect to their elders, past and
@@ -140,9 +136,9 @@ const Footer = () => {
 
           <hr className="border-brand-blue-4 my-4" />
 
-          <p className="w-fit mx-auto text-center text-sm">
+          <p className="w-fit mx-auto text-center text-sm text-neutral-300">
             Copyright &copy; {new Date().getFullYear()} Mpika Holdings Pty Ltd
-            as Quantam Institute of Higher Education. 
+            as Quantam Institute of Higher Education.
           </p>
         </ContainerLayout>
       </div>

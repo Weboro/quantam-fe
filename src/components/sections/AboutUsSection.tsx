@@ -4,6 +4,7 @@ import Image from "next/image";
 import Heading from "../ui/Heading";
 import Button from "../ui/Button";
 import Link from "next/link";
+import { siteLinks } from "@/extra/siteLinks";
 
 const AboutUsSection = () => {
   return (
@@ -19,18 +20,20 @@ const AboutUsSection = () => {
           </Heading>
 
           <p className="leading-relaxed text-muted">
-            Explore our programs, discover our campus, and take the first step
-            toward your future with QIHE.
+            Take the first step toward an exciting future. At QIHE, your
+            academic journey is more than study—it's about growth, opportunity,
+            and real-world success.
           </p>
 
-          <p className="leading-relaxed text-muted">
-            A modal dialog that interrupts the user with important content and
-            expects a response. A modal dialog that interrupts the user with
-            important content and expects a response.
+          <br />
+
+          <p className="leading-relaxed text-muted ">
+            Your future starts now. Choose a program, gain practical knowledge,
+            and build a career with purpose at QIHE.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 mt-6">
-            <Link href={``} className="">
+            <Link href={siteLinks.apply} className="">
               <Button
                 variant="secondary"
                 icon="fi fi-br-arrow-small-right"
@@ -40,7 +43,7 @@ const AboutUsSection = () => {
               </Button>
             </Link>
 
-            <Link href={`/courses`}>
+            <Link href={siteLinks.programs}>
               <Button
                 variant="primary"
                 icon="fi fi-br-arrow-small-right"
@@ -57,7 +60,7 @@ const AboutUsSection = () => {
           width={700}
           height={700}
           alt="About section detgails"
-          className="w-full aspect-[2/1] lg:aspect-[4.5/5] object-cover rounded-xl"
+          className="w-full aspect-[2/1] lg:aspect-[6.5/5] object-cover rounded-xl"
         />
       </ContainerLayout>
       ;

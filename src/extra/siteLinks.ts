@@ -13,4 +13,8 @@ export const siteLinks = {
   eLibrary: underConstruction,
   libraryFacilitiesPolicy: underConstruction,
   studentPlatformLogin: underConstruction,
+  programs: "/programs",
+  keyDates: "/key-dates",
+  news: "/news",
+  contact: "/contact",
 };

@@ -4,21 +4,25 @@ import Button from "../ui/Button";
 import { news } from "@/data/news";
 import NewsCard from "../cards/NewsCard";
 import Heading from "../ui/Heading";
+import { siteLinks } from "@/extra/siteLinks";
 
 const NewsSection = ({ showAll = false }) => (
   <ContainerLayout>
     <ContainerLayout className="grid md:grid-cols-2 gap-4 mt-4 mb-12">
-      <div className="">
+      <div className="flex flex-col items-between gap-2">
         <Heading level={2}>News & Articles</Heading>
-        <Link href="/news" className="font-semibold">
+
+        <Link href={siteLinks.news} className="font-semibold">
           <Button variant="secondary">More Blogs</Button>
         </Link>
       </div>
-      <p className="text-muted">
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis
-        provident temporibus dolore corrupti quae dolores consequuntur adipisci.
-        Nemo fugit qui sapiente! Voluptates.
-      </p>
+
+      <div className="flex items-end">
+        <p className="text-muted ">
+          Stay updated with the latest news, announcements, and achievements
+          from the Quantum Institute community.
+        </p>
+      </div>
     </ContainerLayout>
 
     <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">

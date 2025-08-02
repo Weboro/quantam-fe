@@ -15,7 +15,12 @@ const ContactPage = () => {
       <ContainerLayout className="mt-4">
         <Heading level={1}>Contact QIHE</Heading>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 mt-6">
+        <p className="text-muted max-w-2xl mt-2 mb-4">
+          Have questions or need assistance? We're here to help—reach out to the
+          QIHE team through the channels below.
+        </p>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 mt-8">
           {contact.map((item, i) => (
             <div
               key={i}

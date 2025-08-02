@@ -5,6 +5,7 @@ import KeyDateCard from "@/components/cards/KeyDateCard";
 import Button from "../ui/Button";
 import Link from "next/link";
 import Heading from "../ui/Heading";
+import { siteLinks } from "@/extra/siteLinks";
 
 interface IKeyDatesSection {
   showAll?: boolean;
@@ -17,7 +18,7 @@ const KeyDatesSection: React.FC<IKeyDatesSection> = ({ showAll = false }) => (
         <Heading level={3}>Key Dates</Heading>
 
         {!showAll && (
-          <Link href="/key-dates">
+          <Link href={siteLinks.keyDates}>
             <Button variant="secondary">All Key Dates </Button>
           </Link>
         )}
@@ -25,9 +26,8 @@ const KeyDatesSection: React.FC<IKeyDatesSection> = ({ showAll = false }) => (
 
       <div className="flex-1">
         <p className="text-md text-semibold text-muted text-left font-secondary ">
-          A modal dialog that interrupts the user with important content and
-          expects a response. A modal dialog that interrupts the user with
-          important content and expects a response.
+          Stay ahead of your academic schedule. Keep track of important dates
+          including semester starts, census deadlines, exam periods, and more.
         </p>
       </div>
     </div>

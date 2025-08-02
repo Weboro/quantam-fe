@@ -6,6 +6,7 @@ import Button from "../ui/Button";
 import { AboutUsCardRef } from "../sliders/CourseSlider";
 import Heading from "../ui/Heading";
 import CourseSlider from "../sliders/CourseSlider";
+import { siteLinks } from "@/extra/siteLinks";
 
 const CoursesSections = () => {
   const sliderRef = useRef<AboutUsCardRef>(null);
@@ -29,13 +30,14 @@ const CoursesSections = () => {
             About Our Programs and our course of action.
           </Heading>
           <p className=" text-muted font-normal max-w-2xl">
-            A modal dialog that interrupts the user with important content and
-            expects a response. A modal dialog that interrupts the user.
+            Explore our range of undergraduate programs designed to equip you
+            with the knowledge, skills, and industry insight to succeed in a
+            competitive global workforce.
           </p>
         </div>
 
         <div className="flex flex-col justify-between items-end">
-          <Link href={"/courses"}>
+          <Link href={siteLinks.programs}>
             <Button variant="secondary" className="text-lg font-semibold">
               Learn More
             </Button>

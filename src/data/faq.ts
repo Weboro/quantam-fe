@@ -9,37 +9,49 @@ const faq: IFaq[] = [
     id: 1,
     question: "What programs does QIHE offer?",
     answer:
-      "QIHE currently offers undergraduate programs in Business and Information Technology with majors such as Accounting, Information Systems, and Hospitality Management.",
+      "QIHE offers undergraduate programs in Business and Information Technology. Business majors include Accounting, Information Systems, and Hospitality.",
   },
   {
     id: 2,
-    question: "Is QIHE accredited in Australia?",
+    question: "Where is QIHE located?",
     answer:
-      "Yes, QIHE is accredited under the Australian Qualifications Framework (AQF) and operates under TEQSA regulations. All programs meet national quality standards.",
+      "QIHE is located in the heart of Parramatta, offering students convenient access to public transport, local amenities, and opportunities to engage with the community.",
   },
   {
     id: 3,
-    question: "Can international students apply to QIHE?",
+    question: "What are the entry requirements for international students?",
     answer:
-      "Absolutely. International students are welcome and supported throughout the admissions, visa, and enrollment processes.",
+      "International applicants must have completed 12 years of formal education recognized by NOOSR, meet English proficiency standards, satisfy GTE criteria, and provide valid student visa documentation.",
   },
   {
     id: 4,
-    question: "What are the English language requirements?",
+    question: "What are the English language requirements at QIHE?",
     answer:
-      "QIHE accepts IELTS (Academic) with a minimum overall score of 6.0 and no band below 5.5. TOEFL and PTE scores are also accepted. Please check the latest English Language Policy for details.",
+      "QIHE accepts IELTS (Academic) with an overall score of 6.0 and no band below 5.5. TOEFL (IBT) and PTE (Academic) scores are also accepted. Refer to the English Language Policy for details.",
   },
   {
     id: 5,
-    question: "Does QIHE offer scholarships or financial aid?",
+    question: "Does QIHE recognize prior learning or work experience?",
     answer:
-      "Currently, QIHE offers merit-based scholarships for outstanding applicants. Additional financial support options may be available based on eligibility and intake.",
+      "Yes. Students may apply for Advanced Standing or Credit Transfer based on relevant prior learning, work experience, or qualifications that align with course outcomes.",
   },
   {
     id: 6,
-    question: "What support services are available for students?",
+    question: "What support services are available at QIHE?",
     answer:
-      "QIHE provides academic advising, career guidance, counselling, and access to learning resources both on campus and online through its Student Services team.",
+      "QIHE offers academic advising, career guidance, personal development support, and a range of student services delivered by a dedicated team, including during orientation.",
+  },
+  {
+    id: 7,
+    question: "How does the admission process work at QIHE?",
+    answer:
+      "Applicants must submit a completed online form along with certified documents. Admission outcomes are generally released within five working days and may include a conditional or full offer.",
+  },
+  {
+    id: 8,
+    question: "What are the delivery methods for programs?",
+    answer:
+      "All programs are delivered full-time, on-campus, and face-to-face to ensure an immersive and supportive learning experience.",
   },
 ];
 
