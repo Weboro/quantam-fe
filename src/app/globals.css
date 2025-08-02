@@ -1,144 +1,142 @@
-@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import 'tailwindcss';
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import "tailwindcss";
 
 @theme {
-	--color-background: hsl(0 0% 95%);
-	--color-text: hsl(222 40% 15%);
-	--color-surface: hsl(0 0% 95%);
-	--color-surface-1: hsl(0 0% 91%);
-	--color-surface-2: hsl(0 0% 86%);
-	/* --color-muted: hsl(222 8% 55%); */
-	--color-muted: #64748b;
-	--color-error: hsl(0 70% 58%);
-	--color-success: hsl(142 50% 45%);
+  --color-background: hsl(0 0% 95%);
+  --color-text: hsl(222 40% 15%);
+  --color-surface: hsl(0 0% 95%);
+  --color-surface-1: hsl(0 0% 91%);
+  --color-surface-2: hsl(0 0% 86%);
+  /* --color-muted: hsl(222 8% 55%); */
+  --color-muted: #424242;
+  --color-error: hsl(0 70% 58%);
+  --color-success: hsl(142 50% 45%);
 
-	--color-powder-blue: #edf5ff;
+  --color-powder-blue: #edf5ff;
 
-	--color-brand-primary: #002a5c;
-	--color-brand-primary-yellow: #f3bd1c;
-	--color-brand-primary-black: #111111;
+  --color-brand-primary: #002a5c;
+  --color-brand-primary-yellow: #f3bd1c;
+  --color-brand-primary-black: #111111;
 
-	--color-brand-blue-1: #093a73;
-	--color-brand-blue-2: #124380;
-	--color-brand-blue-3: #1d4d8b;
-	--color-brand-blue-4: #255494;
+  --color-brand-blue-1: #093a73;
+  --color-brand-blue-2: #124380;
+  --color-brand-blue-3: #1d4d8b;
+  --color-brand-blue-4: #255494;
 
-	--color-brand-yellow-1: #ef7c00;
-	--color-brand-yellow-2: #f2a510;
-	--color-brand-yellow-3: #f3bd1c;
-	--color-brand-yellow-4: #f4d526;
+  --color-brand-yellow-1: #ef7c00;
+  --color-brand-yellow-2: #f2a510;
+  --color-brand-yellow-3: #f3bd1c;
+  --color-brand-yellow-4: #f4d526;
 
-	--font-primary: 'League Spartan', serif;
-	--font-secondary: 'Poppins', serif;
+  --font-primary: "League Spartan", serif;
+  --font-secondary: "Poppins", serif;
 }
 
 body {
-	@apply bg-background text-text font-secondary;
+  @apply bg-background text-text font-secondary;
 
-	font-style: normal;
-	font-optical-sizing: auto;
+  font-style: normal;
+  font-optical-sizing: auto;
 }
 
 .container-sm {
-	width: 100%;
+  width: 100%;
 }
 
 @media (min-width: 640px) {
-	.container-sm {
-		max-width: 460px;
-	}
+  .container-sm {
+    max-width: 460px;
+  }
 }
 @media (min-width: 768px) {
-	.container-sm {
-		max-width: 600px;
-	}
+  .container-sm {
+    max-width: 600px;
+  }
 }
 @media (min-width: 1024px) {
-	.container-sm {
-		max-width: 800px;
-	}
+  .container-sm {
+    max-width: 800px;
+  }
 }
 @media (min-width: 1280px) {
-	.container-sm {
-		max-width: 960px;
-	}
+  .container-sm {
+    max-width: 960px;
+  }
 }
 @media (min-width: 1536px) {
-	.container-sm {
-		max-width: 1080px;
-	}
+  .container-sm {
+    max-width: 1080px;
+  }
 }
 
 /*  */
 /*  */
 @keyframes fadeIn {
-	from {
-		opacity: 0;
-		transform: translateY(20px);
-	}
-	to {
-		opacity: 1;
-		transform: translateY(0);
-	}
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 @keyframes fadeOut {
-	from {
-		opacity: 1;
-		transform: translateY(0);
-	}
-	to {
-		opacity: 0;
-		transform: translateY(20px);
-	}
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(20px);
+  }
 }
 
 .fade-in {
-	animation: fadeIn 0.3s forwards;
+  animation: fadeIn 0.3s forwards;
 }
 
 .fade-out {
-	animation: fadeOut 0.3s forwards;
+  animation: fadeOut 0.3s forwards;
 }
 
-
-
 .rich_text p {
-	font-size: 16px;
-	line-height: 1.6;
-	margin-bottom: 16px;
-	color: var(--color-muted);
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 16px;
+  color: var(--color-muted);
 }
 
 .rich_text h3 {
-	font-size: 18px;
-	font-weight: 600;
-	color: var(--color-brand-primary-black);
-	margin-top: 24px;
-	margin-bottom: 12px;
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--color-brand-primary-black);
+  margin-top: 24px;
+  margin-bottom: 12px;
 }
 
 .rich_text ul {
-	list-style: none;
-	padding: 0;
-	margin-bottom: 24px;
+  list-style: none;
+  padding: 0;
+  margin-bottom: 24px;
 }
 
 .rich_text li {
-	position: relative;
-	padding-left: 20px;
-	margin-bottom: 8px;
-	color: var(--color-muted);
-	line-height: 1.5;
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 8px;
+  color: var(--color-muted);
+  line-height: 1.5;
 }
 
 .rich_text li::before {
-	content: '';
-	position: absolute;
-	left: 0;
-	top: 10px;
-	width: 6px;
-	height: 6px;
-	background-color: #9ca3af;
-	border-radius: 50%;
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 10px;
+  width: 6px;
+  height: 6px;
+  background-color: #9ca3af;
+  border-radius: 50%;
 }

@@ -8,7 +8,7 @@ import FaqSection from "@/components/sections/FaqSection";
 
 const HomePage = () => {
   return (
-    <div className="space-y-28 mb-24">
+    <div className="space-y-24 mb-24">
       <HeroSection
         title="Welcome to Quantum Institute of Higher Education"
         subtitle="At Quantum Institute of Higher Education (QIHE), we are dedicated to providing quality education that empowers our students to succeed in a dynamic and evolving world. "

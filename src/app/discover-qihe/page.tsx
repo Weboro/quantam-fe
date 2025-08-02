@@ -13,7 +13,7 @@ const page = () => {
       <Breadcrumbs />
 
       <ContainerLayout className="mt-4">
-        <Heading level={1} className="mb-4">
+        <Heading className="text-brand-primary-black mt-4 mb-2" level={1}>
           About QIHE
         </Heading>
 
@@ -42,8 +42,8 @@ const page = () => {
 
       <hr className="my-12 border-muted/50" />
 
-      <ContainerLayout>
-        <Heading level={2} className="">
+      <ContainerLayout className="text-muted">
+        <Heading className="text-brand-primary-black mt-4 mb-2" level={2}>
           Our Vision
         </Heading>
         <p>
@@ -58,8 +58,8 @@ const page = () => {
 
       <hr className="my-12 border-muted/50" />
 
-      <ContainerLayout>
-        <Heading level={2} className="">
+      <ContainerLayout className="text-muted">
+        <Heading className="text-brand-primary-black mt-4 mb-2" level={2}>
           Our Mission
         </Heading>
         <p>
@@ -73,8 +73,8 @@ const page = () => {
 
       <hr className="my-12 border-muted/50" />
 
-      <ContainerLayout>
-        <Heading level={2} className="">
+      <ContainerLayout className="text-muted">
+        <Heading className="text-brand-primary-black mt-4 mb-2" level={2}>
           Our Core Values
         </Heading>
         <p className="mb-2">
@@ -125,12 +125,14 @@ const page = () => {
 
       <hr className="my-12 border-muted/50" />
 
-      <ContainerLayout>
-        <Heading level={2} className="mb-3">
+      <ContainerLayout className="text-muted">
+        <Heading className="text-brand-primary-black mt-4 mb-2" level={2}>
           Our People
         </Heading>
 
-        <Heading level={2}>A Note from the Chair</Heading>
+        <Heading className="text-brand-primary-black mt-4 mb-2" level={2}>
+          A Note from the Chair
+        </Heading>
         <p className="mt-2">
           <strong>Emeritus Professor Jim Psaros</strong>
           <br />
@@ -148,8 +150,8 @@ const page = () => {
 
       <hr className="my-12 border-muted/50" />
 
-      <ContainerLayout>
-        <Heading level={2} className="mt-8">
+      <ContainerLayout className="text-muted">
+        <Heading className="text-brand-primary-black mt-4 mb-2" level={2}>
           Meet the Quantum Family
         </Heading>
         <p>
@@ -190,7 +192,9 @@ const page = () => {
 
         <p className="mt-2 w-fit mx-auto md:text-center">
           <Link
-            href="#"
+            href="/organizational/governance-structure.png"
+            target="_blank"
+            download={true}
             className="text-brand-primary underline hover:text-brand-blue-4 transition-all"
           >
             Download Governance Structure & Organizational Diagram
@@ -200,8 +204,8 @@ const page = () => {
 
       <hr className="my-12 border-muted/50" />
 
-      <ContainerLayout>
-        <Heading level={2} className="mt-8">
+      <ContainerLayout className="text-muted">
+        <Heading className="text-brand-primary-black mt-4 mb-2" level={2}>
           The Academic Team
         </Heading>
         <p>
@@ -221,8 +225,8 @@ const page = () => {
 
       <hr className="my-12 border-muted/50" />
 
-      <ContainerLayout>
-        <Heading level={2} className="mt-8">
+      <ContainerLayout className="text-muted">
+        <Heading className="text-brand-primary-black mt-4 mb-2" level={2}>
           The Support Team
         </Heading>
         <p>
@@ -241,8 +245,8 @@ const page = () => {
 
       <hr className="my-12 border-muted/50" />
 
-      <ContainerLayout>
-        <Heading level={2} className="mt-8">
+      <ContainerLayout className="text-muted">
+        <Heading className="text-brand-primary-black mt-4 mb-2" level={2}>
           Student Association
         </Heading>
         <p>

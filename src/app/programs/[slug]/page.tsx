@@ -28,7 +28,7 @@ const CoursePage: React.FC<ICoursePage> = async ({ params }) => {
         <Heading level={1}>{course.name}</Heading>
       </ContainerLayout>
 
-      <div className="mt-12 space-y-24">
+      <div className="mt-12 space-y-22">
         <CourseDetailsSection
           name={course.name}
           description={course.description}

@@ -12,17 +12,23 @@ const page = () => {
     <>
       <Breadcrumbs />
 
-      <ContainerLayout className="">
-        <Heading level={1}>Future Students</Heading>
+      <ContainerLayout>
+        <Heading className="text-gray-800 mt-6 mb-2" level={1}>
+          Future Students
+        </Heading>
       </ContainerLayout>
 
       <hr className="my-12 border-muted/50" />
 
-      <ContainerLayout className="mt-2">
-        <Heading level={2}>Admissions</Heading>
+      <ContainerLayout className="mt-6 mb-2 text-muted">
+        <Heading className="text-gray-800 mt-6 mb-2" level={2}>
+          Admissions
+        </Heading>
 
         <section className="mt-4">
-          <Heading level={3}>Step 1: Admission Eligibility</Heading>
+          <Heading className="text-gray-800 mt-6 mb-2" level={3}>
+            Step 1: Admission Eligibility
+          </Heading>
           <p>
             Check your eligibility through Quantum’s{" "}
             <Link
@@ -36,7 +42,9 @@ const page = () => {
         </section>
 
         <section className="mt-4">
-          <Heading level={3}>Step 2: Admission Application Form</Heading>
+          <Heading className="text-gray-800 mt-6 mb-2" level={3}>
+            Step 2: Admission Application Form
+          </Heading>
           <p>
             To allow ample time to arrange your respective Australian Visa, we
             encourage you to apply at the earliest. You can find the{" "}
@@ -52,7 +60,9 @@ const page = () => {
         </section>
 
         <section className="mt-4">
-          <Heading level={3}>Step 3: Supplementary Documents</Heading>
+          <Heading className="text-gray-800 mt-6 mb-2" level={3}>
+            Step 3: Supplementary Documents
+          </Heading>
           <p>
             The below supporting documents must be certified by an accredited
             body:
@@ -75,7 +85,9 @@ const page = () => {
         </section>
 
         <section className="mt-4">
-          <Heading level={3}>Step 4: Admission Outcome</Heading>
+          <Heading className="text-gray-800 mt-6 mb-2" level={3}>
+            Step 4: Admission Outcome
+          </Heading>
           <p>
             After successful completion of the outlined criteria, the
             application outcome is typically released within five working days
@@ -92,7 +104,9 @@ const page = () => {
         </section>
 
         <section className="mt-4">
-          <Heading level={3}>Step 5: Acceptance of Offer</Heading>
+          <Heading className="text-gray-800 mt-6 mb-2" level={3}>
+            Step 5: Acceptance of Offer
+          </Heading>
           <p>The Confirmation of Enrolment (CoE) will be issued when:</p>
           <ul className="list-disc pl-6 space-y-1">
             <li>Entry admission requirements are satisfied;</li>
@@ -108,7 +122,9 @@ const page = () => {
         </section>
 
         <section className="mt-4">
-          <Heading level={3}>Step 6: Student Orientation and Enrolment</Heading>
+          <Heading className="text-gray-800 mt-6 mb-2" level={3}>
+            Step 6: Student Orientation and Enrolment
+          </Heading>
 
           <p>
             We warmly welcome you to the Quantum Institute of Higher Education!
@@ -135,8 +151,10 @@ const page = () => {
 
       <hr className="my-8 border-muted/50" />
 
-      <ContainerLayout>
-        <Heading level={2}>Policies and Procedures</Heading>
+      <ContainerLayout className="text-muted">
+        <Heading className="text-gray-800 mt-6 mb-2" level={2}>
+          Policies and Procedures
+        </Heading>
         <p>
           Below are QIHE’s policies and procedures that provides comprehensive
           information for everyone in regard to QIHE:
@@ -171,12 +189,14 @@ const page = () => {
 
       <hr className="my-8 border-muted/50" />
 
-      <ContainerLayout>
-        <Heading level={2}>Find an Education Agent</Heading>
+      <ContainerLayout className="text-muted">
+        <Heading className="text-gray-800 mt-6 mb-2" level={2}>
+          Find an Education Agent
+        </Heading>
 
         <Link
           className="text-brand-primary underline hover:text-brand-blue-4 transition-all"
-          href={siteLinks.consultation}
+          href={siteLinks.findAgent}
         >
           Find Agents Page
         </Link>
@@ -184,8 +204,10 @@ const page = () => {
 
       <hr className="my-8 border-muted/50" />
 
-      <ContainerLayout>
-        <Heading level={2}>Why QIHE?</Heading>
+      <ContainerLayout className="text-muted">
+        <Heading className="text-gray-800 mt-6 mb-2" level={2}>
+          Why QIHE?
+        </Heading>
         <p>
           At QIHE, we are committed to providing a supportive and enriching
           environment for students to achieve academic and professional success.
@@ -193,26 +215,31 @@ const page = () => {
           for students’ impactful educational journey.
         </p>
 
-        <Heading level={3} className="">
+        <Heading className="text-gray-800 mt-6 mb-2" level={3}>
           Modern Facilities
         </Heading>
         <ul className="list-disc pl-6 space-y-1">
           <li>
-            <strong>Well-equipped Computer Labs:</strong> Designed to provide
-            hands-on experience with the latest software and technologies.
+            <strong className="text-gray-800">
+              Well-equipped Computer Labs:
+            </strong>{" "}
+            Designed to provide hands-on experience with the latest software and
+            technologies.
           </li>
           <li>
-            <strong>Resourceful Library:</strong> A digital and physical library
-            offering access to academic resources, research tools, and study
-            spaces.
+            <strong className="text-gray-800">Resourceful Library:</strong> A
+            digital and physical library offering access to academic resources,
+            research tools, and study spaces.
           </li>
           <li>
-            <strong>Collaborative Learning Areas:</strong> Modern spaces for
-            teamwork, brainstorming, and group projects.
+            <strong className="text-gray-800">
+              Collaborative Learning Areas:
+            </strong>{" "}
+            Modern spaces for teamwork, brainstorming, and group projects.
           </li>
         </ul>
 
-        <Heading level={3} className="">
+        <Heading className="text-gray-800 mt-6 mb-2" level={3}>
           Industry-Relevant Curriculum
         </Heading>
         <p>
@@ -222,19 +249,19 @@ const page = () => {
           we aim to prepare students for careers in rapidly evolving fields.
         </p>
 
-        <Heading level={3} className="">
+        <Heading className="text-gray-800 mt-6 mb-2" level={3}>
           Personalised and Learning Support
         </Heading>
         <ul className="list-disc pl-6 space-y-1">
           <li>
-            <strong>Small Class Sizes:</strong> Students benefit from close
-            interaction with academic staff, fostering a more personalised
-            learning experience.
+            <strong className="text-gray-800">Small Class Sizes:</strong>{" "}
+            Students benefit from close interaction with academic staff,
+            fostering a more personalised learning experience.
           </li>
           <li>
-            <strong>Student Services:</strong> Dedicated support for academic
-            guidance, career planning, and personal development. Please refer to
-            the{" "}
+            <strong className="text-gray-800">Student Services:</strong>{" "}
+            Dedicated support for academic guidance, career planning, and
+            personal development. Please refer to the{" "}
             <Link
               className="text-brand-primary underline hover:text-brand-blue-4 transition-all"
               href={siteLinks.studentSupport}
@@ -251,13 +278,13 @@ const page = () => {
             for more information.
           </li>
           <li>
-            <strong>Learning Programs:</strong> Events and programs that allow
-            students to build their learning skills, connect with others, and
-            stay engaged.
+            <strong className="text-gray-800">Learning Programs:</strong> Events
+            and programs that allow students to build their learning skills,
+            connect with others, and stay engaged.
           </li>
         </ul>
 
-        <Heading level={3} className="">
+        <Heading className="text-gray-800 mt-6 mb-2" level={3}>
           Dedicated Educators
         </Heading>
         <p>
@@ -266,7 +293,7 @@ const page = () => {
           knowledge in their chosen fields.
         </p>
 
-        <Heading level={3} className="">
+        <Heading className="text-gray-800 mt-6 mb-2" level={3}>
           Convenient Location
         </Heading>
         <p>
@@ -275,7 +302,7 @@ const page = () => {
           amenities, and opportunities to engage with the local community.
         </p>
 
-        <Heading level={3} className="">
+        <Heading className="text-gray-800 mt-6 mb-2" level={3}>
           Inclusive and Supportive Environment
         </Heading>
         <p>
@@ -283,7 +310,7 @@ const page = () => {
           students from all backgrounds feel welcome and supported.
         </p>
 
-        <p className="">
+        <p>
           <Link
             className="text-brand-primary underline hover:text-brand-blue-4 transition-all"
             href={siteLinks.prospectus}
@@ -302,8 +329,8 @@ const page = () => {
       </ContainerLayout>
 
       <hr className="my-12 border-muted/50" />
-      <ContainerLayout>
-        <Heading level={2} className="mt-8">
+      <ContainerLayout className="text-muted">
+        <Heading className="text-gray-800 mt-6 mb-2" level={2}>
           Orientation and Pre-Arrival Guide
         </Heading>
         <p>
@@ -312,7 +339,7 @@ const page = () => {
           their academic journey with us.
         </p>
 
-        <Heading level={3} className="">
+        <Heading className="text-gray-800 mt-6 mb-2" level={3}>
           Pre-Arrival Guide
         </Heading>
         <p>
@@ -333,7 +360,7 @@ const page = () => {
           </li>
         </ul>
 
-        <Heading level={3} className="">
+        <Heading className="text-gray-800 mt-6 mb-2" level={3}>
           Student Orientation Program
         </Heading>
         <p>
@@ -344,33 +371,39 @@ const page = () => {
         </p>
         <ul className="list-disc pl-6 space-y-1">
           <li>
-            <strong>Explore the Campus:</strong> Learn the layout of classrooms,
-            student areas, and key administrative offices.
+            <strong className="text-gray-800">Explore the Campus:</strong> Learn
+            the layout of classrooms, student areas, and key administrative
+            offices.
           </li>
           <li>
-            <strong>Learn About Policies:</strong> Receive essential information
-            on attendance requirements, refund procedures, and emergency
-            protocols.
+            <strong className="text-gray-800">Learn About Policies:</strong>{" "}
+            Receive essential information on attendance requirements, refund
+            procedures, and emergency protocols.
           </li>
           <li>
-            <strong>Receive the Student Handbook:</strong> A comprehensive
-            resource with all the details you need, including visa and housing
-            information for international students and support services for all.
+            <strong className="text-gray-800">
+              Receive the Student Handbook:
+            </strong>{" "}
+            A comprehensive resource with all the details you need, including
+            visa and housing information for international students and support
+            services for all.
           </li>
           <li>
-            <strong>Discover Support Services:</strong> Gain insights into how
-            to access academic, personal, and career support services available
-            at QIHE.
+            <strong className="text-gray-800">
+              Discover Support Services:
+            </strong>{" "}
+            Gain insights into how to access academic, personal, and career
+            support services available at QIHE.
           </li>
         </ul>
 
-        <p className="">
+        <p>
           Our Student Services Team, led by the Student Services Manager and
           supported by the Student Services Officer, will guide you through this
           program to ensure you feel fully informed and supported from day one.
         </p>
 
-        <p className="mt-2 font-semibold">
+        <p className="mt-6 mb-2 font-semibold">
           We look forward to welcoming you to QIHE!
         </p>
       </ContainerLayout>

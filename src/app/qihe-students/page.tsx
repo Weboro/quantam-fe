@@ -11,13 +11,17 @@ const page = () => {
       <Breadcrumbs />
 
       <ContainerLayout className="mt-4">
-        <Heading level={1}>QIHE Information</Heading>
+        <Heading className="text-brand-primary-black mb-2" level={1}>
+          QIHE Information
+        </Heading>
       </ContainerLayout>
 
       <hr className="my-12 border-muted/50" />
 
       <ContainerLayout className="mt-4">
-        <Heading level={2}>Fees and Payment</Heading>
+        <Heading className="text-brand-primary-black mb-2" level={2}>
+          Fees and Payment
+        </Heading>
         <p>
           Stay informed about your tuition fees, payment deadlines, and
           available payment options. For assistance, contact our Accounts
@@ -45,8 +49,8 @@ const page = () => {
 
       <hr className="my-12 border-muted/50" />
 
-      <ContainerLayout>
-        <Heading level={2} className="">
+      <ContainerLayout className="text-muted">
+        <Heading className="text-brand-primary-black mb-2" level={2}>
           Library
         </Heading>
         <p>
@@ -76,8 +80,8 @@ const page = () => {
 
       <hr className="my-12 border-muted/50" />
 
-      <ContainerLayout>
-        <Heading level={2} className="">
+      <ContainerLayout className="text-muted">
+        <Heading className="text-brand-primary-black mb-2" level={2}>
           Important Dates
         </Heading>
         <p>
@@ -96,8 +100,8 @@ const page = () => {
 
       <hr className="my-12 border-muted/50" />
 
-      <ContainerLayout>
-        <Heading level={2} className="">
+      <ContainerLayout className="text-muted">
+        <Heading className="text-brand-primary-black mb-2" level={2}>
           Student Platform
         </Heading>
         <p>
@@ -118,8 +122,8 @@ const page = () => {
 
       <hr className="my-12 border-muted/50" />
 
-      <ContainerLayout>
-        <Heading level={2} className="">
+      <ContainerLayout className="text-muted">
+        <Heading className="text-brand-primary-black mb-2" level={2}>
           Forms
         </Heading>
         <p>Access important student forms directly below:</p>

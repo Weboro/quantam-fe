@@ -10,11 +10,17 @@ const page = () => {
       <Breadcrumbs />
 
       <ContainerLayout className="mt-4">
-        <Heading level={1}>Admission Requirements</Heading>
-        <Heading level={2}>General Admission Requirements</Heading>
+        <Heading className="text-brand-primary-black mt-4 mb-2" level={1}>
+          Admission Requirements
+        </Heading>
+        <Heading className="text-brand-primary-black mt-4 mb-2" level={2}>
+          General Admission Requirements
+        </Heading>
 
         <section className="mt-4">
-          <Heading level={3}>Domestic Applicants</Heading>
+          <Heading className="text-brand-primary-black mt-4 mb-2" level={3}>
+            Domestic Applicants
+          </Heading>
           <p>
             For any undergraduate courses, you must satisfy at least one of the
             following entry requirements:
@@ -41,7 +47,9 @@ const page = () => {
         </section>
 
         <section className="mt-4">
-          <Heading level={3}>International Applicants</Heading>
+          <Heading className="text-brand-primary-black mt-4 mb-2" level={3}>
+            International Applicants
+          </Heading>
           <p>
             For any undergraduate courses, you must satisfy all of the following
             entry requirements:
@@ -101,9 +109,11 @@ const page = () => {
 
       <hr className="my-12 border-muted/50" />
 
-      <ContainerLayout>
+      <ContainerLayout className="text-muted">
         <section className="mt-4">
-          <Heading level={2}>English Language Requirements</Heading>
+          <Heading className="text-brand-primary-black mt-4 mb-2" level={2}>
+            English Language Requirements
+          </Heading>
           <p>
             International students whose prior education was conducted in a
             language other than English must provide documentary evidence to
@@ -141,9 +151,9 @@ const page = () => {
 
       <hr className="my-12 border-muted/50" />
 
-      <ContainerLayout>
+      <ContainerLayout className="text-muted">
         <section className="mt-4">
-          <Heading level={2}>
+          <Heading className="text-brand-primary-black mt-4 mb-2" level={2}>
             Advanced Standing (Recognition of Proper Learning)
           </Heading>
           <p>

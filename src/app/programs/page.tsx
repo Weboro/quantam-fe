@@ -8,7 +8,7 @@ const CoursesPage = () => {
     <>
       <Breadcrumbs />
 
-      <div className="space-y-28 mt-6">
+      <div className="space-y-22 mt-6">
         <CourseFilterSection />
 
         <FaqSection />
