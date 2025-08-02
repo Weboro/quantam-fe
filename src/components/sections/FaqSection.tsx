@@ -9,9 +9,10 @@ const FaqSection: React.FC = () => {
       <Heading level={2} className="w-fit mx-auto text-center">
         Frequently Asked Questions
       </Heading>
+
       <p className="text-muted max-w-xl text-center mx-auto">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore a optio
-        praesentium assumenda consectetur ipsa ut molestiae, debitis voluptas?
+        Find answers to common questions about admissions, courses, support
+        services, and life at QIHE.
       </p>
 
       <br />

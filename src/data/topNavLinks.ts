@@ -1,10 +1,16 @@
-interface socialLink {
+interface ISocialLink {
   name: string;
   icon: string;
   url: string;
 }
 
-export const socialLinks: socialLink[] = [
+interface ITopLink {
+  name: string;
+  url: string;
+  redirect?: boolean;
+}
+
+export const socialLinks: ISocialLink[] = [
   {
     name: "facebook",
     icon: "fi fi-brands-facebook",
@@ -22,26 +28,23 @@ export const socialLinks: socialLink[] = [
   },
 ];
 
-interface topLink {
-  name: string;
-  url: string;
-}
-
-export const topLinks: topLink[] = [
+export const topLinks: ITopLink[] = [
   {
     name: "Programs",
-    url: "#",
+    url: "/courses",
+    redirect: false,
   },
   {
-    name: "Future Students",
-    url: "#",
+    name: "Find Agent",
+    url: "/find-agent",
+    redirect: false,
   },
   {
     name: "QHIE Students",
-    url: "#",
+    url: "",
   },
   {
     name: "Discover QHIE",
-    url: "#",
+    url: "",
   },
 ];

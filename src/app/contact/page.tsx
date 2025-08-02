@@ -1,16 +1,16 @@
-import HeroSection from "@/components/sections/HeroSection";
+import Breadcrumbs from "@/components/global/Breadcrumbs";
+import ContainerLayout from "@/components/layouts/ContainerLayout";
+import Heading from "@/components/ui/Heading";
 import React from "react";
 
 const ContactPage = () => {
   return (
     <>
-      <HeroSection
-        title="Contact Us"
-        description="Learn More Quantum Institute"
-        imageUrl="/banner.jpg"
-      />
+      <Breadcrumbs />
 
-      <div className="my-32 text-center">TBD</div>
+      <ContainerLayout className="mt-2">
+        <Heading level={1}>Contact QIHE</Heading>
+      </ContainerLayout>
     </>
   );
 };

@@ -28,7 +28,7 @@ const TopNav = () => {
           {topLinks.map((link, i) => (
             <Link
               href={`${link.url}`}
-              target="_blank"
+              target={link.redirect === false ? "" : "_blank"}
               className="text-neutral-300 hover:text-background hover:underline transition-all"
               key={i}
             >

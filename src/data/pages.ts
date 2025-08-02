@@ -3,7 +3,6 @@ interface Ipage {
   slug: string;
   title: string;
   description: string;
-  lastUpdated: string;
   seo: ISeo;
   subPages?: ISubpage[];
 }
@@ -21,39 +20,14 @@ interface ISeo {
 
 const pages: Ipage[] = [
   {
-    name: "Home",
-    slug: "",
-    title: "Welcome to MySite",
+    name: "Programs",
+    slug: "programs",
+    title: "Our Programs",
     description:
-      "Discover our offerings, latest updates, and key features on the homepage.",
+      "Browse through the range of Programs we offer for different skill levels.",
     seo: {
-      title: "MySite — Home",
-      description:
-        "Explore MySite, your hub for courses, community and insights.",
-    },
-    lastUpdated: "2025-07-20",
-  },
-  {
-    name: "About",
-    slug: "about",
-    title: "About Us",
-    description:
-      "Learn about our mission, values, and the team behind our organization.",
-    seo: {
-      title: "About — MySite",
-      description: "Find out who we are and what drives us.",
-    },
-    lastUpdated: "2025-06-15",
-  },
-  {
-    name: "Courses",
-    slug: "courses",
-    title: "Our Courses",
-    description:
-      "Browse through the range of courses we offer for different skill levels.",
-    seo: {
-      title: "Courses — MySite",
-      description: "Check out our full catalog of courses and learning paths.",
+      title: "Programs — QIHE",
+      description: "Check out our full catalog of Programs and learning paths.",
     },
     subPages: [
       {
@@ -77,20 +51,42 @@ const pages: Ipage[] = [
         name: "Bachelor of Information Technology",
       },
     ],
-    lastUpdated: "2025-07-01",
   },
   {
-    name: "Find Agent",
-    slug: "find-agent",
-    title: "Find an Agent",
+    name: "Future Students",
+    slug: "future-students",
+    title: "Future Students",
     description:
-      "Locate certified agents near you for expert guidance and support.",
+      "Essential resources and information for prospective students planning to study with us.",
     seo: {
-      title: "Find an Agent — MySite",
+      title: "Future Students — QIHE",
       description:
-        "Browse our list of verified agents to get personalized assistance.",
+        "Learn about application processes, scholarships, and life at QIHE as a future student.",
     },
-    lastUpdated: "2025-08-01",
+  },
+  {
+    name: "QIHE Students",
+    slug: "qihe-students",
+    title: "Current Students",
+    description:
+      "Access services, support, and campus resources for current QIHE students.",
+    seo: {
+      title: "QIHE Students — QIHE",
+      description:
+        "All the tools and support you need to thrive as a QIHE student.",
+    },
+  },
+  {
+    name: "Discover QIHE",
+    slug: "discover-qihe",
+    title: "Discover QIHE",
+    description:
+      "Explore our story, mission, campus life, and why QIHE is the right choice for you.",
+    seo: {
+      title: "Discover QIHE — QIHE",
+      description:
+        "Get to know QIHE, our values, campus, and what makes us unique.",
+    },
   },
 ];
 

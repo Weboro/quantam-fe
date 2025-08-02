@@ -17,7 +17,7 @@ const KeyDatesSection: React.FC<IKeyDatesSection> = ({ showAll = false }) => (
         <Heading level={3}>Key Dates</Heading>
 
         {!showAll && (
-          <Link href="/all-key-dates">
+          <Link href="/key-dates">
             <Button variant="secondary">All Key Dates </Button>
           </Link>
         )}
