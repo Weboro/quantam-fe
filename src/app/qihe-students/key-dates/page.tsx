@@ -1,5 +1,5 @@
 import Breadcrumbs from "@/components/global/Breadcrumbs";
-import AgentFilterSection from "@/components/sections/course/AgentFilterSection";
+import KeyDatesSection from "@/components/sections/KeyDatesSection";
 import React from "react";
 
 const page = () => {
@@ -7,7 +7,8 @@ const page = () => {
     <>
       <Breadcrumbs />
 
-      <AgentFilterSection />
+      <div className="mt-6"></div>
+      <KeyDatesSection showAll={true} />
     </>
   );
 };

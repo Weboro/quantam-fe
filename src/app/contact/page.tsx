@@ -24,11 +24,11 @@ const ContactPage = () => {
           {contact.map((item, i) => (
             <div
               key={i}
-              className="border border-muted/50 shadow rounded-xl p-3"
+              className="border border-muted/50 shadow rounded-xl p-3 group/card"
             >
-              <p className="w-14 aspect-square bg-brand-primary/10 rounded-full grid place-items-center">
+              <p className="w-16 aspect-square bg-brand-primary/10 group-hover/card:bg-brand-blue-3/25 transition-all rounded-full grid place-items-center mb-3">
                 <i
-                  className={`${item.icon} flex text-3xl text-brand-primary`}
+                  className={`${item.icon} flex text-3xl group-hover/card:scale-105 transition-all text-brand-primary`}
                 />
               </p>
 

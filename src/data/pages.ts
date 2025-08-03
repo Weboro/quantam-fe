@@ -1,3 +1,5 @@
+import { siteLinks } from "@/extra/siteLinks";
+
 interface Ipage {
   name: string;
   slug: string;
@@ -8,6 +10,7 @@ interface Ipage {
 }
 
 interface ISubpage {
+  icon?: string;
   name: string;
   slug: string;
 }
@@ -49,7 +52,7 @@ const pages: Ipage[] = [
   },
   {
     name: "Future Students",
-    slug: "future-students",
+    slug: siteLinks.futureStudents,
     title: "Future Students",
     description:
       "Essential resources and information for prospective students planning to study with us.",
@@ -58,11 +61,44 @@ const pages: Ipage[] = [
       description:
         "Learn about application processes, scholarships, and life at QIHE as a future student.",
     },
+    subPages: [
+      {
+        name: "Why Choose Us",
+        slug: "why-choose-us",
+        icon: "fi fi-rr-choose",
+      },
+      {
+        name: "Admissions",
+        slug: "admissions",
+        icon: "fi fi-rr-id-card-clip-alt",
+      },
+      {
+        name: "Admission Requirements",
+        slug: "admission-requirements",
+        icon: "fi fi-rr-document-signed",
+      },
+      {
+        name: "Find Agent",
+        slug: "find-agent",
+        icon: "fi fi-rr-member-search",
+      },
+
+      {
+        name: "Orientation and Pre-Arrival Guide",
+        slug: "orientation-and-pre-arrival-guide",
+        icon: "fi fi-rr-info-guide",
+      },
+      {
+        name: "Policies and Procedures",
+        slug: "policies-and-procedures",
+        icon: "fi fi-rr-workflow-alt",
+      },
+    ],
   },
   {
     name: "QIHE Students",
     slug: "qihe-students",
-    title: "Current Students",
+    title: "QIHE Students",
     description:
       "Access services, support, and campus resources for current QIHE students.",
     seo: {
@@ -70,6 +106,35 @@ const pages: Ipage[] = [
       description:
         "All the tools and support you need to thrive as a QIHE student.",
     },
+    subPages: [
+      {
+        slug: "student-platform",
+        name: "Student Platform",
+        icon: "fi fi-rr-student-alt",
+      },
+      {
+        slug: "library",
+        name: "Library",
+        icon: "fi fi-rr-diary-bookmark-down",
+      },
+      {
+        slug: "key-dates",
+        name: "Key Dates",
+        icon: "fi fi-rr-calendar-star",
+      },
+
+      {
+        slug: "forms",
+        name: "Forms",
+        icon: "fi fi-rr-form",
+      },
+
+      {
+        slug: "fees-and-payment",
+        name: "Fees and Payment",
+        icon: "fi fi-rr-fee",
+      },
+    ],
   },
   {
     name: "Discover QIHE",
@@ -82,6 +147,43 @@ const pages: Ipage[] = [
       description:
         "Get to know QIHE, our values, campus, and what makes us unique.",
     },
+    subPages: [
+      {
+        slug: "about-qihe",
+        name: "About QIHE",
+        icon: "fi fi-rr-school",
+      },
+      {
+        slug: "mission-and-vision",
+        name: "Mission and Vision",
+        icon: "fi fi-rr-flag",
+      },
+      {
+        slug: "our-core-values",
+        name: "Our Core Values",
+        icon: "fi fi-rr-gem",
+      },
+      {
+        slug: "our-core-team",
+        name: "Our Core Team",
+        icon: "fi fi-rr-lead-management",
+      },
+      {
+        slug: "academic-team",
+        name: "Academic Team",
+        icon: "fi fi-rr-hr-person",
+      },
+      {
+        slug: "support-team",
+        name: "Support Team",
+        icon: "fi fi-rr-heart-partner-handshake",
+      },
+      {
+        slug: "sutdent-association",
+        name: "Student Association",
+        icon: "fi fi-rr-employees-woman-man",
+      },
+    ],
   },
 ];
 

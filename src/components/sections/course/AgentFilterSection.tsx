@@ -14,7 +14,7 @@ const AgentFilterSection = () => {
   return (
     <>
       <ContainerLayout>
-        <section className="mt-2 grid lg:grid-cols-2 gap-4 mb-8">
+        <section className="grid lg:grid-cols-2 gap-4 mb-8">
           <div className="">
             <Heading level={2}>Find Agent</Heading>
             <p className="text-muted">

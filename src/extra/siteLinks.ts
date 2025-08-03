@@ -1,9 +1,7 @@
 const underConstruction = "/under-construction";
 
 export const siteLinks = {
-  admission: "/future-students/admissions",
   apply: "/apply",
-  findAgent: "/find-agent",
   prospectus: underConstruction,
   onlineApplication: underConstruction,
   studentSupport: underConstruction,
@@ -17,4 +15,7 @@ export const siteLinks = {
   keyDates: "/key-dates",
   news: "/news",
   contact: "/contact",
+  futureStudents: "future-students",
+  qiheStudents: "qihe-students",
+  discoverQihe: "discover-qihe",
 };

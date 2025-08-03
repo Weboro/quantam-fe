@@ -10,7 +10,7 @@ export interface IContact {
 export const contact: IContact[] = [
   {
     title: "Call Us",
-    icon: "fi fi-br-phone-flip scale-x-[-1]",
+    icon: "fi fi-br-phone-flip",
     phone: SITE_PHONE,
   },
   {

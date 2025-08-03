@@ -1,134 +1,48 @@
 import Breadcrumbs from "@/components/global/Breadcrumbs";
 import ContainerLayout from "@/components/layouts/ContainerLayout";
+import NewsLetterSection from "@/components/sections/NewsLetterSection";
 import Heading from "@/components/ui/Heading";
+import pages from "@/data/pages";
 import { siteLinks } from "@/extra/siteLinks";
 import Link from "next/link";
 import React from "react";
 
 const page = () => {
+  const items = pages.find((page) => page.slug === siteLinks.qiheStudents);
+
   return (
     <>
       <Breadcrumbs />
 
-      <ContainerLayout className="mt-4">
-        <Heading className="text-brand-primary-black mb-2" level={1}>
-          QIHE Information
+      <ContainerLayout>
+        <Heading className="text-gray-800 mt-6 mb-2" level={1}>
+          QIHE Students
         </Heading>
+
+        <section className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 mt-8">
+          {items?.subPages?.map((item) => (
+            <div
+              key={item.slug}
+              className="border border-muted/50 shadow rounded-xl p-3 group/card"
+            >
+              <Link href={`${siteLinks.qiheStudents}/${item.slug}`}>
+                <p className="w-16 aspect-square bg-brand-primary/10 group-hover/card:bg-brand-blue-3/25 transition-all rounded-full grid place-items-center mb-3">
+                  <i
+                    className={`${item.icon} flex text-3xl group-hover/card:scale-105 transition-all text-brand-primary`}
+                  />
+                </p>
+                <Heading level={4} className="">
+                  {item.name}
+                </Heading>
+              </Link>
+            </div>
+          ))}
+        </section>
       </ContainerLayout>
 
-      <hr className="my-12 border-muted/50" />
-
-      <ContainerLayout className="mt-4">
-        <Heading className="text-brand-primary-black mb-2" level={2}>
-          Fees and Payment
-        </Heading>
-        <p>
-          Stay informed about your tuition fees, payment deadlines, and
-          available payment options. For assistance, contact our Accounts
-          Officer or visit the{" "}
-          <Link
-            href={siteLinks.feesandPayments}
-            className="text-brand-primary underline hover:text-brand-blue-4 transition-all"
-          >
-            Fees and Payments
-          </Link>{" "}
-          section on the Student Platform.
-        </p>
-
-        <p>
-          For more information on fees and refunds, please refer to our{" "}
-          <Link
-            href={siteLinks.feeRefundPolicy}
-            className="text-brand-primary underline hover:text-brand-blue-4 transition-all"
-          >
-            Fee Refund Policy
-          </Link>
-          .
-        </p>
-      </ContainerLayout>
-
-      <hr className="my-12 border-muted/50" />
-
-      <ContainerLayout className="text-muted">
-        <Heading className="text-brand-primary-black mb-2" level={2}>
-          Library
-        </Heading>
-        <p>
-          Access a wide range of academic resources, including textbooks,
-          journals, and e-resources, through our on-campus library and online
-          portal. The library staff is here to support your learning needs.
-        </p>
-        <p className="mt-2">
-          <Link
-            href={siteLinks.eLibrary}
-            className="text-brand-primary underline hover:text-brand-blue-4 transition-all"
-          >
-            Access the E-Library
-          </Link>
-        </p>
-        <p>
-          For more details, see our{" "}
-          <Link
-            href={siteLinks.libraryFacilitiesPolicy}
-            className="text-brand-primary underline hover:text-brand-blue-4 transition-all"
-          >
-            ICT Services and Library Facilities Policy
-          </Link>
-          .
-        </p>
-      </ContainerLayout>
-
-      <hr className="my-12 border-muted/50" />
-
-      <ContainerLayout className="text-muted">
-        <Heading className="text-brand-primary-black mb-2" level={2}>
-          Important Dates
-        </Heading>
-        <p>
-          Keep track of key academic dates, including semester start and end
-          dates, census dates, and exam periods.
-        </p>
-        <p className="mt-2">
-          <Link
-            href="/key-dates"
-            className="text-brand-primary underline hover:text-brand-blue-4 transition-all"
-          >
-            Visit Key Dates page
-          </Link>
-        </p>
-      </ContainerLayout>
-
-      <hr className="my-12 border-muted/50" />
-
-      <ContainerLayout className="text-muted">
-        <Heading className="text-brand-primary-black mb-2" level={2}>
-          Student Platform
-        </Heading>
-        <p>
-          The QIHE Student Platform is your hub for managing your studies.
-          Access course materials, submit assignments, view grades, and stay
-          updated with important announcements.
-        </p>
-
-        <p className="mt-2">
-          <Link
-            href={siteLinks.studentPlatformLogin}
-            className="text-brand-primary underline hover:text-brand-blue-4 transition-all"
-          >
-            Login to the Student Platform
-          </Link>
-        </p>
-      </ContainerLayout>
-
-      <hr className="my-12 border-muted/50" />
-
-      <ContainerLayout className="text-muted">
-        <Heading className="text-brand-primary-black mb-2" level={2}>
-          Forms
-        </Heading>
-        <p>Access important student forms directly below:</p>
-        <ul className="list-disc pl-6 space-y-1 mt-2">TODO: List Forms</ul>
-      </ContainerLayout>
+      <div className="my-40">
+        <NewsLetterSection />
+      </div>
     </>
   );
 };
