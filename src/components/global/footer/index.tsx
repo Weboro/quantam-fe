@@ -4,10 +4,25 @@ import pages from "@/data/pages";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import FooterBottom from "./FooterBottom";
+import FooterLinksSection from "./FooterLinksSection";
+
+const findSection = (slug: string) => {
+  return pages.find((el) => el.slug === slug);
+};
 
 const Footer = () => {
-  const pageData = pages.filter((item) => item.slug !== "programs");
-  const courseData = pages.find((item) => item.slug === "programs");
+  const programData = findSection(siteLinks.programs);
+  const futureStudents = findSection(siteLinks.futureStudents);
+  const discoverQihe = findSection(siteLinks.discoverQihe);
+  const qiheStudents = findSection(siteLinks.qiheStudents);
+
+  const footerSections = [
+    { title: "Programs", data: programData },
+    { title: "Future Students", data: futureStudents },
+    { title: "QIHE Students", data: qiheStudents },
+    { title: "Discover QIHE", data: discoverQihe },
+  ];
 
   return (
     <footer className="mt-24">
@@ -39,109 +54,34 @@ const Footer = () => {
           size="base"
           className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4"
         >
-          <div className="mb-8 lg:mb-0">
-            <h4 className="text-xl md:text-3xl font-semibold font-primary">
-              Information
-            </h4>
+          <FooterLinksSection
+            title={"Information"}
+            baseSlug={""}
+            pages={[
+              ...pages,
+              {
+                title: "Contact",
+                name: "Contact QHIE",
+                slug: siteLinks.contact,
+              },
+            ]}
+          />
 
-            {pageData.map((page) => (
-              <Link
-                className="block mt-1.5 hover:text-brand-primary transition-all hover:underline"
-                href={`/${page.slug}`}
-                key={page.slug}
-              >
-                {page.name}
-              </Link>
-            ))}
-          </div>
-
-          <div className="mb-8 lg:mb-0">
-            <h4 className="text-xl md:text-3xl font-semibold font-primary">
-              Programs
-            </h4>
-
-            {courseData?.subPages
-              ?.slice(0, courseData?.subPages.length / 2)
-              ?.map((page) => (
-                <Link
-                  className="block mt-1.5 hover:text-brand-primary transition-all hover:underline"
-                  href={`/${courseData.slug}/${page.slug}`}
-                  key={page.slug}
-                >
-                  {page.name}
-                </Link>
-              ))}
-          </div>
-
-          <div className="mb-8 lg:mb-0">
-            <h4 className="text-xl md:text-3xl font-semibold font-primary">
-              Programs
-            </h4>
-
-            {courseData?.subPages
-              ?.slice(
-                courseData?.subPages.length / 2,
-                courseData?.subPages.length
+          {footerSections.map(
+            ({ title, data }) =>
+              data && (
+                <FooterLinksSection
+                  key={title}
+                  title={title}
+                  baseSlug={data.slug}
+                  pages={data.subPages}
+                />
               )
-              ?.map((page) => (
-                <Link
-                  className="block mt-1.5 hover:text-brand-primary transition-all hover:underline"
-                  href={`/${courseData.slug}/${page.slug}`}
-                  key={page.slug}
-                >
-                  {page.name}
-                </Link>
-              ))}
-          </div>
-
-          <div className="mb-8 lg:mb-0">
-            <h4 className="text-xl md:text-3xl font-semibold font-primary">
-              Links
-            </h4>
-
-            <Link
-              className="block mt-1.5 hover:text-brand-primary transition-all hover:underline"
-              href={siteLinks.contact}
-            >
-              Contact
-            </Link>
-          </div>
+          )}
         </ContainerLayout>
       </div>
 
-      <div className="bg-brand-primary text-background">
-        <ContainerLayout className="pt-12 pb-6">
-          <div className="flex items-center justify-center gap-4 mb-4">
-            <Image
-              src={"/flag-a.png"}
-              alt="footer flag image"
-              className="w-22"
-              width={250}
-              height={250}
-            />
-            <Image
-              src={"/flag-b.png"}
-              alt="footer flag image"
-              className="w-22"
-              width={250}
-              height={250}
-            />
-          </div>
-          <p className="md:w-2/4 mx-auto text-center leading-4.5 text-sm text-neutral-300">
-            Quantam Institute of Higher Education acknowledges Aboriginal and
-            Torres Strait Islander people as the Traditional Custodians of the
-            land and acknowledges and pays respect to their elders, past and
-            present
-          </p>
-
-          <hr className="border-brand-blue-4 my-4" />
-
-          <p className="w-fit mx-auto text-center text-sm text-neutral-300">
-            Copyright &copy; {new Date().getFullYear()} Mpika Holdings Pty Ltd
-            as Quantam Institute of Higher Education.
-          </p>
-        </ContainerLayout>
-      </div>
+      <FooterBottom />
     </footer>
   );
 };

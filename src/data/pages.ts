@@ -4,8 +4,8 @@ interface Ipage {
   name: string;
   slug: string;
   title: string;
-  description: string;
-  seo: ISeo;
+  description?: string;
+  seo?: ISeo;
   subPages?: ISubpage[];
 }
 
@@ -23,7 +23,7 @@ interface ISeo {
 const pages: Ipage[] = [
   {
     name: "Programs",
-    slug: "programs",
+    slug: siteLinks.programs,
     title: "Our Programs",
     description:
       "Browse through the range of Programs we offer for different skill levels.",
@@ -34,19 +34,19 @@ const pages: Ipage[] = [
     subPages: [
       {
         slug: "bachelor-business-accounting",
-        name: "Bachelor of Business – Accounting",
+        name: "Accounting",
       },
       {
         slug: "bachelor-business-information-systems",
-        name: "Bachelor of Business – Information Systems",
+        name: "Information Systems",
       },
       {
         slug: "bachelor-business-hospitality",
-        name: "Bachelor of Business – Hospitality",
+        name: "Hospitality",
       },
       {
         slug: "bachelor-information-technology",
-        name: "Bachelor of Information Technology",
+        name: "Information Technology",
       },
     ],
   },

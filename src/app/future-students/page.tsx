@@ -1,3 +1,4 @@
+import IconCard from "@/components/cards/IconCard";
 import Breadcrumbs from "@/components/global/Breadcrumbs";
 import ContainerLayout from "@/components/layouts/ContainerLayout";
 import FaqSection from "@/components/sections/FaqSection";
@@ -22,21 +23,16 @@ const page = () => {
 
         <section className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 mt-8">
           {items?.subPages?.map((item) => (
-            <div
+            <Link
+              href={`${siteLinks.futureStudents}/${item.slug}`}
               key={item.slug}
-              className="border border-muted/50 shadow rounded-xl p-3 group/card"
             >
-              <Link href={`${siteLinks.futureStudents}/${item.slug}`}>
-                <p className="w-16 aspect-square bg-brand-primary/10 group-hover/card:bg-brand-blue-3/25 transition-all rounded-full grid place-items-center mb-3">
-                  <i
-                    className={`${item.icon} flex text-3xl group-hover/card:scale-105 transition-all text-brand-primary`}
-                  />
-                </p>
+              <IconCard icon={item.icon}>
                 <Heading level={4} className="">
                   {item.name}
                 </Heading>
-              </Link>
-            </div>
+              </IconCard>
+            </Link>
           ))}
         </section>
       </ContainerLayout>

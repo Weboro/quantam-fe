@@ -12,7 +12,7 @@ const NavDesktop = () => {
           <React.Fragment key={i}>
             {page.subPages ? (
               <div className="group/nav">
-                <p className="flex items-center gap-1 cursor-pointer">
+                <p className="flex items-center text-center leading-tight gap-1 cursor-pointer text-sm xl:text-base">
                   <span className="group-hover/nav:underline group-hover/nav:text-brand-primary transition-all">
                     <Link href={`/${page.slug}`}>{page.title}</Link>
                   </span>
@@ -22,7 +22,7 @@ const NavDesktop = () => {
 
                 <div className="hidden group-hover/nav:block group-hover/nav:absolute left-1/2 -translate-x-1/2 right-0 w-full ">
                   <div className="bg-surface-1 shadow px-2 pt-6 pb-3 mt-6">
-                    <ContainerLayout>
+                    <ContainerLayout size="base">
                       <div className="mt-2 pb-6 space-y-1">
                         <h3 className="text-3xl font-bold text-brand-primary mb-3">
                           <Link href={`/${page.slug}`}>{page.title}</Link>
@@ -60,7 +60,7 @@ const NavDesktop = () => {
       <div className="hidden lg:flex items-center gap-2">
         <Link href={"/contact"}>
           <Button
-            className="font-medium flex-row-reverse"
+            className="font-medium flex-row-reverse text-sm"
             variant="secondary"
             icon="fi fi-rr-phone-flip scale-x-[-1]"
           >
@@ -69,7 +69,7 @@ const NavDesktop = () => {
         </Link>
 
         <Link href={"/apply"}>
-          <Button className="font-medium">Get Started</Button>
+          <Button className="font-medium text-sm">Get Started</Button>
         </Link>
       </div>
     </>

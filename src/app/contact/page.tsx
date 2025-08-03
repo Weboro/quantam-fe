@@ -1,3 +1,4 @@
+import IconCard from "@/components/cards/IconCard";
 import Breadcrumbs from "@/components/global/Breadcrumbs";
 import ContainerLayout from "@/components/layouts/ContainerLayout";
 import FaqSection from "@/components/sections/FaqSection";
@@ -22,17 +23,8 @@ const ContactPage = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 mt-8">
           {contact.map((item, i) => (
-            <div
-              key={i}
-              className="border border-muted/50 shadow rounded-xl p-3 group/card"
-            >
-              <p className="w-16 aspect-square bg-brand-primary/10 group-hover/card:bg-brand-blue-3/25 transition-all rounded-full grid place-items-center mb-3">
-                <i
-                  className={`${item.icon} flex text-3xl group-hover/card:scale-105 transition-all text-brand-primary`}
-                />
-              </p>
-
-              <Heading level={3} className="mt-3 -mb-0.5">
+            <IconCard key={i} icon={item.icon}>
+              <Heading level={4} className="">
                 {item.title}
               </Heading>
 
@@ -65,7 +57,7 @@ const ContactPage = () => {
                   {item.url}
                 </Link>
               )}
-            </div>
+            </IconCard>
           ))}
         </div>
       </ContainerLayout>
