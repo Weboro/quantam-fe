@@ -8,7 +8,7 @@ const Breadcrumbs = () => {
   const segments = pathname.split("/").filter(Boolean);
 
   return (
-    <ContainerLayout className="mt-4 flex items-center space-x-1 text-neutral-600 text-sm">
+    <ContainerLayout className="mt-4 flex flex-wrap items-center space-x-1 text-neutral-600 text-sm">
       <Link
         href="/"
         className="hover:underline hover:text-brand-primary transition-all"

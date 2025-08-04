@@ -34,19 +34,19 @@ const pages: Ipage[] = [
     subPages: [
       {
         slug: "bachelor-business-accounting",
-        name: "Accounting",
+        name: "Bachelors of Business - Accounting",
       },
       {
         slug: "bachelor-business-information-systems",
-        name: "Information Systems",
+        name: "Bachelors of Business - Information Systems",
       },
       {
         slug: "bachelor-business-hospitality",
-        name: "Hospitality",
+        name: "Bachelors of Business - Hospitality",
       },
       {
         slug: "bachelor-information-technology",
-        name: "Information Technology",
+        name: "Bachelors of Information Technology",
       },
     ],
   },

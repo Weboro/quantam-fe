@@ -2,9 +2,10 @@ import ContainerLayout from "@/components/layouts/ContainerLayout";
 import Button from "@/components/ui/Button";
 import Heading from "../ui/Heading";
 import Link from "next/link";
+import { ReactNode } from "react";
 
 interface HeroSectionProps {
-  title: string;
+  title: string | ReactNode;
   subtitle?: string;
   description: string;
   buttonText?: string;
@@ -29,7 +30,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
 
   return (
     <div
-      className="relative w-full h-[75vh] bg-cover bg-center bg-no-repeat grid place-items-center"
+      className="relative w-full h-[50vh] md:h-[70vh] bg-cover bg-center bg-no-repeat grid place-items-center"
       style={{ backgroundImage: `url('${imageUrl}')` }}
     >
       <div className="absolute inset-0 bg-gradient-to-r from-[#002B5C] via-[#002B5C]/50 to-transparent"></div>
@@ -37,9 +38,13 @@ const HeroSection: React.FC<HeroSectionProps> = ({
       <ContainerLayout
         className={`relative z-10 h-full flex flex-col justify-center ${alignClass}`}
       >
-        <Heading level={1} className="text-background lg:max-w-3xl mb-4">
-          {title}
-        </Heading>
+        {typeof title === "string" ? (
+          <Heading level={1} className="text-background lg:max-w-3xl mb-4">
+            {title}
+          </Heading>
+        ) : (
+          <>{title}</>
+        )}
 
         {subtitle && (
           <Heading

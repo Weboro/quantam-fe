@@ -7,12 +7,12 @@ import React from "react";
 const NavDesktop = () => {
   return (
     <>
-      <nav className="hidden md:flex items-center gap-5 font-[500]">
+      <nav className="hidden md:flex items-center gap-2 lg:gap-4 font-[500]">
         {pages.map((page, i) => (
           <React.Fragment key={i}>
             {page.subPages ? (
               <div className="group/nav">
-                <p className="flex items-center text-center leading-tight gap-1 cursor-pointer text-sm xl:text-base">
+                <p className="flex items-center text-center leading-tight gap-0.5 cursor-pointer text-sm xl:text-base">
                   <span className="group-hover/nav:underline group-hover/nav:text-brand-primary transition-all">
                     <Link href={`/${page.slug}`}>{page.title}</Link>
                   </span>
@@ -21,23 +21,25 @@ const NavDesktop = () => {
                 </p>
 
                 <div className="hidden group-hover/nav:block group-hover/nav:absolute left-1/2 -translate-x-1/2 right-0 w-full ">
-                  <div className="bg-surface-1 shadow px-2 pt-6 pb-3 mt-6">
-                    <ContainerLayout size="base">
-                      <div className="mt-2 pb-6 space-y-1">
-                        <h3 className="text-3xl font-bold text-brand-primary mb-3">
-                          <Link href={`/${page.slug}`}>{page.title}</Link>
-                        </h3>
+                  <div className="bg-background shadow px-2 pt-6 pb-3 mt-6">
+                    <ContainerLayout>
+                      <div className="grid grid-cols-2 gap-4 lg:grid-cols-3 ">
+                        <div className="lg:col-span-2">
+                          <div className="lg:grid lg:grid-cols-2 gap-1">
+                            {page.subPages.map((subPage) => (
+                              <Link
+                                href={`/${page.slug}/${subPage.slug}`}
+                                key={subPage.slug}
+                                className="block font-medium hover:underline py-1"
+                              >
+                                {subPage.name}
+                              </Link>
+                            ))}
+                          </div>
+                        </div>
 
-                        <div className="xl:grid xl:grid-cols-2 gap-3">
-                          {page.subPages.map((subPage) => (
-                            <Link
-                              href={`/${page.slug}/${subPage.slug}`}
-                              key={subPage.slug}
-                              className="block mt-3 xl:mt-0 font-semibold text-gray-700 hover:text-brand-blue-3 transition-all"
-                            >
-                              {subPage.name}
-                            </Link>
-                          ))}
+                        <div className="w-full aspect-auto lg:aspect-square xl:aspect-[2/1.25] bg-brand-primary/25">
+                          TBD: BENTO GRID
                         </div>
                       </div>
                     </ContainerLayout>
@@ -57,7 +59,7 @@ const NavDesktop = () => {
         ))}
       </nav>
 
-      <div className="hidden lg:flex items-center gap-2">
+      <div className="hidden xl:flex items-center gap-2">
         <Link href={"/contact"}>
           <Button
             className="font-medium flex-row-reverse text-sm"

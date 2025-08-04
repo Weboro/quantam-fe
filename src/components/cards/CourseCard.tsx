@@ -14,22 +14,18 @@ const CourseCard: React.FC<CourseCardProps> = ({
   title,
   description,
   link,
-}) => {
-  return (
-    <div className="min-w-[250px] max-w-[320px] w-auto bg-background rounded-xl overflow-hidden flex-shrink-0 border-2 p-4  border-surface-2  ">
-      <div className="h-[200px] w-full relative  rounded-xl overflow-hidden mb-4">
-        <Image
-          width={250}
-          height={250}
-          src={image}
-          alt={title}
-          className="w-full h-full object-cover"
-        />
-      </div>
-      <div>
-        <Heading level={4} className="mb-2">
-          {title}
-        </Heading>
+}) => (
+  <div className="min-w-[250px] max-w-[320px] flex-shrink-0 w-auto overflow-hidden ournded rounded-xl p-3 border border-muted/50 flex flex-col gap-2">
+    <Image
+      width={250}
+      height={250}
+      src={image}
+      alt={title}
+      className="w-full aspect-[4/3] object-cover rounded-xl"
+    />
+    <div className="flex-1 flex flex-col justify-between">
+      <h3 className="text-2xl font-semibold font-primary">{title}</h3>
+      <div className="h-fit">
         <p className="text-muted mb-4 line-clamp-3 leading-relaxed">
           {description}
         </p>
@@ -45,7 +41,7 @@ const CourseCard: React.FC<CourseCardProps> = ({
         </Link>
       </div>
     </div>
-  );
-};
+  </div>
+);
 
 export default CourseCard;

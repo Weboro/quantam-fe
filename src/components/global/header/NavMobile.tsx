@@ -28,7 +28,7 @@ const NavMobile = () => {
 
       {isOpen && (
         <section className="md:hidden fixed top-0 left-0 w-screen h-screen py-4 pb-16 bg-background z-50 overflow-y-auto">
-          <ContainerLayout size="base">
+          <ContainerLayout size="base" isCenter={true}>
             <div className="flex items-center gap-2 justify-between mb-4">
               <Link className="block h-10" href={"/"} onClick={closeNav}>
                 <Image
@@ -46,7 +46,7 @@ const NavMobile = () => {
             <hr className="opacity-50 mb-6" />
           </ContainerLayout>
 
-          <ContainerLayout isCenter={false}>
+          <ContainerLayout size="base" isCenter={true}>
             <nav className="space-y-4">
               {pages.map((page, i) => (
                 <div className="text-lg font-medium" key={i}>

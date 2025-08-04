@@ -27,10 +27,7 @@ const Footer = () => {
   return (
     <footer className="mt-24">
       <div className="bg-powder-blue pt-16 pb-12 space-y-4">
-        <ContainerLayout
-          size="base"
-          className="grid md:grid-cols-2 items-center"
-        >
+        <ContainerLayout className="grid md:grid-cols-2 items-center">
           <Link className="h-24 lg:h-32 aspect-[7/3] mb-8 md:mb-0" href={"/"}>
             <Image
               src={"/logo.png"}
@@ -50,10 +47,7 @@ const Footer = () => {
 
         <br />
 
-        <ContainerLayout
-          size="base"
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4"
-        >
+        <ContainerLayout className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
           <FooterLinksSection
             title={"Information"}
             baseSlug={""}

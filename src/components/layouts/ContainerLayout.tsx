@@ -1,23 +1,27 @@
 import React, { type ReactNode } from "react";
 
 interface ContainerLayoutProps {
-  size?: "sm" | "base";
+  size?: "sm" | "md" | "base";
   isCenter?: boolean;
   className?: string;
   children: ReactNode;
 }
 
 const ContainerLayout: React.FC<ContainerLayoutProps> = ({
-  size = "sm",
+  size = "md",
   isCenter = true,
   children,
   className,
 }) => {
   return (
     <div
-      className={`${size === "sm" ? "container-sm" : "container"} ${
-        isCenter && "mx-auto"
-      } ${className} px-4`}
+      className={`${
+        size === "sm"
+          ? "container-sm"
+          : size === "md"
+          ? "container-md"
+          : "container"
+      } ${isCenter && "mx-auto"} ${className} px-4`}
     >
       {children}
     </div>

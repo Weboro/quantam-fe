@@ -6,10 +6,7 @@ import React from "react";
 const TopNav = () => {
   return (
     <div className="bg-brand-primary">
-      <ContainerLayout
-        size="base"
-        className="py-2 flex items-center gap-2 justify-between"
-      >
+      <ContainerLayout className="py-2 flex items-center gap-2 justify-between">
         <nav className="flex items-center gap-3 text-base">
           {socialLinks.map((link, i) => (
             <Link

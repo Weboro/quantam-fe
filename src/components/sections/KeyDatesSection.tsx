@@ -32,9 +32,9 @@ const KeyDatesSection: React.FC<IKeyDatesSection> = ({ showAll = false }) => (
       </div>
     </div>
 
-    <div className="grid grid-cols-1 gap-4 md:gap-6 lg:gap-8">
+    <div className="grid grid-cols-1 xl:grid-cols-2 gap-4 md:gap-6 lg:gap-8">
       {keyDates
-        .slice(0, showAll ? keyDates.length : 3)
+        .slice(0, showAll ? keyDates.length : 4)
         .map((item, index: number) => (
           <KeyDateCard key={index} {...item} />
         ))}
