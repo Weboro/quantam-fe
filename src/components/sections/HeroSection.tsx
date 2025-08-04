@@ -7,7 +7,7 @@ import { ReactNode } from "react";
 interface HeroSectionProps {
   title: string | ReactNode;
   subtitle?: string;
-  description: string;
+  description?: string;
   buttonText?: string;
   buttonLink?: string;
   imageUrl?: string;

@@ -68,15 +68,12 @@ const NavMobile = () => {
                       </button>
 
                       {openDropdown === i && (
-                        <div className="mt-3 pl-3 space-y-1 border-l-4 border-l-brand-primary">
-                          <h3 className="text-xl font-bold text-gray-900 mb-3">
-                            <Link href={`/${page.slug}`}>{page.title}</Link>
-                          </h3>
+                        <div className="mt-2 pl-2 border-l-4 border-l-brand-primary">
                           {page.subPages.map((subPage) => (
                             <Link
                               href={`/${page.slug}/${subPage.slug}`}
                               key={subPage.slug}
-                              className="block text-base font-semibold text-gray-700 hover:text-brand-blue-3 transition-colors"
+                              className="block text-base font-medium hover:underline py-1"
                               onClick={closeNav}
                             >
                               {subPage.name}
