@@ -2,7 +2,7 @@ export interface CourseCardProps {
   imageUrl: string;
   title: string;
   location: string;
-  studyLevel: string;
+  degreeType: string;
   duration: string;
   deliveryModes: string[];
   programCode: string;
@@ -17,7 +17,7 @@ export const courseCards: CourseCardProps[] = [
     title:
       "Quantum welcomes you with all with warm greetings and lorem insup floral.",
     location: "City Campus",
-    studyLevel: "Undergraduate",
+    degreeType: "Undergraduate",
     duration: "2 years",
     deliveryModes: ["Face-to-face (includes blended)", "Online"],
     programCode: "Program code 7459",
@@ -35,7 +35,7 @@ export interface CourseCardProps {
   imageUrl: string;
   title: string;
   location: string;
-  studyLevel: string;
+  degreeType: string;
   duration: string;
   deliveryModes: string[];
   programCode: string;

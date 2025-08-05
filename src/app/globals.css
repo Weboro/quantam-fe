@@ -2,11 +2,11 @@
 @import "tailwindcss";
 
 @theme {
-  --color-background: hsl(0 0% 95%);
+  --color-background: hsl(0 0% 98%);
   --color-text: hsl(222 40% 15%);
-  --color-surface: hsl(0 0% 95%);
-  --color-surface-1: hsl(0 0% 91%);
-  --color-surface-2: hsl(0 0% 86%);
+  --color-surface: hsl(0 0% 93%);
+  --color-surface-1: hsl(0 0% 87%);
+  --color-surface-2: hsl(0 0% 82%);
   /* --color-muted: hsl(222 8% 55%); */
   --color-muted: #424242;
   --color-error: hsl(0 70% 58%);

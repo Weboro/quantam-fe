@@ -15,7 +15,7 @@ type ICourseDetailsSection = Pick<
   | "duration"
   | "heroImage"
   | "location"
-  | "studyLevel"
+  | "degreeType"
   | "intakes"
   | "deliveryMode"
   | "CRICOSCourseCode"
@@ -28,18 +28,18 @@ const DetailedCourseCard: React.FC<ICourseDetailsSection> = ({
   heroImage,
   location,
   duration,
-  studyLevel,
+  degreeType,
   intakes,
   deliveryMode,
   CRICOSCourseCode,
 }) => {
   const infoFields = [
     { label: "Location", value: location },
-    { label: "Study Level", value: studyLevel },
     { label: "Duration", value: duration },
     { label: "Delivery Mode", value: deliveryMode },
     { label: "CRICOS Course Code", value: CRICOSCourseCode },
     { label: "Intakes", value: intakes },
+    { label: "Degree Type", value: degreeType },
   ];
 
   return (
@@ -59,7 +59,7 @@ const DetailedCourseCard: React.FC<ICourseDetailsSection> = ({
           Study {name} at QHIE
         </Heading>
 
-        <p className="text-muted text-base   line-clamp-3">{description}</p>
+        <p className="text-muted text-base line-clamp-3">{description}</p>
 
         <div className="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-3 gap-4 text-sm lg:px-4 my-5">
           {infoFields.map(({ label, value }) => (
@@ -68,7 +68,7 @@ const DetailedCourseCard: React.FC<ICourseDetailsSection> = ({
         </div>
 
         <div className="flex items-center gap-3">
-          <Link href={""}>
+          <Link href={`/${slugs.apply}`}>
             <Button
               className="flex-row-reverse "
               icon="fi fi-br-arrow-small-right"
@@ -78,7 +78,7 @@ const DetailedCourseCard: React.FC<ICourseDetailsSection> = ({
             </Button>
           </Link>
 
-          <Link href={`${slugs.programs}/${slug}`}>
+          <Link href={`/${slugs.programs}/${slug}`}>
             <Button
               className="flex-row-reverse"
               icon="fi fi-br-arrow-small-right"

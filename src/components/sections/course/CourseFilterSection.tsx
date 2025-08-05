@@ -1,15 +1,29 @@
 "use client";
 import DetailedCourseCard from "@/components/cards/DetailedCourseCard";
 import ContainerLayout from "@/components/layouts/ContainerLayout";
+import FilterPopover from "@/components/popovers/FilterPopover";
+import FilterSelect from "@/components/select/FilterSelect";
 import Button from "@/components/ui/Button";
 import Heading from "@/components/ui/Heading";
-import courses from "@/data/courses";
+import courses, { type ICourse } from "@/data/courses";
 import useSearchCourse from "@/hooks/useSearchCourse";
-import React from "react";
+import React, { useState } from "react";
 
 const CourseFilterSection = () => {
-  const { results, searchQuery, handleInputChange, handleSearch } =
-    useSearchCourse(courses);
+  const {
+    results,
+    searchQuery,
+    handleInputChange,
+    handleSearch,
+    clearFilter,
+    //
+    degreeType,
+    setDegreeType,
+    deliveryMode,
+    setDeliveryMode,
+    studentType,
+    setStudentType,
+  } = useSearchCourse(courses);
 
   return (
     <>
@@ -24,10 +38,10 @@ const CourseFilterSection = () => {
           </div>
 
           <div className="flex items-end">
-            <div className="flex flex-col sm:flex-row sm:items-center w-full gap-2 min-w-0">
+            <div className="flex flex-col sm:flex-row sm:items-center items-end w-full gap-2 min-w-0">
               <input
                 type="text"
-                className="flex-1 min-w-0 border-2 border-surface-2 rounded-lg bg-surface-1 px-2 py-1.5"
+                className="flex-1 min-w-0 border-2 border-surface-2 rounded-lg bg-surface w-full px-2 py-1.5"
                 placeholder="Search"
                 value={searchQuery}
                 onChange={handleInputChange}
@@ -36,17 +50,35 @@ const CourseFilterSection = () => {
                 }}
               />
 
-              <div className="flex gap-2">
-                <Button
-                  icon="fi fi-br-search"
-                  className="w-fit"
-                  onClick={handleSearch}
-                >
-                  Search
-                </Button>
+              <FilterPopover clearFilter={clearFilter}>
+                <FilterSelect
+                  value={degreeType ?? ""}
+                  onChange={(el) => setDegreeType(el as ICourse["degreeType"])}
+                  placeholder="Select Degree Type"
+                  options={[
+                    "Undergraduate",
+                    "Postgraduate",
+                    "Diploma",
+                    "Certificate",
+                  ]}
+                />
 
-                <Button icon="fi fi-br-filter" className="py-[11px]" />
-              </div>
+                <FilterSelect
+                  value={deliveryMode ?? ""}
+                  onChange={(el) =>
+                    setDeliveryMode(el as ICourse["deliveryMode"])
+                  }
+                  placeholder="Select Delivery Mode"
+                  options={["Face-to-Face", "Online", "Blended"]}
+                />
+
+                <FilterSelect
+                  value={studentType ?? ""}
+                  onChange={(el) => setStudentType(el as ICourse["level"])}
+                  placeholder="Select Student Level"
+                  options={["Beginner", "Intermediate", "Advanced"]}
+                />
+              </FilterPopover>
             </div>
           </div>
         </section>
@@ -62,7 +94,7 @@ const CourseFilterSection = () => {
                 name={course.name}
                 location={course.location}
                 duration={course.duration}
-                studyLevel={course.studyLevel}
+                degreeType={course.degreeType}
                 intakes={course.intakes}
                 deliveryMode={course.deliveryMode}
                 CRICOSCourseCode={course.CRICOSCourseCode}

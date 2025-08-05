@@ -36,7 +36,7 @@ const CoursePage: React.FC<ICoursePage> = async ({ params }) => {
           heroImage={course.heroImage}
           duration={course?.duration}
           location={course?.location}
-          studyLevel={course?.studyLevel}
+          degreeType={course?.degreeType}
           intakes={course?.intakes}
           deliveryMode={course?.deliveryMode}
           CRICOSCourseCode={course?.CRICOSCourseCode}

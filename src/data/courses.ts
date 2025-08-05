@@ -17,9 +17,9 @@ export interface ICourse {
   price?: number;
   url: string;
   location?: string;
-  studyLevel?: "Undergraduate" | "Postgraduate" | "Diploma" | "Certificate";
+  degreeType?: "Undergraduate" | "Postgraduate" | "Diploma" | "Certificate";
   intakes?: string[];
-  deliveryMode?: ("Face-to-face" | "Online" | "Blended")[];
+  deliveryMode?: "Face-to-face" | "Online" | "Blended";
   CRICOSCourseCode?: string;
   tabbedPaneData?: ITabbedPane[];
 }
@@ -45,9 +45,9 @@ const courses: ICourse[] = [
     publishedDate: "2025-08-01",
     url: "/courses/bachelor-business-accounting",
     location: "Parramatta",
-    studyLevel: "Undergraduate",
+    degreeType: "Postgraduate",
     intakes: ["March", "July", "November"],
-    deliveryMode: ["Face-to-face"],
+    deliveryMode: "Face-to-face",
     CRICOSCourseCode: "_TBA_",
     tabbedPaneData: [
       {
@@ -85,9 +85,9 @@ const courses: ICourse[] = [
     publishedDate: "2025-08-01",
     url: "/courses/bachelor-business-information-systems",
     location: "Parramatta",
-    studyLevel: "Undergraduate",
+    degreeType: "Undergraduate",
     intakes: ["March", "July", "November"],
-    deliveryMode: ["Face-to-face"],
+    deliveryMode: "Face-to-face",
     CRICOSCourseCode: "_TBA_",
     tabbedPaneData: [
       {
@@ -125,9 +125,9 @@ const courses: ICourse[] = [
     publishedDate: "2025-08-01",
     url: "/courses/bachelor-business-hospitality",
     location: "Parramatta",
-    studyLevel: "Undergraduate",
+    degreeType: "Undergraduate",
     intakes: ["March", "July", "November"],
-    deliveryMode: ["Face-to-face"],
+    deliveryMode: "Face-to-face",
     CRICOSCourseCode: "_TBA_",
     tabbedPaneData: [
       {
@@ -165,9 +165,9 @@ const courses: ICourse[] = [
     publishedDate: "2025-08-01",
     url: "/courses/bachelor-information-technology",
     location: "Parramatta",
-    studyLevel: "Undergraduate",
+    degreeType: "Undergraduate",
     intakes: ["March", "July", "November"],
-    deliveryMode: ["Face-to-face"],
+    deliveryMode: "Face-to-face",
     CRICOSCourseCode: "_TBA_",
     tabbedPaneData: [
       {
