@@ -55,12 +55,14 @@ const HeroSection: React.FC<HeroSectionProps> = ({
           </Heading>
         )}
 
-        <Heading
-          level={4}
-          className="text-neutral-200 font-normal hidden md:block lg:max-w-3xl"
-        >
-          {description}
-        </Heading>
+        {description && (
+          <Heading
+            level={4}
+            className="text-neutral-200 font-normal hidden md:block lg:max-w-3xl"
+          >
+            {description}
+          </Heading>
+        )}
 
         {buttonText && buttonLink && (
           <Link href={buttonLink} className="font-medium block mt-4 md:mt-8">

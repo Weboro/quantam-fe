@@ -6,7 +6,7 @@ import Button from "../ui/Button";
 import { AboutUsCardRef } from "../sliders/CourseSlider";
 import Heading from "../ui/Heading";
 import CourseSlider from "../sliders/CourseSlider";
-import { siteLinks } from "@/extra/siteLinks";
+import { slugs } from "@/extra/slugs";
 
 const CoursesSections = () => {
   const sliderRef = useRef<AboutUsCardRef>(null);
@@ -37,7 +37,7 @@ const CoursesSections = () => {
         </div>
 
         <div className="flex flex-col justify-between items-end">
-          <Link href={siteLinks.programs}>
+          <Link href={slugs.programs}>
             <Button variant="secondary" className="text-lg font-semibold">
               Learn More
             </Button>

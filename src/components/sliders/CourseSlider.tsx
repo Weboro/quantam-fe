@@ -2,6 +2,7 @@ import React, { useRef, forwardRef, useImperativeHandle } from "react";
 import CourseCard from "../cards/CourseCard";
 import courses from "@/data/courses";
 import ContainerLayout from "../layouts/ContainerLayout";
+import { slugs } from "@/extra/slugs";
 
 export interface AboutUsCardRef {
   scrollLeft: () => void;
@@ -40,7 +41,7 @@ const CourseSlider = forwardRef<AboutUsCardRef>((_, ref) => {
               image={course.heroImage}
               title={course.name}
               description={course.description}
-              link={`/courses/${course.slug}/`}
+              link={`/${slugs.programs}/${course.slug}/`}
             />
           ))}
         </div>

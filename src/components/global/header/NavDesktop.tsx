@@ -1,6 +1,7 @@
 import ContainerLayout from "@/components/layouts/ContainerLayout";
 import Button from "@/components/ui/Button";
 import pages from "@/data/pages";
+import { slugs } from "@/extra/slugs";
 import Link from "next/link";
 import React from "react";
 
@@ -60,7 +61,7 @@ const NavDesktop = () => {
       </nav>
 
       <div className="hidden xl:flex items-center gap-2">
-        <Link href={"/contact"}>
+        <Link href={`/${slugs.contact}`}>
           <Button
             className="font-medium flex-row-reverse text-sm"
             variant="secondary"
@@ -70,7 +71,7 @@ const NavDesktop = () => {
           </Button>
         </Link>
 
-        <Link href={"/apply"}>
+        <Link href={`/${slugs.getStarted}`}>
           <Button className="font-medium text-sm">Get Started</Button>
         </Link>
       </div>

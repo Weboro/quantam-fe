@@ -1,3 +1,5 @@
+import { slugs } from "@/extra/slugs";
+
 export interface ICourse {
   id: string;
   name: string;
@@ -30,7 +32,7 @@ const courses: ICourse[] = [
     id: "bachelor-business-accounting",
     major: "Bachelor of Business",
     name: "Accounting",
-    slug: "bachelor-business-accounting",
+    slug: slugs.bachelorBusinessAccounting,
     description:
       "The Accounting major equips students with the knowledge and skills to interpret, analyse, and report financial and non-financial information critical to effective decision-making.",
     richText:
@@ -70,7 +72,7 @@ const courses: ICourse[] = [
     id: "bachelor-business-information-systems",
     major: "Bachelor of Business",
     name: "Information Systems",
-    slug: "bachelor-business-information-systems",
+    slug: slugs.bachelorBusinessInformationSystems,
     description:
       "Bridges the gap between technology and business, enabling students to harness technology for strategic decision-making.",
     richText:
@@ -110,7 +112,7 @@ const courses: ICourse[] = [
     id: "bachelor-business-hospitality",
     major: "Bachelor of Business",
     name: "Hospitality",
-    slug: "bachelor-business-hospitality",
+    slug: slugs.bachelorBusinessHospitality,
     description:
       "Prepares students for leadership in the dynamic hospitality industry through hospitality management, event planning, and sustainability.",
     richText:
@@ -150,7 +152,7 @@ const courses: ICourse[] = [
     id: "bachelor-information-technology",
     major: "Bachelor of Business",
     name: "Bachelor of Information Technology",
-    slug: "bachelor-information-technology",
+    slug: slugs.bachelorInformationTechnology,
     description:
       "Equips students to thrive in the digital world with expertise in emerging tech, ethical IT practices, and business-focused problem-solving.",
     richText:

@@ -3,7 +3,7 @@ import ContainerLayout from "@/components/layouts/ContainerLayout";
 import FaqSection from "@/components/sections/FaqSection";
 import NewsLetterSection from "@/components/sections/NewsLetterSection";
 import Heading from "@/components/ui/Heading";
-import { siteLinks } from "@/extra/siteLinks";
+import { slugs } from "@/extra/slugs";
 import Link from "next/link";
 import React from "react";
 
@@ -23,7 +23,7 @@ const page = () => {
         </p>
         <p className="mt-2">
           <Link
-            href={siteLinks.eLibrary}
+            href={slugs.eLibrary}
             className="text-brand-primary underline hover:text-brand-blue-4 transition-all"
           >
             Access the E-Library
@@ -32,7 +32,7 @@ const page = () => {
         <p>
           For more details, see our{" "}
           <Link
-            href={siteLinks.libraryFacilitiesPolicy}
+            href={slugs.libraryFacilitiesPolicy}
             className="text-brand-primary underline hover:text-brand-blue-4 transition-all"
           >
             ICT Services and Library Facilities Policy

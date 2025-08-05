@@ -1,5 +1,5 @@
 import ContainerLayout from "@/components/layouts/ContainerLayout";
-import { siteLinks } from "@/extra/siteLinks";
+import { slugs } from "@/extra/slugs";
 import pages from "@/data/pages";
 import Image from "next/image";
 import Link from "next/link";
@@ -12,10 +12,10 @@ const findSection = (slug: string) => {
 };
 
 const Footer = () => {
-  const programData = findSection(siteLinks.programs);
-  const futureStudents = findSection(siteLinks.futureStudents);
-  const discoverQihe = findSection(siteLinks.discoverQihe);
-  const qiheStudents = findSection(siteLinks.qiheStudents);
+  const programData = findSection(slugs.programs);
+  const futureStudents = findSection(slugs.futureStudents);
+  const discoverQihe = findSection(slugs.discoverQihe);
+  const qiheStudents = findSection(slugs.qiheStudents);
 
   const footerSections = [
     { title: "Programs", data: programData },
@@ -56,7 +56,7 @@ const Footer = () => {
               {
                 title: "Contact",
                 name: "Contact QHIE",
-                slug: siteLinks.contact,
+                slug: slugs.contact,
               },
             ]}
           />

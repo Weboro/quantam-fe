@@ -3,7 +3,7 @@ import ContainerLayout from "@/components/layouts/ContainerLayout";
 import FaqSection from "@/components/sections/FaqSection";
 import NewsLetterSection from "@/components/sections/NewsLetterSection";
 import Heading from "@/components/ui/Heading";
-import { siteLinks } from "@/extra/siteLinks";
+import { slugs } from "@/extra/slugs";
 import Link from "next/link";
 import React from "react";
 
@@ -21,7 +21,7 @@ const page = () => {
           available payment options. For assistance, contact our Accounts
           Officer or visit the{" "}
           <Link
-            href={siteLinks.feesandPayments}
+            href={slugs.feesandPayments}
             className="text-brand-primary underline hover:text-brand-blue-4 transition-all"
           >
             Fees and Payments
@@ -32,7 +32,7 @@ const page = () => {
         <p>
           For more information on fees and refunds, please refer to our{" "}
           <Link
-            href={siteLinks.feeRefundPolicy}
+            href={slugs.feeRefundPolicy}
             className="text-brand-primary underline hover:text-brand-blue-4 transition-all"
           >
             Fee Refund Policy

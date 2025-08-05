@@ -2,7 +2,7 @@ import ContainerLayout from "@/components/layouts/ContainerLayout";
 import FaqSection from "@/components/sections/FaqSection";
 import NewsLetterSection from "@/components/sections/NewsLetterSection";
 import Heading from "@/components/ui/Heading";
-import { siteLinks } from "@/extra/siteLinks";
+import { slugs } from "@/extra/slugs";
 import Link from "next/link";
 import React from "react";
 
@@ -22,7 +22,7 @@ const page = () => {
             Check your eligibility through Quantum’s{" "}
             <Link
               className="text-brand-primary underline hover:text-brand-blue-4 transition-all"
-              href={`/${siteLinks.futureStudents}/admission-policy`}
+              href={`/${slugs.futureStudents}/admission-policy`}
             >
               Admission Requirements
             </Link>{" "}
@@ -39,7 +39,7 @@ const page = () => {
             encourage you to apply at the earliest. You can find the{" "}
             <Link
               className="text-brand-primary underline hover:text-brand-blue-4 transition-all"
-              href={siteLinks.onlineApplication}
+              href={slugs.onlineApplication}
             >
               Quantum’s Online Application Form
             </Link>{" "}
@@ -130,7 +130,7 @@ const page = () => {
             For more Information:{" "}
             <Link
               className="text-brand-primary underline hover:text-brand-blue-4 transition-all"
-              href={`/${siteLinks.futureStudents}/admission-policy`}
+              href={`/${slugs.futureStudents}/admission-policy`}
             >
               QIHE’s Admission Policy
             </Link>

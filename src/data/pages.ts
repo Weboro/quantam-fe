@@ -1,4 +1,4 @@
-import { siteLinks } from "@/extra/siteLinks";
+import { slugs } from "@/extra/slugs";
 
 interface Ipage {
   name: string;
@@ -23,7 +23,7 @@ interface ISeo {
 const pages: Ipage[] = [
   {
     name: "Programs",
-    slug: siteLinks.programs,
+    slug: slugs.programs,
     title: "Our Programs",
     description:
       "Browse through the range of Programs we offer for different skill levels.",
@@ -33,26 +33,26 @@ const pages: Ipage[] = [
     },
     subPages: [
       {
-        slug: "bachelor-business-accounting",
+        slug: slugs.bachelorBusinessAccounting,
         name: "Bachelors of Business - Accounting",
       },
       {
-        slug: "bachelor-business-information-systems",
+        slug: slugs.bachelorBusinessInformationSystems,
         name: "Bachelors of Business - Information Systems",
       },
       {
-        slug: "bachelor-business-hospitality",
+        slug: slugs.bachelorBusinessHospitality,
         name: "Bachelors of Business - Hospitality",
       },
       {
-        slug: "bachelor-information-technology",
+        slug: slugs.bachelorInformationTechnology,
         name: "Bachelors of Information Technology",
       },
     ],
   },
   {
     name: "Future Students",
-    slug: siteLinks.futureStudents,
+    slug: slugs.futureStudents,
     title: "Future Students",
     description:
       "Essential resources and information for prospective students planning to study with us.",
@@ -64,40 +64,40 @@ const pages: Ipage[] = [
     subPages: [
       {
         name: "Why Choose Us",
-        slug: "why-choose-us",
+        slug: slugs.whyChooseUs,
         icon: "fi fi-rr-choose",
       },
       {
         name: "Admissions",
-        slug: "admissions",
+        slug: slugs.admissions,
         icon: "fi fi-rr-id-card-clip-alt",
       },
       {
         name: "Admission Requirements",
-        slug: "admission-requirements",
+        slug: slugs.admissionRequirements,
         icon: "fi fi-rr-document-signed",
       },
       {
         name: "Find Agent",
-        slug: "find-agent",
+        slug: slugs.findAgent,
         icon: "fi fi-rr-member-search",
       },
 
       {
         name: "Orientation and Pre-Arrival Guide",
-        slug: "orientation-and-pre-arrival-guide",
+        slug: slugs.orientationAndPreArrivalGuide,
         icon: "fi fi-rr-info-guide",
       },
       {
         name: "Policies and Procedures",
-        slug: "policies-and-procedures",
+        slug: slugs.policiesAndProcedures,
         icon: "fi fi-rr-workflow-alt",
       },
     ],
   },
   {
     name: "QIHE Students",
-    slug: "qihe-students",
+    slug: slugs.qiheStudents,
     title: "QIHE Students",
     description:
       "Access services, support, and campus resources for current QIHE students.",
@@ -108,29 +108,29 @@ const pages: Ipage[] = [
     },
     subPages: [
       {
-        slug: "student-platform",
+        slug: slugs.studentPlatform,
         name: "Student Platform",
         icon: "fi fi-rr-student-alt",
       },
       {
-        slug: "library",
+        slug: slugs.library,
         name: "Library",
         icon: "fi fi-rr-diary-bookmark-down",
       },
       {
-        slug: "key-dates",
+        slug: slugs.keyDates,
         name: "Key Dates",
         icon: "fi fi-rr-calendar-star",
       },
 
       {
-        slug: "forms",
+        slug: slugs.forms,
         name: "Forms",
         icon: "fi fi-rr-form",
       },
 
       {
-        slug: "fees-and-payment",
+        slug: slugs.feesandPayments,
         name: "Fees and Payment",
         icon: "fi fi-rr-fee",
       },
@@ -138,7 +138,7 @@ const pages: Ipage[] = [
   },
   {
     name: "Discover QIHE",
-    slug: "discover-qihe",
+    slug: slugs.discoverQihe,
     title: "Discover QIHE",
     description:
       "Explore our story, mission, campus life, and why QIHE is the right choice for you.",
@@ -149,37 +149,42 @@ const pages: Ipage[] = [
     },
     subPages: [
       {
-        slug: "about-qihe",
+        slug: slugs.aboutQihe,
         name: "About QIHE",
         icon: "fi fi-rr-school",
       },
       {
-        slug: "mission-and-vision",
+        slug: slugs.missionAndVision,
         name: "Mission and Vision",
         icon: "fi fi-rr-flag",
       },
       {
-        slug: "our-core-values",
+        slug: slugs.ourCoreValues,
         name: "Our Core Values",
         icon: "fi fi-rr-gem",
       },
       {
-        slug: "our-core-team",
+        slug: slugs.ourCoreTeam,
         name: "Our Core Team",
         icon: "fi fi-rr-lead-management",
       },
       {
-        slug: "academic-team",
+        slug: slugs.academicTeam,
         name: "Academic Team",
         icon: "fi fi-rr-hr-person",
       },
       {
-        slug: "support-team",
+        slug: slugs.supportTeam,
         name: "Support Team",
         icon: "fi fi-rr-heart-partner-handshake",
       },
       {
-        slug: "sutdent-association",
+        slug: slugs.faqs,
+        name: "Frequently Asked Questions",
+        icon: "fi fi-rr-seal-question",
+      },
+      {
+        slug: slugs.studentAssociation,
         name: "Student Association",
         icon: "fi fi-rr-employees-woman-man",
       },

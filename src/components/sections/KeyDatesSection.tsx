@@ -5,7 +5,7 @@ import KeyDateCard from "@/components/cards/KeyDateCard";
 import Button from "../ui/Button";
 import Link from "next/link";
 import Heading from "../ui/Heading";
-import { siteLinks } from "@/extra/siteLinks";
+import { slugs } from "@/extra/slugs";
 
 interface IKeyDatesSection {
   showAll?: boolean;
@@ -18,7 +18,7 @@ const KeyDatesSection: React.FC<IKeyDatesSection> = ({ showAll = false }) => (
         <Heading level={3}>Key Dates</Heading>
 
         {!showAll && (
-          <Link href={siteLinks.keyDates}>
+          <Link href={slugs.keyDates}>
             <Button variant="secondary">All Key Dates </Button>
           </Link>
         )}

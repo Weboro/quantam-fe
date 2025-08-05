@@ -7,6 +7,7 @@ import NewsLetterSection from "@/components/sections/NewsLetterSection";
 import FaqSection from "@/components/sections/FaqSection";
 import Heading from "@/components/ui/Heading";
 import TypewriterEffect from "@/components/TypewriterEffect";
+import { slugs } from "@/extra/slugs";
 
 const HomePage = () => {
   return (
@@ -14,18 +15,17 @@ const HomePage = () => {
       <HeroSection
         title={
           <Heading level={1} className="text-background lg:max-w-3xl mb-4">
-            Empowering You to Thrive in a
+            Empowering You to Thrive
             <br />
+            in a{" "}
             <TypewriterEffect
               strings={["Dynamic", "Digital", "Global", "Evolving"]}
             />{" "}
             World!
           </Heading>
         }
-        subtitle=""
-        description=""
         buttonText="Get Started"
-        buttonLink="/get-started"
+        buttonLink={`${slugs.getStarted}`}
         imageUrl="/banner.jpg"
         textAlign="left"
       />

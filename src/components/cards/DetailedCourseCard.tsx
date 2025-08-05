@@ -5,7 +5,7 @@ import CourseInfoBlock from "./CourseInfoBlock";
 import { type ICourse } from "@/data/courses";
 import Link from "next/link";
 import Button from "../ui/Button";
-import { siteLinks } from "@/extra/siteLinks";
+import { slugs } from "@/extra/slugs";
 
 type ICourseDetailsSection = Pick<
   ICourse,
@@ -78,7 +78,7 @@ const DetailedCourseCard: React.FC<ICourseDetailsSection> = ({
             </Button>
           </Link>
 
-          <Link href={`${siteLinks.programs}/${slug}`}>
+          <Link href={`${slugs.programs}/${slug}`}>
             <Button
               className="flex-row-reverse"
               icon="fi fi-br-arrow-small-right"

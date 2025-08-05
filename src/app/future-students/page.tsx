@@ -5,12 +5,12 @@ import FaqSection from "@/components/sections/FaqSection";
 import NewsLetterSection from "@/components/sections/NewsLetterSection";
 import Heading from "@/components/ui/Heading";
 import pages from "@/data/pages";
-import { siteLinks } from "@/extra/siteLinks";
+import { slugs } from "@/extra/slugs";
 import Link from "next/link";
 import React from "react";
 
 const page = () => {
-  const items = pages.find((page) => page.slug === siteLinks.futureStudents);
+  const items = pages.find((page) => page.slug === slugs.futureStudents);
 
   return (
     <>
@@ -23,10 +23,7 @@ const page = () => {
 
         <section className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 mt-8">
           {items?.subPages?.map((item) => (
-            <Link
-              href={`${siteLinks.futureStudents}/${item.slug}`}
-              key={item.slug}
-            >
+            <Link href={`${slugs.futureStudents}/${item.slug}`} key={item.slug}>
               <IconCard icon={item.icon}>
                 <Heading level={4} className="">
                   {item.name}

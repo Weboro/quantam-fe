@@ -3,7 +3,7 @@ import FaqSection from "@/components/sections/FaqSection";
 import NewsLetterSection from "@/components/sections/NewsLetterSection";
 import ContainerLayout from "@/components/layouts/ContainerLayout";
 import Heading from "@/components/ui/Heading";
-import { siteLinks } from "@/extra/siteLinks";
+import { slugs } from "@/extra/slugs";
 import Link from "next/link";
 
 const page = () => {
@@ -71,14 +71,14 @@ const page = () => {
             personal development. Please refer to the{" "}
             <Link
               className="text-brand-primary underline hover:text-brand-blue-4 transition-all"
-              href={siteLinks.studentSupport}
+              href={slugs.studentSupport}
             >
               Student Support
             </Link>{" "}
             and{" "}
             <Link
               className="text-brand-primary underline hover:text-brand-blue-4 transition-all"
-              href={siteLinks.consultation}
+              href={slugs.consultation}
             >
               Consultation Policy
             </Link>{" "}
@@ -120,14 +120,14 @@ const page = () => {
         <p>
           <Link
             className="text-brand-primary underline hover:text-brand-blue-4 transition-all"
-            href={siteLinks.prospectus}
+            href={slugs.prospectus}
           >
             Find our Prospectus here
           </Link>
           . <br />
           <Link
             className="text-brand-primary underline hover:text-brand-blue-4 transition-all"
-            href={siteLinks.apply}
+            href={slugs.apply}
           >
             Apply here
           </Link>

@@ -3,7 +3,7 @@ import ContainerLayout from "@/components/layouts/ContainerLayout";
 import FaqSection from "@/components/sections/FaqSection";
 import NewsLetterSection from "@/components/sections/NewsLetterSection";
 import Heading from "@/components/ui/Heading";
-import { siteLinks } from "@/extra/siteLinks";
+import { slugs } from "@/extra/slugs";
 import Link from "next/link";
 import React from "react";
 
@@ -24,7 +24,7 @@ const page = () => {
 
         <p className="mt-2">
           <Link
-            href={siteLinks.studentPlatformLogin}
+            href={slugs.studentPlatformLogin}
             className="text-brand-primary underline hover:text-brand-blue-4 transition-all"
           >
             Login to the Student Platform

@@ -4,7 +4,7 @@ import Image from "next/image";
 import Heading from "../ui/Heading";
 import Button from "../ui/Button";
 import Link from "next/link";
-import { siteLinks } from "@/extra/siteLinks";
+import { slugs } from "@/extra/slugs";
 
 const AboutUsSection = () => {
   return (
@@ -33,7 +33,7 @@ const AboutUsSection = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 mt-6">
-            <Link href={siteLinks.apply} className="">
+            <Link href={slugs.apply} className="">
               <Button
                 variant="secondary"
                 icon="fi fi-br-arrow-small-right"
@@ -43,7 +43,7 @@ const AboutUsSection = () => {
               </Button>
             </Link>
 
-            <Link href={siteLinks.programs}>
+            <Link href={slugs.programs}>
               <Button
                 variant="primary"
                 icon="fi fi-br-arrow-small-right"

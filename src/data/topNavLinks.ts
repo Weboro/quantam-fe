@@ -1,4 +1,4 @@
-import { siteLinks } from "@/extra/siteLinks";
+import { slugs } from "@/extra/slugs";
 
 interface ISocialLink {
   name: string;
@@ -33,22 +33,22 @@ export const socialLinks: ISocialLink[] = [
 export const topLinks: ITopLink[] = [
   {
     name: "Programs",
-    url: siteLinks.programs,
+    url: slugs.programs,
     redirect: false,
   },
   {
     name: "Find Agent",
-    url: "/find-agent",
+    url: slugs.findAgent,
     redirect: false,
   },
   {
     name: "QHIE Students",
-    url: "qihe-students",
+    url: slugs.qiheStudents,
     redirect: false,
   },
   {
     name: "Discover QHIE",
-    url: "discover-qihe",
+    url: slugs.discoverQihe,
     redirect: false,
   },
 ];

@@ -12,22 +12,10 @@ const page = () => {
     <>
       <Breadcrumbs />
 
-      <ContainerLayout className="mt-6 text-muted">
-        <Heading className="text-brand-primary-black mt-4 mb-2" level={2}>
-          The Support Team
+      <ContainerLayout className="mt-6">
+        <Heading className="text-brand-primary-black mt-4 mb-2" level={1}>
+          Get Started
         </Heading>
-        <p>
-          The support staff ensure students have access to essential services,
-          guidance, and resources from enrollment to graduation.
-        </p>
-        <p className="mt-2">
-          <Link
-            href="#"
-            className="text-brand-primary underline hover:text-brand-blue-4 transition-all"
-          >
-            View Support Staff Profiles
-          </Link>
-        </p>
       </ContainerLayout>
 
       <div className="space-y-40 mt-40">

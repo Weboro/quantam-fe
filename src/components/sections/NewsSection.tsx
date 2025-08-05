@@ -4,7 +4,7 @@ import Button from "../ui/Button";
 import { news } from "@/data/news";
 import NewsCard from "../cards/NewsCard";
 import Heading from "../ui/Heading";
-import { siteLinks } from "@/extra/siteLinks";
+import { slugs } from "@/extra/slugs";
 
 const NewsSection = ({ showAll = false }) => (
   <ContainerLayout>
@@ -12,7 +12,7 @@ const NewsSection = ({ showAll = false }) => (
       <div className="flex flex-col items-between gap-2">
         <Heading level={2}>News & Articles</Heading>
 
-        <Link href={siteLinks.news} className="font-semibold">
+        <Link href={slugs.news} className="font-semibold">
           <Button variant="secondary">More Blogs</Button>
         </Link>
       </div>
@@ -34,7 +34,7 @@ const NewsSection = ({ showAll = false }) => (
           readTime={card.readTime}
           title={card.title}
           summary={card.summary}
-          url={`/news/${card.slug}`}
+          url={`/${slugs.news}/${card.slug}`}
         />
       ))}
     </div>
