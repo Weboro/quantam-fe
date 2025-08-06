@@ -49,6 +49,13 @@ const CourseFilterSection = () => {
                   if (e.key === "Enter") handleSearch();
                 }}
               />
+              <Button
+                  icon="fi fi-br-search"
+                  className="w-fit"
+                  onClick={handleSearch}
+                >
+                  Search
+              </Button>
 
               <FilterPopover clearFilter={clearFilter}>
                 <FilterSelect

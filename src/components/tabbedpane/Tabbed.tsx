@@ -33,15 +33,15 @@ const Tabbed: React.FC<TabbedProps> = ({ tabbedPaneData }) => {
 					))}
 				</div>
 
-				<div className=' rounded-lg p-6 bg-surface-2'>
-					<div className='space-y-6'>
+				<div className=' rounded-lg p-6 bg-surface-1'>
+					<div className=''>
 						<div>
-							<h2 className='text-2xl font-medium text-brand-primary-black mb-4'>
+							<h2 className='text-2xl font-medium text-brand-primary-black '>
 								{tabbedPaneData.find((item) => item.title === activeTab)?.title}
 							</h2>
 						</div>
 
-						<div className='space-y-3'>
+						<div className=''>
 							<div
 								dangerouslySetInnerHTML={{
 									__html:
