@@ -3,9 +3,32 @@ import ContainerLayout from "@/components/layouts/ContainerLayout";
 import FaqSection from "@/components/sections/FaqSection";
 import NewsLetterSection from "@/components/sections/NewsLetterSection";
 import Heading from "@/components/ui/Heading";
-import { slugs } from "@/extra/slugs";
-import Link from "next/link";
 import React from "react";
+import { SITE_TITLE, SITE_URL } from "@/extra/siteDetails";
+import { slugs } from "@/extra/slugs";
+import type { Metadata } from "next";
+
+export const generateMetadata = (): Metadata => ({
+  title: `About QIHE`,
+  description:
+    "Learn about Quantum Institute of Higher Education (QIHE), our history, vision, and commitment to quality education and student success.",
+  alternates: {
+    canonical: `${SITE_URL}/${slugs.discoverQihe}/${slugs.aboutQihe}`,
+  },
+  openGraph: {
+    title: `About QIHE`,
+    description:
+      "Learn about Quantum Institute of Higher Education (QIHE), our history, vision, and commitment to quality education and student success.",
+    url: `${SITE_URL}/${slugs.discoverQihe}/${slugs.aboutQihe}`,
+    siteName: SITE_TITLE,
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: `About QIHE`,
+    description:
+      "Learn about Quantum Institute of Higher Education (QIHE), our history, vision, and commitment to quality education and student success.",
+  },
+});
 
 const page = () => {
   return (

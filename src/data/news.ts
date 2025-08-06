@@ -1,6 +1,6 @@
 export interface INews {
   id: number;
-  imageUrl: "/banner.jpg";
+  imageUrl: string;
   date: string;
   readTime: string;
   title: string;

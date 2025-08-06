@@ -3,9 +3,39 @@ import ContainerLayout from "@/components/layouts/ContainerLayout";
 import FaqSection from "@/components/sections/FaqSection";
 import NewsLetterSection from "@/components/sections/NewsLetterSection";
 import Heading from "@/components/ui/Heading";
-import { slugs } from "@/extra/slugs";
 import Link from "next/link";
-import React from "react";
+import { Metadata } from "next";
+import { SITE_TITLE, SITE_URL } from "@/extra/siteDetails";
+import { slugs } from "@/extra/slugs";
+
+export const metadata: Metadata = {
+  title: "Student Platform",
+  description:
+    "Access the Quantum Institute student platform for course materials, announcements, grades, and communication with faculty and staff.",
+  keywords: [
+    "student platform",
+    "Quantum Institute portal",
+    "course materials",
+    "student announcements",
+    "academic grades",
+  ],
+  alternates: {
+    canonical: `${SITE_URL}/${slugs.qiheStudents}/${slugs.studentPlatform}`,
+  },
+  openGraph: {
+    title: "Student Platform",
+    description:
+      "Access the Quantum Institute student platform for course materials, announcements, grades, and communication with faculty and staff.",
+    url: `${SITE_URL}/${slugs.qiheStudents}/${slugs.studentPlatform}`,
+    siteName: SITE_TITLE,
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Student Platform",
+    description:
+      "Access the Quantum Institute student platform for course materials, announcements, grades, and communication with faculty and staff.",
+  },
+};
 
 const page = () => {
   return (

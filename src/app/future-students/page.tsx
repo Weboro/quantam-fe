@@ -1,7 +1,6 @@
 import IconCard from "@/components/cards/IconCard";
 import Breadcrumbs from "@/components/global/Breadcrumbs";
 import ContainerLayout from "@/components/layouts/ContainerLayout";
-import FaqSection from "@/components/sections/FaqSection";
 import NewsLetterSection from "@/components/sections/NewsLetterSection";
 import Heading from "@/components/ui/Heading";
 import pages from "@/data/pages";

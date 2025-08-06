@@ -3,9 +3,32 @@ import ContainerLayout from "@/components/layouts/ContainerLayout";
 import FaqSection from "@/components/sections/FaqSection";
 import NewsLetterSection from "@/components/sections/NewsLetterSection";
 import Heading from "@/components/ui/Heading";
-import { slugs } from "@/extra/slugs";
 import Link from "next/link";
-import React from "react";
+import { SITE_TITLE, SITE_URL } from "@/extra/siteDetails";
+import { slugs } from "@/extra/slugs";
+import type { Metadata } from "next";
+
+export const generateMetadata = (): Metadata => ({
+  title: `Academic Team`,
+  description:
+    "Meet the expert academic team at Quantum Institute who guide and support your learning journey with dedication and excellence.",
+  alternates: {
+    canonical: `${SITE_URL}/${slugs.discoverQihe}/${slugs.academicTeam}`,
+  },
+  openGraph: {
+    title: `Academic Team`,
+    description:
+      "Meet the expert academic team at Quantum Institute who guide and support your learning journey with dedication and excellence.",
+    url: `${SITE_URL}/${slugs.discoverQihe}/${slugs.academicTeam}`,
+    siteName: SITE_TITLE,
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: `Academic Team`,
+    description:
+      "Meet the expert academic team at Quantum Institute who guide and support your learning journey with dedication and excellence.",
+  },
+});
 
 const page = () => {
   return (

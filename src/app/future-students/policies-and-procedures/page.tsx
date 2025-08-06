@@ -3,8 +3,39 @@ import FaqSection from "@/components/sections/FaqSection";
 import NewsLetterSection from "@/components/sections/NewsLetterSection";
 import ContainerLayout from "@/components/layouts/ContainerLayout";
 import Heading from "@/components/ui/Heading";
-import { slugs } from "@/extra/slugs";
 import Link from "next/link";
+import { Metadata } from "next";
+import { SITE_TITLE, SITE_URL } from "@/extra/siteDetails";
+import { slugs } from "@/extra/slugs";
+
+export const metadata: Metadata = {
+  title: `Policies and Procedures`,
+  description:
+    "Review the important policies and procedures that govern student life and academic integrity at Quantum Institute.",
+  keywords: [
+    "student policies",
+    "academic procedures",
+    "Quantum Institute rules",
+    "student guidelines",
+    "university policies",
+  ],
+  alternates: {
+    canonical: `${SITE_URL}/${slugs.futureStudents}/${slugs.policiesAndProcedures}`,
+  },
+  openGraph: {
+    title: `Policies and Procedures`,
+    description:
+      "Review the important policies and procedures that govern student life and academic integrity at Quantum Institute.",
+    url: `${SITE_URL}/${slugs.futureStudents}/${slugs.policiesAndProcedures}`,
+    siteName: SITE_TITLE,
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: `Policies and Procedures`,
+    description:
+      "Review the important policies and procedures that govern student life and academic integrity at Quantum Institute.",
+  },
+};
 
 const page = () => {
   return (

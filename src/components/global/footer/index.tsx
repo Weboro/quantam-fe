@@ -55,7 +55,7 @@ const Footer = () => {
               ...pages,
               {
                 title: "Contact",
-                name: "Contact QHIE",
+                name: "Contact QIHE",
                 slug: slugs.contact,
               },
             ]}

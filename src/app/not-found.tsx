@@ -6,7 +6,7 @@ import Heading from "@/components/ui/Heading";
 import Link from "next/link";
 import React from "react";
 
-const GlobalNotFound = () => {
+const NotFound = () => {
   return (
     <div className="space-y-24">
       <ContainerLayout>
@@ -34,4 +34,4 @@ const GlobalNotFound = () => {
   );
 };
 
-export default GlobalNotFound;
+export default NotFound;

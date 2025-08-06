@@ -16,7 +16,7 @@ const UnderConstruction = () => {
           </p>
 
           <Heading level={4} className="font-medium text-center">
-            We're building something great here!
+            we are building something great here!
             <br />
             This page is under construction.
           </Heading>

@@ -3,10 +3,33 @@ import ContainerLayout from "@/components/layouts/ContainerLayout";
 import FaqSection from "@/components/sections/FaqSection";
 import NewsLetterSection from "@/components/sections/NewsLetterSection";
 import Heading from "@/components/ui/Heading";
-import { slugs } from "@/extra/slugs";
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
+import { SITE_TITLE, SITE_URL } from "@/extra/siteDetails";
+import { slugs } from "@/extra/slugs";
+import type { Metadata } from "next";
+
+export const generateMetadata = (): Metadata => ({
+  title: `Our Core Team`,
+  description:
+    "Meet the leadership and core team at Quantum Institute who drive our vision and uphold our commitment to quality education.",
+  alternates: {
+    canonical: `${SITE_URL}/${slugs.discoverQihe}/${slugs.ourCoreTeam}`,
+  },
+  openGraph: {
+    title: `Our Core Team`,
+    description:
+      "Meet the leadership and core team at Quantum Institute who drive our vision and uphold our commitment to quality education.",
+    url: `${SITE_URL}/${slugs.discoverQihe}/${slugs.ourCoreTeam}`,
+    siteName: SITE_TITLE,
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: `Our Core Team`,
+    description:
+      "Meet the leadership and core team at Quantum Institute who drive our vision and uphold our commitment to quality education.",
+  },
+});
 
 const page = () => {
   return (
