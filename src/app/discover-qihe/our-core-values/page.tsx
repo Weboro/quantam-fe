@@ -3,9 +3,31 @@ import ContainerLayout from "@/components/layouts/ContainerLayout";
 import FaqSection from "@/components/sections/FaqSection";
 import NewsLetterSection from "@/components/sections/NewsLetterSection";
 import Heading from "@/components/ui/Heading";
+import { SITE_TITLE, SITE_URL } from "@/extra/siteDetails";
 import { slugs } from "@/extra/slugs";
-import Link from "next/link";
-import React from "react";
+import type { Metadata } from "next";
+
+export const generateMetadata = (): Metadata => ({
+  title: `Our Core Values`,
+  description:
+    "Discover the core values that guide Quantum Institute in fostering integrity, inclusivity, innovation, and academic excellence.",
+  alternates: {
+    canonical: `${SITE_URL}/${slugs.discoverQihe}/${slugs.ourCoreValues}`,
+  },
+  openGraph: {
+    title: `Our Core Values`,
+    description:
+      "Discover the core values that guide Quantum Institute in fostering integrity, inclusivity, innovation, and academic excellence.",
+    url: `${SITE_URL}/${slugs.discoverQihe}/${slugs.ourCoreValues}`,
+    siteName: SITE_TITLE,
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: `Our Core Values`,
+    description:
+      "Discover the core values that guide Quantum Institute in fostering integrity, inclusivity, innovation, and academic excellence.",
+  },
+});
 
 const page = () => {
   return (

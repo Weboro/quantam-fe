@@ -3,6 +3,38 @@ import FaqSection from "@/components/sections/FaqSection";
 import NewsLetterSection from "@/components/sections/NewsLetterSection";
 import ContainerLayout from "@/components/layouts/ContainerLayout";
 import Heading from "@/components/ui/Heading";
+import { Metadata } from "next";
+import { SITE_TITLE, SITE_URL } from "@/extra/siteDetails";
+import { slugs } from "@/extra/slugs";
+
+export const metadata: Metadata = {
+  title: `Orientation & Pre-Arrival Guide`,
+  description:
+    "Prepare for your journey at Quantum Institute with our comprehensive orientation and pre-arrival guide.",
+  keywords: [
+    "orientation guide",
+    "pre-arrival information",
+    "Quantum Institute orientation",
+    "student preparation",
+    "campus introduction",
+  ],
+  alternates: {
+    canonical: `${SITE_URL}/${slugs.futureStudents}/${slugs.orientationAndPreArrivalGuide}`,
+  },
+  openGraph: {
+    title: `Orientation & Pre-Arrival Guide`,
+    description:
+      "Prepare for your journey at Quantum Institute with our comprehensive orientation and pre-arrival guide.",
+    url: `${SITE_URL}/${slugs.futureStudents}/${slugs.orientationAndPreArrivalGuide}`,
+    siteName: SITE_TITLE,
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: `Orientation & Pre-Arrival Guide`,
+    description:
+      "Prepare for your journey at Quantum Institute with our comprehensive orientation and pre-arrival guide.",
+  },
+};
 
 const page = () => {
   return (

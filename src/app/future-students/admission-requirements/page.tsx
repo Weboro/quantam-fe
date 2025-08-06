@@ -5,6 +5,39 @@ import NewsLetterSection from "@/components/sections/NewsLetterSection";
 import Heading from "@/components/ui/Heading";
 import Link from "next/link";
 import React from "react";
+import { Metadata } from "next";
+import { SITE_TITLE, SITE_URL } from "@/extra/siteDetails";
+import { slugs } from "@/extra/slugs";
+
+export const metadata: Metadata = {
+  title: `Admission Requirements`,
+  description:
+    "Understand the admission requirements for prospective students at Quantum Institute to prepare your application successfully.",
+  keywords: [
+    "admission requirements",
+    "Quantum Institute admissions",
+    "student eligibility",
+    "entry criteria",
+    "application requirements",
+    "higher education admission",
+  ],
+  alternates: {
+    canonical: `${SITE_URL}/${slugs.futureStudents}/${slugs.admissionRequirements}`,
+  },
+  openGraph: {
+    title: `Admission Requirements`,
+    description:
+      "Understand the admission requirements for prospective students at Quantum Institute to prepare your application successfully.",
+    url: `${SITE_URL}/${slugs.futureStudents}/${slugs.admissionRequirements}`,
+    siteName: SITE_TITLE,
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: `Admission Requirements`,
+    description:
+      "Understand the admission requirements for prospective students at Quantum Institute to prepare your application successfully.",
+  },
+};
 
 const page = () => {
   return (
@@ -89,7 +122,7 @@ const page = () => {
                 applicant must also satisfy the following criteria:
                 <ul className="list-circle pl-6 space-y-1">
                   <li>
-                    Compliance with the Australian Department of Home Affairs'
+                    Compliance with the Australian Department of Home Affairs
                     Genuine Temporary Entrant (GTE) verification process,
                     including completion of the QIHE GTE Form subject for
                     assessment by QIHE staff.

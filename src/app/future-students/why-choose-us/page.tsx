@@ -5,6 +5,37 @@ import ContainerLayout from "@/components/layouts/ContainerLayout";
 import Heading from "@/components/ui/Heading";
 import { slugs } from "@/extra/slugs";
 import Link from "next/link";
+import { Metadata } from "next";
+import { SITE_TITLE, SITE_URL } from "@/extra/siteDetails";
+
+export const metadata: Metadata = {
+  title: `Why Choose Us`,
+  description:
+    "Discover why Quantum Institute is the right choice for your higher education, offering quality, support, and opportunity.",
+  keywords: [
+    "why choose Quantum Institute",
+    "higher education benefits",
+    "quality education",
+    "student support",
+    "education opportunities",
+  ],
+  alternates: {
+    canonical: `${SITE_URL}/${slugs.futureStudents}/${slugs.whyChooseUs}`,
+  },
+  openGraph: {
+    title: `Why Choose Us`,
+    description:
+      "Discover why Quantum Institute is the right choice for your higher education, offering quality, support, and opportunity.",
+    url: `${SITE_URL}/${slugs.futureStudents}/${slugs.whyChooseUs}`,
+    siteName: SITE_TITLE,
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: `Why Choose Us`,
+    description:
+      "Discover why Quantum Institute is the right choice for your higher education, offering quality, support, and opportunity.",
+  },
+};
 
 const page = () => {
   return (

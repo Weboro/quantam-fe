@@ -33,22 +33,22 @@ export const socialLinks: ISocialLink[] = [
 export const topLinks: ITopLink[] = [
   {
     name: "Programs",
-    url: slugs.programs,
+    url: `/${slugs.programs}`,
     redirect: false,
   },
   {
     name: "Find Agent",
-    url: slugs.findAgent,
+    url: `/${slugs.futureStudents}/${slugs.findAgent}`,
     redirect: false,
   },
   {
-    name: "QHIE Students",
-    url: slugs.qiheStudents,
+    name: "News",
+    url: `/${slugs.news}`,
     redirect: false,
   },
   {
-    name: "Discover QHIE",
-    url: slugs.discoverQihe,
+    name: "Contact QIHE",
+    url: `/${slugs.contact}`,
     redirect: false,
   },
 ];

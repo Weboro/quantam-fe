@@ -3,9 +3,38 @@ import ContainerLayout from "@/components/layouts/ContainerLayout";
 import FaqSection from "@/components/sections/FaqSection";
 import NewsLetterSection from "@/components/sections/NewsLetterSection";
 import Heading from "@/components/ui/Heading";
+import { Metadata } from "next";
+import { SITE_TITLE, SITE_URL } from "@/extra/siteDetails";
 import { slugs } from "@/extra/slugs";
-import Link from "next/link";
-import React from "react";
+
+export const metadata: Metadata = {
+  title: "Forms",
+  description:
+    "Access and download all necessary student forms, including enrollment, transcript requests, and other administrative documents.",
+  keywords: [
+    "student forms",
+    "enrollment forms",
+    "transcript request",
+    "Quantum Institute forms",
+    "administrative documents",
+  ],
+  alternates: {
+    canonical: `${SITE_URL}/${slugs.qiheStudents}/${slugs.forms}`,
+  },
+  openGraph: {
+    title: "Forms",
+    description:
+      "Access and download all necessary student forms, including enrollment, transcript requests, and other administrative documents.",
+    url: `${SITE_URL}/${slugs.qiheStudents}/${slugs.forms}`,
+    siteName: SITE_TITLE,
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Forms",
+    description:
+      "Access and download all necessary student forms, including enrollment, transcript requests, and other administrative documents.",
+  },
+};
 
 const page = () => {
   return (

@@ -6,6 +6,37 @@ import Heading from "@/components/ui/Heading";
 import { slugs } from "@/extra/slugs";
 import Link from "next/link";
 import React from "react";
+import { Metadata } from "next";
+import { SITE_TITLE, SITE_URL } from "@/extra/siteDetails";
+
+export const metadata: Metadata = {
+  title: "Fees and Payment",
+  description:
+    "Find all the essential information on tuition fees, payment methods, deadlines, and financial policies at Quantum Institute.",
+  keywords: [
+    "tuition fees",
+    "payment methods",
+    "Quantum Institute fees",
+    "student payments",
+    "financial policies",
+  ],
+  alternates: {
+    canonical: `${SITE_URL}/${slugs.qiheStudents}/${slugs.feesAndPayment}`,
+  },
+  openGraph: {
+    title: "Fees and Payment",
+    description:
+      "Find all the essential information on tuition fees, payment methods, deadlines, and financial policies at Quantum Institute.",
+    url: `${SITE_URL}/${slugs.qiheStudents}/${slugs.feesAndPayment}`,
+    siteName: SITE_TITLE,
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Fees and Payment",
+    description:
+      "Find all the essential information on tuition fees, payment methods, deadlines, and financial policies at Quantum Institute.",
+  },
+};
 
 const page = () => {
   return (

@@ -1,14 +1,47 @@
+import Breadcrumbs from "@/components/global/Breadcrumbs";
 import ContainerLayout from "@/components/layouts/ContainerLayout";
 import FaqSection from "@/components/sections/FaqSection";
 import NewsLetterSection from "@/components/sections/NewsLetterSection";
 import Heading from "@/components/ui/Heading";
 import { slugs } from "@/extra/slugs";
 import Link from "next/link";
-import React from "react";
+import { Metadata } from "next";
+import { SITE_TITLE, SITE_URL } from "@/extra/siteDetails";
+
+export const metadata: Metadata = {
+  title: `Admissions`,
+  description:
+    "Learn about the admissions process at Quantum Institute and the steps you need to take to enroll successfully.",
+  keywords: [
+    "admissions process",
+    "Quantum Institute enrollment",
+    "application steps",
+    "student registration",
+    "higher education admissions",
+  ],
+  alternates: {
+    canonical: `${SITE_URL}/${slugs.futureStudents}/${slugs.admissions}`,
+  },
+  openGraph: {
+    title: `Admissions`,
+    description:
+      "Learn about the admissions process at Quantum Institute and the steps you need to take to enroll successfully.",
+    url: `${SITE_URL}/${slugs.futureStudents}/${slugs.admissions}`,
+    siteName: SITE_TITLE,
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: `Admissions`,
+    description:
+      "Learn about the admissions process at Quantum Institute and the steps you need to take to enroll successfully.",
+  },
+};
 
 const page = () => {
   return (
     <>
+      <Breadcrumbs />
+
       <ContainerLayout className="text-muted mt-6">
         <Heading className="text-gray-800 mt-6 mb-2" level={1}>
           Admissions

@@ -3,37 +3,88 @@ import ContainerLayout from "@/components/layouts/ContainerLayout";
 import Heading from "@/components/ui/Heading";
 import { getNews } from "@/utils/getNews";
 import { notFound } from "next/navigation";
+import type { Metadata } from "next";
+import { SITE_TITLE, SITE_URL } from "@/extra/siteDetails";
+import { slugs } from "@/extra/slugs";
 
-interface IBlogPage {
+interface InewsPage {
   params: Promise<{ slug: string }>;
 }
 
-const BlogPage: React.FC<IBlogPage> = async ({ params }) => {
+export async function generateMetadata({
+  params,
+}: InewsPage): Promise<Metadata> {
   const { slug } = await params;
 
-  const blog = await getNews(slug);
+  const news = await getNews(slug);
 
-  if (!blog) notFound();
+  if (!news) {
+    return {
+      title: "News Article Not Found",
+      description: "The news article you are looking for does not exist.",
+      robots: "noindex, nofollow",
+    };
+  }
+
+  return {
+    title: `${news.title}`,
+    description:
+      news.summary ||
+      "Read the latest news and updates from Quantum Institute.",
+    alternates: {
+      canonical: `${SITE_URL}/${slugs.news}/${news.slug}`,
+    },
+    openGraph: {
+      title: news.title,
+      description: news.summary,
+      url: `${SITE_URL}/${slugs.news}/${news.slug}`,
+      siteName: "Quantum Institute of Higher Education",
+      images: [
+        {
+          url: news.imageUrl || "/default-og-image.jpg",
+          width: 1200,
+          height: 630,
+          alt: news.title,
+        },
+      ],
+      type: "article",
+      publishedTime: news.date,
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: news.title,
+      description: news.summary,
+      images: [news.imageUrl || "/default-og-image.jpg"],
+    },
+  };
+}
+
+const newsPage: React.FC<InewsPage> = async ({ params }) => {
+  const { slug } = await params;
+
+  const news = await getNews(slug);
+
+  if (!news) notFound();
 
   return (
     <>
       <Breadcrumbs />
       <ContainerLayout>
         <Heading level={2} className="mt-4 mb-3.5">
-          {blog.title}
+          {news.title}
         </Heading>
 
         <div className="my-32 text-center">TBD</div>
 
-        <p className="md:max-w-2xl text-muted">{blog.summary}</p>
+        <p className="md:max-w-2xl text-muted">{news.summary}</p>
 
         <div
           className="md:max-w-2xl text-muted mt-4"
-          dangerouslySetInnerHTML={{ __html: blog.richText }}
+          dangerouslySetInnerHTML={{ __html: news.richText }}
         />
       </ContainerLayout>
     </>
   );
 };
 
-export default BlogPage;
+export default newsPage;

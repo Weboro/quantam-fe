@@ -3,9 +3,31 @@ import ContainerLayout from "@/components/layouts/ContainerLayout";
 import FaqSection from "@/components/sections/FaqSection";
 import NewsLetterSection from "@/components/sections/NewsLetterSection";
 import Heading from "@/components/ui/Heading";
+import { SITE_TITLE, SITE_URL } from "@/extra/siteDetails";
 import { slugs } from "@/extra/slugs";
-import Link from "next/link";
-import React from "react";
+import type { Metadata } from "next";
+
+export const generateMetadata = (): Metadata => ({
+  title: `Mission and Vision`,
+  description:
+    "Explore Quantum Institute’s mission and vision statements that reflect our dedication to excellence, innovation, and student success.",
+  alternates: {
+    canonical: `${SITE_URL}/${slugs.discoverQihe}/${slugs.missionAndVision}`,
+  },
+  openGraph: {
+    title: `Mission and Vision`,
+    description:
+      "Explore Quantum Institute’s mission and vision statements that reflect our dedication to excellence, innovation, and student success.",
+    url: `${SITE_URL}/${slugs.discoverQihe}/${slugs.missionAndVision}`,
+    siteName: SITE_TITLE,
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: `Mission and Vision`,
+    description:
+      "Explore Quantum Institute’s mission and vision statements that reflect our dedication to excellence, innovation, and student success.",
+  },
+});
 
 const page = () => {
   return (
@@ -50,7 +72,7 @@ const page = () => {
             Our Vision
           </Heading>
           <p className="text-muted">
-            At QIHE, we aspire to transform students' lives and open doors to
+            At QIHE, we aspire to transform students lives and open doors to
             professional opportunities through the delivery of quality higher
             education. Our vision is to create an environment that fosters
             intellectual curiosity, critical thinking, and the cultivation of

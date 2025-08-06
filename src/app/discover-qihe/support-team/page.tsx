@@ -3,9 +3,32 @@ import ContainerLayout from "@/components/layouts/ContainerLayout";
 import FaqSection from "@/components/sections/FaqSection";
 import NewsLetterSection from "@/components/sections/NewsLetterSection";
 import Heading from "@/components/ui/Heading";
+import { SITE_TITLE, SITE_URL } from "@/extra/siteDetails";
 import { slugs } from "@/extra/slugs";
+import type { Metadata } from "next";
 import Link from "next/link";
-import React from "react";
+
+export const generateMetadata = (): Metadata => ({
+  title: `Support Team`,
+  description:
+    "Meet the support team dedicated to helping QIHE students succeed through academic assistance, counseling, and student services.",
+  alternates: {
+    canonical: `${SITE_URL}/${slugs.discoverQihe}/${slugs.supportTeam}`,
+  },
+  openGraph: {
+    title: `Support Team`,
+    description:
+      "Meet the support team dedicated to helping QIHE students succeed through academic assistance, counseling, and student services.",
+    url: `${SITE_URL}/${slugs.discoverQihe}/${slugs.supportTeam}`,
+    siteName: SITE_TITLE,
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: `Support Team`,
+    description:
+      "Meet the support team dedicated to helping QIHE students succeed through academic assistance, counseling, and student services.",
+  },
+});
 
 const page = () => {
   return (

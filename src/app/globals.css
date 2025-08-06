@@ -15,7 +15,7 @@
   --color-surface: hsl(0 0% 93%);
   --color-surface-1: hsl(0 0% 87%);
   --color-surface-2: hsl(0 0% 82%);
-  /* --color-muted: hsl(222 8% 55%); */
+
   --color-muted: #424242;
   --color-error: hsl(0 70% 58%);
   --color-success: hsl(142 50% 45%);

@@ -5,7 +5,37 @@ import NewsLetterSection from "@/components/sections/NewsLetterSection";
 import Heading from "@/components/ui/Heading";
 import { slugs } from "@/extra/slugs";
 import Link from "next/link";
-import React from "react";
+import { Metadata } from "next";
+import { SITE_TITLE, SITE_URL } from "@/extra/siteDetails";
+
+export const metadata: Metadata = {
+  title: "Library",
+  description:
+    "Explore the Quantum Institute library resources, access digital collections, and find study spaces and support services available to students.",
+  keywords: [
+    "Quantum Institute library",
+    "digital collections",
+    "study resources",
+    "library services",
+    "student support",
+  ],
+  alternates: {
+    canonical: `${SITE_URL}/${slugs.qiheStudents}/${slugs.library}`,
+  },
+  openGraph: {
+    title: "Library",
+    description:
+      "Explore the Quantum Institute library resources, access digital collections, and find study spaces and support services available to students.",
+    url: `${SITE_URL}/${slugs.qiheStudents}/${slugs.library}`,
+    siteName: SITE_TITLE,
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Library",
+    description:
+      "Explore the Quantum Institute library resources, access digital collections, and find study spaces and support services available to students.",
+  },
+};
 
 const page = () => {
   return (

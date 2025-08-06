@@ -42,7 +42,7 @@ const CourseDetailsSection: React.FC<ICourseDetailsSection> = ({
 
   return (
     <ContainerLayout className="grid grid-cols-1 lg:grid-cols-3 gap-4">
-      <div suppressHydrationWarning className="md:col-span-2">
+      <div suppressHydrationWarning className="md:col-span-2 self-center">
         <Heading level={3} className="mb-3">
           Study {name} at QIHE
         </Heading>
@@ -61,7 +61,7 @@ const CourseDetailsSection: React.FC<ICourseDetailsSection> = ({
         </div>
       </div>
 
-      <div className="w-full aspect-[2/1] md:aspect-square rounded-xl overflow-hidden">
+      <div className="w-full aspect-[2/1] lg:aspect-[3.75/4] rounded-xl overflow-hidden">
         <Image
           src={heroImage}
           width={500}
