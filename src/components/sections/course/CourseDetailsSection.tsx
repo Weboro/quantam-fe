@@ -43,7 +43,7 @@ const CourseDetailsSection: React.FC<ICourseDetailsSection> = ({
   return (
     <ContainerLayout className="grid grid-cols-1 lg:grid-cols-3 gap-4">
       <div suppressHydrationWarning className="md:col-span-2 self-center">
-        <Heading level={3} className="mb-3">
+        <Heading level={2} className="mb-3">
           Study {name} at QIHE
         </Heading>
 

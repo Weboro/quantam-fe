@@ -10,13 +10,13 @@ import React from "react";
 const AgentFilterSection = () => {
   const { results, searchQuery, handleInputChange, handleSearch } =
     useSearchAgent(agents);
-
+    
   return (
     <>
       <ContainerLayout>
         <section className="grid lg:grid-cols-2 gap-4 mb-8">
           <div className="">
-            <Heading level={2}>Find Agent</Heading>
+            <Heading level={1}>Find Agent</Heading>
             <p className="text-muted">
               Looking for the perfect course? Explore from our wide range of
               undergraduate, postgraduate and research programs.

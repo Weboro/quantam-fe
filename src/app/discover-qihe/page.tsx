@@ -17,7 +17,7 @@ const page = () => {
 
       <ContainerLayout>
         <Heading className="text-gray-800 mt-6 mb-2" level={1}>
-          QIHE Students
+          Discover QIHE
         </Heading>
 
         <section className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 mt-8">

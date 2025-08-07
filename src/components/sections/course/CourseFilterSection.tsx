@@ -30,7 +30,7 @@ const CourseFilterSection = () => {
       <ContainerLayout>
         <section className="mt-2 grid lg:grid-cols-2 gap-4">
           <div className="">
-            <Heading level={2}>Find A Course</Heading>
+            <Heading level={1}>Find A Course</Heading>
             <p className="text-muted">
               Looking for the perfect course? Explore from our wide range of
               undergraduate, postgraduate and research programs.
@@ -49,6 +49,13 @@ const CourseFilterSection = () => {
                   if (e.key === "Enter") handleSearch();
                 }}
               />
+              <Button
+                  icon="fi fi-br-search"
+                  className="w-fit"
+                  onClick={handleSearch}
+                >
+                  Search
+              </Button>
 
               <FilterPopover clearFilter={clearFilter}>
                 <FilterSelect
@@ -64,7 +71,7 @@ const CourseFilterSection = () => {
                 />
 
                 <FilterSelect
-                  value={deliveryMode ?? ""}
+                  value={deliveryMode ?? "" }
                   onChange={(el) =>
                     setDeliveryMode(el as ICourse["deliveryMode"])
                   }

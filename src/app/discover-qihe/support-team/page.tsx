@@ -36,7 +36,7 @@ const page = () => {
       <Breadcrumbs />
 
       <ContainerLayout className="mt-6 text-muted">
-        <Heading className="text-brand-primary-black mt-4 mb-2" level={2}>
+        <Heading className="text-brand-primary-black mt-4 mb-2" level={1}>
           The Support Team
         </Heading>
         <p>

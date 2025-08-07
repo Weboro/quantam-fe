@@ -3,6 +3,11 @@ import React from "react";
 import { SITE_TITLE, SITE_URL } from "@/extra/siteDetails";
 import { slugs } from "@/extra/slugs";
 import type { Metadata } from "next";
+import Heading from "@/components/ui/Heading";
+import Accordion from "@/components/accordion";
+import faq from "@/data/faq";
+import Breadcrumbs from "@/components/global/Breadcrumbs";
+import ContainerLayout from "@/components/layouts/ContainerLayout";
 
 export const generateMetadata = (): Metadata => ({
   title: `Frequently Asked Questions`,
@@ -28,8 +33,20 @@ export const generateMetadata = (): Metadata => ({
 
 const FaqPage = () => {
   return (
-    <main className="pt-8">
-      <FaqSection />
+    <main className="">
+      <Breadcrumbs />
+      <ContainerLayout className="pt-6">
+        <Heading level={1} className="w-fit mx-auto text-center">
+          Frequently Asked Questions
+        </Heading>
+
+        <p className="text-muted max-w-xl text-center mx-auto">
+          Find answers to common questions about admissions, courses, support
+          services, and life at QIHE.
+        </p>
+
+        <Accordion data={faq} />
+      </ContainerLayout>
     </main>
   );
 };

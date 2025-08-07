@@ -43,7 +43,7 @@ const page = () => {
       <Breadcrumbs />
 
       <ContainerLayout className="text-muted mt-6">
-        <Heading className="text-brand-primary-black mb-2" level={2}>
+        <Heading className="text-brand-primary-black mb-2" level={1}>
           Library
         </Heading>
         <p>

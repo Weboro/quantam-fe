@@ -34,7 +34,7 @@ const HomePage = () => {
 
       <AboutUsSection />
 
-      <KeyDatesSection />
+      <KeyDatesSection level={2} />
 
       <HomeNewsSection />
 
