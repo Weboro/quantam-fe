@@ -1,5 +1,4 @@
 import NewsCard from "@/components/cards/NewsCard";
-import Breadcrumbs from "@/components/global/Breadcrumbs";
 import ContainerLayout from "@/components/layouts/ContainerLayout";
 import Heading from "@/components/ui/Heading";
 import { news } from "@/data/news";
@@ -8,9 +7,7 @@ import React from "react";
 const BlogPage = () => {
   return (
     <>
-      <Breadcrumbs />
-
-      <ContainerLayout className="grid md:grid-cols-2 gap-8 mt-4 mb-8">
+      <ContainerLayout className="grid md:grid-cols-2 gap-8 mb-8">
         <div className="">
           <Heading level={1}>News & Articles</Heading>
           <p className="text-muted">
@@ -19,6 +16,7 @@ const BlogPage = () => {
             adipisci. Nemo fugit qui sapiente! Voluptates.
           </p>
         </div>
+
         <div className="flex items-end">
           <p>::TODO - Searchbar</p>
         </div>

@@ -1,7 +1,4 @@
-import Breadcrumbs from "@/components/global/Breadcrumbs";
 import AgentFilterSection from "@/components/sections/course/AgentFilterSection";
-import FaqSection from "@/components/sections/FaqSection";
-import NewsLetterSection from "@/components/sections/NewsLetterSection";
 import { Metadata } from "next";
 import { SITE_TITLE, SITE_URL } from "@/extra/siteDetails";
 import { slugs } from "@/extra/slugs";
@@ -36,20 +33,7 @@ export const metadata: Metadata = {
 };
 
 const page = () => {
-  return (
-    <>
-      <Breadcrumbs />
-
-      <div className="mt-6"></div>
-      <AgentFilterSection />
-
-      <div className="space-y-40 mt-40">
-        <FaqSection />
-
-        <NewsLetterSection />
-      </div>
-    </>
-  );
+  return <AgentFilterSection />;
 };
 
 export default page;

@@ -16,7 +16,7 @@ const page = () => {
         </Heading>
       </ContainerLayout>
 
-      <div className="space-y-40 mt-40">
+      <div className="space-y-32 mt-32">
         <FaqSection />
         <NewsLetterSection />
       </div>

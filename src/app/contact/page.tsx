@@ -37,7 +37,7 @@ const ContactPage = () => {
     <>
       <Breadcrumbs />
 
-      <ContainerLayout className="mt-4">
+      <ContainerLayout className="mt-8">
         <Heading level={1}>Contact QIHE</Heading>
 
         <p className="text-muted max-w-2xl mt-2 mb-4">
@@ -86,7 +86,7 @@ const ContactPage = () => {
         </div>
       </ContainerLayout>
 
-      <div className="mt-22 space-y-22">
+      <div className="mt-32 space-y-32">
         <FaqSection />
 
         <NewsLetterSection />

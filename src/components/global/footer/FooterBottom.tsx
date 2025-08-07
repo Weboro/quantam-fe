@@ -4,12 +4,12 @@ import React from "react";
 
 const FooterBottom = () => (
   <div className="bg-brand-primary text-background">
-    <ContainerLayout className="pt-12 pb-6">
+    <ContainerLayout size="sm" className="pt-12 pb-6">
       <div className="flex items-center justify-center gap-4 mb-4">
         <Image
           src={"/flag-a.png"}
           alt="footer flag image"
-          className="w-22"
+          className="w-20"
           width={250}
           height={250}
         />
@@ -17,7 +17,7 @@ const FooterBottom = () => (
         <Image
           src={"/flag-b.png"}
           alt="footer flag image"
-          className="w-22"
+          className="w-20"
           width={250}
           height={250}
         />

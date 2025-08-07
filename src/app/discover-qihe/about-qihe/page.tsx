@@ -1,12 +1,11 @@
-import Breadcrumbs from "@/components/global/Breadcrumbs";
-import ContainerLayout from "@/components/layouts/ContainerLayout";
-import FaqSection from "@/components/sections/FaqSection";
-import NewsLetterSection from "@/components/sections/NewsLetterSection";
-import Heading from "@/components/ui/Heading";
 import React from "react";
-import { SITE_TITLE, SITE_URL } from "@/extra/siteDetails";
-import { slugs } from "@/extra/slugs";
 import type { Metadata } from "next";
+//
+import { slugs } from "@/extra/slugs";
+import { SITE_TITLE, SITE_URL } from "@/extra/siteDetails";
+//
+import ContainerLayout from "@/components/layouts/ContainerLayout";
+import Heading from "@/components/ui/Heading";
 
 export const generateMetadata = (): Metadata => ({
   title: `About QIHE`,
@@ -32,12 +31,10 @@ export const generateMetadata = (): Metadata => ({
 
 const page = () => {
   return (
-    <>
-      <Breadcrumbs />
-
+    <div className="space-y-32">
       <ContainerLayout className="mt-6 grid md:grid-cols-2 gap-4">
-        <div className="">
-          <Heading className="text-brand-primary-black mt-4 mb-2" level={1}>
+        <div className="text-muted">
+          <Heading className="mt-4 mb-2" level={1}>
             About QIHE
           </Heading>
 
@@ -64,20 +61,18 @@ const page = () => {
             their chosen fields.
           </p>
         </div>
-        <div className="bg-brand-primary/10 grid place-items-center text-brand-primary">
+        <div className="bg-brand-primary/10 grid place-items-center text-brand-primary rounded-lg">
           IMAGE HERE
         </div>
       </ContainerLayout>
 
-      <hr className="my-12 border-muted/50" />
-
-      <ContainerLayout className="mt-4 grid md:grid-cols-2 gap-4">
-        <div className="bg-brand-primary/10 grid place-items-center text-brand-primary">
+      <ContainerLayout className="mt-4 grid md:grid-cols-2 gap-4 text-muted">
+        <div className="bg-brand-primary/10 grid place-items-center text-brand-primary rounded-lg">
           IMAGE OF CHAIRPERSON HERE
         </div>
 
         <div className="">
-          <Heading className="text-brand-primary-black mt-4 mb-2" level={2}>
+          <Heading className="mt-4 mb-2" level={2}>
             A Note from the Chair
           </Heading>
 
@@ -104,12 +99,7 @@ const page = () => {
           </p>
         </div>
       </ContainerLayout>
-
-      <div className="space-y-40 mt-40">
-        <FaqSection />
-        <NewsLetterSection />
-      </div>
-    </>
+    </div>
   );
 };
 

@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Heading from "../ui/Heading";
+import Link from "next/link";
 
 interface NewsCardProps {
   imageUrl: string;
@@ -41,18 +42,19 @@ const NewsCard: React.FC<NewsCardProps> = ({
       </span>
     </div>
 
-    <Heading level={4} className="mb-3.5">
-      {title}
-    </Heading>
-
+    <Link href={url}>
+      <Heading level={4} className="mb-3.5 line-clamp-1">
+        {title}
+      </Heading>
+    </Link>
     <p className="text-muted text-base mb-4">{summary}</p>
 
-    <a
+    <Link
       href={url}
       className="font-bold text-brand-primary text-sm flex items-center gap-2"
     >
       <span>Learn More</span> <i className="fi fi-br-arrow-right flex"></i>
-    </a>
+    </Link>
   </div>
 );
 

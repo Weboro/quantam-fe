@@ -1,11 +1,10 @@
-import Breadcrumbs from "@/components/global/Breadcrumbs";
-import ContainerLayout from "@/components/layouts/ContainerLayout";
-import FaqSection from "@/components/sections/FaqSection";
-import NewsLetterSection from "@/components/sections/NewsLetterSection";
-import Heading from "@/components/ui/Heading";
+import type { Metadata } from "next";
+//
 import { SITE_TITLE, SITE_URL } from "@/extra/siteDetails";
 import { slugs } from "@/extra/slugs";
-import type { Metadata } from "next";
+//
+import ContainerLayout from "@/components/layouts/ContainerLayout";
+import Heading from "@/components/ui/Heading";
 
 export const generateMetadata = (): Metadata => ({
   title: `Mission and Vision`,
@@ -32,8 +31,6 @@ export const generateMetadata = (): Metadata => ({
 const page = () => {
   return (
     <>
-      <Breadcrumbs />
-
       <ContainerLayout>
         <Heading className="text-brand-primary-black mt-6 mb-6" level={1}>
           Our Mission and Vision
@@ -81,11 +78,6 @@ const page = () => {
           </p>
         </div>
       </ContainerLayout>
-
-      <div className="space-y-40 mt-40">
-        <FaqSection />
-        <NewsLetterSection />
-      </div>
     </>
   );
 };

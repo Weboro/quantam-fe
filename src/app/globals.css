@@ -1,14 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import "tailwindcss";
 
-@layer base {
-  p {@apply font-primary font-normal not-italic text-base leading-7 tracking-normal;}
-  h1 {@apply font-secondary font-extrabold not-italic text-5xl leading-[48px] tracking-tight;}
-  h2 {@apply font-primary font-normal not-italic text-3xl leading-9 tracking-tight;}
-  h3 {@apply font-primary font-normal not-italic text-2xl leading-8 tracking-tight;}
-  h4 {@apply font-primary font-semibold not-italic text-xl leading-7 tracking-tight;}
-}
-
 @theme {
   --color-background: hsl(0 0% 98%);
   --color-text: hsl(222 40% 15%);

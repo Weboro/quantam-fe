@@ -7,13 +7,13 @@ import type { Metadata } from "next";
 import { SITE_TITLE, SITE_URL } from "@/extra/siteDetails";
 import { slugs } from "@/extra/slugs";
 
-interface InewsPage {
+interface INewsPage {
   params: Promise<{ slug: string }>;
 }
 
 export async function generateMetadata({
   params,
-}: InewsPage): Promise<Metadata> {
+}: INewsPage): Promise<Metadata> {
   const { slug } = await params;
 
   const news = await getNews(slug);
@@ -59,7 +59,7 @@ export async function generateMetadata({
   };
 }
 
-const newsPage: React.FC<InewsPage> = async ({ params }) => {
+const NewsPage: React.FC<INewsPage> = async ({ params }) => {
   const { slug } = await params;
 
   const news = await getNews(slug);
@@ -67,24 +67,21 @@ const newsPage: React.FC<InewsPage> = async ({ params }) => {
   if (!news) notFound();
 
   return (
-    <>
-      <Breadcrumbs />
-      <ContainerLayout>
-        <Heading level={2} className="mt-4 mb-3.5">
-          {news.title}
-        </Heading>
+    <ContainerLayout>
+      <Heading level={2} className="mt-4 mb-3.5">
+        {news.title}
+      </Heading>
 
-        <div className="my-32 text-center">TBD</div>
+      <div className="my-32 text-center">TBD</div>
 
-        <p className="md:max-w-2xl text-muted">{news.summary}</p>
+      <p className="md:max-w-2xl text-muted">{news.summary}</p>
 
-        <div
-          className="md:max-w-2xl text-muted mt-4"
-          dangerouslySetInnerHTML={{ __html: news.richText }}
-        />
-      </ContainerLayout>
-    </>
+      <div
+        className="md:max-w-2xl text-muted mt-4"
+        dangerouslySetInnerHTML={{ __html: news.richText }}
+      />
+    </ContainerLayout>
   );
 };
 
-export default newsPage;
+export default NewsPage;

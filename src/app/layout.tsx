@@ -105,7 +105,9 @@ export default function RootLayout({
       >
         <Header />
         {children}
+
         <ScrollToTop />
+
         <Footer />
       </body>
     </html>
