@@ -6,7 +6,7 @@ import Accordion from "../accordion";
 const FaqSection: React.FC = () => {
   return (
     <ContainerLayout>
-      <Heading level={1} className="w-fit mx-auto text-center">
+      <Heading level={2} className="w-fit mx-auto text-center">
         Frequently Asked Questions
       </Heading>
 
