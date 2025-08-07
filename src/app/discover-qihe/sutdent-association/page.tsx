@@ -36,9 +36,10 @@ const page = () => {
       <Breadcrumbs />
 
       <ContainerLayout className="mt-6 text-muted">
-        <Heading className="text-brand-primary-black mt-4 mb-2" level={2}>
+        <Heading className="text-brand-primary-black mt-4 mb-2" level={1}>
           Student Association
         </Heading>
+
         <p>
           Our Student Association plays an important role in creating a vibrant
           and inclusive campus culture, representing student voices and

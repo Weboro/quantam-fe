@@ -9,13 +9,17 @@ import { slugs } from "@/extra/slugs";
 
 interface IKeyDatesSection {
   showAll?: boolean;
+  level?: 1 | 2 | 3 | 4 | 5;
 }
 
-const KeyDatesSection: React.FC<IKeyDatesSection> = ({ showAll = false }) => (
+const KeyDatesSection: React.FC<IKeyDatesSection> = ({
+  level = 1,
+  showAll = false,
+}) => (
   <ContainerLayout>
     <div className="flex flex-col gap-4 md:flex-row md:items-center mb-8">
       <div className="flex flex-col gap-4 flex-1">
-        <Heading level={1}>Key Dates</Heading>
+        <Heading level={level}>Key Dates</Heading>
 
         {!showAll && (
           <Link href={`/${slugs.qiheStudents}/${slugs.keyDates}`}>

@@ -12,7 +12,7 @@ const BlogPage = () => {
 
       <ContainerLayout className="grid md:grid-cols-2 gap-8 mt-4 mb-8">
         <div className="">
-          <Heading level={2}>News & Articles</Heading>
+          <Heading level={1}>News & Articles</Heading>
           <p className="text-muted">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis
             provident temporibus dolore corrupti quae dolores consequuntur
