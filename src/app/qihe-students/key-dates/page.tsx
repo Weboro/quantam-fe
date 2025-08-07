@@ -1,8 +1,9 @@
-import Breadcrumbs from "@/components/global/Breadcrumbs";
-import KeyDatesSection from "@/components/sections/KeyDatesSection";
 import { Metadata } from "next";
+//
 import { SITE_TITLE, SITE_URL } from "@/extra/siteDetails";
 import { slugs } from "@/extra/slugs";
+//
+import KeyDatesSection from "@/components/sections/KeyDatesSection";
 
 export const metadata: Metadata = {
   title: "Key Dates",
@@ -34,14 +35,7 @@ export const metadata: Metadata = {
 };
 
 const page = () => {
-  return (
-    <>
-      <Breadcrumbs />
-
-      <div className="mt-6"></div>
-      <KeyDatesSection showAll={true} />
-    </>
-  );
+  return <KeyDatesSection showAll={true} />;
 };
 
 export default page;

@@ -25,7 +25,7 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="mt-24">
+    <footer className="mt-32">
       <div className="bg-powder-blue pt-16 pb-12 space-y-4">
         <ContainerLayout className="grid md:grid-cols-2 items-center">
           <Link className="h-24 lg:h-32 aspect-[7/3] mb-8 md:mb-0" href={"/"}>

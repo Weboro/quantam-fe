@@ -1,6 +1,10 @@
+import type { Metadata } from "next";
+//
 import { SITE_TITLE, SITE_URL } from "@/extra/siteDetails";
 import { slugs } from "@/extra/slugs";
-import type { Metadata } from "next";
+//
+import Breadcrumbs from "@/components/global/Breadcrumbs";
+import NewsLetterSection from "@/components/sections/NewsLetterSection";
 
 export const metadata: Metadata = {
   title: {
@@ -32,5 +36,13 @@ export default function QiheStudentsLayout({
 }: {
   children: React.ReactNode;
 }) {
-  return <>{children}</>;
+  return (
+    <>
+      <Breadcrumbs />
+
+      <div className="mt-8 mb-32">{children}</div>
+
+      <NewsLetterSection />
+    </>
+  );
 }

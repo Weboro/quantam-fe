@@ -86,13 +86,11 @@ export default async function CoursePage({
 
   return (
     <>
-      <Breadcrumbs />
-
       <ContainerLayout className="mt-4">
         <Heading level={1}>{course.name}</Heading>
       </ContainerLayout>
 
-      <div className="mt-2 space-y-22">
+      <div className="space-y-32">
         <CourseDetailsSection
           name={course.name}
           description={course.description}
@@ -107,10 +105,6 @@ export default async function CoursePage({
         />
 
         <Tabbed tabbedPaneData={course.tabbedPaneData || []} />
-
-        <FaqSection />
-
-        <NewsLetterSection />
       </div>
     </>
   );

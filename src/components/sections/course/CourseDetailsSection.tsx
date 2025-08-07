@@ -1,9 +1,10 @@
-import CourseInfoBlock from "@/components/cards/CourseInfoBlock";
-import ContainerLayout from "@/components/layouts/ContainerLayout";
-import Heading from "@/components/ui/Heading";
 import { type ICourse } from "@/data/courses";
 import Image from "next/image";
 import React from "react";
+//
+import CourseInfoBlock from "@/components/cards/CourseInfoBlock";
+import ContainerLayout from "@/components/layouts/ContainerLayout";
+import Heading from "@/components/ui/Heading";
 
 type ICourseDetailsSection = Pick<
   ICourse,

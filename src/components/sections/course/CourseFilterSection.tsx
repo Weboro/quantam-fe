@@ -1,13 +1,15 @@
 "use client";
+import React from "react";
+//
+import courses, { type ICourse } from "@/data/courses";
+import useSearchCourse from "@/hooks/useSearchCourse";
+//
 import DetailedCourseCard from "@/components/cards/DetailedCourseCard";
 import ContainerLayout from "@/components/layouts/ContainerLayout";
 import FilterPopover from "@/components/popovers/FilterPopover";
 import FilterSelect from "@/components/select/FilterSelect";
 import Button from "@/components/ui/Button";
 import Heading from "@/components/ui/Heading";
-import courses, { type ICourse } from "@/data/courses";
-import useSearchCourse from "@/hooks/useSearchCourse";
-import React, { useState } from "react";
 
 const CourseFilterSection = () => {
   const {
@@ -50,11 +52,11 @@ const CourseFilterSection = () => {
                 }}
               />
               <Button
-                  icon="fi fi-br-search"
-                  className="w-fit"
-                  onClick={handleSearch}
-                >
-                  Search
+                icon="fi fi-br-search"
+                className="w-fit"
+                onClick={handleSearch}
+              >
+                Search
               </Button>
 
               <FilterPopover clearFilter={clearFilter}>
@@ -71,7 +73,7 @@ const CourseFilterSection = () => {
                 />
 
                 <FilterSelect
-                  value={deliveryMode ?? "" }
+                  value={deliveryMode ?? ""}
                   onChange={(el) =>
                     setDeliveryMode(el as ICourse["deliveryMode"])
                   }

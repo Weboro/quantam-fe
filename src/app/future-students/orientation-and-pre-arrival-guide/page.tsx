@@ -1,9 +1,8 @@
-import Breadcrumbs from "@/components/global/Breadcrumbs";
-import FaqSection from "@/components/sections/FaqSection";
-import NewsLetterSection from "@/components/sections/NewsLetterSection";
 import ContainerLayout from "@/components/layouts/ContainerLayout";
 import Heading from "@/components/ui/Heading";
+//
 import { Metadata } from "next";
+//
 import { SITE_TITLE, SITE_URL } from "@/extra/siteDetails";
 import { slugs } from "@/extra/slugs";
 
@@ -38,10 +37,8 @@ export const metadata: Metadata = {
 
 const page = () => {
   return (
-    <>
-      <Breadcrumbs />
-
-      <ContainerLayout className="text-muted mt-6">
+    <div className="space-y-20">
+      <ContainerLayout className="text-muted">
         <Heading className="text-gray-800 mt-6 mb-2" level={1}>
           Orientation and Pre-Arrival Guide
         </Heading>
@@ -50,8 +47,10 @@ const page = () => {
           every student feels prepared, welcomed, and confident as they begin
           their academic journey with us.
         </p>
+      </ContainerLayout>
 
-        <Heading className="text-gray-800 mt-6 mb-2" level={3}>
+      <ContainerLayout className="text-muted">
+        <Heading className="text-gray-800 mt-6 mb-2" level={2}>
           Pre-Arrival Guide
         </Heading>
         <p>
@@ -71,8 +70,10 @@ const page = () => {
             An overview of campus facilities and available support services.
           </li>
         </ul>
+      </ContainerLayout>
 
-        <Heading className="text-gray-800 mt-6 mb-2" level={3}>
+      <ContainerLayout className="text-muted">
+        <Heading className="text-gray-800 mt-6 mb-2" level={2}>
           Student Orientation Program
         </Heading>
         <p>
@@ -119,13 +120,7 @@ const page = () => {
           We look forward to welcoming you to QIHE!
         </p>
       </ContainerLayout>
-
-      <div className="space-y-40 mt-40">
-        <FaqSection />
-
-        <NewsLetterSection />
-      </div>
-    </>
+    </div>
   );
 };
 

@@ -11,7 +11,7 @@ import { slugs } from "@/extra/slugs";
 
 const HomePage = () => {
   return (
-    <div className="space-y-28 mb-28">
+    <div className="space-y-32">
       <HeroSection
         title={
           <Heading level={1} className="text-background lg:max-w-3xl mb-4">
