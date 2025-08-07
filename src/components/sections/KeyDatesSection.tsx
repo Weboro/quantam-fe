@@ -15,7 +15,7 @@ const KeyDatesSection: React.FC<IKeyDatesSection> = ({ showAll = false }) => (
   <ContainerLayout>
     <div className="flex flex-col gap-4 md:flex-row md:items-center mb-8">
       <div className="flex flex-col gap-4 flex-1">
-        <Heading level={3}>Key Dates</Heading>
+        <Heading level={1}>Key Dates</Heading>
 
         {!showAll && (
           <Link href={`/${slugs.qiheStudents}/${slugs.keyDates}`}>

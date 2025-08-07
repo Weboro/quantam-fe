@@ -10,7 +10,7 @@ export const slugs = {
   onlineApplication: underConstruction,
   studentSupport: underConstruction,
   consultation: underConstruction,
-  feesandPayments: underConstruction,
+  feesandPayments: 'fees-and-payment',
   feeRefundPolicy: underConstruction,
   eLibrary: underConstruction,
   libraryFacilitiesPolicy: underConstruction,

@@ -33,30 +33,6 @@ const Tabbed: React.FC<TabbedProps> = ({ tabbedPaneData }) => {
           ))}
         </div>
 
-<<<<<<< HEAD
-				<div className=' rounded-lg p-6 bg-surface-1'>
-					<div className=''>
-						<div>
-							<h2 className='text-2xl font-medium text-brand-primary-black '>
-								{tabbedPaneData.find((item) => item.title === activeTab)?.title}
-							</h2>
-						</div>
-
-						<div className=''>
-							<div
-								dangerouslySetInnerHTML={{
-									__html:
-										tabbedPaneData.find((item) => item.title === activeTab)
-											?.richText || '',
-								}}
-							/>
-						</div>
-					</div>
-				</div>
-			</div>
-		</ContainerLayout>
-	);
-=======
         <div className="rounded-lg p-4 bg-surface">
           <div className="space-y-6">
             <div>
@@ -79,7 +55,6 @@ const Tabbed: React.FC<TabbedProps> = ({ tabbedPaneData }) => {
       </div>
     </ContainerLayout>
   );
->>>>>>> deff6a394ca450eec1e127d89a452824db582419
 };
 
 export default Tabbed;

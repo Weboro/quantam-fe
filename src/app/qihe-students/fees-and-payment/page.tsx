@@ -43,7 +43,7 @@ const page = () => {
     <>
       <Breadcrumbs />
 
-      <ContainerLayout className="text-muted mt-6">
+      {/* <ContainerLayout className="text-muted mt-6">
         <Heading className="text-brand-primary-black mb-2" level={2}>
           Fees and Payment
         </Heading>
@@ -75,6 +75,24 @@ const page = () => {
       <div className="space-y-40 mt-40">
         <FaqSection />
         <NewsLetterSection />
+      </div> */}
+      <ContainerLayout className="text-muted mt-6">
+        <Heading className="text-brand-primary-black mb-2" level={1}>
+          Fees and Payments
+        </Heading>
+        <p>Details of Fees are below:</p>
+        <ul className="list-disc pl-6 space-y-1 mt-2">
+          <li>Tuition Fees: $10,000 per year</li>
+          <li>Registration Fee: $200 (one-time)</li>
+          <li>Library Fee: $50 per semester</li>
+          <li>Lab Fee: $100 per course</li>
+        </ul>
+      </ContainerLayout>
+
+      <div className="space-y-40 mt-40">
+        <FaqSection />
+        <NewsLetterSection />
+      
       </div>
     </>
   );
