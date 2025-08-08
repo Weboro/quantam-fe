@@ -7,6 +7,7 @@ import { AboutUsCardRef } from "../sliders/CourseSlider";
 import Heading from "../ui/Heading";
 import CourseSlider from "../sliders/CourseSlider";
 import { slugs } from "@/extra/slugs";
+import FadeUp from "@/components/fadeup/fadeup";
 
 const CoursesSections = () => {
   const sliderRef = useRef<AboutUsCardRef>(null);
@@ -59,9 +60,12 @@ const CoursesSections = () => {
           </div>
         </div>
       </ContainerLayout>
-      <div className="w-full overflow-x-hidden">
-        <CourseSlider ref={sliderRef} />
-      </div>
+      <FadeUp className="w-full">
+        <div className="w-full overflow-x-hidden">
+          <CourseSlider ref={sliderRef} />
+        </div>
+      </FadeUp>
+
     </div>
   );
 };

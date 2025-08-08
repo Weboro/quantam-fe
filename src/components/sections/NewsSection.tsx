@@ -5,6 +5,7 @@ import { news } from "@/data/news";
 import NewsCard from "../cards/NewsCard";
 import Heading from "../ui/Heading";
 import { slugs } from "@/extra/slugs";
+import FadeUp from "@/components/fadeup/fadeup";
 
 const NewsSection = ({ showAll = false }) => (
   <ContainerLayout>
@@ -26,16 +27,17 @@ const NewsSection = ({ showAll = false }) => (
     </ContainerLayout>
 
     <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-      {news.slice(0, showAll ? news.length : 3).map((card) => (
-        <NewsCard
-          key={card.id}
-          imageUrl={card.imageUrl}
-          date={card.date}
-          readTime={card.readTime}
-          title={card.title}
-          summary={card.summary}
-          url={`/${slugs.news}/${card.slug}`}
-        />
+      {news.slice(0, showAll ? news.length : 3).map((card, index) => (
+        <FadeUp key={card.id} delay={index * 0.1}>
+          <NewsCard
+            imageUrl={card.imageUrl}
+            date={card.date}
+            readTime={card.readTime}
+            title={card.title}
+            summary={card.summary}
+            url={`/${slugs.news}/${card.slug}`}
+          />
+        </FadeUp>
       ))}
     </div>
   </ContainerLayout>
