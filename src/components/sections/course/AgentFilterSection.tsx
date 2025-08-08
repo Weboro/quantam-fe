@@ -6,6 +6,7 @@ import Heading from "@/components/ui/Heading";
 import { agents } from "@/data/agents";
 import useSearchAgent from "@/hooks/useSearchAgent";
 import React from "react";
+import FadeUp from "@/components/fadeup/fadeup";
 
 const AgentFilterSection = () => {
   const { results, searchQuery, handleInputChange, handleSearch } =
@@ -53,18 +54,20 @@ const AgentFilterSection = () => {
 
         {results.length > 0 ? (
           <section className="grid grid-cols-1  gap-4 md:grid-cols-2 lg:grid-cols-3">
-            {results.map((agent) => (
-              <AgentCard
-                key={agent.email}
-                companyImage={agent.companyImage}
-                companyName={agent.companyName}
-                agentName={agent.agentName}
-                phone={agent.phone}
-                email={agent.email}
-                url={agent.url}
-              />
+            {results.map((agent, index) => (
+              <FadeUp key={agent.email} delay={index * 0.05}>
+                <AgentCard
+                  companyImage={agent.companyImage}
+                  companyName={agent.companyName}
+                  agentName={agent.agentName}
+                  phone={agent.phone}
+                  email={agent.email}
+                  url={agent.url}
+                />
+              </FadeUp>
             ))}
           </section>
+
         ) : (
           <div className="flex items-center flex-col py-20 my-8 rounded-2xl bg-brand-primary/5">
             <p className="w-20 aspect-square bg-brand-primary/25 rounded-full grid place-items-center mb-4">

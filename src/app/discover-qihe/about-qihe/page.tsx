@@ -7,6 +7,7 @@ import { SITE_TITLE, SITE_URL } from "@/extra/siteDetails";
 import ContainerLayout from "@/components/layouts/ContainerLayout";
 import Heading from "@/components/ui/Heading";
 
+
 export const generateMetadata = (): Metadata => ({
   title: `About QIHE`,
   description:

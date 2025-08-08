@@ -51,6 +51,7 @@ const FilterPopover: React.FC<IFilterPopover> = ({ children, clearFilter }) => {
               <Button variant="contrastAlt" className="text-xs">
                 Clear
               </Button>
+            
             </div>
           </div>
         </div>
