@@ -6,12 +6,12 @@ import Heading from "@/components/ui/Heading";
 import { agents } from "@/data/agents";
 import useSearchAgent from "@/hooks/useSearchAgent";
 import React from "react";
-import FadeUp from "@/components/fadeup/fadeup";
+import FadeUp from "@/components/animations/FadeUp";
 
 const AgentFilterSection = () => {
   const { results, searchQuery, handleInputChange, handleSearch } =
     useSearchAgent(agents);
-    
+
   return (
     <>
       <ContainerLayout>
@@ -67,7 +67,6 @@ const AgentFilterSection = () => {
               </FadeUp>
             ))}
           </section>
-
         ) : (
           <div className="flex items-center flex-col py-20 my-8 rounded-2xl bg-brand-primary/5">
             <p className="w-20 aspect-square bg-brand-primary/25 rounded-full grid place-items-center mb-4">

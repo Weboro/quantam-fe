@@ -1,5 +1,5 @@
 import React from "react";
-import FadeUp from "@/components/fadeup/fadeup";
+import FadeUp from "@/components/animations/FadeUp";
 import ContainerLayout from "../layouts/ContainerLayout";
 import Image from "next/image";
 import Heading from "../ui/Heading";

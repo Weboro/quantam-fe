@@ -6,7 +6,7 @@ import Button from "../ui/Button";
 import Link from "next/link";
 import Heading from "../ui/Heading";
 import { slugs } from "@/extra/slugs";
-import FadeUp from "@/components/fadeup/fadeup";
+import FadeUp from "@/components/animations/FadeUp";
 
 interface IKeyDatesSection {
   showAll?: boolean;

@@ -5,7 +5,7 @@ import { news } from "@/data/news";
 import NewsCard from "../cards/NewsCard";
 import Heading from "../ui/Heading";
 import { slugs } from "@/extra/slugs";
-import FadeUp from "@/components/fadeup/fadeup";
+import FadeUp from "@/components/animations/FadeUp";
 
 const NewsSection = ({ showAll = false }) => (
   <ContainerLayout>

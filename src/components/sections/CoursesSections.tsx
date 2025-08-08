@@ -7,7 +7,7 @@ import { AboutUsCardRef } from "../sliders/CourseSlider";
 import Heading from "../ui/Heading";
 import CourseSlider from "../sliders/CourseSlider";
 import { slugs } from "@/extra/slugs";
-import FadeUp from "@/components/fadeup/fadeup";
+import FadeUp from "@/components/animations/FadeUp";
 
 const CoursesSections = () => {
   const sliderRef = useRef<AboutUsCardRef>(null);
@@ -65,7 +65,6 @@ const CoursesSections = () => {
           <CourseSlider ref={sliderRef} />
         </div>
       </FadeUp>
-
     </div>
   );
 };
