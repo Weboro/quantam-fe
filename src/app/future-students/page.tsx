@@ -7,6 +7,7 @@ import { slugs } from "@/extra/slugs";
 import IconCard from "@/components/cards/IconCard";
 import ContainerLayout from "@/components/layouts/ContainerLayout";
 import Heading from "@/components/ui/Heading";
+import FadeUp from "@/components/animations/FadeUp";
 
 const page = () => {
   const items = pages.find((page) => page.slug === slugs.futureStudents);
@@ -17,15 +18,17 @@ const page = () => {
         Future Students
       </Heading>
 
-      <section className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 mt-8">
-        {items?.subPages?.map((item) => (
-          <Link href={`${slugs.futureStudents}/${item.slug}`} key={item.slug}>
-            <IconCard icon={item.icon}>
-              <Heading level={4} className="">
-                {item.name}
-              </Heading>
-            </IconCard>
-          </Link>
+      <section className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-4 mt-8">
+        {items?.subPages?.map((item, index) => (
+          <FadeUp delay={index * 0.1} key={item.slug}>
+            <Link href={`${slugs.futureStudents}/${item.slug}`}>
+              <IconCard icon={item.icon}>
+                <Heading level={4} className="">
+                  {item.name}
+                </Heading>
+              </IconCard>
+            </Link>
+          </FadeUp>
         ))}
       </section>
     </ContainerLayout>

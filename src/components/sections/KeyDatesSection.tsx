@@ -6,6 +6,7 @@ import Button from "../ui/Button";
 import Link from "next/link";
 import Heading from "../ui/Heading";
 import { slugs } from "@/extra/slugs";
+import FadeUp from "@/components/animations/FadeUp";
 
 interface IKeyDatesSection {
   showAll?: boolean;
@@ -40,7 +41,9 @@ const KeyDatesSection: React.FC<IKeyDatesSection> = ({
       {keyDates
         .slice(0, showAll ? keyDates.length : 4)
         .map((item, index: number) => (
-          <KeyDateCard key={index} {...item} />
+          <FadeUp key={index} delay={index * 0.1}>
+            <KeyDateCard {...item} />
+          </FadeUp>
         ))}
     </div>
   </ContainerLayout>

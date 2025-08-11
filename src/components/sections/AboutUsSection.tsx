@@ -1,4 +1,5 @@
 import React from "react";
+import FadeUp from "@/components/animations/FadeUp";
 import ContainerLayout from "../layouts/ContainerLayout";
 import Image from "next/image";
 import Heading from "../ui/Heading";
@@ -8,7 +9,7 @@ import { slugs } from "@/extra/slugs";
 
 const AboutUsSection = () => {
   return (
-    <>
+    <FadeUp>
       <ContainerLayout className="grid lg:grid-cols-2 gap-12 items-center">
         <div className="">
           <span className="text-muted text-sm font-medium capitalize">
@@ -63,8 +64,7 @@ const AboutUsSection = () => {
           className="w-full aspect-[2/1] lg:aspect-[6.5/5] object-cover rounded-xl"
         />
       </ContainerLayout>
-      ;
-    </>
+    </FadeUp>
   );
 };
 

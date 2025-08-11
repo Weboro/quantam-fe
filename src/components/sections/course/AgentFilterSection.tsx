@@ -6,11 +6,12 @@ import Heading from "@/components/ui/Heading";
 import { agents } from "@/data/agents";
 import useSearchAgent from "@/hooks/useSearchAgent";
 import React from "react";
+import FadeUp from "@/components/animations/FadeUp";
 
 const AgentFilterSection = () => {
   const { results, searchQuery, handleInputChange, handleSearch } =
     useSearchAgent(agents);
-    
+
   return (
     <>
       <ContainerLayout>
@@ -53,16 +54,17 @@ const AgentFilterSection = () => {
 
         {results.length > 0 ? (
           <section className="grid grid-cols-1  gap-4 md:grid-cols-2 lg:grid-cols-3">
-            {results.map((agent) => (
-              <AgentCard
-                key={agent.email}
-                companyImage={agent.companyImage}
-                companyName={agent.companyName}
-                agentName={agent.agentName}
-                phone={agent.phone}
-                email={agent.email}
-                url={agent.url}
-              />
+            {results.map((agent, index) => (
+              <FadeUp key={agent.email} delay={index * 0.05}>
+                <AgentCard
+                  companyImage={agent.companyImage}
+                  companyName={agent.companyName}
+                  agentName={agent.agentName}
+                  phone={agent.phone}
+                  email={agent.email}
+                  url={agent.url}
+                />
+              </FadeUp>
             ))}
           </section>
         ) : (

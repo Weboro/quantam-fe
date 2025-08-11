@@ -1,3 +1,4 @@
+import FadeUp from "@/components/animations/FadeUp";
 import NewsCard from "@/components/cards/NewsCard";
 import ContainerLayout from "@/components/layouts/ContainerLayout";
 import Heading from "@/components/ui/Heading";
@@ -24,18 +25,20 @@ const BlogPage = () => {
 
       <ContainerLayout>
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
-          {news.map((card) => (
-            <NewsCard
-              key={card.id}
-              imageUrl={card.imageUrl}
-              date={card.date}
-              readTime={card.readTime}
-              title={card.title}
-              summary={card.summary}
-              url={`/news/${card.slug}`}
-            />
+          {news.map((card, idx) => (
+            <FadeUp key={card.id} delay={idx * 0.07}>
+              <NewsCard
+                imageUrl={card.imageUrl}
+                date={card.date}
+                readTime={card.readTime}
+                title={card.title}
+                summary={card.summary}
+                url={`/news/${card.slug}`}
+              />
+            </FadeUp>
           ))}
         </div>
+        
       </ContainerLayout>
     </>
   );
