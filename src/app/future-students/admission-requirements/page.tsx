@@ -89,7 +89,7 @@ const page = () => {
                 applicant must also satisfy the following criteria:
                 <ul className="list-circle pl-6 space-y-1">
                   <li>
-                    Compliance with the Australian Department of Home Affairs'
+                    Compliance with the Australian Department of Home Affairs&apos;
                     Genuine Temporary Entrant (GTE) verification process,
                     including completion of the QIHE GTE Form subject for
                     assessment by QIHE staff.
