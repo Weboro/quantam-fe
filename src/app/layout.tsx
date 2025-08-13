@@ -4,6 +4,7 @@ import Header from "@/components/global/header";
 import Footer from "@/components/global/footer";
 import { Poppins, League_Spartan } from "next/font/google";
 import ScrollToTop from "@/components/global/ScrollToTop";
+import { SITE_TITLE, SITE_URL } from "@/extra/siteDetails";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -20,8 +21,58 @@ const leagueSpartan = League_Spartan({
 });
 
 export const metadata: Metadata = {
-  title: "Quantum Institute",
-  description: "",
+  metadataBase: new URL(SITE_URL),
+  title: {
+    default: "Quantum Institute of Higher Education",
+    template: `%s • ${SITE_TITLE}`,
+  },
+  description:
+    "Quantum Institute is a leading education provider offering quality programs and courses.",
+  keywords: [
+    "education",
+    "quantum institute",
+    "courses",
+    "programs",
+    "learning",
+    "student support",
+  ],
+  robots: {
+    index: true,
+    follow: true,
+  },
+  alternates: {
+    canonical: `${SITE_URL}`,
+  },
+  openGraph: {
+    title: "Quantum Institute",
+    description:
+      "Quantum Institute is a leading education provider offering quality programs and courses.",
+    url: SITE_URL,
+    siteName: "Quantum Institute of Higher Education",
+    images: [
+      {
+        url: `${SITE_URL}/logo.png`,
+        width: 1200,
+        height: 630,
+        alt: "Quantum Institute",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Quantum Institute",
+    description:
+      "Quantum Institute is a leading education provider offering quality programs and courses.",
+    images: [`${SITE_URL}/logo.png`],
+  },
+  icons: {
+    icon: "/favicon.svg",
+    shortcut: "/favicon.svg",
+    apple: "/apple-touch-icon.png",
+  },
+  manifest: "/site.webmanifest",
 };
 
 export default function RootLayout({
@@ -32,8 +83,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-
         {[
           "uicons-regular-straight",
           "uicons-thin-straight",
@@ -58,6 +107,7 @@ export default function RootLayout({
         {children}
 
         <ScrollToTop />
+
         <Footer />
       </body>
     </html>

@@ -7,6 +7,7 @@ export interface IContact {
   email?: string;
   url?: string;
 }
+
 export const contact: IContact[] = [
   {
     title: "Call Us",

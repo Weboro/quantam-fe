@@ -19,7 +19,7 @@ type Step = {
 	pointsTitle?: string;
 };
 
-const BlogPage: React.FC<IBlogPage> = async ({ params }) => {
+const NewsPage: React.FC<IBlogPage> = async ({ params }) => {
 	const { slug } = await params;
 
 	const blog = await getNews(slug);
@@ -171,4 +171,4 @@ const BlogPage: React.FC<IBlogPage> = async ({ params }) => {
 	);
 };
 
-export default BlogPage;
+export default NewsPage;

@@ -1,13 +1,16 @@
 "use client";
+import React from "react";
+//
+import courses, { type ICourse } from "@/data/courses";
+import useSearchCourse from "@/hooks/useSearchCourse";
+//
 import DetailedCourseCard from "@/components/cards/DetailedCourseCard";
+import FadeUp from "@/components/animations/FadeUp";
 import ContainerLayout from "@/components/layouts/ContainerLayout";
 import FilterPopover from "@/components/popovers/FilterPopover";
 import FilterSelect from "@/components/select/FilterSelect";
 import Button from "@/components/ui/Button";
 import Heading from "@/components/ui/Heading";
-import courses, { type ICourse } from "@/data/courses";
-import useSearchCourse from "@/hooks/useSearchCourse";
-import React, { useState } from "react";
 
 const CourseFilterSection = () => {
   const {
@@ -30,7 +33,7 @@ const CourseFilterSection = () => {
       <ContainerLayout>
         <section className="mt-2 grid lg:grid-cols-2 gap-4">
           <div className="">
-            <Heading level={2}>Find A Course</Heading>
+            <Heading level={1}>Find A Course</Heading>
             <p className="text-muted">
               Looking for the perfect course? Explore from our wide range of
               undergraduate, postgraduate and research programs.
@@ -49,6 +52,13 @@ const CourseFilterSection = () => {
                   if (e.key === "Enter") handleSearch();
                 }}
               />
+              <Button
+                icon="fi fi-br-search"
+                className="w-fit"
+                onClick={handleSearch}
+              >
+                Search
+              </Button>
 
               <FilterPopover clearFilter={clearFilter}>
                 <FilterSelect
@@ -85,20 +95,21 @@ const CourseFilterSection = () => {
 
         {results.length > 0 ? (
           <section className="space-y-6 mt-10">
-            {results.map((course) => (
-              <DetailedCourseCard
-                key={course.slug}
-                slug={course.slug}
-                heroImage={course.heroImage}
-                description={course.description}
-                name={course.name}
-                location={course.location}
-                duration={course.duration}
-                degreeType={course.degreeType}
-                intakes={course.intakes}
-                deliveryMode={course.deliveryMode}
-                CRICOSCourseCode={course.CRICOSCourseCode}
-              />
+            {results.map((course, idx) => (
+              <FadeUp key={course.slug} delay={idx * 0.07}>
+                <DetailedCourseCard
+                  slug={course.slug}
+                  heroImage={course.heroImage}
+                  description={course.description}
+                  name={course.name}
+                  location={course.location}
+                  duration={course.duration}
+                  degreeType={course.degreeType}
+                  intakes={course.intakes}
+                  deliveryMode={course.deliveryMode}
+                  CRICOSCourseCode={course.CRICOSCourseCode}
+                />
+              </FadeUp>
             ))}
           </section>
         ) : (

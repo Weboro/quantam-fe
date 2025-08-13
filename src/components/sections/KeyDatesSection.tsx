@@ -6,16 +6,21 @@ import Button from "../ui/Button";
 import Link from "next/link";
 import Heading from "../ui/Heading";
 import { slugs } from "@/extra/slugs";
+import FadeUp from "@/components/animations/FadeUp";
 
 interface IKeyDatesSection {
   showAll?: boolean;
+  level?: 1 | 2 | 3 | 4 | 5;
 }
 
-const KeyDatesSection: React.FC<IKeyDatesSection> = ({ showAll = false }) => (
+const KeyDatesSection: React.FC<IKeyDatesSection> = ({
+  level = 1,
+  showAll = false,
+}) => (
   <ContainerLayout>
     <div className="flex flex-col gap-4 md:flex-row md:items-center mb-8">
       <div className="flex flex-col gap-4 flex-1">
-        <Heading level={3}>Key Dates</Heading>
+        <Heading level={level}>Key Dates</Heading>
 
         {!showAll && (
           <Link href={`/${slugs.qiheStudents}/${slugs.keyDates}`}>
@@ -36,7 +41,9 @@ const KeyDatesSection: React.FC<IKeyDatesSection> = ({ showAll = false }) => (
       {keyDates
         .slice(0, showAll ? keyDates.length : 4)
         .map((item, index: number) => (
-          <KeyDateCard key={index} {...item} />
+          <FadeUp key={index} delay={index * 0.1}>
+            <KeyDateCard {...item} />
+          </FadeUp>
         ))}
     </div>
   </ContainerLayout>

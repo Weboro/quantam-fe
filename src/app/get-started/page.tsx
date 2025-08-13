@@ -3,8 +3,6 @@ import ContainerLayout from "@/components/layouts/ContainerLayout";
 import FaqSection from "@/components/sections/FaqSection";
 import NewsLetterSection from "@/components/sections/NewsLetterSection";
 import Heading from "@/components/ui/Heading";
-import { slugs } from "@/extra/slugs";
-import Link from "next/link";
 import React from "react";
 
 const page = () => {
@@ -18,7 +16,7 @@ const page = () => {
         </Heading>
       </ContainerLayout>
 
-      <div className="space-y-40 mt-40">
+      <div className="space-y-32 mt-32">
         <FaqSection />
         <NewsLetterSection />
       </div>

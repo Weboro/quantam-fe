@@ -6,9 +6,9 @@ import Heading from "@/components/ui/Heading";
 import Link from "next/link";
 import React from "react";
 
-const GlobalNotFound = () => {
+const NotFound = () => {
   return (
-    <div className="space-y-24">
+    <div className="space-y-32">
       <ContainerLayout>
         <div className="flex items-center flex-col py-20 my-8 rounded-2xl bg-brand-primary/5">
           <p className="w-20 aspect-square bg-brand-primary/25 rounded-full grid place-items-center mb-4">
@@ -34,4 +34,4 @@ const GlobalNotFound = () => {
   );
 };
 
-export default GlobalNotFound;
+export default NotFound;

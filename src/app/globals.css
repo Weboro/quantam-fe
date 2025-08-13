@@ -7,7 +7,7 @@
   --color-surface: hsl(0 0% 93%);
   --color-surface-1: hsl(0 0% 87%);
   --color-surface-2: hsl(0 0% 82%);
-  /* --color-muted: hsl(222 8% 55%); */
+
   --color-muted: #424242;
   --color-error: hsl(0 70% 58%);
   --color-success: hsl(142 50% 45%);
@@ -84,20 +84,20 @@ body {
   font-size: 18px;
   font-weight: 600;
   color: var(--color-brand-primary-black);
-  margin-top: 24px;
-  margin-bottom: 12px;
+  /* margin-top: 24px; */
+  /* margin-bottom: 12px; */
 }
 
 .rich_text ul {
   list-style: none;
   padding: 0;
-  margin-bottom: 24px;
+  /* margin-bottom: 24px; */
 }
 
 .rich_text li {
   position: relative;
   padding-left: 20px;
-  margin-bottom: 8px;
+  /* margin-bottom: 8px; */
   color: var(--color-muted);
   line-height: 1.5;
 }
@@ -111,6 +111,16 @@ body {
   height: 6px;
   background-color: #9ca3af;
   border-radius: 50%;
+}
+.rich_text ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 24px;
+  width: 969px;
+  /* height: 156px; */
+  /* gap: 32px; */
+  opacity: 1;
+  transform: rotate(0deg);
 }
 
 /* ------------------- SM --------------------- */
