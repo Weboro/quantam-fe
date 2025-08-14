@@ -48,7 +48,16 @@ const NewsPage: React.FC<IBlogPage> = async ({ params }) => {
           </span>
         </div>
 
+<<<<<<< HEAD
         <div className="h-1 w-36 bg-brand-primary-yellow mb-8 mt-2" />
+=======
+					<span className='flex items-center gap-1'>
+						<i className='fi fi-rr-time-quarter-to text-xl' />
+						{blog.readTime}
+					</span>
+				</div>
+				<h2 className='mt-4 mb-3.5 text-5xl font-bold'>{blog.title}</h2>
+>>>>>>> dafd5a394359ef3f99213a912e2b223ca5cbff4a
 
         <h1 className="mt-4 mb-3.5 text-5xl font-bold">{blog.title}</h1>
 
@@ -70,6 +79,7 @@ const NewsPage: React.FC<IBlogPage> = async ({ params }) => {
           dangerouslySetInnerHTML={{ __html: blog.richText }}
         />
 
+<<<<<<< HEAD
         {steps && steps.length > 0 && (
           <div className="mt-12">
             {steps.map((step, idx) => (
@@ -99,6 +109,47 @@ const NewsPage: React.FC<IBlogPage> = async ({ params }) => {
             <hr className="border-t border-surface-2 my-8 py-2" />
           </div>
         )}
+=======
+				<div className='mt-8 flex items-center gap-4'>
+					<span className='text-xl text-text font-medium'>Share To:</span>
+					<Link
+						href='#'
+						aria-label='Email'
+						className='text-text text-3xl hover:opacity-70'
+					>
+						<i className='fi fi-rr-envelope'></i>
+					</Link>
+					<Link
+						href='#'
+						aria-label='Facebook'
+						className='text-text text-3xl hover:opacity-70'
+					>
+						<i className='fi fi-brands-facebook'></i>
+					</Link>
+
+					<Link
+						href='#'
+						aria-label='LinkedIn'
+						className='text-text text-3xl hover:opacity-70 ml-[-1]'
+					>
+						<i className='fi fi-brands-linkedin'></i>
+					</Link>
+					<Link
+						href='#'
+						aria-label='WhatsApp'
+						className='text-text text-3xl hover:opacity-70'
+					>
+						<i className='fi fi-brands-whatsapp'></i>
+					</Link>
+					<Link
+						href='#'
+						aria-label='Messenger'
+						className='text-text text-3xl hover:opacity-70'
+					>
+						<i className='fi fi-brands-messenger' />
+					</Link>
+				</div>
+>>>>>>> dafd5a394359ef3f99213a912e2b223ca5cbff4a
 
         <div className="mt-8 flex items-center gap-2">
           <span className="text-xl text-text font-medium">Share To:</span>
