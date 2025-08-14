@@ -38,7 +38,6 @@ const BlogPage = () => {
             </FadeUp>
           ))}
         </div>
-        
       </ContainerLayout>
     </>
   );
