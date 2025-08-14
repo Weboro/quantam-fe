@@ -33,7 +33,7 @@ const BlogPage = () => {
 
   return (
     <>
-      <Breadcrumbs />
+     
 
       <ContainerLayout className="grid md:grid-cols-2 gap-8 mt-4 mb-8">
         <div className="">
