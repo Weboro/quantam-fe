@@ -47,7 +47,7 @@ const Footer = () => {
 
         <br />
 
-        <ContainerLayout className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+        <ContainerLayout className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-6 gap-y-12">
           <FooterLinksSection
             title={"Information"}
             baseSlug={""}
@@ -57,6 +57,11 @@ const Footer = () => {
                 title: "Contact",
                 name: "Contact QIHE",
                 slug: slugs.contact,
+              },
+              {
+                title: "News",
+                name: "News",
+                slug: slugs.news,
               },
             ]}
           />

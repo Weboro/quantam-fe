@@ -45,7 +45,9 @@ const FilterSelect: React.FC<IFilterSelect> = ({
         onClick={() => setIsOpen(!isOpen)}
       >
         <p className="flex items-center gap-2 justify-between">
-          <span className="py-1.5 text-gray-700">{displayValue}</span>
+          <span className="py-1.5 text-gray-700 capitalize">
+            {displayValue}
+          </span>
           <i
             className={`fi fi-rr-angle-small-down text-gray-500 transition-transform duration-200 flex ${
               isOpen ? "rotate-180" : ""
@@ -65,7 +67,7 @@ const FilterSelect: React.FC<IFilterSelect> = ({
               {["", ...options].map((option: string, index: number) => (
                 <div
                   key={index}
-                  className="px-4 py-2 text-gray-700 hover:bg-brand-primary/5 cursor-pointer transition-colors duration-150 border-b border-muted/25 last:border-b-0 first:rounded-t-lg last:rounded-b-lg"
+                  className="px-4 capitalize py-2 text-gray-700 hover:bg-brand-primary/5 cursor-pointer transition-colors duration-150 border-b border-muted/25 last:border-b-0 first:rounded-t-lg last:rounded-b-lg"
                   onClick={() => handleSelect(option)}
                 >
                   {option === "" ? placeholder : option}

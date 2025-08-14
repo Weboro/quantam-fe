@@ -28,7 +28,7 @@ const FilterPopover: React.FC<IFilterPopover> = ({ children, clearFilter }) => {
   return (
     <div className="relative">
       <div onClick={() => setIsOpen((prev) => !prev)}>
-        <Button icon="fi fi-br-filter" className="py-[11px]" />
+        <Button icon="fi fi-br-filter" className="py-[12px]" />
       </div>
 
       {isOpen && (
@@ -51,7 +51,6 @@ const FilterPopover: React.FC<IFilterPopover> = ({ children, clearFilter }) => {
               <Button variant="contrastAlt" className="text-xs">
                 Clear
               </Button>
-            
             </div>
           </div>
         </div>

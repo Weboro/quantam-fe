@@ -9,7 +9,7 @@ const FooterLinksSection: React.FC<{
 
   return (
     <div className="mb-8 lg:mb-0">
-      <h4 className="text-xl md:text-3xl font-semibold font-primary">
+      <h4 className="text-xl md:text-3xl font-semibold font-primary mb-1.5">
         {title}
       </h4>
 
