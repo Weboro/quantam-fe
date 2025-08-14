@@ -11,8 +11,6 @@ import React from "react";
 import useSearchNews from "@/hooks/useSearchNews";
 import Button from "@/components/ui/Button";
 
-
-
 const BlogPage = () => {
   const {
     searchQuery,
@@ -33,8 +31,6 @@ const BlogPage = () => {
 
   return (
     <>
-     
-
       <ContainerLayout className="grid md:grid-cols-2 gap-8 mt-4 mb-8">
         <div className="">
           <Heading level={2}>News & Articles</Heading>
@@ -55,14 +51,7 @@ const BlogPage = () => {
                   if (e.key === "Enter") handleSearch();
                 }}
               />
-              <div className="flex flex-row gap-2 w-full sm:w-auto mt-0 sm:mt-0 sm:ml-2">
-                <Button
-                  icon="fi fi-br-search"
-                  className="w-full sm:w-fit"
-                  onClick={handleSearch}
-                >
-                  Search
-                </Button>
+              <div className="flex items-center justify-end">
                 <FilterPopover clearFilter={clearFilter}>
                   <FilterSelect
                     value={selectedTag}
