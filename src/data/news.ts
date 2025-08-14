@@ -8,6 +8,7 @@ export interface INews {
 	summary: string;
 	richText: string;
 	author?: string;
+  tags: string[];
 }
 
 export const news: INews[] = [
@@ -18,6 +19,7 @@ export const news: INews[] = [
 		readTime: '2 mins read',
 		title: 'Grand Opening of QIHE’s New Campus in Parramatta',
 		slug: 'grand-opening-parramatta-campus',
+    tags: ['event'],
 		summary:
 			'QIHE celebrated the grand opening of its state-of-the-art Parramatta campus, attended by faculty, students, and community leaders.',
 		richText: `
@@ -67,6 +69,7 @@ export const news: INews[] = [
 		readTime: '1 min read',
 		title: 'Experts Discuss AI Trends at QIHE Panel Event',
 		slug: 'ai-panel-event-2025',
+    tags: ['ai'],
 		summary:
 			'Industry leaders joined our students for a panel on artificial intelligence, exploring ethical implications and future career paths.',
 		richText: `
@@ -115,6 +118,7 @@ export const news: INews[] = [
 		readTime: '1 min read',
 		title: 'Record-Breaking Enrolments for Semester 2, 2025',
 		slug: 'record-enrolment-2025',
+    tags: ['technology'],
 		summary:
 			'QIHE hits a new milestone with the highest-ever number of enrolments for Semester 2, driven by strong domestic and international interest.',
 		richText: `
