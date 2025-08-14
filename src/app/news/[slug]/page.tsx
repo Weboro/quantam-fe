@@ -47,7 +47,7 @@ const NewsPage: React.FC<IBlogPage> = async ({ params }) => {
 
 					<span className='flex items-center gap-1'>
 						<i className='fi fi-rr-time-quarter-to text-xl' />
-						{blog.readTime} 
+						{blog.readTime}
 					</span>
 				</div>
 				<h2 className='mt-4 mb-3.5 text-5xl font-bold'>{blog.title}</h2>
@@ -116,13 +116,7 @@ const NewsPage: React.FC<IBlogPage> = async ({ params }) => {
 					>
 						<i className='fi fi-brands-facebook'></i>
 					</Link>
-					<Link
-						href='#'
-						aria-label='X'
-						className='text-text text-3xl hover:opacity-70'
-					>
-						<i className='fi fi-brands-x' />
-					</Link>
+
 					<Link
 						href='#'
 						aria-label='LinkedIn'
