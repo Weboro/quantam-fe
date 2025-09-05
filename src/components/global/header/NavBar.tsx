@@ -15,7 +15,7 @@ const NavBar = () => {
             width={200}
             height={200}
             alt="Logo Image for Header"
-            className="w-full h-full object-contain"
+            className="h-full object-contain"
           />
         </Link>
       </div>
