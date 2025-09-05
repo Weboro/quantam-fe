@@ -28,8 +28,11 @@ const FooterBottom = () => (
         Strait Islander people as the Traditional Custodians of the land and
         acknowledges and pays respect to their elders, past and present
       </p>
-      <p className="mx-auto w-100 text-center mt-4">ABN: 54 668 014 757</p>
-
+      <div className="w-100 text-center mx-auto mt-4">
+        <p>CRICOS Provider Code TBA</p>
+        <p>TEQSA Provider Number TBA</p>
+        <p>ABN: 54 668 014 758</p>
+      </div>
       <hr className="border-brand-blue-4 my-4" />
 
       <p className="w-fit mx-auto text-center text-sm text-neutral-300">

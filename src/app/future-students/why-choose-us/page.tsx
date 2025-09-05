@@ -131,7 +131,7 @@ const page = () => {
         Convenient Location
       </Heading>
       <p>
-        Our campus is conveniently located in the heart of Parramatta, providing
+        Our campus is conveniently located at Level 4, 16-18 Wentworth Street, Parramatta NSW 2150, providing
         students with easy access to public transport, nearby amenities, and
         opportunities to engage with the local community.
       </p>

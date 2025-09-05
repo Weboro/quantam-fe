@@ -43,13 +43,13 @@ const page = () => {
         Fees and Payments
       </Heading>
 
-      <p>Details of Fees are below:</p>
-      <ul className="list-disc pl-6 space-y-1 mt-2">
+      <p>Details of Fees are TBA:</p>
+      {/* <ul className="list-disc pl-6 space-y-1 mt-2">
         <li>Tuition Fees: $10,000 per year</li>
         <li>Registration Fee: $200 (one-time)</li>
         <li>Library Fee: $50 per semester</li>
         <li>Lab Fee: $100 per course</li>
-      </ul>
+      </ul> */}
     </ContainerLayout>
   );
 };

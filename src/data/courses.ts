@@ -52,7 +52,7 @@ const courses: ICourse[] = [
     tabbedPaneData: [
       {
         title: "Program Overview",
-        richText: ` <div class="rich_text"> <p>The Accounting major equips students with the knowledge and skills to interpret, analyse, and report financial and non-financial information critical to effective decision-making.</p><h3>Core Learning Outcomes</h3> <ul> <li>Master financial reporting standards and principles</li> <li>Develop advanced analytical and problem-solving skills</li> <li>Understand taxation and regulatory compliance</li> </ul>`,
+        richText: ` <div class="rich_text"> <p>The Accounting major equips students with the knowledge and skills to interpret, analyse, and report financial and non-financial information critical to effective decision-making.</p><h3>Core Learning Outcomes</h3> <ul> <li>Master financial reporting standards and principles</li> <li>Develop advanced analytical and problem-solving skills</li> <li>Understand taxation and regulatory compliance</li> </ul><h3>Professional Recognition</h3> <ul> <li>TBA</li> </ul>`,
       },
       {
         title: "Why Choose This Program?",
@@ -60,7 +60,7 @@ const courses: ICourse[] = [
       },
       {
         title: "Career Outcomes",
-        richText: ` <div class="rich_text"> <p>Graduates are prepared for diverse accounting and finance roles across various industries.</p>  <h3>Career Opportunities</h3> <ul> <li>Public Practice Accountant</li> <li>Management Accountant</li> <li>Financial Analyst</li> <li>Taxation Specialist</li> </ul>`,
+        richText: ` <div class="rich_text"> <p>Graduates are prepared for diverse accounting and finance roles across various industries.</p>  <h3>Career Opportunities</h3> <ul> <li>Public Practice Accountant</li> <li>Management Accountant</li> <li>Financial Analyst</li> <li>Taxation Specialist</li> </ul><h3>Graduate Success</h3> <ul> <li>TBA</li> </ul>`,
       },
       {
         title: "Admission Requirements",
@@ -100,7 +100,7 @@ const courses: ICourse[] = [
       },
       {
         title: "Career Outcomes",
-        richText: ` <div class="rich_text"> <p>Graduates are equipped for diverse technology roles that bridge business and IT domains.</p>  <h3>Career Opportunities</h3> <ul> <li>IT Consultant</li> <li>Systems Analyst</li> <li>Cybersecurity Specialist</li> <li>Business Intelligence Analyst</li> </ul>  <h3>Industry Demand</h3> <ul> <li>95% employment rate within 4 months of graduation</li> <li>Average starting salary of $70,000+</li> <li>High growth potential in emerging tech sectors</li> </ul> </div> `,
+        richText: ` <div class="rich_text"> <p>Graduates are equipped for diverse technology roles that bridge business and IT domains.</p>  <h3>Career Opportunities</h3> <ul> <li>IT Consultant</li> <li>Systems Analyst</li> <li>Cybersecurity Specialist</li> <li>Business Intelligence Analyst</li> </ul>  <h3>Industry Demand</h3> <ul> <li>TBA</li> </ul> </div> `,
       },
       {
         title: "Admission Requirements",
@@ -140,7 +140,7 @@ const courses: ICourse[] = [
       },
       {
         title: "Career Outcomes",
-        richText: ` <div class="rich_text"> <p>Graduates pursue diverse leadership roles across the global hospitality and tourism industry.</p>  <h3>Career Opportunities</h3> <ul> <li>Hotel Manager</li> <li>Event Coordinator</li> <li>Restaurant Manager</li> <li>Tourism Development Manager</li> </ul>  <h3>Industry Prospects</h3> <ul> <li>89% employment rate within 6 months</li> <li>Average starting salary of $55,000+</li> <li>Rapid career progression opportunities</li> </ul> </div> `,
+        richText: ` <div class="rich_text"> <p>Graduates pursue diverse leadership roles across the global hospitality and tourism industry.</p>  <h3>Career Opportunities</h3> <ul> <li>Hotel Manager</li> <li>Event Coordinator</li> <li>Restaurant Manager</li> <li>Tourism Development Manager</li> </ul>  <h3>Industry Prospects</h3> <ul> <li>TBA<li> </ul> </div> `,
       },
       {
         title: "Admission Requirements",
