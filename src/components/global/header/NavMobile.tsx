@@ -32,7 +32,7 @@ const NavMobile = () => {
             <div className="flex items-center gap-2 justify-between mb-4">
               <Link className="block h-10" href={"/"} onClick={closeNav}>
                 <Image
-                  src={"/quantam-logo.svg"}
+                  src={"/quantam-horizontal.svg"}
                   width={200}
                   height={200}
                   alt="Logo Image for Header"
