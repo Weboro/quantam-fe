@@ -11,7 +11,7 @@ const NavBar = () => {
       <div className="block h-14 md:h-16">
         <Link className="w-full h-full block" href={"/"}>
           <Image
-            src={"/logo.png"}
+            src={"/quantam-logo.svg"}
             width={200}
             height={200}
             alt="Logo Image for Header"

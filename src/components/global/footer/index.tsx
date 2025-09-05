@@ -30,7 +30,7 @@ const Footer = () => {
         <ContainerLayout className="grid md:grid-cols-2 items-center">
           <Link className="h-24 lg:h-32 aspect-[7/3] mb-8 md:mb-0" href={"/"}>
             <Image
-              src={"/logo.png"}
+              src={"/quantam-logo.svg"}
               width={200}
               height={200}
               alt="Logo Image for Header"
@@ -39,9 +39,9 @@ const Footer = () => {
           </Link>
 
           <div className="flex flex-col md:items-end text-text font-[250  ]">
-            <p>CRICOS Provider Code 04082E</p>
+            {/* <p>CRICOS Provider Code 04082E</p>
             <p>TEQSA Provider Number PRV14305</p>
-            <p>ABN 91 612 507 141</p>
+            <p>ABN 91 612 507 141</p> */}
           </div>
         </ContainerLayout>
 

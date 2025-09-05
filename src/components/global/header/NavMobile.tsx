@@ -32,7 +32,7 @@ const NavMobile = () => {
             <div className="flex items-center gap-2 justify-between mb-4">
               <Link className="block h-10" href={"/"} onClick={closeNav}>
                 <Image
-                  src={"/logo.png"}
+                  src={"/quantam-logo.svg"}
                   width={200}
                   height={200}
                   alt="Logo Image for Header"
@@ -61,9 +61,8 @@ const NavMobile = () => {
                         </span>
 
                         <i
-                          className={`fi fi-rr-angle-small-up flex transition-transform duration-200 ${
-                            openDropdown === i ? "rotate-180" : "rotate-0"
-                          }`}
+                          className={`fi fi-rr-angle-small-up flex transition-transform duration-200 ${openDropdown === i ? "rotate-180" : "rotate-0"
+                            }`}
                         />
                       </button>
 

@@ -51,7 +51,7 @@ export const metadata: Metadata = {
     siteName: "Quantum Institute of Higher Education",
     images: [
       {
-        url: `${SITE_URL}/logo.png`,
+        url: `${SITE_URL}/quantam-logo.svg`,
         width: 1200,
         height: 630,
         alt: "Quantum Institute",
@@ -65,7 +65,7 @@ export const metadata: Metadata = {
     title: "Quantum Institute",
     description:
       "Quantum Institute is a leading education provider offering quality programs and courses.",
-    images: [`${SITE_URL}/logo.png`],
+    images: [`${SITE_URL}/quantam-logo.svg`],
   },
   icons: {
     icon: "/favicon.svg",
@@ -107,7 +107,7 @@ export default function RootLayout({
         {children}
 
         <ScrollToTop />
-         
+
         <Footer />
       </body>
     </html>

@@ -1,4 +1,4 @@
-import { SITE_EMAIL, SITE_PHONE, SITE_URL } from "@/extra/siteDetails";
+import { SITE_EMAIL, SITE_PHONE, SITE_URL, SITE_LOCATION } from "@/extra/siteDetails";
 
 export interface IContact {
   title: string;
@@ -6,6 +6,7 @@ export interface IContact {
   phone?: string;
   email?: string;
   url?: string;
+  link?: string;
 }
 
 export const contact: IContact[] = [
@@ -22,6 +23,7 @@ export const contact: IContact[] = [
   {
     title: "Visit Us",
     icon: "fi fi-br-land-layer-location",
-    url: SITE_URL,
+    url: SITE_LOCATION,
+    link: SITE_URL,
   },
 ];

@@ -36,7 +36,7 @@ const courses: ICourse[] = [
     description:
       "The Accounting major equips students with the knowledge and skills to interpret, analyse, and report financial and non-financial information critical to effective decision-making.",
     richText:
-      "<ul><li>Gain expertise to analyse financial data and create value for stakeholders</li><li>Prepare for CPA Australia and CAANZ eligibility</li><li>Explore sustainability and forensic accounting</li></ul>",
+      "<ul><li>Gain expertise to analyse financial data and create value for stakeholders</li></ul>",
     heroImage: "/courses/accounting/hero.jpg",
     images: ["/courses/accounting/1.jpg"],
     level: "Beginner",
@@ -44,15 +44,15 @@ const courses: ICourse[] = [
     tags: ["Accounting", "Business"],
     publishedDate: "2025-08-01",
     url: "/courses/bachelor-business-accounting",
-    location: "Parramatta",
-    degreeType: "Postgraduate",
-    intakes: ["March", "July", "November"],
+    location: "Level 4, 16-18 Wentworth Street, Parramatta NSW 2150",
+    degreeType: "Undergraduate",
+    intakes: ["TBA"],
     deliveryMode: "Face-to-face",
     CRICOSCourseCode: "_TBA_",
     tabbedPaneData: [
       {
         title: "Program Overview",
-        richText: ` <div class="rich_text"> <p>The Accounting major equips students with the knowledge and skills to interpret, analyse, and report financial and non-financial information critical to effective decision-making.</p><h3>Core Learning Outcomes</h3> <ul> <li>Master financial reporting standards and principles</li> <li>Develop advanced analytical and problem-solving skills</li> <li>Understand taxation and regulatory compliance</li> </ul><h3>Professional Recognition</h3> <ul> <li>Pathway to CPA Australia membership</li> <li>CAANZ accreditation eligibility</li> <li>Industry-recognized qualifications</li> </ul> </div> `,
+        richText: ` <div class="rich_text"> <p>The Accounting major equips students with the knowledge and skills to interpret, analyse, and report financial and non-financial information critical to effective decision-making.</p><h3>Core Learning Outcomes</h3> <ul> <li>Master financial reporting standards and principles</li> <li>Develop advanced analytical and problem-solving skills</li> <li>Understand taxation and regulatory compliance</li> </ul>`,
       },
       {
         title: "Why Choose This Program?",
@@ -60,7 +60,7 @@ const courses: ICourse[] = [
       },
       {
         title: "Career Outcomes",
-        richText: ` <div class="rich_text"> <p>Graduates are prepared for diverse accounting and finance roles across various industries.</p>  <h3>Career Opportunities</h3> <ul> <li>Public Practice Accountant</li> <li>Management Accountant</li> <li>Financial Analyst</li> <li>Taxation Specialist</li> </ul>  <h3>Graduate Success</h3> <ul> <li>92% employment rate within 6 months of graduation</li> <li>Average starting salary of $65,000+</li> <li>Strong alumni network in Big 4 and mid-tier firms</li> </ul> </div> `,
+        richText: ` <div class="rich_text"> <p>Graduates are prepared for diverse accounting and finance roles across various industries.</p>  <h3>Career Opportunities</h3> <ul> <li>Public Practice Accountant</li> <li>Management Accountant</li> <li>Financial Analyst</li> <li>Taxation Specialist</li> </ul>`,
       },
       {
         title: "Admission Requirements",
@@ -84,9 +84,9 @@ const courses: ICourse[] = [
     tags: ["Information Systems", "Business"],
     publishedDate: "2025-08-01",
     url: "/courses/bachelor-business-information-systems",
-    location: "Parramatta",
+    location: "Level 4, 16-18 Wentworth Street, Parramatta NSW 2150",
     degreeType: "Undergraduate",
-    intakes: ["March", "July", "November"],
+    intakes: ["TBA"],
     deliveryMode: "Face-to-face",
     CRICOSCourseCode: "_TBA_",
     tabbedPaneData: [
@@ -124,9 +124,9 @@ const courses: ICourse[] = [
     tags: ["Hospitality", "Business"],
     publishedDate: "2025-08-01",
     url: "/courses/bachelor-business-hospitality",
-    location: "Parramatta",
+    location: "Level 4, 16-18 Wentworth Street, Parramatta NSW 2150",
     degreeType: "Undergraduate",
-    intakes: ["March", "July", "November"],
+    intakes: ["TBA"],
     deliveryMode: "Face-to-face",
     CRICOSCourseCode: "_TBA_",
     tabbedPaneData: [
@@ -164,9 +164,9 @@ const courses: ICourse[] = [
     tags: ["IT", "Technology"],
     publishedDate: "2025-08-01",
     url: "/courses/bachelor-information-technology",
-    location: "Parramatta",
+    location: "Level 4, 16-18 Wentworth Street, Parramatta NSW 2150",
     degreeType: "Undergraduate",
-    intakes: ["March", "July", "November"],
+    intakes: ["TBA"],
     deliveryMode: "Face-to-face",
     CRICOSCourseCode: "_TBA_",
     tabbedPaneData: [

@@ -15,7 +15,7 @@ const faq: IFaq[] = [
     id: 2,
     question: "Where is QIHE located?",
     answer:
-      "QIHE is located in the heart of Parramatta, offering students convenient access to public transport, local amenities, and opportunities to engage with the community.",
+      "QIHE is located at Level 4, 16-18 Wentworth Street, Parramatta NSW 2150, offering students convenient access to public transport, local amenities, and opportunities to engage with the community.",
   },
   {
     id: 3,

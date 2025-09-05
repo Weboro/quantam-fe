@@ -28,6 +28,7 @@ const FooterBottom = () => (
         Strait Islander people as the Traditional Custodians of the land and
         acknowledges and pays respect to their elders, past and present
       </p>
+      <p className="mx-auto w-100 text-center mt-4">ABN: 54 668 014 757</p>
 
       <hr className="border-brand-blue-4 my-4" />
 

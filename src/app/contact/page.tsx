@@ -7,7 +7,7 @@ import Heading from "@/components/ui/Heading";
 import { contact } from "@/data/contact";
 import Link from "next/link";
 import type { Metadata } from "next";
-import { SITE_URL } from "@/extra/siteDetails";
+import { SITE_URL, SITE_MAP } from "@/extra/siteDetails";
 import { slugs } from "@/extra/slugs";
 
 export const generateMetadata = (): Metadata => ({
@@ -75,7 +75,7 @@ const ContactPage = () => {
               {item.url && (
                 <Link
                   className="text-muted underline hover:text-brand-primary transition-all"
-                  href={`${item.url}`}
+                  href={`${SITE_MAP}`}
                   target="_blank"
                 >
                   {item.url}
