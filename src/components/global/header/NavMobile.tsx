@@ -36,7 +36,7 @@ const NavMobile = () => {
                   width={200}
                   height={200}
                   alt="Logo Image for Header"
-                  className="w-full h-full object-contain"
+                  className="w-full h-full object-contain text-left"
                 />
               </Link>
               <button className="text-2xl p-2" onClick={closeNav}>
