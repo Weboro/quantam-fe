@@ -1,0 +1,58 @@
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+<style>
+    :root {
+        --color-background: hsl(0 0% 98%);
+        --color-text: hsl(222 40% 15%);
+        --color-surface: hsl(0 0% 93%);
+        --color-surface-1: hsl(0 0% 87%);
+        --color-surface-2: hsl(0 0% 82%);
+        --color-muted: #424242;
+        --color-error: hsl(0 70% 58%);
+        --color-success: hsl(142 50% 45%);
+        --color-powder-blue: #edf5ff;
+        --color-brand-primary: #78256f;
+        --color-brand-primary-yellow: #f3bd1c;
+        --color-brand-primary-black: #111111;
+        --color-brand-blue-1: #093a73;
+        --color-brand-blue-2: #124380;
+        --color-brand-blue-3: #1d4d8b;
+        --color-brand-blue-4: #255494;
+        --color-brand-yellow-1: #ef7c00;
+        --color-brand-yellow-2: #f2a510;
+        --color-brand-yellow-3: #f3bd1c;
+        --color-brand-yellow-4: #f4d526;
+        --font-primary: 'League Spartan', serif;
+        --font-secondary: 'Poppins', serif;
+    }
+</style>
+
+<div class="container-md mx-auto px-4">
+  <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-8">
+    <div>
+      <h2 class="font-primary font-bold text-3xl md:text-4xl mb-2">News & Articles</h2>
+      <a href="#" class="inline-block mt-2">
+        <button class="px-4 py-2 rounded text-sm font-medium bg-[var(--color-brand-yellow-3)] text-black hover:bg-[var(--color-brand-yellow-2)] transition-colors">More Blogs</button>
+      </a>
+    </div>
+    <p class="text-muted md:max-w-xl">
+      Stay updated with the latest news, announcements, and achievements from the Quantum Institute community.
+    </p>
+  </div>
+  <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+    <!-- News Card Example -->
+    <div class="rounded-xl overflow-hidden border border-muted/50 bg-white shadow-sm flex flex-col">
+      <img src="/public/news-image.jpg" alt="News Title" class="w-full h-48 object-cover" />
+      <div class="p-4 flex flex-col gap-2 flex-1">
+        <div class="flex items-center gap-2 text-xs text-muted mb-1">
+          <span>Sep 21, 2025</span>
+          <span class="mx-1">•</span>
+          <span>5 min read</span>
+        </div>
+        <h3 class="font-bold text-lg text-[var(--color-brand-primary)] leading-tight">Sample News Title Goes Here</h3>
+        <p class="text-muted text-sm line-clamp-2">This is a short summary of the news article. Stay updated with the latest news, announcements, and achievements from the Quantum Institute community.</p>
+        <a href="#" class="mt-2 text-brand-primary font-medium hover:underline">Read More</a>
+      </div>
+    </div>
+    <!-- Duplicate the card above for more news items -->
+  </div>
+</div>
