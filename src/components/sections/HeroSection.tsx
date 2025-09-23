@@ -33,7 +33,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
       className="relative w-full h-[50vh] md:h-[70vh] bg-cover bg-center bg-no-repeat grid place-items-center"
       style={{ backgroundImage: `url('${imageUrl}')` }}
     >
-      <div className="absolute inset-0 bg-gradient-to-r from-[#002B5C] via-[#002B5C]/50 to-transparent"></div>
+      <div className="absolute inset-0 bg-gradient-to-r from-brand-primary via-brand-primary/50 to-transparent"></div>
 
       <ContainerLayout
         className={`relative z-10 h-full flex flex-col justify-center ${alignClass}`}

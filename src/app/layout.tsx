@@ -103,12 +103,7 @@ export default function RootLayout({
       <body
         className={`${poppins.variable} ${leagueSpartan.variable} antialiased bg-white text-black dark:bg-black dark:text-white`}
       >
-        <Header />
         {children}
-
-        <ScrollToTop />
-
-        <Footer />
       </body>
     </html>
   );

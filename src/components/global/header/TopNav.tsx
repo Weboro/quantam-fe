@@ -1,9 +1,18 @@
+"use client";
+import React from "react";
 import ContainerLayout from "@/components/layouts/ContainerLayout";
 import { socialLinks, topLinks } from "@/data/topNavLinks";
 import Link from "next/link";
-import React from "react";
+import { useRouter } from "next/navigation";
 
 const TopNav = () => {
+  const router = useRouter();
+
+  const logout = () => {
+    document.cookie = "isAuthed=; path=/";
+    router.push("/login");
+  };
+
   return (
     <div className="bg-brand-primary">
       <ContainerLayout className="py-2 flex items-center gap-2 justify-between">
@@ -32,6 +41,13 @@ const TopNav = () => {
               {link.name}
             </Link>
           ))}
+
+          <p
+            className="text-neutral-300 hover:text-background hover:underline cursor-pointer transition-all"
+            onClick={logout}
+          >
+            Logout
+          </p>
         </nav>
       </ContainerLayout>
     </div>
