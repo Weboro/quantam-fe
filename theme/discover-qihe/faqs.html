@@ -25,15 +25,39 @@
         --font-secondary: 'Poppins', serif;
     }
 </style>
-<div className="container-md">
-      <h1 className="w-fit mx-auto text-center">
-        Frequently Asked Questions
-      </h1>
-
-      <p className="text-muted max-w-xl text-center mx-auto">
-        Find answers to common questions about admissions, courses, support
-        services, and life at QIHE.
-      </p>
-
-      <!-- {accrodin} -->
+<div class="container-md mt-6">
+  <h1 class="w-fit mx-auto text-center text-4xl md:text-5xl font-bold text-brand-primary-black mb-2">Frequently Asked Questions</h1>
+  <p class="text-muted max-w-xl text-center mx-auto mb-6">
+    Find answers to common questions about admissions, courses, support services, and life at QIHE.
+  </p>
+  <div class="max-w-2xl mx-auto">
+    <div class="border-b border-muted/50">
+      <button class="w-full flex justify-between items-center py-4 text-left font-medium text-lg focus:outline-none" onclick="this.nextElementSibling.classList.toggle('hidden')">
+        What are the admission requirements?
+        <span class="ml-2"><i class="fi fi-rr-angle-small-down"></i></span>
+      </button>
+      <div class="hidden pb-4 text-muted">
+        Admission requirements vary by program. Please visit the Admissions page for detailed information.
+      </div>
     </div>
+    <div class="border-b border-muted/50">
+      <button class="w-full flex justify-between items-center py-4 text-left font-medium text-lg focus:outline-none" onclick="this.nextElementSibling.classList.toggle('hidden')">
+        How do I apply?
+        <span class="ml-2"><i class="fi fi-rr-angle-small-down"></i></span>
+      </button>
+      <div class="hidden pb-4 text-muted">
+        You can apply online through our application portal. See the Apply Now page for step-by-step instructions.
+      </div>
+    </div>
+    <div class="border-b border-muted/50">
+      <button class="w-full flex justify-between items-center py-4 text-left font-medium text-lg focus:outline-none" onclick="this.nextElementSibling.classList.toggle('hidden')">
+        What support services are available?
+        <span class="ml-2"><i class="fi fi-rr-angle-small-down"></i></span>
+      </button>
+      <div class="hidden pb-4 text-muted">
+        We offer academic advising, career counseling, and student support services. Visit the Support page for more details.
+      </div>
+    </div>
+    <!-- Add more FAQ items as needed -->
+  </div>
+</div>
