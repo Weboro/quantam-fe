@@ -10,9 +10,17 @@ const FormsPage = () => {
         Forms
       </Heading>
 
-      {formsList.map((form, index) => (
-        <PDFrenderCard key={index} form={form} />
-      ))}
+      {formsList.map((form) => {
+        return (
+          <PDFrenderCard
+            key={form.id}
+            icon={form.icon}
+            title={form.title}
+            url={form.url}
+            description={form.description}
+          />
+        );
+      })}
     </ContainerLayout>
   );
 };

@@ -1,80 +1,58 @@
-export interface IForm {
-    id: string
-    name: string
-    fileFormate?: string
-    description: string
-    icon?: string
-    formUrl: string
-}
+import { IPdfType } from "@/types/pdf-type";
 
 
-export const formsList: IForm[] = [
+
+export const formsList: IPdfType[] = [
     {
         id: "1",
-        name: "Admission Application Form",
+        title: "Admission Application Form",
         description: "Use this form to apply for admission to the institution.",
-        fileFormate: "PDF",
-        formUrl:
+        url:
             "https://www.dropbox.com/scl/fo/ixrq58oyj2yo3ja5g8f9n/ABpcZ03eVACUmpsqkooYkxU/Forms?dl=0&preview=Admission+Application+Form.pdf",
-        icon: "/pdf-svgrepo-com.svg",
+        icon: "fi fi-ts-id-card-clip-alt",
     },
     {
         id: "2",
-        name: "Advanced Standing and Credit Transfer Application Form",
-        fileFormate: "PDF",
+        title: "Advanced Standing and Credit Transfer Application Form",
         description: "Advanced Standing and Credit Transfer Application Form",
-        formUrl:
+        url:
             "https://www.dropbox.com/scl/fo/ixrq58oyj2yo3ja5g8f9n/ABpcZ03eVACUmpsqkooYkxU/Forms?dl=0&preview=Advanced+Standing+and+Credit+Transfer+Application+Form.pdf&rlkey=bt8lvdav3k7x6my0f6khqgfsg&subfolder_nav_tracking=1",
-        icon: "/pdf-svgrepo-com.svg",
+        icon: "fi fi-rs-form",
     },
     {
         id: "3",
-        name: "Complaints and Appeal Form",
-        fileFormate: "PDF",
+        title: "Complaints and Appeal Form",
         description: "Complaints and Appeal Form",
-        formUrl:
+        url:
             "https://www.dropbox.com/scl/fo/ixrq58oyj2yo3ja5g8f9n/ABpcZ03eVACUmpsqkooYkxU/Forms?dl=0&preview=Complaints+and+Appeal+Form.pdf&rlkey=bt8lvdav3k7x6my0f6khqgfsg&subfolder_nav_tracking=1",
-        icon: "/pdf-svgrepo-com.svg",
+        icon: "fi fi-rr-assessment",
     },
     {
         id: "4",
-        name: "Complaints and Appeal Outcome Form",
-        fileFormate: "PDF",
-        description: "Complaints and Appeal Outcome Form",
-        formUrl: "https://www.dropbox.com/scl/fo/ixrq58oyj2yo3ja5g8f9n/ABpcZ03eVACUmpsqkooYkxU/Forms?dl=0&preview=Complaints+and+Appeal+Outcome+Form.pdf&rlkey=bt8lvdav3k7x6my0f6khqgfsg&subfolder_nav_tracking=1",
-        icon: "/pdf-svgrepo-com.svg",
+        title: "Deferment, Withdrawal and Cancellation Form",
+        description: "Deferment, Withdrawal and Cancellation Form",
+        url: "https://www.dropbox.com/scl/fo/ixrq58oyj2yo3ja5g8f9n/ABpcZ03eVACUmpsqkooYkxU/Forms?dl=0&preview=Deferment%2C+Withdrawal+and+Cancellation+Form.pdf&rlkey=bt8lvdav3k7x6my0f6khqgfsg&subfolder_nav_tracking=1",
+        icon: "fi fi-rr-assessment-alt",
     }, {
         id: "5",
-        name: "Deferment, Withdrawal and Cancellation Form",
-        description: "Deferment, Withdrawal and Cancellation Form",
-        formUrl: "https://www.dropbox.com/scl/fo/ixrq58oyj2yo3ja5g8f9n/ABpcZ03eVACUmpsqkooYkxU/Forms?dl=0&preview=Deferment%2C+Withdrawal+and+Cancellation+Form.pdf&rlkey=bt8lvdav3k7x6my0f6khqgfsg&subfolder_nav_tracking=1",
-        icon: "/pdf-svgrepo-com.svg"
-    }, {
-        id: "6",
-        name: "Fee Refund Application Form",
+        title: "Fee Refund Application Form",
         description: "Fee Refund Application Form",
-        formUrl: "https://www.dropbox.com/scl/fo/ixrq58oyj2yo3ja5g8f9n/ABpcZ03eVACUmpsqkooYkxU/Forms?dl=0&preview=Fee+Refund+Application+Form.pdf&rlkey=bt8lvdav3k7x6my0f6khqgfsg&subfolder_nav_tracking=1",
-        icon: "/pdf-svgrepo-com.svg"
+        url: "https://www.dropbox.com/scl/fo/ixrq58oyj2yo3ja5g8f9n/ABpcZ03eVACUmpsqkooYkxU/Forms?dl=0&preview=Fee+Refund+Application+Form.pdf&rlkey=bt8lvdav3k7x6my0f6khqgfsg&subfolder_nav_tracking=1",
+        icon: "fi fi-ts-refund-alt"
+    },
+    {
+        id: "6",
+        title: "Incident Form",
+        url: "https://www.dropbox.com/scl/fo/ixrq58oyj2yo3ja5g8f9n/ABpcZ03eVACUmpsqkooYkxU/Forms?dl=0&preview=Incident+Form.pdf&rlkey=bt8lvdav3k7x6my0f6khqgfsg&subfolder_nav_tracking=1",
+        description: "<p>Incident Form</p>",
+        icon: "fi fi-rr-triangle-warning"
     },
     {
         id: "7",
-        name: "Incident Form",
-        formUrl: "https://www.dropbox.com/scl/fo/ixrq58oyj2yo3ja5g8f9n/ABpcZ03eVACUmpsqkooYkxU/Forms?dl=0&preview=Incident+Form.pdf&rlkey=bt8lvdav3k7x6my0f6khqgfsg&subfolder_nav_tracking=1",
-        description: "<p>Incident Form</p>",
-        icon: "/pdf-svgrepo-com.svg"
-    },
-    {
-        id: "8",
-        name: "Transfer and Release Request Form",
+        title: "Transfer and Release Request Form",
         description: "Transfer and Release Request Form",
-        formUrl: "https://www.dropbox.com/scl/fo/ixrq58oyj2yo3ja5g8f9n/ABpcZ03eVACUmpsqkooYkxU/Forms?dl=0&preview=Transfer+and+Release+Request+Form.pdf&rlkey=bt8lvdav3k7x6my0f6khqgfsg&subfolder_nav_tracking=1",
-        icon: "/pdf-svgrepo-com.svg"
+        url: "https://www.dropbox.com/scl/fo/ixrq58oyj2yo3ja5g8f9n/ABpcZ03eVACUmpsqkooYkxU/Forms?dl=0&preview=Transfer+and+Release+Request+Form.pdf&rlkey=bt8lvdav3k7x6my0f6khqgfsg&subfolder_nav_tracking=1",
+        icon: "fi fi-rr-money-bill-transfer"
     },
-    {
-        id: "9",
-        name: "Transfer and Release Request Form",
-        description: "Transfer and Release Request Form  dhdf dhasj sjask nsrejdj jdhdjhd fjhdfksjdfndj vnjchxv <b> hdhdsgfb sghdshjdhav njigandh pajndeyi fjfv ,</b> Transfer and Release Request Form  dhdf dhasj sjask nsrejdj jdhdjhd fjhdfksjdfndj vnjchxv <b> hdhdsgfb sghdshjdhav njigandh pajndeyi fjfv ,</b>Transfer and Release Request Form  dhdf dhasj sjask nsrejdj jdhdjhd fjhdfksjdfndj vnjchxv <b> hdhdsgfb sghdshjdhav njigandh pajndeyi fjfv ,</b>Transfer and Release Request Form  dhdf dhasj sjask nsrejdj jdhdjhd fjhdfksjdfndj vnjchxv <b> hdhdsgfb sghdshjdhav njigandh pajndeyi fjfv ,</b>",
-        formUrl: "https://www.dropbox.com/scl/fo/ixrq58oyj2yo3ja5g8f9n/ABpcZ03eVACUmpsqkooYkxU/Forms?dl=0&preview=Transfer+and+Release+Request+Form.pdf&rlkey=bt8lvdav3k7x6my0f6khqgfsg&subfolder_nav_tracking=1",
-        icon: "/pdf-svgrepo-com.svg"
-    }
+
 ]; 

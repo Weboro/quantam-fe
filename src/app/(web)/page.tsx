@@ -8,6 +8,7 @@ import FaqSection from "@/components/sections/FaqSection";
 import Heading from "@/components/ui/Heading";
 import TypewriterEffect from "@/components/TypewriterEffect";
 import { slugs } from "@/extra/slugs";
+import QiheCard from "@/components/cards/QiheCard";
 
 const HomePage = () => {
   return (
@@ -17,10 +18,10 @@ const HomePage = () => {
           <Heading level={1} className="text-background lg:max-w-3xl mb-4">
             Empowering You to Thrive
             <br />
-            in a{" "}
+            in a
             <TypewriterEffect
               strings={["Dynamic", "Digital", "Global", "Evolving"]}
-            />{" "}
+            />
             World!
           </Heading>
         }
@@ -29,17 +30,12 @@ const HomePage = () => {
         imageUrl="/banner.jpg"
         textAlign="left"
       />
-
       <CoursesSections />
-
       <AboutUsSection />
-
       <KeyDatesSection level={2} />
-
       <HomeNewsSection />
-
+      <QiheCard  />
       <FaqSection />
-
       <NewsLetterSection />
     </div>
   );
