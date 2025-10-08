@@ -5,6 +5,8 @@ import { Metadata } from "next";
 //
 import { SITE_TITLE, SITE_URL } from "@/extra/siteDetails";
 import { slugs } from "@/extra/slugs";
+import Button from "@/components/ui/Button";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: `Orientation & Pre-Arrival Guide`,
@@ -109,13 +111,36 @@ const page = () => {
             support services available at QIHE.
           </li>
         </ul>
-
         <p>
           Our Student Services Team, led by the Student Services Manager and
           supported by the Student Services Officer, will guide you through this
           program to ensure you feel fully informed and supported from day one.
         </p>
-
+        <Button className="mt-6">
+          <Link
+            href={
+              "https://www.dropbox.com/scl/fo/ixrq58oyj2yo3ja5g8f9n/AF-HwH0fnWWbpNminvyKYTI/Student%20Information%20Materials?dl=0&preview=QIHE+Pre-Arrival+Guide.pdf&rlkey=bt8lvdav3k7x6my0f6khqgfsg&subfolder_nav_tracking=1"
+            }
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center justify-center gap-2"
+          >
+            <svg
+              className="w-4 h-4"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+              />
+            </svg>
+          </Link>
+          Pre-Arrival Guide
+        </Button>
         <p className="mt-6 mb-2 font-semibold">
           We look forward to welcoming you to QIHE!
         </p>
