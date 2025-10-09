@@ -1,5 +1,11 @@
 import { slugs } from "@/extra/slugs";
 
+export type IValue =
+  | "On Campus"
+  | "Face-to-face (Not work-based training involved)"
+  | "Online"
+  | "Blended";
+
 export interface ICourse {
   id: string;
   name: string;
@@ -21,13 +27,7 @@ export interface ICourse {
   creditPoints?: string;
   degreeType?: "Undergraduate" | "Postgraduate" | "Diploma" | "Certificate";
   intakes?: string[];
-  deliveryMode?: (
-    | "On Campus"
-    | "Face-to-face (Not work-based training involved)"
-    | "Online"
-    | "Blended"
-  )[];
-
+  deliveryMode?: IValue[];
   CRICOSCourseCode?: string;
   numberOfcourses?: string;
   tabbedPaneData?: ITabbedPane[];
@@ -38,15 +38,14 @@ export interface ITabbedPane {
   richText: string;
 }
 
-
-
 const courses: ICourse[] = [
   {
     id: "bachelor-business-accounting",
     major: "Bachelor of Business",
     name: "Bachelor of Business – Accounting",
     slug: slugs.bachelorBusinessAccounting,
-    description: "The Accounting major equips students with the knowledge and skills to interpret, analyse, and report financial and non-financial information critical to effective decision-making. Students will explore foundational and advanced concepts, including accounting principles, auditing, taxation, business law, and management. This major is ideal for those seeking a career in professional accounting or related fields.",
+    description:
+      "The Accounting major equips students with the knowledge and skills to interpret, analyse, and report financial and non-financial information critical to effective decision-making. Students will explore foundational and advanced concepts, including accounting principles, auditing, taxation, business law, and management. This major is ideal for those seeking a career in professional accounting or related fields.",
     richText: "",
     heroImage: "/courses/accounting/hero.jpg",
     images: ["/courses/accounting/1.jpg"],
@@ -61,7 +60,10 @@ const courses: ICourse[] = [
     creditPoints: "240",
     degreeType: "Undergraduate",
     intakes: ["TBA"],
-    deliveryMode: ["On Campus", "Face-to-face (Not work-based training involved)"],
+    deliveryMode: [
+      "On Campus",
+      "Face-to-face (Not work-based training involved)",
+    ],
     CRICOSCourseCode: "TBA",
     tabbedPaneData: [
       {
@@ -73,8 +75,9 @@ const courses: ICourse[] = [
   <li>Prepare for professional certifications and industry recognition</li>
   <li>Learn from industry-relevant curriculum aligned with workforce needs</li>
   <li>Engage in hands-on practical experience and real-world projects</li>
-</ul>`
-      }, {
+</ul>`,
+      },
+      {
         title: "Learning Outcomes",
         richText: `
 <div class="list-decimal list-outside  space-y-2  flex flex-col gap-2 py-2">
@@ -89,10 +92,8 @@ const courses: ICourse[] = [
     </ul>
   </p></div>
   <p>Graduates of the Bachelor of Business (Accounting) program will be prepared to be qualified as professional accountants from major professional bodies in Australia such as CPA Australia and Chartered Accountants Australia and New Zealand (CAANZ).</p>
-</div>`
-      }
-      ,
-
+</div>`,
+      },
       {
         title: "Career Outcomes",
         richText: `
@@ -107,7 +108,7 @@ const courses: ICourse[] = [
   <li>Accounts Receivable or Payable Officer</li>
   <li>Risk Manager</li>
   <li>Credit Officer</li>
-</ul>`
+</ul>`,
       },
       {
         title: "Admission Requirements",
@@ -140,16 +141,17 @@ const courses: ICourse[] = [
   <li>Receive Admission Outcome</li>
   <li>Accept Offer</li>
   <li>Orientation and Enrolment</li>
-</ol>`
-      }
-    ]
+</ol>`,
+      },
+    ],
   },
   {
     id: "bachelor-business-information-systems",
     major: "Bachelor of Business",
     name: "Bachelors of Business - Information Systems",
     slug: slugs.bachelorBusinessInformationSystems,
-    description: "The Bachelor of Business - Information Systems major bridges the gap between technology and business, enabling students to harness technology for strategic decision-making. Students will learn to improve business efficiency, develop and manage information systems, and protect organisational data. This major prepares graduates for leadership in today’s digital economy.",
+    description:
+      "The Bachelor of Business - Information Systems major bridges the gap between technology and business, enabling students to harness technology for strategic decision-making. Students will learn to improve business efficiency, develop and manage information systems, and protect organisational data. This major prepares graduates for leadership in today’s digital economy.",
     richText: "", // "<ul><li>Gain skills in software development, cybersecurity, and data management</li><li>Address real-world challenges with innovative solutions</li></ul>",
     heroImage: "/courses/information-systems/hero.jpg",
     images: ["/courses/information-systems/1.jpg"],
@@ -162,7 +164,10 @@ const courses: ICourse[] = [
     aqfLevel: "7 (Bachelor Degree)",
     numberOfcourses: "24 Courses/ 10 Credit Points Per Course",
     creditPoints: "240",
-    deliveryMode: ["On Campus", "Face-to-face (Not work-based training involved)"],
+    deliveryMode: [
+      "On Campus",
+      "Face-to-face (Not work-based training involved)",
+    ],
 
     degreeType: "Undergraduate",
     intakes: ["TBA"],
@@ -177,7 +182,7 @@ const courses: ICourse[] = [
     <li>Build transferable skills to address real-world business and technology challenges.</li>
     <li>Develop ethical and sustainable practices aligned with professional IT roles.</li>
     <li>Benefit from a curriculum designed to meet industry demands and prepare for future IT roles.</li>
-  </ul>`
+  </ul>`,
       },
       {
         title: "Program Learning Outcomes ",
@@ -201,7 +206,8 @@ const courses: ICourse[] = [
       </ol>
     </div>
   </div>
-  ` },
+  `,
+      },
       {
         title: "Career Outcomes",
         richText: `
@@ -214,7 +220,7 @@ const courses: ICourse[] = [
   <li>Information Security Analyst</li>
   <li>Business Intelligence Analyst</li>
   <li>IT Project Manager</li>
-</ul> `
+</ul> `,
       },
       {
         title: "Admission Requirements",
@@ -252,10 +258,9 @@ const courses: ICourse[] = [
   <li>Accept Offer</li>
   <li>Orientation and Enrolment</li>
 </ol>
-`
-      }
-
-    ]
+`,
+      },
+    ],
   },
   {
     id: "bachelor-business-hospitality",
@@ -264,7 +269,7 @@ const courses: ICourse[] = [
     slug: slugs.bachelorBusinessHospitality,
     description:
       "The Bachelor of Business - Hospitality major prepares students for leadership in the fast-paced and dynamic hospitality industry. Students will gain a deep understanding of hospitality management, customer experience, event planning, and sustainable practices. This major is tailored for those passionate about creating exceptional guest experiences and managing hospitality operations.",
-    richText: "",// "<ul><li>Develop customer experience and hospitality operations management skills</li><li>Learn event planning, food and beverage management</li></ul>",
+    richText: "", // "<ul><li>Develop customer experience and hospitality operations management skills</li><li>Learn event planning, food and beverage management</li></ul>",
     heroImage: "/courses/hospitality/hero.jpg",
     images: ["/courses/hospitality/1.jpg"],
     level: "Beginner",
@@ -276,7 +281,10 @@ const courses: ICourse[] = [
     aqfLevel: "7 (Bachelor Degree)",
     numberOfcourses: "24 Courses/ 10 Credit Points Per Course",
     creditPoints: "240",
-    deliveryMode: ["On Campus", "Face-to-face (Not work-based training involved)"],
+    deliveryMode: [
+      "On Campus",
+      "Face-to-face (Not work-based training involved)",
+    ],
     degreeType: "Undergraduate",
     intakes: ["TBA"],
     CRICOSCourseCode: "TBA",
@@ -291,9 +299,8 @@ const courses: ICourse[] = [
   <li>Gain expertise in event planning, food and beverage management, and sustainability.</li>
   <li>Learn from industry-relevant curriculum aligned with workforce needs.</li>
 </ul>
-`
-      }
-      ,
+`,
+      },
       {
         title: "Learning Outcomes",
         richText: `
@@ -316,9 +323,8 @@ const courses: ICourse[] = [
     </ol>
   </div>
 </div>
-`
+`,
       },
-
 
       {
         title: "Career Outcomes",
@@ -335,9 +341,8 @@ const courses: ICourse[] = [
   <li>Customer Service or Quality Manager</li>
   <li>Retail Management</li>
 </ul>
-`
-      }
-      ,
+`,
+      },
       {
         title: "Admission Requirements",
         richText: `
@@ -378,10 +383,9 @@ const courses: ICourse[] = [
 <p class="mt-4">
   For full details, see the Admission Policy and Procedure.
 </p>
-`
-      }
-
-    ]
+`,
+      },
+    ],
   },
   {
     id: "bachelor-information-technology",
@@ -390,7 +394,7 @@ const courses: ICourse[] = [
     slug: slugs.bachelorInformationTechnology,
     description:
       "The Bachelor of Information Technology program aims to produce graduates who are well-prepared to meet the demands of the digital world. Students will gain a comprehensive understanding of emerging technologies, ethical IT practices, and strategic problem-solving, enabling them to contribute meaningfully to diverse organisations and industries",
-    richText: "",  // "<ul><li>Learn AI, cloud computing, cybersecurity, and IoT</li><li>Prepare for diverse IT careers</li><li>Curriculum meets industry demands</li></ul>",
+    richText: "", // "<ul><li>Learn AI, cloud computing, cybersecurity, and IoT</li><li>Prepare for diverse IT careers</li><li>Curriculum meets industry demands</li></ul>",
     heroImage: "/courses/information-technology/hero.jpg",
     images: ["/courses/information-technology/1.jpg"],
     level: "Beginner",
@@ -404,7 +408,10 @@ const courses: ICourse[] = [
     aqfLevel: "7 (Bachelor Degree)",
     numberOfcourses: "24 Courses/ 10 Credit Points Per Course",
     creditPoints: "240",
-    deliveryMode: ["On Campus", "Face-to-face (Not work-based training involved)"],
+    deliveryMode: [
+      "On Campus",
+      "Face-to-face (Not work-based training involved)",
+    ],
     CRICOSCourseCode: "TBA",
     tabbedPaneData: [
       {
@@ -415,9 +422,8 @@ const courses: ICourse[] = [
   <li>Build transferable skills to address real-world business and technology challenges.</li>
   <li>Develop ethical and sustainable practices aligned with professional IT roles.</li>
   <li>Benefit from a curriculum designed to meet industry demands and prepare for future IT roles.</li>
-</ul>`
-      }
-      ,
+</ul>`,
+      },
       {
         title: "Learning Outcomes",
         richText: `
@@ -440,10 +446,8 @@ const courses: ICourse[] = [
     </ol>
   </div>
 </div>
-`
-      }
-      ,
-
+`,
+      },
       {
         title: "Career Outcomes",
         richText: `
@@ -460,9 +464,9 @@ const courses: ICourse[] = [
   <li>Software Developer or Engineer</li>
   <li>Information Systems Manager</li>
   <li>Network Administrator or Engineer</li>
-</ul>`
-      }
-      , {
+</ul>`,
+      },
+      {
         title: "Admission Requirements",
         richText: `
 <p class="mb-4">
@@ -493,11 +497,10 @@ const courses: ICourse[] = [
   <li>Accept Offer</li>
   <li>Orientation and Enrolment</li>
 </ol>
-<p class="mt-4 text-gray-700">For full details, see the Admission Policy and Procedure.</p>`
-      }
-
-    ]
-  }
+<p class="mt-4 text-gray-700">For full details, see the Admission Policy and Procedure.</p>`,
+      },
+    ],
+  },
 ];
 
 export default courses;

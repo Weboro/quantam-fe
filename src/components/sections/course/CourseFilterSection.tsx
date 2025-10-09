@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 //
-import courses, { type ICourse } from "@/data/courses";
+import courses, { IValue, type ICourse } from "@/data/courses";
 import useSearchCourse from "@/hooks/useSearchCourse";
 //
 import DetailedCourseCard from "@/components/cards/DetailedCourseCard";
@@ -74,10 +74,8 @@ const CourseFilterSection = () => {
                 />
 
                 <FilterSelect
-                  value={deliveryMode ?? ""}
-                  onChange={(el) =>
-                    setDeliveryMode(el as ICourse["deliveryMode"])
-                  }
+                  value={deliveryMode?.[0] ?? ""}
+                  onChange={(el) => setDeliveryMode(el ? [el as IValue] : [])}
                   placeholder="Select Delivery Mode"
                   options={["Face-to-Face", "Online", "Blended"]}
                 />
