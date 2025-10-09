@@ -30,7 +30,10 @@ const Accordion: React.FC<IAccordion> = ({ data }) => {
           </div>
 
           {selectedId === item.id && (
-            <p className="pb-2 text-neutral-700">{item.answer}</p>
+            <p
+              className="pb-2 text-neutral-700"
+              dangerouslySetInnerHTML={{ __html: item.answer }}
+            ></p>
           )}
         </div>
       ))}

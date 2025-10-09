@@ -21,38 +21,49 @@ const faq: IFaq[] = [
     id: 3,
     question: "What are the entry requirements for international students?",
     answer:
-      "International applicants must have completed 12 years of formal education recognized by NOOSR, meet English proficiency standards, satisfy GTE criteria, and provide valid student visa documentation.",
+      "International students are required to demonstrate qualifications equivalent to Australian Year 12, a Certificate IV or higher, or an International Baccalaureate diploma (Minimum 24 points ) as recognised by the Australion Government Department of Education's Country Education Profiles (CEP), submit the necessary documentation, and satisfy the Genuine Student requirement.",
   },
   {
     id: 4,
     question: "What are the English language requirements at QIHE?",
     answer:
-      "QIHE accepts IELTS (Academic) with an overall score of 6.0 and no band below 5.5. TOEFL (IBT) and PTE (Academic) scores are also accepted. Refer to the English Language Policy for details.",
+      " <p> International applicants must demonstrate English proficiency with one of the following: IELTS (Academic) 6.0 overall with no band below 5.5, TOEFL iBT minimum 60, or PTE Academic minimum 55. </p> <br> <p> For more detailed information, please refer to <a href='/programs' class='text-blue-700 hover:underline hover:text-brand-primary transition-all '>Our Programs</a>. page for Admission Requirements, or <a href='/contact' class='text-blue-700 hover:underline hover:text-brand-primary transition-all'>Contact Us</a>. for further assistance. </p>",
   },
   {
     id: 5,
     question: "Does QIHE recognize prior learning or work experience?",
     answer:
-      "Yes. Students may apply for Advanced Standing or Credit Transfer based on relevant prior learning, work experience, or qualifications that align with course outcomes.",
+      "<p>Yes. Students may apply for Advanced Standing or Credit Transfer based on relevant prior learning, work experience, or qualifications. that align with courses outcomes. Decisions are made in accordance with AQF level descriptions to ensure equivalency in knowledge, skills, and applications.</p> <br> <p> For further details, please refer to the Advanced Standing ,<a href='https://www.dropbox.com/scl/fo/ixrq58oyj2yo3ja5g8f9n/AJ-mqWkT5w00G5w_-L9PFRw/Policies%20and%20Procedures?e=1&preview=Advanced+Standing%2C+Credit+Transfer+and+Articulation+Policy.pdf&rlkey=bt8lvdav3k7x6my0f6khqgfsg&subfolder_nav_tracking=1&dl=0'  class='text-blue-700 hover:underline hover:text-brand-primary transition-all ' >  <i>Credit Transfer and Articulation Policy    </i> </a>, Requirements or <a href='/contact' class='text-blue-700 hover:underline hover:text-brand-primary transition-all'>Contact Us</a> for further assistance.   </p>",
   },
   {
     id: 6,
     question: "What support services are available at QIHE?",
     answer:
-      "QIHE offers academic advising, career guidance, personal development support, and a range of student services delivered by a dedicated team, including during orientation.",
+      "<p> QIHE provides academic and non-academic support services to help students succeed in their studies , wellbeing, and personal development </p>. <br> <p> For more information, please refer to the   <a href='https://www.dropbox.com/scl/fo/ixrq58oyj2yo3ja5g8f9n/AJ-mqWkT5w00G5w_-L9PFRw/Policies%20and%20Procedures?e=2&preview=Student+Support+and+Consultation+Policy.pdf&rlkey=bt8lvdav3k7x6my0f6khqgfsg&subfolder_nav_tracking=1&dl=0' class='text-blue-700 hover:underline hover:text-brand-primary transition-all'>Student Support and Consultation Policy</a> , or <a href='/contact' class='text-blue-700 hover:underline hover:text-brand-primary transition-all'>Contact Us</a> for further assistance <p>",
   },
   {
     id: 7,
     question: "How does the admission process work at QIHE?",
     answer:
-      "Applicants must submit a completed online form along with certified documents. Admission outcomes are generally released within five working days and may include a conditional or full offer.",
+      "<p>Applicants must submit a completed Admission Application Form along with certified documents. Admission outcomes are issued in writing and may include a full or conditional Letter of Offer.,</p> <br> <p> For more information, please refer to the <a href='https://www.dropbox.com/scl/fo/ixrq58oyj2yo3ja5g8f9n/AJ-mqWkT5w00G5w_-L9PFRw/Policies%20and%20Procedures?e=1&preview=Assessment+Policy+and+Procedure.pdf&rlkey=bt8lvdav3k7x6my0f6khqgfsg&subfolder_nav_tracking=1&dl=0' class='text-blue-700 hover:underline hover:text-brand-primary transition-all'>Assessment Policy and Procedure</a> , or <a href='/contact' class='text-blue-700 hover:underline hover:text-brand-primary transition-all'>Contact Us</a> for further assistance </p>.",
   },
   {
     id: 8,
-    question: "What are the delivery methods for programs?",
+    question: "What are the delivery methods for the programs?",
     answer:
-      "All programs are delivered full-time, on-campus, and face-to-face to ensure an immersive and supportive learning experience.",
+      "All programs are delivered full-time, on-campus , and face-to-face, with no work-based training involved, ensuring an immersive and supportive learning experience focused entrely on academic and professional skil development. ",
   },
+  {
+    id: 9,
+    question: "How can i apply for a student visa to study in Australia?",
+    answer:
+      "<p>You can find the most up-to-date information on student visa requirements and the application process at</p> <br> <a href='homeaffairs.gov.au' class='text-blue-700 hover:underline hover:text-brand-primary transition-all'>homeaffairs.gov.au</a>.  ",
+  },
+  {
+    id: 10,
+    question: "Can i apply for my student visa through an equcation agent?",
+    answer: "Absolutely! QIHE works with trusted education agents who can help you with your application. <a href='/future-students/find-agent' class='text-blue-700 hover:underline hover:text-brand-primary transition-all'>Find Agent </a> to find an agent near you."
+  }
 ];
 
 export default faq;

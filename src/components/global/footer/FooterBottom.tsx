@@ -22,22 +22,29 @@ const FooterBottom = () => (
           height={250}
         />
       </div>
-
+      <h3> Acknowledgements of Country </h3>
       <p className="md:w-2/4 mx-auto text-center leading-4.5 text-sm text-neutral-300">
-        Quantam Institute of Higher Education acknowledges Aboriginal and Torres
-        Strait Islander people as the Traditional Custodians of the land and
-        acknowledges and pays respect to their elders, past and present
+        We Acknowledgements the Dharug people as the Traditional Custodians of
+        the land on which Quantum Institute of Hight Education Stands in
+        Parramatta, New South Wales.
       </p>
-      <div className="w-100 text-center mx-auto mt-4">
-        <p>CRICOS Provider Code TBA</p>
-        <p>TEQSA Provider Number TBA</p>
-        <p>ABN: 54 668 014 758</p>
+      <p className="md:w-2/4 mx-auto text-center leading-4.5 text-sm text-neutral-300">
+        We pay our respects to thei Elders past, present, and emerging, and
+        extend that respect to all Aboriginal and Torres Strait Islander people.
+      </p>
+      <div className="w-fit text-center mx-auto mt-4">
+        <p>TEQSA Provider ID: TBA </p>
+        <p>CRICOS Provider Code: TBA </p>
+        <p>ABN 54 668 014 757</p>
+        <p>ACN 668 014 757</p>
+        <p>Level 4, 16-18 Wentworth Street, Parramatta, NSW 2150</p>
+        +61 2 8359 5220
       </div>
       <hr className="border-brand-blue-4 my-4" />
 
       <p className="w-fit mx-auto text-center text-sm text-neutral-300">
         Copyright &copy; {new Date().getFullYear()} Quantam Institute of Higher
-        Education
+        Education. All Rights Reserved.
       </p>
     </ContainerLayout>
   </div>
