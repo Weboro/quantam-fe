@@ -1,3 +1,4 @@
+// app/(web)/contact/page.tsx
 import IconCard from "@/components/cards/IconCard";
 import Breadcrumbs from "@/components/global/Breadcrumbs";
 import ContainerLayout from "@/components/layouts/ContainerLayout";
@@ -39,44 +40,35 @@ const ContactPage = () => {
 
       <ContainerLayout className="mt-8">
         <Heading level={1}>Contact QIHE</Heading>
-
-        <p className="text-muted max-w-2xl mt-2 mb-4">
-          Have questions or need assistance? We are here to help—reach out to
-          the QIHE team through the channels below.
+        <p className="text-gray-600 max-w-2xl mt-2 mb-6">
+          We are here to support you throughout your learning journey. If you have any questions, require assistance, or need further information, please reach out using the details below. Our team is committed to providing timely and helpful guidance to all students.
         </p>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 mt-8">
+        {/* Contact Info Cards */}
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 mt-8">
           {contact.map((item, i) => (
             <IconCard key={i} icon={item.icon}>
-              <Heading level={4} className="">
-                {item.title}
-              </Heading>
-
+              <Heading level={4}>{item.title}</Heading>
               {item.email && (
                 <Link
-                  className="text-muted underline hover:text-brand-primary transition-all"
                   href={`mailto:${item.email}`}
-                  target="_blank"
+                  className="text-gray-600 underline hover:text-brand-primary transition-all"
                 >
                   {item.email}
                 </Link>
               )}
-
               {item.phone && (
                 <Link
-                  className="text-muted underline hover:text-brand-primary transition-all"
                   href={`tel:${item.phone}`}
-                  target="_blank"
+                  className="text-gray-600 underline hover:text-brand-primary transition-all"
                 >
                   {item.phone}
                 </Link>
               )}
-
               {item.url && (
                 <Link
-                  className="text-muted underline hover:text-brand-primary transition-all"
-                  href={`${SITE_MAP}`}
-                  target="_blank"
+                  href={item.url}
+                  className="text-gray-600 underline hover:text-brand-primary transition-all"
                 >
                   {item.url}
                 </Link>
@@ -84,11 +76,67 @@ const ContactPage = () => {
             </IconCard>
           ))}
         </div>
+
+        {/* Office Hours & Student Support */}
+        <div className="mt-12 space-y-6">
+          <Heading level={2} className="text-2xl font-semibold">
+            Office Hours & Student Support
+          </Heading>
+          <p className="text-gray-700">
+            <strong>Office Hours:</strong> Monday to Friday: 9:00 AM – 5:30 PM (AEST)
+          </p>
+          <p className="text-gray-700">
+            <strong>Student Support:</strong> For academic, enrolment, or wellbeing support, contact our Student Services Team at: TBA (Email and Phone)
+          </p>
+        </div>
+
+        {/* Contact Form */}
+        <div className="mt-12">
+          <Heading level={2} className="text-2xl font-semibold mb-4">
+            Write to QIHE
+          </Heading>
+          <p className="text-gray-700 mb-6">
+            You can contact us directly through our online form. Please complete the fields below, and a member of our team will respond to your enquiry as soon as possible.
+          </p>
+
+          <form className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-3xl">
+            <div className="flex flex-col">
+              <label htmlFor="name" className="mb-1 font-medium text-gray-700">Full Name*</label>
+              <input type="text" id="name" placeholder="Enter your first and last name" className="border rounded-md p-3 focus:ring-2 focus:ring-blue-500 focus:outline-none" />
+            </div>
+
+            <div className="flex flex-col">
+              <label htmlFor="email" className="mb-1 font-medium text-gray-700">Email Address*</label>
+              <input type="email" id="email" placeholder="Enter a valid email" className="border rounded-md p-3 focus:ring-2 focus:ring-blue-500 focus:outline-none" />
+            </div>
+
+            <div className="flex flex-col">
+              <label htmlFor="phone" className="mb-1 font-medium text-gray-700">Phone Number (Optional)</label>
+              <input type="tel" id="phone" placeholder="Enter your phone number" className="border rounded-md p-3 focus:ring-2 focus:ring-blue-500 focus:outline-none" />
+            </div>
+
+            <div className="flex flex-col">
+              <label htmlFor="studentId" className="mb-1 font-medium text-gray-700">Student ID (if applicable)</label>
+              <input type="text" id="studentId" placeholder="Provide your student ID" className="border rounded-md p-3 focus:ring-2 focus:ring-blue-500 focus:outline-none" />
+            </div>
+
+            <div className="flex flex-col md:col-span-2">
+              <label htmlFor="message" className="mb-1 font-medium text-gray-700">Your Message*</label>
+              <textarea id="message" rows={6} placeholder="Include your enquiry, feedback, or request" className="border rounded-md p-3 focus:ring-2 focus:ring-blue-500 focus:outline-none"></textarea>
+            </div>
+
+            <div className="md:col-span-2">
+              <button type="submit" className="bg-blue-600 text-white px-6 py-3 rounded-md hover:bg-blue-700 transition-all">
+                📩 Send Message
+              </button>
+            </div>
+          </form>
+        </div>
       </ContainerLayout>
 
+      {/* FAQ and Newsletter Sections */}
       <div className="mt-32 space-y-32">
         <FaqSection />
-
         <NewsLetterSection />
       </div>
     </>

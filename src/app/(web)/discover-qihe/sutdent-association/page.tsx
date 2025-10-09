@@ -8,24 +8,24 @@ import ContainerLayout from "@/components/layouts/ContainerLayout";
 import Heading from "@/components/ui/Heading";
 
 export const generateMetadata = (): Metadata => ({
-  title: `Student Association`,
+  title: `QIHE Student Association`,
   description:
-    "Learn about the Student Association at Quantum Institute, fostering community, leadership, and engagement among QIHE students.",
+    "The Quantum Institute of Higher Education (QIHE) Student Association is the formally recognised body representing the interests, needs, and welfare of all students.",
   alternates: {
     canonical: `${SITE_URL}/${slugs.discoverQihe}/${slugs.studentAssociation}`,
   },
   openGraph: {
-    title: `Student Association`,
+    title: `QIHE Student Association`,
     description:
-      "Learn about the Student Association at Quantum Institute, fostering community, leadership, and engagement among QIHE students.",
+      "The Quantum Institute of Higher Education (QIHE) Student Association is the formally recognised body representing the interests, needs, and welfare of all students.",
     url: `${SITE_URL}/${slugs.discoverQihe}/${slugs.studentAssociation}`,
     siteName: SITE_TITLE,
   },
   twitter: {
     card: "summary_large_image",
-    title: `Student Association`,
+    title: `QIHE Student Association`,
     description:
-      "Learn about the Student Association at Quantum Institute, fostering community, leadership, and engagement among QIHE students.",
+      "The Quantum Institute of Higher Education (QIHE) Student Association is the formally recognised body representing the interests, needs, and welfare of all students.",
   },
 });
 
@@ -33,22 +33,114 @@ const page = () => {
   return (
     <ContainerLayout className="mt-6 text-muted">
       <Heading className="text-brand-primary-black mt-4 mb-2" level={1}>
-        Student Association
+        QIHE Student Association
       </Heading>
 
       <p>
-        Our Student Association plays an important role in creating a vibrant
-        and inclusive campus culture, representing student voices and organizing
-        events, support services, and advocacy initiatives.
+        The Quantum Institute of Higher Education (QIHE) Student Association is
+        the formally recognised body representing the interests, needs, and
+        welfare of all students. It provides a strong student voice in
+        institutional decision-making and acts as a channel of communication
+        between students, management, and governance bodies.
       </p>
-      <p className="mt-2">
+
+      <p className="mt-4">
+        The Association enhances academic, social, and cultural life by:
+      </p>
+
+      <ul className="list-disc list-inside mt-2 space-y-1">
+        <li>
+          Representing students in governance, planning, and quality assurance
+          processes.
+        </li>
+        <li>
+          Organising events, clubs, and initiatives that promote wellbeing,
+          inclusivity, and diversity.
+        </li>
+        <li>
+          Supporting student-led activities such as peer mentoring, advocacy,
+          volunteering, and leadership development.
+        </li>
+        <li>
+          Ensuring that the perspectives of domestic, international, and diverse
+          student cohorts are heard and valued.
+        </li>
+      </ul>
+
+      <p className="mt-4">
+        All enrolled students are automatically members of the Student
+        Association, giving them the opportunity to participate in elections,
+        attend meetings, and contribute to student-led initiatives. Through this
+        engagement, the Association builds student belonging, strengthens
+        community, and contributes to continuous improvement of the student
+        learning experience.
+      </p>
+
+      <p className="mt-4">
+        For further information, please refer to the QIHE Student Association –
+        Plan and Terms of Reference.
+      </p>
+
+      <p className="mt-4">
         <Link
           href="#"
           className="text-brand-primary underline hover:text-brand-blue-4 transition-all"
         >
-          Meet the Student Association
+          Meet the Student Association – Your Voice at QIHE
         </Link>
       </p>
+
+      <Heading className="text-brand-primary-black mt-6 mb-2" level={2}>
+        Campus Information
+      </Heading>
+      <ul className="list-disc list-inside space-y-1">
+        <li>
+          <Link href="/discover-qihe/sutdent-association/Campus-Location-and-Directions">
+            Campus Location and Directions
+          </Link>
+        </li>
+        <li>
+          <Link href="/discover-qihe/sutdent-association/campus-safety">
+            Campus Safety
+          </Link>
+          <ul className="list-disc list-inside ml-5">
+            <li>Evacuation Plan</li>
+            <li>Fire Exit Diagram</li>
+          </ul>
+        </li>
+      </ul>
+
+      <Heading className="text-brand-primary-black mt-6 mb-2" level={2}>
+        Additional Information
+      </Heading>
+      <ul className="list-disc list-inside space-y-1">
+        <li>
+          <Link href="/contact">Contact Us</Link>{" "}
+        </li>
+        <li>
+          <Link href="/qihe-students/forms"> Policies and Forms</Link>{" "}
+        </li>
+        <li>
+          <Link href="/discover-qihe/sutdent-association/esos-framework">
+            ESOS Framework
+          </Link>
+        </li>
+        <li>
+          <Link href="/discover-qihe/sutdent-association/privacy-policy">
+            Privacy Policy
+          </Link> 
+        </li>
+        <li>
+          <Link href="/discover-qihe/sutdent-association/copyright">
+            Copyright
+          </Link>
+        </li>
+        <li>
+          <Link href="/discover-qihe/sutdent-association/careers-at-qihe">
+            Careers at QIHE
+          </Link> 
+        </li>
+      </ul>
     </ContainerLayout>
   );
 };

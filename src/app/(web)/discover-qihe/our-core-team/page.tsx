@@ -1,67 +1,54 @@
 import Image from "next/image";
 import Link from "next/link";
 import type { Metadata } from "next";
-//
 import { SITE_TITLE, SITE_URL } from "@/extra/siteDetails";
 import { slugs } from "@/extra/slugs";
-//
 import ContainerLayout from "@/components/layouts/ContainerLayout";
 import Heading from "@/components/ui/Heading";
 
 export const generateMetadata = (): Metadata => ({
-  title: `Our Core Team`,
+  title: `Governance Structure`,
   description:
-    "Meet the leadership and core team at Quantum Institute who drive our vision and uphold our commitment to quality education.",
+    "Explore QIHE’s Governance Structure and Framework, where dedicated academic and administrative bodies work together to uphold integrity, excellence, and transparency in education.",
   alternates: {
     canonical: `${SITE_URL}/${slugs.discoverQihe}/${slugs.ourCoreTeam}`,
   },
   openGraph: {
-    title: `Our Core Team`,
+    title: `Governance Structure`,
     description:
-      "Meet the leadership and core team at Quantum Institute who drive our vision and uphold our commitment to quality education.",
+      "Explore QIHE’s Governance Structure and Framework, where dedicated academic and administrative bodies work together to uphold integrity, excellence, and transparency in education.",
     url: `${SITE_URL}/${slugs.discoverQihe}/${slugs.ourCoreTeam}`,
     siteName: SITE_TITLE,
   },
   twitter: {
     card: "summary_large_image",
-    title: `Our Core Team`,
+    title: `Governance Structure`,
     description:
-      "Meet the leadership and core team at Quantum Institute who drive our vision and uphold our commitment to quality education.",
+      "Explore QIHE’s Governance Structure and Framework, where dedicated academic and administrative bodies work together to uphold integrity, excellence, and transparency in education.",
   },
 });
 
 const page = () => {
   return (
     <ContainerLayout className="text-muted">
-      <Heading className="text-brand-primary-black mt-4 mb-2" level={1}>
+      <Heading className="text-brand-primary-black mt-4 mb-1" level={1}>
         Meet the Quantum Family
       </Heading>
-      <p>
-        QIHE’s governance framework includes several key bodies that work
-        collaboratively to uphold our commitment to academic excellence,
-        integrity, and student achievement.
-      </p>
+      <p className="font-medium mb-3">QIHE’s Governance Framework</p>
 
       <ul className="list-disc pl-6 space-y-1 mt-2">
         <li>The Governing Council</li>
         <li>The Academic Board</li>
-        <li>The Industry and Advisory Committee</li>
+        <li>The Course and Industry Advisory Committee</li>
         <li>The Risk and Audit Committee</li>
       </ul>
 
-      <p className="mt-2">
+      <p className="mt-3 text-justify leading-relaxed">
         The Institute is steered by the Governing Council, the Academic Board,
-        and a network of Course and Advisory Committees. These bodies play a
-        pivotal role in ensuring the Institute’s academic standards, industry
-        relevance, and student-focused outcomes.
-      </p>
-
-      <p className="mt-2">
-        These teams collaborate closely to provide an enriching learning
-        experience, combining innovative teaching, industry insights, and
-        personalized support. At Quantum, we are committed to empowering
-        students with relevant knowledge, skills, and connections they need to
-        thrive in their careers and contribute meaningfully to society.
+        and a network of Course and Industry Advisory Committee, who plays a
+        pivotal role in upholding the Institute’s standards of academic
+        excellence and integrity, practical and industry relevance, and, most
+        importantly, student achievement.
       </p>
 
       <Image
@@ -69,10 +56,10 @@ const page = () => {
         alt="Governance Structure"
         width={600}
         height={600}
-        className="md:w-2xl mx-auto mix-blend-multiply"
+        className="md:w-2xl mx-auto mix-blend-multiply mt-4"
       />
 
-      <p className="mt-2 w-fit mx-auto md:text-center">
+      <p className="mt-3 w-fit mx-auto md:text-center">
         <Link
           href="/organizational/governance-structure.png"
           target="_blank"

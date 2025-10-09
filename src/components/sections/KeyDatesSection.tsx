@@ -32,7 +32,8 @@ const KeyDatesSection: React.FC<IKeyDatesSection> = ({
       <div className="flex-1">
         <p className="text-md text-semibold text-muted text-left font-secondary ">
           Stay ahead of your academic schedule. Keep track of important dates
-          including semester starts, census deadlines, exam periods, and more.
+          including semester start and end dates, census dates, exam periods,
+          and more.
         </p>
       </div>
     </div>

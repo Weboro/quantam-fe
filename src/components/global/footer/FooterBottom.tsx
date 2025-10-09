@@ -22,15 +22,18 @@ const FooterBottom = () => (
           height={250}
         />
       </div>
-      <h3> Acknowledgements of Country </h3>
+      <p className="md:w-2/4 mx-auto text-center leading-4.5 text-md font-semibold text-neutral-300">
+        Acknowledgements of Country
+      </p>
       <p className="md:w-2/4 mx-auto text-center leading-4.5 text-sm text-neutral-300">
         We Acknowledgements the Dharug people as the Traditional Custodians of
         the land on which Quantum Institute of Hight Education Stands in
         Parramatta, New South Wales.
       </p>
       <p className="md:w-2/4 mx-auto text-center leading-4.5 text-sm text-neutral-300">
-        We pay our respects to thei Elders past, present, and emerging, and
-        extend that respect to all Aboriginal and Torres Strait Islander people.
+        We pay our respects to their Elders past, present, and emerging, and
+        extend that respect to all Aboriginal and Torres Strait Islander
+        peoples.
       </p>
       <div className="w-fit text-center mx-auto mt-4">
         <p>TEQSA Provider ID: TBA </p>

@@ -15,7 +15,8 @@ export const slugs = {
   eLibrary: underConstruction,
   libraryFacilitiesPolicy: underConstruction,
   studentPlatformLogin: underConstruction,
-
+  
+ 
   //
   programs: "programs",
   // Programs Sub pages
@@ -23,6 +24,7 @@ export const slugs = {
   bachelorBusinessInformationSystems: "bachelor-business-information-systems",
   bachelorBusinessHospitality: "bachelor-business-hospitality",
   bachelorInformationTechnology: "bachelor-information-technology",
+  studentInformationMaterial: "student-information-material",
 
   //
   futureStudents: "future-students",

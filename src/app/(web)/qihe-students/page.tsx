@@ -23,7 +23,7 @@ const page = () => {
           <FadeUp delay={index * 0.1} key={item.slug}>
             <Link href={`${slugs.qiheStudents}/${item.slug}`}>
               <IconCard icon={item.icon}>
-                <Heading level={4}>{item.name}</Heading>
+                <Heading level={4}>{item.name} </Heading>
               </IconCard>
             </Link>
           </FadeUp>

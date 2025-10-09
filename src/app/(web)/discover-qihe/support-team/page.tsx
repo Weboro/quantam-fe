@@ -36,8 +36,10 @@ const page = () => {
         The Support Team
       </Heading>
       <p>
-        The support staff ensure students have access to essential services,
-        guidance, and resources from enrollment to graduation.
+        Change to: Our Support Team is dedicated to helping students thrive by
+        providing access to essential services, personalised guidance, and
+        tailored resources throughout their journey from enrolment to
+        graduation.
       </p>
       <p className="mt-2">
         <Link

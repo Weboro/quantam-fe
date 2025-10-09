@@ -33,7 +33,7 @@ const NavDesktop = () => {
                                 key={subPage.slug}
                                 className="block font-medium hover:underline py-1"
                               >
-                                {subPage.name}
+                                {subPage.name}  
                               </Link>
                             ))}
                           </div>

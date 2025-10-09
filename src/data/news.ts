@@ -1,6 +1,6 @@
 export interface INews {
   id: number;
-  imageUrl: '/banner.jpg';
+  imageUrl: '/box1.png';
   date: string;
   readTime: string;
   title: string;
@@ -14,7 +14,7 @@ export interface INews {
 export const news: INews[] = [
   {
     id: 1,
-    imageUrl: '/banner.jpg',
+    imageUrl: '/box1.png',
     date: 'Jun 28, 2025',
     readTime: '2 mins read',
     title: 'Grand Opening of QIHE’s New Campus in Parramatta',
@@ -64,7 +64,7 @@ export const news: INews[] = [
   },
   {
     id: 2,
-    imageUrl: '/banner.jpg',
+    imageUrl: '/box1.png',
     date: 'Jul 5, 2025',
     readTime: '1 min read',
     title: 'Experts Discuss AI Trends at QIHE Panel Event',
@@ -113,7 +113,7 @@ export const news: INews[] = [
   },
   {
     id: 3,
-    imageUrl: '/banner.jpg',
+    imageUrl: '/box1.png',
     date: 'Jul 15, 2025',
     readTime: '1 min read',
     title: 'Record-Breaking Enrolments for Semester 2, 2025',

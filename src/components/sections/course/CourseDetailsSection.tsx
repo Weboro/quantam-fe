@@ -13,9 +13,10 @@ type ICourseDetailsSection = Pick<
   | "richText"
   | "heroImage"
   | "duration"
-  | "location"
-  | "degreeType"
+  | "numberOfcourses"
+  | "aqfLevel"
   | "intakes"
+  | "creditPoints"
   | "deliveryMode"
   | "CRICOSCourseCode"
 >;
@@ -25,19 +26,21 @@ const CourseDetailsSection: React.FC<ICourseDetailsSection> = ({
   description,
   richText,
   heroImage,
-  location,
+  numberOfcourses,
   duration,
-  degreeType,
+  aqfLevel,
+  creditPoints,
   intakes,
   deliveryMode,
   CRICOSCourseCode,
 }) => {
   const infoFields = [
-    { label: "Location", value: location },
-    { label: "Study Level", value: degreeType },
+    { label: "Number of Courses", value: numberOfcourses },
+    { label: "Credit Points", value: creditPoints },
+    { label: "AQF Level", value: aqfLevel },
     { label: "Duration", value: duration },
     { label: "Delivery Mode", value: deliveryMode },
-    { label: "CRICOS Course Code", value: CRICOSCourseCode },
+    { label: "CRICOS Code", value: CRICOSCourseCode },
     { label: "Intakes", value: intakes },
   ];
 

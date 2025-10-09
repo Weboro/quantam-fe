@@ -15,9 +15,13 @@ const CourseInfoBlock = ({
         {label}
       </Heading>
 
-      <p className="text-muted text-sm -mt-0.5">
-        {Array.isArray(value) ? value.join("\n") : value}
-      </p>
+  <p
+  className="text-muted text-sm -mt-0.5"
+  dangerouslySetInnerHTML={{
+    __html: Array.isArray(value) ? value.join(", <br />") : value,
+  }}
+/>
+
     </div>
   );
 };

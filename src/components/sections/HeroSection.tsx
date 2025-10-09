@@ -63,10 +63,25 @@ const HeroSection: React.FC<HeroSectionProps> = ({
             {description}
           </Heading>
         )}
-
+        <div>
+          <p className="text-neutral-200 font-normal  lg:max-w-3xl">
+            At Quantum Institute of Higher Education (QIHE), we are dedicated to
+            providing quality education that empowers our students to succeed in
+            a dynamic and evolving world.
+          </p>
+            <br />
+          <p className="text-neutral-200 font-normal  lg:max-w-3xl">
+            Whether you’re looking to advance your knowledge in business or
+            embark on an exciting journey into the world of information
+            technology, QIHE offers programs designed to equip you with the
+            skills, insights, and confidence needed to thrive in your chosen
+            field.
+          </p>
+         
+        </div>
         {buttonText && buttonLink && (
           <Link href={buttonLink} className="font-medium block mt-4 md:mt-8">
-            <Button variant="secondary">{buttonText}</Button>
+            <Button variant="secondary">{buttonText} </Button>
           </Link>
         )}
       </ContainerLayout>
