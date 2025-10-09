@@ -5,18 +5,18 @@ export const slugs = {
   news: "news",
   contact: "contact",
   getStarted: "get-started",
+  majors: "courses",
   //
   prospectus: underConstruction,
   onlineApplication: underConstruction,
   studentSupport: underConstruction,
   consultation: underConstruction,
-  feesandPayments: 'fees-and-payment',
+  feesandPayments: "fees-and-payment",
   feeRefundPolicy: underConstruction,
   eLibrary: underConstruction,
   libraryFacilitiesPolicy: underConstruction,
   studentPlatformLogin: underConstruction,
-  
- 
+
   //
   programs: "programs",
   // Programs Sub pages
