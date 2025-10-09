@@ -22,6 +22,7 @@ const NewsSection = ({ showAll = false }) => (
           Stay informed with the latest news, announcements, and achievements
           from the QIHE community, helping you remain engaged and connected with
           campus life and academic developments.
+          {/*  */}
         </p>
       </div>
     </ContainerLayout>
