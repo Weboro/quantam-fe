@@ -43,7 +43,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
             {title}
           </Heading>
         ) : (
-          <>{title}</>
+          <>{title}</> 
         )}
 
         {subtitle && (

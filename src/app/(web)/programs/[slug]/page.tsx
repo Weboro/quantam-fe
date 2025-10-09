@@ -97,8 +97,9 @@ export default async function CoursePage({
           richText={course.richText}
           heroImage={course.heroImage}
           duration={course?.duration}
-          location={course?.location}
-          degreeType={course?.degreeType}
+          numberOfcourses={course?.numberOfcourses}
+          aqfLevel={course?.aqfLevel}
+          creditPoints={course?.creditPoints}
           intakes={course?.intakes}
           deliveryMode={course?.deliveryMode}
           CRICOSCourseCode={course?.CRICOSCourseCode}
