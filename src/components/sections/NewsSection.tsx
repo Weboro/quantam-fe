@@ -20,8 +20,9 @@ const NewsSection = ({ showAll = false }) => (
 
       <div className="flex items-end">
         <p className="text-muted ">
-          Stay updated with the latest news, announcements, and achievements
-          from the Quantum Institute community.
+          Stay informed with the latest news, announcements, and achievements
+          from QIHE community, helping you remain engaged and connected with
+          campus life and academic pursuits.
         </p>
       </div>
     </ContainerLayout>

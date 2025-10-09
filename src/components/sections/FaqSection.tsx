@@ -7,16 +7,13 @@ const FaqSection: React.FC = () => {
   return (
     <ContainerLayout>
       <Heading level={2} className="w-fit mx-auto text-center">
-        Frequently Asked Questions
+        Got Questions about Studying at QIHE ?
       </Heading>
-
       <p className="text-muted max-w-xl text-center mx-auto">
-        Find answers to common questions about admissions, courses, support
-        services, and life at QIHE.
+        Find answers about admissions, programs, support services, and student
+        visas to help you succeed.
       </p>
-
       <br />
-
       <Accordion data={faq} />
     </ContainerLayout>
   );
