@@ -94,9 +94,9 @@ const pages: Ipage[] = [
 				icon: 'fi fi-rr-workflow-alt',
 			}, {
 				name: 'student information material',
-				slug: slugs.studentInformationMaterial,
+				slug: 'student-information-material',
 				icon: 'fi fi-rr-info-guide',
-			}
+			},
 		],
 	},
 	{
