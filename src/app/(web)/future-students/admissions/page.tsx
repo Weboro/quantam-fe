@@ -117,6 +117,10 @@ const page = () => {
             A Conditional Letter of Offer, outlining any conditions that must be
             satisfied prior to issuance of the full offer;{" "}
           </li>
+          <li>
+            A request for additional documentation needed to complete the
+            decision process
+          </li>
           <li>A notification of application rejection</li>
         </ul>
       </section>

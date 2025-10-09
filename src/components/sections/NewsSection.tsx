@@ -21,8 +21,8 @@ const NewsSection = ({ showAll = false }) => (
       <div className="flex items-end">
         <p className="text-muted ">
           Stay informed with the latest news, announcements, and achievements
-          from QIHE community, helping you remain engaged and connected with
-          campus life and academic pursuits.
+          from the QIHE community, helping you remain engaged and connected with
+          campus life and academic developments.
         </p>
       </div>
     </ContainerLayout>

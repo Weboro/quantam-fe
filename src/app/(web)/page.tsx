@@ -17,7 +17,6 @@ const HomePage = () => {
         title={
           <Heading level={1} className="text-background lg:max-w-3xl mb-4">
             Welcome to Quantum Institute of Higher Education
-            {/* <TypewriterEffect strings={["Education"]} /> */}
           </Heading>
         }
         buttonText="Get Started"
@@ -25,6 +24,7 @@ const HomePage = () => {
         imageUrl="/banner.jpg"
         textAlign="left"
       />
+    
       <CoursesSections />
       <AboutUsSection />
       <KeyDatesSection level={2} />

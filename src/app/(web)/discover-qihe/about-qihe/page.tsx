@@ -7,7 +7,6 @@ import { SITE_TITLE, SITE_URL } from "@/extra/siteDetails";
 import ContainerLayout from "@/components/layouts/ContainerLayout";
 import Heading from "@/components/ui/Heading";
 
-
 export const generateMetadata = (): Metadata => ({
   title: `About QIHE`,
   description:
@@ -39,7 +38,7 @@ const page = () => {
             About QIHE
           </Heading>
 
-          <p>
+          <p className="text-justify max-w-3xl mx-auto leading-relaxed">
             At QIHE, we are driven by a mission to create an empowering
             educational ecosystem where every student is inspired to pursue
             their dreams and make a meaningful impact through education.
@@ -53,8 +52,8 @@ const page = () => {
             perspective.
           </p>
           <br />
-          <p>
-            Our institute brings together a dedicated team of educators with
+          <p className="text-justify max-w-3xl mx-auto leading-relaxed">
+            Our Institute brings together a dedicated team of educators with
             diverse expertise and qualifications, united by a shared passion for
             fostering student achievement. At QIHE, our focus extends beyond
             academic success—we aim to ensure our students are job-ready and
@@ -74,29 +73,40 @@ const page = () => {
 
         <div className="">
           <Heading className="mt-4 mb-2" level={2}>
-            A Note from the Chair
+            Welcome to Quantum Institute of Higher Education (QIHE)!
           </Heading>
-
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus
-            perspiciatis doloremque facere expedita, voluptatem nisi corrupti!
-            Reiciendis ipsa harum fugiat nobis ipsum, nesciunt explicabo? Illum
-            consequuntur quibusdam fugiat vel saepe earum minus similique
-            beatae, cumque magnam voluptatum explicabo quis quam nesciunt
-            veritatis nostrum ut? Tempore vitae nostrum distinctio pariatur
-            quibusdam commodi quam dicta, inventore expedita repudiandae, totam
-            rerum voluptatum dolores exercitationem. Illo, cumque? Quod, dolorem
-            iure accusamus ducimus excepturi similique qui autem quo placeat
-            facilis, totam quis consequuntur voluptates nesciunt veritatis
-            obcaecati illum labore quos, modi magni? Corrupti, architecto error
-            recusandae eius ducimus optio laudantium nisi sunt, eveniet adipisci
-            laborum.
+          <p className="text-justify max-w-3xl mx-auto leading-relaxed">
+            At QIHE, we believe that education is not just about acquiring
+            knowledge — it’s about unlocking potential, fostering innovation,
+            and shaping future leaders. Our institution is built on a commitment
+            to academic excellence, student success, and real-world impact.
+            Whether you aspire to lead in business, drive technological
+            advancements, or contribute to your community, we are here to guide
+            and support you every step of the way. Located in the vibrant city
+            of Parramatta, our modern campus offers an enriching learning
+            environment where students from diverse backgrounds come together to
+            share ideas, challenge perspectives, and build lasting connections.
+            Our industry-aligned programs, hands-on learning opportunities, and
+            dedicated academic support ensure that you graduate not only with a
+            degree but with the skills and confidence to thrive in an evolving
+            global landscape. As you explore this prospectus, we invite you to
+            imagine your future with QIHE — a place where your aspirations are
+            nurtured, your potential is realised, and your success is
+            celebrated.
           </p>
-
+          <p className="text-justify max-w-3xl mx-auto leading-relaxed mt-4">
+            We look forward to welcoming you to our community and being a part
+            of your academic and personal growth.
+          </p>
+          <p>
+            <b>Warm Regards,</b>
+          </p>
           <p className="mt-4">
             <strong>Emeritus Professor Jim Psaros</strong>
             <br />
             Chair of the Governing Council
+            <br />
+            Quantum Institute of Higher Education
           </p>
         </div>
       </ContainerLayout>

@@ -36,9 +36,10 @@ const page = () => {
         The Academic Team
       </Heading>
       <p>
-        Our academic team comprises highly qualified professionals with both
-        industry and academic experience, dedicated to delivering
-        student-centric education that’s relevant and impactful.
+        Our academic team consists of highly qualified professionals with strong
+        industry and academic backgrounds, committed to supporting student
+        success through relevant, engaging, and practice-focused learning
+        experiences.
       </p>
       <p className="mt-2">
         <Link

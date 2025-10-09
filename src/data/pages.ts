@@ -92,7 +92,11 @@ const pages: Ipage[] = [
 				name: 'Policies and Procedures',
 				slug: slugs.policiesAndProcedures,
 				icon: 'fi fi-rr-workflow-alt',
-			},
+			}, {
+				name: 'student information material',
+				slug: slugs.studentInformationMaterial,
+				icon: 'fi fi-rr-info-guide',
+			}
 		],
 	},
 	{
@@ -125,7 +129,7 @@ const pages: Ipage[] = [
 
 			{
 				slug: slugs.forms,
-				name: 'Forms',
+				name: 'Policies, Procedures & Forms. ',
 				icon: 'fi fi-rr-form',
 			},
 

@@ -4,86 +4,53 @@ export interface IKeyDate {
   date?: string;
   month: string;
   day: string;
-  category: ("Undergraduate" | "Post-graduate")[];
+  category: "Undergraduate"[];  
   learnMoreUrl: string;
 }
 
 const keyDates: IKeyDate[] = [
   {
     title:
-      "Quantum welcomes you with all with warm greetings and lorem insup floral.",
+      "Welcome to Quantum Institute of Higher Education (QIHE)! We are committed to supporting every student’s learning journey, growth, and success.",
     description:
-      "A modal dialog that interrupts the user with important content and expects a response.",
+      "Stay ahead of your academic schedule. Keep track of important dates including semester start and end dates, census dates, exam periods, and more.",
     date: "2025-01-01",
     month: "JAN",
     day: "01",
-    category: ["Undergraduate", "Post-graduate"],
+    category: ["Undergraduate"],
     learnMoreUrl: "#",
   },
   {
     title:
-      "Quantum welcomes you with all with warm greetings and lorem insup floral.",
+      "Welcome to Quantum Institute of Higher Education (QIHE)! We are committed to supporting every student’s learning journey, growth, and success.",
     description:
-      "A modal dialog that interrupts the user with important content and expects a response. A modal dialog that interrupts the user. A modal dialog that interrupts the user with important content and expects a response. A modal dialog that interrupts the user.A modal dialog that interrupts the user with important content and expects a response. A modal dialog that interrupts the user.",
-    date: "2025-01-27",
+      "Stay ahead of your academic schedule. Keep track of important dates including semester start and end dates, census dates, exam periods, and more.",
+    date: "2025-01-01",
     month: "JAN",
-    day: "27",
-    category: ["Undergraduate", "Post-graduate"],
+    day: "01",
+    category: ["Undergraduate"],
     learnMoreUrl: "#",
   },
   {
     title:
-      "Quantum welcomes you with all with warm greetings and lorem insup floral.",
+      "Welcome to Quantum Institute of Higher Education (QIHE)! We are committed to supporting every student’s learning journey, growth, and success.",
     description:
-      "A modal dialog that interrupts the user with important content and expects a response. A modal dialog that interrupts the user.",
-    date: "2025-01-30",
+      "Stay ahead of your academic schedule. Keep track of important dates including semester start and end dates, census dates, exam periods, and more.",
+    date: "2025-01-01",
     month: "JAN",
-    day: "30",
-    category: ["Undergraduate", "Post-graduate"],
+    day: "01",
+    category: ["Undergraduate"],
     learnMoreUrl: "#",
   },
   {
     title:
-      "Quantum welcomes you with all with warm greetings and lorem insup floral.",
+      "Welcome to Quantum Institute of Higher Education (QIHE)! We are committed to supporting every student’s learning journey, growth, and success.",
     description:
-      "A modal dialog that interrupts the user with important content and expects a response. A modal dialog that interrupts the user.",
-    date: "2025-01-30",
+      "Stay ahead of your academic schedule. Keep track of important dates including semester start and end dates, census dates, exam periods, and more.",
+    date: "2025-01-01",
     month: "JAN",
-    day: "30",
-    category: ["Undergraduate", "Post-graduate"],
-    learnMoreUrl: "#",
-  },
-  {
-    title:
-      "Quantum welcomes you with all with warm greetings and lorem insup floral.",
-    description:
-      "A modal dialog that interrupts the user with important content and expects a response. A modal dialog that interrupts the user.",
-    date: "2025-01-30",
-    month: "JAN",
-    day: "30",
-    category: ["Undergraduate", "Post-graduate"],
-    learnMoreUrl: "#",
-  },
-  {
-    title:
-      "Quantum welcomes you with all with warm greetings and lorem insup floral.",
-    description:
-      "A modal dialog that interrupts the user with important content and expects a response. A modal dialog that interrupts the user.",
-    date: "2025-01-30",
-    month: "JAN",
-    day: "30",
-    category: ["Undergraduate", "Post-graduate"],
-    learnMoreUrl: "#",
-  },
-  {
-    title:
-      "Quantum welcomes you with all with warm greetings and lorem insup floral.",
-    description:
-      "A modal dialog that interrupts the user with important content and expects a response. A modal dialog that interrupts the user.",
-    date: "2025-01-30",
-    month: "JAN",
-    day: "30",
-    category: ["Undergraduate", "Post-graduate"],
+    day: "01",
+    category: ["Undergraduate"],
     learnMoreUrl: "#",
   },
 ];
