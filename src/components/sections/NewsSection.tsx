@@ -17,7 +17,6 @@ const NewsSection = ({ showAll = false }) => (
           <Button variant="secondary">More Blogs</Button>
         </Link>
       </div>
-
       <div className="flex items-end">
         <p className="text-muted ">
           Stay informed with the latest news, announcements, and achievements
