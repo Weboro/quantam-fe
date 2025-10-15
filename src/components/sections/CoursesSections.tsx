@@ -28,7 +28,7 @@ const CoursesSections = () => {
             Our Programs
           </span>
           <Heading className="mb-3" level={2}>
-            About Our Programs and our course of action.
+            About Our Programs and Our Course of Action.
           </Heading>
           <p className=" text-muted font-normal max-w-2xl">
             Explore our range of undergraduate programs designed to equip you

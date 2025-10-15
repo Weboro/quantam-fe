@@ -1,7 +1,6 @@
 import { type ICourse } from "@/data/courses";
 import Image from "next/image";
 import React from "react";
-//
 import CourseInfoBlock from "@/components/cards/CourseInfoBlock";
 import ContainerLayout from "@/components/layouts/ContainerLayout";
 import Heading from "@/components/ui/Heading";
@@ -47,9 +46,10 @@ const CourseDetailsSection: React.FC<ICourseDetailsSection> = ({
   return (
     <ContainerLayout className="grid grid-cols-1 lg:grid-cols-3 gap-4">
       <div suppressHydrationWarning className="md:col-span-2 self-center">
-        <Heading level={2} className="mb-3">
-          Study {name} at QIHE
-        </Heading>
+        {/* 🔹 Changed heading text */}
+        {/* <Heading level={2} className="mb-3">
+          {name}
+        </Heading> */}
 
         <p className="text-muted md:max-w-xl">{description}</p>
         <div

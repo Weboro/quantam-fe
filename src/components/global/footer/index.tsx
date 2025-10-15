@@ -37,8 +37,6 @@ const Footer = () => {
               className="w-full h-full object-contain"
             />
           </Link>
-
-
         </ContainerLayout>
 
         <br />
@@ -53,11 +51,6 @@ const Footer = () => {
                 title: "Contact",
                 name: "Contact QIHE",
                 slug: slugs.contact,
-              },
-              {
-                title: "News",
-                name: "News",
-                slug: slugs.news,
               },
             ]}
           />

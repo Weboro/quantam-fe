@@ -18,15 +18,15 @@ const NewsLetterSection = () => (
       <div className="absolute inset-0 z-0 bg-gradient-to-r from-brand-primary to-transparent pointer-events-none" />
 
       <div className="relative z-10 w-full h-full px-5 py-4 text-white">
-        <Heading level={4}>Did not find what you want?</Heading>
+        <Heading level={4}>Not finding what you need?</Heading>
 
         <Heading level={4} className="mb-3">
-          We are here to help!
+          No worries!
         </Heading>
+
         <p className="text-gray-200 md:max-w-2xl">
-          If you can&apos;t find the answer you&apos;re looking for below,
-          please send us a question, call us on{" "}
-          <span className="font-medium">{SITE_PHONE}</span> or chat with us
+          Ask us a question, call{" "}
+          <span className="font-medium">{SITE_PHONE}</span>, or chat with us
           online.
         </p>
 

@@ -143,12 +143,11 @@ const pages: Ipage[] = [
         name: "Library",
         icon: "fi fi-rr-diary-bookmark-down",
       },
-      {
-        slug: slugs.keyDates,
-        name: "Key Dates",
-        icon: "fi fi-rr-calendar-star",
-      },
-
+      // {
+      //   slug: slugs.keyDates,
+      //   name: "Key Dates",
+      //   icon: "fi fi-rr-calendar-star",
+      // },
       {
         slug: slugs.forms,
         name: "Policies, Procedures & Forms. ",

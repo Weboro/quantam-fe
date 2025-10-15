@@ -69,13 +69,13 @@ const courses: ICourse[] = [
       {
         title: "Why Choose This Program?",
         richText: `
-<ul class="list-disc list-outside space-y-1 text-start p-2">
-  <li>Gain essential business knowledge and skills</li>
-  <li>Develop expertise to analyse data and create value for stakeholders</li>
-  <li>Prepare for professional certifications and industry recognition</li>
-  <li>Learn from industry-relevant curriculum aligned with workforce needs</li>
-  <li>Engage in hands-on practical experience and real-world projects</li>
-</ul>`,
+<p class="list-disc list-outside space-y-1 text-start p-2">
+Gain essential business knowledge and skills in accounting
+ Gain expertise to analyse financial data and create value for stakeholders.
+ Prepare for professional certifications with CPA Australia and CAANZ eligibility.
+ Explore emerging fields like sustainability accounting and forensic accounting.
+ Learn from industry-relevant curriculum aligned with workforce needs
+</p>`,
       },
       {
         title: "Learning Outcomes",
@@ -145,19 +145,20 @@ const courses: ICourse[] = [
       },
     ],
   },
+
   {
     id: "bachelor-business-information-systems",
     major: "Bachelor of Business",
-    name: "Bachelors of Business - Information Systems",
+    name: "Bachelor of Business – Information Systems",
     slug: slugs.bachelorBusinessInformationSystems,
     description:
       "The Bachelor of Business - Information Systems major bridges the gap between technology and business, enabling students to harness technology for strategic decision-making. Students will learn to improve business efficiency, develop and manage information systems, and protect organisational data. This major prepares graduates for leadership in today’s digital economy.",
-    richText: "", // "<ul><li>Gain skills in software development, cybersecurity, and data management</li><li>Address real-world challenges with innovative solutions</li></ul>",
+    richText: "",
     heroImage: "/courses/information-systems/hero.jpg",
     images: ["/courses/information-systems/1.jpg"],
     level: "Beginner",
     duration: "3 years, Full-Time",
-    tags: ["Bachelors of Business - Information Systemss", "Business"],
+    tags: ["Bachelors of Business - Information Systems", "Business"],
     publishedDate: "2025-08-01",
     url: "/courses/bachelor-business-information-systems",
     location: "Level 4, 16-18 Wentworth Street, Parramatta NSW 2150",
@@ -168,50 +169,48 @@ const courses: ICourse[] = [
       "On Campus",
       "Face-to-face (Not work-based training involved)",
     ],
-
     degreeType: "Undergraduate",
     intakes: ["TBA"],
-
     CRICOSCourseCode: "TBA",
     tabbedPaneData: [
       {
         title: "Why Choose This Program?",
         richText: `
-  <ul class="list-disc list-outside space-y-1 text-start pl-5 text-gray-700">
-    <li>Acquire up-to-date knowledge of emerging technologies such as AI, cloud computing, cybersecurity, and IoT.</li>
-    <li>Build transferable skills to address real-world business and technology challenges.</li>
-    <li>Develop ethical and sustainable practices aligned with professional IT roles.</li>
-    <li>Benefit from a curriculum designed to meet industry demands and prepare for future IT roles.</li>
-  </ul>`,
+<p class="list-disc list-outside space-y-1 text-start pl-5 text-gray-700">
+Gain essential business knowledge and skills in information systems.
+Gain skills in software development, cybersecurity, data management, and analysis.
+Prepare for diverse roles in the digital economy.
+Address real-world challenges with innovative solutions.
+Learn from industry-relevant curriculum aligned with workforce needs.
+</p>`,
       },
       {
-        title: "Program Learning Outcomes ",
+        title: "Program Learning Outcomes",
         richText: `
-  <div class="space-y-6 text-gray-800">
-    <p class="leading-relaxed text-base md:text-lg">
-      Students enrolled in the Bachelor of Business program will be able to possess broad and coherent knowledge as well as skills that are transferrable for real-world application to prepare them for their careers, with specific learning outcomes that are in line with the major that they have selected.
-    </p>
+<div class="space-y-6 text-gray-800">
+  <p class="leading-relaxed text-base md:text-lg">
+    Students enrolled in the Bachelor of Business program will be able to possess broad and coherent knowledge as well as skills that are transferrable for real-world application to prepare them for their careers, with specific learning outcomes that are in line with the major that they have selected.
+  </p>
 
-    <div class="bg-gray-50 border border-gray-200 rounded-2xl p-5 md:p-8 shadow-sm">
-      <h3 class="text-lg md:text-xl font-semibold text-blue-800 mb-4">
-        Upon completion of the Bachelor of Business - Information Systems program, students are expected to:
-      </h3>
+  <div class="bg-gray-50 border border-gray-200 rounded-2xl p-5 md:p-8 shadow-sm">
+    <h3 class="text-lg md:text-xl font-semibold text-blue-800 mb-4">
+      Upon completion of the Bachelor of Business - Information Systems program, students are expected to:
+    </h3>
 
-      <ol class="list-decimal list-inside space-y-3 text-gray-700 text-sm md:text-base   text-start px-4">
-        <li>Demonstrate a broad and coherent understanding of business and information systems principles, theories, and practices across diverse industry contexts.</li>
-        <li>Critically analyse and solve complex problems to develop innovative and sustainable solutions, integrating emerging technologies, information systems applications, and entrepreneurial approaches within diverse global and cultural business environments.</li>
-        <li>Communicate effectively and professionally with diverse audiences using a range of traditional and digital platforms.</li>
-        <li>Work independently and collaboratively to manage information systems tasks, lead projects, and achieve common business goals while respecting cultural and social diversity.</li>
-        <li>Apply ethical, legal, and socially responsible principles in decision-making to contribute positively to society and professional information systems practice.</li>
-      </ol>
-    </div>
+    <ol class="list-decimal list-inside space-y-3 text-gray-700 text-sm md:text-base text-start px-4">
+      <li>Demonstrate a broad and coherent understanding of business and information systems principles, theories, and practices across diverse industry contexts.</li>
+      <li>Critically analyse and solve complex problems to develop innovative and sustainable solutions, integrating emerging technologies, information systems applications, and entrepreneurial approaches within diverse global and cultural business environments.</li>
+      <li>Communicate effectively and professionally with diverse audiences using a range of traditional and digital platforms.</li>
+      <li>Work independently and collaboratively to manage information systems tasks, lead projects, and achieve common business goals while respecting cultural and social diversity.</li>
+      <li>Apply ethical, legal, and socially responsible principles in decision-making to contribute positively to society and professional information systems practice.</li>
+    </ol>
   </div>
-  `,
+</div>`,
       },
       {
         title: "Career Outcomes",
         richText: `
-  <ul class="list-disc list-outside space-y-1 text-start pl-5 text-gray-700">
+<ul class="list-disc list-outside space-y-1 text-start pl-5 text-gray-700">
   <li>Information Systems Manager</li>
   <li>System Analyst</li>
   <li>Data Analyst</li>
@@ -220,7 +219,7 @@ const courses: ICourse[] = [
   <li>Information Security Analyst</li>
   <li>Business Intelligence Analyst</li>
   <li>IT Project Manager</li>
-</ul> `,
+</ul>`,
       },
       {
         title: "Admission Requirements",
@@ -258,7 +257,10 @@ const courses: ICourse[] = [
   <li>Accept Offer</li>
   <li>Orientation and Enrolment</li>
 </ol>
-`,
+
+<p class="mt-4 text-sm text-gray-600">
+  For full details, see the Admission Policy and Procedure.
+</p>`,
       },
     ],
   },
@@ -292,13 +294,13 @@ const courses: ICourse[] = [
       {
         title: "Why Choose This Program?",
         richText: `
-<ul class="list-disc list-outside space-y-1 text-start p-2">
-  <li>Gain essential business knowledge and skills in hospitality.</li>
-  <li>Build essential management and customer service skills.</li>
-  <li>Learn to navigate the global hospitality industry.</li>
-  <li>Gain expertise in event planning, food and beverage management, and sustainability.</li>
-  <li>Learn from industry-relevant curriculum aligned with workforce needs.</li>
-</ul>
+<p class="list-disc list-outside space-y-1 text-start p-2">
+Gain essential business knowledge and skills in hospitality.
+ Build essential management and customer service skills.
+ Learn to navigate the global hospitality industry.
+Gain expertise in event planning, food and beverage management, and sustainability.
+ Learn from industry-relevant curriculum aligned with workforce needs.
+</p>
 `,
       },
       {
@@ -387,6 +389,7 @@ const courses: ICourse[] = [
       },
     ],
   },
+
   {
     id: "bachelor-information-technology",
     major: "Bachelor of Business",
@@ -497,7 +500,10 @@ const courses: ICourse[] = [
   <li>Accept Offer</li>
   <li>Orientation and Enrolment</li>
 </ol>
-<p class="mt-4 text-gray-700">For full details, see the Admission Policy and Procedure.</p>`,
+<p class="mt-4 text-gray-700">
+  For full details, see <em>Admission Policy and Procedure</em>.
+</p>
+ `,
       },
     ],
   },

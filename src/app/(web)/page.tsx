@@ -24,11 +24,10 @@ const HomePage = () => {
         imageUrl="/banner.jpg"
         textAlign="left"
       />
-    
       <CoursesSections />
       <AboutUsSection />
       <KeyDatesSection level={2} />
-      <HomeNewsSection />
+      {/* <HomeNewsSection /> */}
       <QiheCard />/
       <FaqSection />
       <NewsLetterSection />
