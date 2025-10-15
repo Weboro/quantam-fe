@@ -267,7 +267,7 @@ Learn from industry-relevant curriculum aligned with workforce needs.
   {
     id: "bachelor-business-hospitality",
     major: "Bachelor of Business",
-    name: "Hospitality",
+    name: "Bachelor of Business - Hospitality",
     slug: slugs.bachelorBusinessHospitality,
     description:
       "The Bachelor of Business - Hospitality major prepares students for leadership in the fast-paced and dynamic hospitality industry. Students will gain a deep understanding of hospitality management, customer experience, event planning, and sustainable practices. This major is tailored for those passionate about creating exceptional guest experiences and managing hospitality operations.",
