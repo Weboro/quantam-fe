@@ -22,7 +22,6 @@ const KeyDatesSection: React.FC<IKeyDatesSection> = ({
       <div className="flex flex-col gap-4 flex-1">
         <Heading level={level}>Key Dates</Heading>
       </div>
-
       <div className="flex-1">
         <p className="text-md text-semibold text-muted text-left font-secondary ">
           Stay ahead of your academic schedule. Keep track of important dates
