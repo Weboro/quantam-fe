@@ -219,6 +219,26 @@ const pages: Ipage[] = [
         name: "Student Association",
         icon: "fi fi-rr-employees-woman-man",
       },
+      {
+        slug: slugs.esosFramework,
+        name: "ESOS Framework",
+        icon: "fi fi-rr-file-contract",
+      },
+      {
+        slug: slugs.privacyPolicy,
+        name: "Privacy Policy",
+        icon: "fi fi-rr-shield-check",
+      },
+      {
+        slug: slugs.copyright,
+        name: "Copyright",
+        icon: "fi fi-rr-copyright",
+      },
+      {
+        slug: slugs.careersAtQihe,
+        name: "Careers at QIHE",
+        icon: "fi fi-rr-briefcase",
+      },
     ],
   },
 ];

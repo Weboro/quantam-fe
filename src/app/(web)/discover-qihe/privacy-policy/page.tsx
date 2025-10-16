@@ -1,8 +1,9 @@
+"use client";
 import React from "react";
 import ContainerLayout from "@/components/layouts/ContainerLayout";
 import Heading from "@/components/ui/Heading";
 
-const PrivacyPage = () => {
+const PrivacyPolicyPage = () => {
   return (
     <ContainerLayout>
       <div className="py-12">
@@ -10,7 +11,7 @@ const PrivacyPage = () => {
           Privacy Information
         </Heading>
 
-        <p className="text-gray-700 mb-6">
+        <p className="text-gray-700 mb-4">
           QIHE respects your privacy and handles personal information in
           accordance with Australian privacy laws. We are committed to
           protecting the personal information of our students, staff, and
@@ -21,7 +22,7 @@ const PrivacyPage = () => {
           For guidance on privacy rights and information about handling personal
           data, please visit the{" "}
           <a
-            href="https://www.ipc.nsw.gov.au/privacy?utm_source=chatgpt.com"
+            href="https://www.ipc.nsw.gov.au/privacy"
             target="_blank"
             rel="noopener noreferrer"
             className="text-blue-600 hover:underline"
@@ -35,4 +36,4 @@ const PrivacyPage = () => {
   );
 };
 
-export default PrivacyPage;
+export default PrivacyPolicyPage;

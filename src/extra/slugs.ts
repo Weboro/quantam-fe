@@ -57,4 +57,8 @@ export const slugs = {
   supportTeam: "support-team",
   studentAssociation: "sutdent-association",
   faqs: "faqs",
+  esosFramework: "esos-framework",
+  privacyPolicy: "privacy-policy",
+  copyright: "copyright",
+  careersAtQihe: "careers-at-qihe",
 };

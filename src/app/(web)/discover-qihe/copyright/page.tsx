@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import ContainerLayout from "@/components/layouts/ContainerLayout";
 import Heading from "@/components/ui/Heading";
@@ -10,16 +11,17 @@ const CopyrightPage = () => {
           Copyright Information
         </Heading>
 
-        <p className="text-gray-700 mb-6">
-          QIHE respects copyright laws and intellectual property rights. We are
-          committed to ensuring that the work of others is used responsibly and
-          in compliance with the law.
+        <p className="text-gray-700 mb-4">
+          QIHE respects copyright laws and intellectual property rights. We
+          acknowledge and protect the creative works of authors, artists, and
+          institutions that contribute to our educational resources.
         </p>
 
         <p className="text-gray-700">
-          For guidance on copyright and intellectual property, please visit the{" "}
+          For official guidance on copyright and intellectual property in New
+          South Wales, please visit the{" "}
           <a
-            href="https://www.nsw.gov.au/nsw-government/about-website/copyright"
+            href="https://www.copyright.nsw.gov.au/"
             target="_blank"
             rel="noopener noreferrer"
             className="text-blue-600 hover:underline"
