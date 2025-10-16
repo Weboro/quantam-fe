@@ -89,58 +89,6 @@ const page = () => {
           Meet the Student Association – Your Voice at QIHE
         </Link>
       </p>
-
-      <Heading className="text-brand-primary-black mt-6 mb-2" level={2}>
-        Campus Information
-      </Heading>
-      <ul className="list-disc list-inside space-y-1">
-        <li>
-          <Link href="/discover-qihe/sutdent-association/Campus-Location-and-Directions">
-            Campus Location and Directions
-          </Link>
-        </li>
-        <li>
-          <Link href="/discover-qihe/sutdent-association/campus-safety">
-            Campus Safety
-          </Link>
-          <ul className="list-disc list-inside ml-5">
-            <li>Evacuation Plan</li>
-            <li>Fire Exit Diagram</li>
-          </ul>
-        </li>
-      </ul>
-
-      <Heading className="text-brand-primary-black mt-6 mb-2" level={2}>
-        Additional Information
-      </Heading>
-      <ul className="list-disc list-inside space-y-1">
-        <li>
-          <Link href="/contact">Contact Us</Link>{" "}
-        </li>
-        <li>
-          <Link href="/qihe-students/forms"> Policies and Forms</Link>{" "}
-        </li>
-        <li>
-          <Link href="/discover-qihe/sutdent-association/esos-framework">
-            ESOS Framework
-          </Link>
-        </li>
-        <li>
-          <Link href="/discover-qihe/sutdent-association/privacy-policy">
-            Privacy Policy
-          </Link> 
-        </li>
-        <li>
-          <Link href="/discover-qihe/sutdent-association/copyright">
-            Copyright
-          </Link>
-        </li>
-        <li>
-          <Link href="/discover-qihe/sutdent-association/careers-at-qihe">
-            Careers at QIHE
-          </Link> 
-        </li>
-      </ul>
     </ContainerLayout>
   );
 };

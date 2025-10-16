@@ -4,7 +4,7 @@ import Heading from "@/components/ui/Heading";
 
 const EsosRightsPage = () => {
   return (
-    <ContainerLayout>
+    <ContainerLayout className="mt-6 text-muted">
       <div className="py-12">
         <Heading level={1} className="text-3xl md:text-4xl font-bold mb-6">
           Your Rights as an International Student (ESOS Framework)
@@ -53,11 +53,12 @@ const EsosRightsPage = () => {
             safeguarding your welfare and study experience.
           </p>
           <p className="text-gray-700">
-            For more details, please visit the{" "}
+            For more details, please visit the
             <a
-              href="https://www.education.gov.au/esos-framework?utm_source=chatgpt.com"
+              href="https://www.education.gov.au/esos-framework"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="Visit official ESOS Framework website"
               className="text-blue-600 hover:underline"
             >
               ESOS Framework

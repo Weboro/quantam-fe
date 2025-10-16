@@ -52,6 +52,11 @@ const Footer = () => {
                 name: "Contact QIHE",
                 slug: slugs.contact,
               },
+              {
+                title: "Campus Information",
+                name: "Campus Information",
+                slug: slugs.campusInformation,
+              },
             ]}
           />
 

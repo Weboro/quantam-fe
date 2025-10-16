@@ -143,22 +143,28 @@ const pages: Ipage[] = [
         name: "Library",
         icon: "fi fi-rr-diary-bookmark-down",
       },
-      // {
-      //   slug: slugs.keyDates,
-      //   name: "Key Dates",
-      //   icon: "fi fi-rr-calendar-star",
-      // },
       {
-        slug: slugs.forms,
-        name: "Policies, Procedures & Forms. ",
-        icon: "fi fi-rr-form",
+        slug: slugs.qiheServicesAndFacilities,
+        name: "QIHE Services and Facilities",
+        icon: "fi fi-rr-calendar-star",
       },
 
       {
-        slug: slugs.feesandPayments,
-        name: "Fees and Payment",
-        icon: "fi fi-rr-fee",
+        slug: slugs.forms,
+        name: "Forms",
+        icon: "fi fi-rr-form",
       },
+      {
+        slug: slugs.studentSupport,
+        name: "Student Support",
+        icon: "fi fi-rr-headset",
+      },
+
+      // {
+      //   slug: slugs.feesandPayments,
+      //   name: "Fees and Payment",
+      //   icon: "fi fi-rr-fee",
+      // },
     ],
   },
   {

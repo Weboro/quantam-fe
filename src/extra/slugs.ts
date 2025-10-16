@@ -4,12 +4,13 @@ export const slugs = {
   apply: "apply",
   news: "news",
   contact: "contact",
+  campusInformation: "campus-information",
   getStarted: "get-started",
   majors: "courses",
   //
   prospectus: underConstruction,
   onlineApplication: underConstruction,
-  studentSupport: underConstruction,
+  studentSupport: "student-support",
   consultation: underConstruction,
   feesandPayments: "fees-and-payment",
   feeRefundPolicy: underConstruction,
@@ -41,7 +42,7 @@ export const slugs = {
   // QIHE Students subpages
   studentPlatform: "student-platform",
   library: "library",
-  keyDates: "key-dates",
+  qiheServicesAndFacilities: "qihe-services-and-facilities",
   forms: "forms",
   feesAndPayment: "fees-and-payment",
 
