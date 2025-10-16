@@ -21,12 +21,6 @@ const KeyDatesSection: React.FC<IKeyDatesSection> = ({
     <div className="flex flex-col gap-4 md:flex-row md:items-center mb-8">
       <div className="flex flex-col gap-4 flex-1">
         <Heading level={level}>Key Dates</Heading>
-
-        {!showAll && (
-          <Link href={`/${slugs.qiheStudents}/${slugs.keyDates}`}>
-            <Button variant="secondary">All Key Dates </Button>
-          </Link>
-        )}
       </div>
 
       <div className="flex-1">
