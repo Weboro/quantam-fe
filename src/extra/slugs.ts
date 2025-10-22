@@ -42,7 +42,6 @@ export const slugs = {
   // QIHE Students subpages
   studentPlatform: "student-platform",
   library: "library",
-  qiheServicesAndFacilities: "qihe-services-and-facilities",
   forms: "forms",
   feesAndPayment: "fees-and-payment",
 

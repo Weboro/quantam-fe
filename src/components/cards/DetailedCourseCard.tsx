@@ -56,7 +56,7 @@ const DetailedCourseCard: React.FC<ICourseDetailsSection> = ({
 
       <div className="sm:col-span-3 p-3">
         <Heading level={4} className="font-semibold">
-          Study {name} at QIHE
+          {name}
         </Heading>
 
         <p className="text-muted text-base line-clamp-3">{description}</p>

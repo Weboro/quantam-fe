@@ -39,6 +39,7 @@ export const metadata: Metadata = {
 const page = () => {
   return (
     <div className="space-y-32">
+      {/* General Admission Requirements */}
       <ContainerLayout className="text-muted mt-6">
         <Heading className="text-brand-primary-black mt-4 mb-8" level={1}>
           Admission Requirements
@@ -47,6 +48,7 @@ const page = () => {
         <Heading className="text-brand-primary-black mt-4 mb-2" level={2}>
           General Admission Requirements
         </Heading>
+
         <section className="mt-4">
           <Heading className="text-brand-primary-black mt-4 mb-2" level={3}>
             Domestic Applicants
@@ -57,14 +59,14 @@ const page = () => {
           </p>
           <ul className="list-disc pl-6 space-y-1">
             <li>
-              Hold a Higher Secondary Certificate (Year 12) or, have completed
-              an ATAR with a minimum score of 55;
+              Hold a Higher Secondary Certificate (Year 12) or have completed an
+              ATAR with a minimum score of 55;
             </li>
             <li>
               Successful completion of any of the following:
               <ul className="list-disc pl-6 space-y-1">
                 <li>Diploma AQF Level 5;</li>
-                <li>Tertiary Preparation Program; or,</li>
+                <li>Tertiary Preparation Program; or</li>
                 <li>
                   An equivalent qualification from an accredited Australian
                   higher education institution such as Universities, TAFE
@@ -93,13 +95,13 @@ const page = () => {
                   Education completion;
                 </li>
                 <li>
-                  12 years of formal studies recognized by the National Office
+                  12 years of formal studies recognised by the National Office
                   for Overseas Skills Recognition (NOOSR);
                 </li>
                 <li>
-                  Certificate IV or, a higher qualification from a
+                  Certificate IV or a higher qualification from a
                   NOOSR-accredited education provider, ideally aligned with the
-                  chosen program; or,
+                  chosen program; or
                 </li>
                 <li>
                   International Baccalaureate Diploma with a minimum score of 24
@@ -108,12 +110,12 @@ const page = () => {
               </ul>
             </li>
             <li>
-              If English is not the applicant’s first language, the ‘English
-              Language Requirements’ outlined below must be fully satisfied;
+              If English is not the applicant’s first language, the English
+              Language Requirements outlined below must be fully satisfied;
             </li>
             <li>
               After meeting the academic and English language requirements,
-              applicant must also satisfy the following criteria:
+              applicants must also satisfy the following criteria:
               <ul className="list-circle pl-6 space-y-1">
                 <li>
                   Compliance with the Australian Department of Home Affairs
@@ -136,6 +138,8 @@ const page = () => {
           </ul>
         </section>
       </ContainerLayout>
+
+      {/* English Language Requirements */}
       <ContainerLayout className="text-muted">
         <section className="mt-4">
           <Heading className="text-brand-primary-black mt-4 mb-2" level={2}>
@@ -149,15 +153,15 @@ const page = () => {
           </p>
           <ul className="list-disc pl-6 space-y-1">
             <li>
-              English Language Testing System (IELTS- Academic): Overall score
-              of 6.0 with no band score lower than 5.5;
+              English Language Testing System (IELTS Academic): Overall score of
+              6.0 with no band score lower than 5.5;
             </li>
             <li>
-              Test of English as a Foreign Language - Internet-Based Test
-              (TOEFL-IBT): Minimum overall score of 60; or,
+              Test of English as a Foreign Language - Internet-Based Test (TOEFL
+              iBT): Minimum overall score of 60;
             </li>
             <li>
-              Pearson Test of English (PTE- Academic): Minimum overall score of
+              Pearson Test of English (PTE Academic): Minimum overall score of
               55.
             </li>
           </ul>
@@ -176,16 +180,17 @@ const page = () => {
         </section>
       </ContainerLayout>
 
+      {/* Advanced Standing / Prior Learning */}
       <ContainerLayout className="text-muted">
         <section className="mt-4">
           <Heading className="text-brand-primary-black mt-4 mb-2" level={2}>
-            Advanced Standing (Recognition of Proper Learning)
+            Advanced Standing (Recognition of Prior Learning)
           </Heading>
           <p>
-            At Quantum Institute of Higher Education, we value and recognize
+            At Quantum Institute of Higher Education, we value and recognise
             your prior learning experiences! You are strongly encouraged to
-            apply for Advanced Standing or, Credit for Prior Learning, based on
-            your previous work or, life experience if you satisfy the following
+            apply for Advanced Standing or Credit for Prior Learning, based on
+            your previous work or life experience if you satisfy the following
             criteria:
           </p>
           <ul className="list-disc pl-6 space-y-1">
@@ -195,30 +200,16 @@ const page = () => {
             </li>
             <li>
               Evidence of skills and knowledge that serve as pre-requisites for
-              subsequent units; and,
+              subsequent units;
             </li>
             <li>
               Fulfillment of requirements set by a relevant professional body
-              (if applicable)
+              (if applicable).
             </li>
           </ul>
-          <p>
-            For more information, you can click{" "}
-            <Link
-              className="text-brand-primary underline hover:text-brand-blue-4 transition-all"
-              href="#"
-            >
-              here
-            </Link>{" "}
-            for the related policy on Advanced Standing, Credit Transfer and
-            Articulation Policy and, the{" "}
-            <Link
-              className="text-brand-primary underline hover:text-brand-blue-4 transition-all"
-              href="#"
-            >
-              form here
-            </Link>
-            .
+          <p className="mt-2 italic">
+            For full details, see the Advanced Standing, Credit Transfer and
+            Articulation Policy.
           </p>
         </section>
       </ContainerLayout>

@@ -33,10 +33,10 @@ const CourseFilterSection = () => {
       <ContainerLayout>
         <section className="mt-2 grid lg:grid-cols-2 gap-4">
           <div className="">
-            <Heading level={1}>Course</Heading>
+            <Heading level={1}>Find a Course</Heading>
             <p className="text-muted">
               Looking for the perfect course? Explore from our wide range of
-              undergraduate, postgraduate and research programs.
+              undergraduate programs.
             </p>
           </div>
 

@@ -1,7 +1,7 @@
 import { Metadata } from "next";
-//
 import { SITE_TITLE, SITE_URL } from "@/extra/siteDetails";
 import { slugs } from "@/extra/slugs";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "QIHE Services and Facilities | Student Support",
@@ -39,7 +39,6 @@ export const metadata: Metadata = {
 const Page = () => {
   return (
     <section className="max-w-4xl mx-auto px-4 py-10 space-y-12">
-      {/* QIHE Services and Facilities */}
       <div>
         <h1 className="text-3xl font-bold mb-6 text-gray-900">
           QIHE Services and Facilities
@@ -53,11 +52,22 @@ const Page = () => {
         </p>
         <p className="text-lg text-gray-700 italic mt-6">
           For full details, please refer to the{" "}
-          <i>ICT Services and Library Facilities Policy</i>.
+          <p>
+            For more details, see our{" "}
+            <a
+              target="main"
+              href={
+                "https://www.dropbox.com/scl/fo/ixrq58oyj2yo3ja5g8f9n/AJ-mqWkT5w00G5w_-L9PFRw/Policies%20and%20Procedures?dl=0&e=1&preview=ICT+Services+and+Library+Facilities+Policy.pdf&rlkey=bt8lvdav3k7x6my0f6khqgfsg&subfolder_nav_tracking=1"
+              }
+              className="text-brand-primary underline hover:text-brand-blue-4 transition-all italic"
+            >
+              ICT Services and Library Facilities Policy
+            </a>
+            .
+          </p>
         </p>
       </div>
 
-      {/* Student Support at QIHE */}
       <div>
         <h2 className="text-3xl font-bold mb-6 text-gray-900">
           Student Support at QIHE

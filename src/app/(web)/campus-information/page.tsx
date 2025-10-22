@@ -43,7 +43,7 @@ export default function CampusPage() {
     <div className="min-h-screen bg-gray-50 py-8">
       <div className="container mx-auto px-4 px-auto">
         <div className="text-center mb-12">
-          <h1 className="text-4xl font-bold text-gray-900 mb-3">
+          <h1 className="text-4xl font-semibold text-gray-900 mb-3">
             Campus Information
           </h1>
           <p className="text-xl text-gray-600">QIHE Campus - Parramatta NSW</p>
@@ -54,9 +54,7 @@ export default function CampusPage() {
               <div className="p-2 bg-blue-100 rounded-lg">
                 <MapPin className="h-6 w-6 text-blue-600" />
               </div>
-              <h2 className="text-2xl font-bold text-gray-900">
-                {location.title}
-              </h2>
+              <h2 className="text-2xl    text-gray-900">{location.title}</h2>
             </div>
           </div>
           <div className="p-8 space-y-8">
@@ -98,7 +96,7 @@ export default function CampusPage() {
               {/* Contact Info & Map */}
               <div className="space-y-6">
                 <div className="bg-gradient-to-br from-blue-50 to-indigo-50 p-6 rounded-xl border border-blue-200">
-                  <h4 className="font-bold text-gray-900 text-lg mb-4 flex items-center gap-2">
+                  <h4 className="font-semibold text-gray-900 text-lg mb-4 flex items-center gap-2">
                     <MapPin className="h-5 w-5 text-blue-600" />
                     Contact Information
                   </h4>
@@ -126,58 +124,99 @@ export default function CampusPage() {
             </div>
           </div>
         </div>
-        {/* Campus Safety */}
-        <div className="bg-white rounded-xl border border-gray-200 shadow-lg mb-8">
+
+        <div className="bg-white rounded-xl border border-gray-200   mb-8">
           <div className="p-6 border-b border-gray-200 bg-gradient-to-r from-green-50 to-white">
             <div className="flex items-center gap-3">
               <div className="p-2 bg-green-100 rounded-lg">
                 <Shield className="h-6 w-6 text-green-600" />
               </div>
-              <h2 className="text-2xl font-bold text-gray-900">
-                {safety.title}
+              <h2 className="text-2xl  font-semibold text-gray-900">
+                Safety at QIHE
               </h2>
             </div>
           </div>
           <div className="p-8 space-y-6">
             <p className="text-lg text-gray-700 text-center max-w-4xl mx-auto">
-              {safety.description}
+              Your safety and wellbeing are our top priority. QIHE maintains a
+              safe and healthy campus through clear policies, regular training,
+              and rapid response to risks or incidents. We provide clear health
+              and safety information during orientation, display procedures
+              across campus, and encourage early reporting so issues are managed
+              quickly and confidentially. Our commitment includes compliance
+              with national standards, critical incident support, and a culture
+              where everyone shares responsibility for safety.
+            </p>
+            <p className="text-lg text-gray-700 text-center max-w-4xl mx-auto">
+              For full details, please refer to the{" "}
+              <a
+                target="main"
+                href="https://www.dropbox.com/scl/fo/ixrq58oyj2yo3ja5g8f9n/AJ-mqWkT5w00G5w_-L9PFRw/Policies%20and%20Procedures?e=1&preview=Health+and+Safety+Policy.pdf&rlkey=bt8lvdav3k7x6my0f6khqgfsg&subfolder_nav_tracking=1&dl=0"
+                className="text-blue-600 hover:underline italic"
+              >
+                Health and Safety Policy
+              </a>
+              .
             </p>
 
             <div className="bg-blue-50 p-6 rounded-xl border-2 border-blue-200">
-              <h4 className="font-bold text-blue-900 text-xl mb-4">
-                {safety.healthSafety.title}
+              <h4 className="font-semibold text-blue-900 text-xl mb-4">
+                Health, Safety and Critical Incidents
               </h4>
-              <ul className="grid md:grid-cols-2 gap-3 text-blue-800">
-                {safety.healthSafety.points.map((point, index) => (
-                  <li key={index} className="flex items-start gap-2">
-                    <div className="w-2 h-2 bg-blue-600 rounded-full mt-2 flex-shrink-0" />
-                    <span>{point}</span>
-                  </li>
-                ))}
+              <ul className="list-disc list-inside   space-y-2">
+                <li>
+                  QIHE is committed to maintaining a safe and healthy
+                  environment for all students, staff, and visitors in line with
+                  the Work Health and Safety Act 2011 (NSW) and related
+                  regulations.
+                </li>
+                <li>
+                  The Institute has a Critical Incident Management Plan to
+                  respond quickly and effectively to emergencies such as serious
+                  accidents, natural disasters, medical emergencies, or security
+                  threats.
+                </li>
+                <li>
+                  In the event of a critical incident, QIHE prioritises student
+                  safety and will provide ongoing support, including access to
+                  counselling and wellbeing services.
+                </li>
+                <li>
+                  Students are encouraged to familiarise themselves with health
+                  and safety information provided during Orientation, on campus,
+                  and in this Handbook.
+                </li>
               </ul>
             </div>
 
-            <div className="flex flex-wrap gap-3 justify-center">
-              {safety.policies.map((policy, index) => (
-                <span
-                  key={index}
-                  className="inline-flex items-center gap-2 px-4 py-2 bg-gray-100 border border-gray-300 rounded-full text-sm font-semibold text-gray-700 hover:bg-gray-200 transition-colors"
-                >
-                  <Shield className="h-4 w-4" />
-                  {policy}
-                </span>
-              ))}
-            </div>
+            <p className="mt-4 text-gray-700 text-center max-w-4xl mx-auto">
+              For further information, please refer to the{" "}
+              <a
+                target="main"
+                href="https://www.dropbox.com/scl/fo/ixrq58oyj2yo3ja5g8f9n/AJ-mqWkT5w00G5w_-L9PFRw/Policies%20and%20Procedures?e=1&preview=Health+and+Safety+Policy.pdf&rlkey=bt8lvdav3k7x6my0f6khqgfsg&subfolder_nav_tracking=1&dl=0"
+                className="text-blue-600 hover:underline italic"
+              >
+                Health and Safety Policy
+              </a>{" "}
+              and the{" "}
+              <a
+                target="main"
+                href="https://www.dropbox.com/scl/fo/ixrq58oyj2yo3ja5g8f9n/AJ-mqWkT5w00G5w_-L9PFRw/Policies%20and%20Procedures?e=1&preview=Emergency+and+Critical+Incident+Management+Policy.pdf&rlkey=bt8lvdav3k7x6my0f6khqgfsg&subfolder_nav_tracking=1&dl=0"
+                className="text-blue-600 hover:underline italic"
+              >
+                Emergency and Critical Incident Management Policy
+              </a>
+              .
+            </p>
           </div>
         </div>
-        {/* Emergency Contacts & Services */}
+
         <div className="grid lg:grid-cols-2 gap-8 mb-8">
-          {/* Emergency Contacts */}
-          <div className="bg-white rounded-xl border border-gray-200 shadow-lg">
+          <div className="bg-white rounded-xl border border-gray-200   ">
             <div className="p-6 border-b border-gray-200 bg-gradient-to-r from-red-50 to-white">
               <div className="flex items-center gap-3 text-red-700">
                 <AlertTriangle className="h-6 w-6" />
-                <h2 className="text-2xl font-bold">
+                <h2 className="text-2xl font-semibold">
                   {emergencyContacts.title}
                 </h2>
               </div>
@@ -196,7 +235,7 @@ export default function CampusPage() {
                     <div className="flex justify-between items-start">
                       <div className="flex-1">
                         <h4
-                          className={`font-bold text-lg ${
+                          className={`font-semibold text-lg ${
                             contact.emergency ? "text-red-900" : "text-gray-900"
                           }`}
                         >
@@ -223,11 +262,11 @@ export default function CampusPage() {
           </div>
 
           {/* Local Services */}
-          <div className="bg-white rounded-xl border border-gray-200 shadow-lg">
+          <div className="bg-white rounded-xl border border-gray-200  ">
             <div className="p-6 border-b border-gray-200 bg-gradient-to-r from-purple-50 to-white">
               <div className="flex items-center gap-3">
                 <Building className="h-6 w-6 text-purple-600" />
-                <h2 className="text-2xl font-bold text-gray-900">
+                <h2 className="text-2xl font-semibold text-gray-900">
                   {localServices.title}
                 </h2>
               </div>
@@ -236,7 +275,7 @@ export default function CampusPage() {
               <div className="space-y-6">
                 {localServices.sections.map((section, index) => (
                   <div key={index}>
-                    <h4 className="font-semibold text-gray-900 text-lg mb-4 border-b pb-2">
+                    <h4 className="  text-gray-900 text-lg mb-4 border-b pb-2">
                       {section.title}
                     </h4>
                     <div className="space-y-3">
@@ -245,7 +284,7 @@ export default function CampusPage() {
                           key={serviceIndex}
                           className="p-4 bg-gray-50 rounded-lg border border-gray-200 hover:bg-purple-50 transition-colors"
                         >
-                          <h5 className="font-bold text-gray-900 text-md mb-2">
+                          <h5 className="font-semibold text-gray-900 text-md mb-2">
                             {service.name}
                           </h5>
                           <p className="text-gray-600 text-sm mb-2">
@@ -264,11 +303,11 @@ export default function CampusPage() {
           </div>
         </div>
         {/* Support Services */}
-        <div className="bg-white rounded-xl border border-gray-200 shadow-lg">
+        <div className="bg-white rounded-xl border border-gray-200 /">
           <div className="p-6 border-b border-gray-200 bg-gradient-to-r from-pink-50 to-white">
             <div className="flex items-center gap-3">
               <Heart className="h-6 w-6 text-pink-600" />
-              <h2 className="text-2xl font-bold text-gray-900">
+              <h2 className="text-2xl font-semibold text-gray-900">
                 {supportServices.title}
               </h2>
             </div>
@@ -280,7 +319,7 @@ export default function CampusPage() {
                   key={index}
                   className="p-5 bg-gray-50 rounded-xl border border-gray-200 hover:shadow-md transition-all hover:border-blue-200"
                 >
-                  <h4 className="font-bold text-gray-900 text-lg mb-2">
+                  <h4 className="font-semibold text-gray-900 text-lg mb-2">
                     {service.name}
                   </h4>
                   <p className="text-blue-600 font-black text-xl mb-2">

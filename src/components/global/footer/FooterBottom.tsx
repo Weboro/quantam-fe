@@ -13,7 +13,6 @@ const FooterBottom = () => (
           width={250}
           height={250}
         />
-
         <Image
           src={"/flag-b.png"}
           alt="footer flag image"
@@ -22,31 +21,36 @@ const FooterBottom = () => (
           height={250}
         />
       </div>
-      <p className="md:w-2/4 mx-auto text-center leading-4.5 text-md font-semibold text-neutral-300">
-        Acknowledgements of Country
-      </p>
+
+      <h2 className="md:w-2/4 mx-auto text-center leading-4.5 text-md font-semibold text-neutral-300">
+        Acknowledgement of Country
+      </h2>
+
       <p className="md:w-2/4 mx-auto text-center leading-4.5 text-sm text-neutral-300">
-        We Acknowledgements the Dharug people as the Traditional Custodians of
-        the land on which Quantum Institute of Hight Education Stands in
+        We acknowledge the Dharug people as the Traditional Custodians of the
+        land on which Quantum Institute of Higher Education stands in
         Parramatta, New South Wales.
       </p>
+
       <p className="md:w-2/4 mx-auto text-center leading-4.5 text-sm text-neutral-300">
-        We pay our respects to their Elders past, present, and emerging, and
+        We pay our respects to their Elders past, present and emerging, and
         extend that respect to all Aboriginal and Torres Strait Islander
         peoples.
       </p>
+
       <div className="w-fit text-center mx-auto mt-4">
-        <p>TEQSA Provider ID: TBA </p>
-        <p>CRICOS Provider Code: TBA </p>
+        <p>TEQSA Provider ID: TBA</p>
+        <p>CRICOS Provider Code: TBA</p>
         <p>ABN 54 668 014 757</p>
         <p>ACN 668 014 757</p>
         <p>Level 4, 16-18 Wentworth Street, Parramatta, NSW 2150</p>
-        +61 2 8359 5220
+        <p>+61 2 8359 5220</p>
       </div>
+
       <hr className="border-brand-blue-4 my-4" />
 
       <p className="w-fit mx-auto text-center text-sm text-neutral-300">
-        Copyright &copy; {new Date().getFullYear()} Quantam Institute of Higher
+        Copyright &copy; {new Date().getFullYear()} Quantum Institute of Higher
         Education. All Rights Reserved.
       </p>
     </ContainerLayout>

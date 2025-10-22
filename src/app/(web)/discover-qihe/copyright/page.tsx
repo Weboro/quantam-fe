@@ -18,8 +18,7 @@ const CopyrightPage = () => {
         </p>
 
         <p className="text-gray-700">
-          For official guidance on copyright and intellectual property in New
-          South Wales, please visit the{" "}
+          For guidance on copyright, visit:{" "}
           <a
             href="https://www.copyright.nsw.gov.au/"
             target="_blank"

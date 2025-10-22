@@ -2,23 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Header from "@/components/global/header";
 import Footer from "@/components/global/footer";
-import { Poppins, League_Spartan } from "next/font/google";
 import ScrollToTop from "@/components/global/ScrollToTop";
 import { SITE_TITLE, SITE_URL } from "@/extra/siteDetails";
-
-const poppins = Poppins({
-  subsets: ["latin"],
-  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
-  variable: "--font-secondary",
-  display: "swap",
-});
-
-const leagueSpartan = League_Spartan({
-  subsets: ["latin"],
-  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
-  variable: "--font-primary",
-  display: "swap",
-});
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
@@ -77,9 +62,9 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
     <html lang="en">
       <head>
@@ -100,10 +85,9 @@ export default function RootLayout({
           />
         ))}
       </head>
-      <body
-        className={`${poppins.variable} ${leagueSpartan.variable} antialiased bg-white text-black dark:bg-black dark:text-white`}
-      >
-        {children}
+
+      <body className="antialiased bg-white text-black dark:bg-black dark:text-white font-secondary">
+        <main>{children}</main>
       </body>
     </html>
   );

@@ -69,13 +69,13 @@ const courses: ICourse[] = [
       {
         title: "Why Choose This Program?",
         richText: `
-<p class="list-disc list-outside space-y-1 text-start p-2">
-Gain essential business knowledge and skills in accounting
- Gain expertise to analyse financial data and create value for stakeholders.
- Prepare for professional certifications with CPA Australia and CAANZ eligibility.
- Explore emerging fields like sustainability accounting and forensic accounting.
- Learn from industry-relevant curriculum aligned with workforce needs
-</p>`,
+<ul class="list-disc list-outside space-y-1 text-start p-2">
+  <li>Gain essential business knowledge and skills in accounting</li>
+  <li>Gain expertise to analyse financial data and create value for stakeholders.</li>
+  <li>Prepare for professional certifications with CPA Australia and CAANZ eligibility.</li>
+  <li>Explore emerging fields like sustainability accounting and forensic accounting.</li>
+  <li>Learn from an industry-relevant curriculum aligned with workforce needs.</li>
+</ul>`,
       },
       {
         title: "Learning Outcomes",
@@ -114,25 +114,30 @@ Gain essential business knowledge and skills in accounting
         title: "Admission Requirements",
         richText: `
 <p class="mb-4">
-  We welcome students who show strong academic ability and a genuine passion for their field.
+  We welcome students who show strong academic ability and a genuine passion for accounting and finance.
 </p>
+
 <h3 class="text-lg font-semibold text-blue-800 mt-6 mb-2">Minimum Entry Requirements</h3>
+
 <h4 class="text-base font-medium text-gray-700 mt-4 mb-1">Domestic Students</h4>
-<ul class="list-disc list-outside space-y-1 text-start px-4 ">
-  <li>Completion of Year 12 (or equivalent)</li>
-  <li>Minimum ATAR score (or equivalent)</li>
+<ul class="list-disc list-outside space-y-1 text-start px-4">
+  <li>Year 12 (Australia) or ATAR 55</li>
+  <li>AQF Level 5 Diploma</li>
 </ul>
+
 <h4 class="text-base font-medium text-gray-700 mt-4 mb-1">International Students</h4>
-<ul class="list-disc list-outside space-y-1 text-start px-4 ">
-  <li>Year 12 equivalent or IB Diploma</li>
+<ul class="list-disc list-outside space-y-1 text-start px-4">
+  <li>Year 12 equivalent or IB Diploma (24+ points)</li>
   <li>English Requirements (if prior studies weren’t in English)</li>
 </ul>
+
 <h3 class="text-lg font-semibold text-blue-800 mt-6 mb-2">Alternative Pathways</h3>
-<ul class="list-disc list-outside space-y-1 text-start px-4 ">
+<ul class="list-disc list-outside space-y-1 text-start px-4">
   <li>Aboriginal & Torres Strait Islander students</li>
   <li>Mature age applicants</li>
   <li>Students from disadvantaged or under-represented backgrounds</li>
 </ul>
+
 <h3 class="text-lg font-semibold text-blue-800 mt-6 mb-2">Admission Process</h3>
 <ol class="list-decimal list-inside space-y-1 px-1">
   <li>Check Eligibility</li>
@@ -141,7 +146,13 @@ Gain essential business knowledge and skills in accounting
   <li>Receive Admission Outcome</li>
   <li>Accept Offer</li>
   <li>Orientation and Enrolment</li>
-</ol>`,
+</ol>
+
+<p class="mt-4">
+  For full details, see the 
+  <a target="main" href="https://www.dropbox.com/scl/fo/ixrq58oyj2yo3ja5g8f9n/AJ-mqWkT5w00G5w_-L9PFRw/Policies%20and%20Procedures?e=1&preview=Admission+Policy+and+Procedure.pdf&rlkey=bt8lvdav3k7x6my0f6khqgfsg&subfolder_nav_tracking=1&dl=0" 
+  class="text-blue-700 hover:underline hover:text-brand-primary transition-all">Admission Policy and Procedure</a>.
+</p>`,
       },
     ],
   },
@@ -176,13 +187,13 @@ Gain essential business knowledge and skills in accounting
       {
         title: "Why Choose This Program?",
         richText: `
-<p class="list-disc list-outside space-y-1 text-start pl-5 text-gray-700">
-Gain essential business knowledge and skills in information systems.
-Gain skills in software development, cybersecurity, data management, and analysis.
-Prepare for diverse roles in the digital economy.
-Address real-world challenges with innovative solutions.
-Learn from industry-relevant curriculum aligned with workforce needs.
-</p>`,
+<ul class="list-disc list-outside space-y-1 text-start pl-5 text-gray-700">
+  <li>Gain essential business knowledge and skills in information systems.</li>
+  <li>Gain skills in software development, cybersecurity, data management, and analysis.</li>
+  <li>Prepare for diverse roles in the digital economy.</li>
+  <li>Address real-world challenges with innovative solutions.</li>
+  <li>Learn from industry-relevant curriculum aligned with workforce needs.</li>
+</ul>`,
       },
       {
         title: "Program Learning Outcomes",
@@ -294,13 +305,13 @@ Learn from industry-relevant curriculum aligned with workforce needs.
       {
         title: "Why Choose This Program?",
         richText: `
-<p class="list-disc list-outside space-y-1 text-start p-2">
-Gain essential business knowledge and skills in hospitality.
- Build essential management and customer service skills.
- Learn to navigate the global hospitality industry.
-Gain expertise in event planning, food and beverage management, and sustainability.
- Learn from industry-relevant curriculum aligned with workforce needs.
-</p>
+<ul class="list-disc list-outside space-y-1 text-start p-2">
+  <li>Gain essential business knowledge and skills in hospitality.</li>
+  <li>Build essential management and customer service skills.</li>
+  <li>Learn to navigate the global hospitality industry.</li>
+  <li>Gain expertise in event planning, food and beverage management, and sustainability.</li>
+  <li>Learn from industry-relevant curriculum aligned with workforce needs.</li>
+</ul>
 `,
       },
       {
@@ -393,10 +404,10 @@ Gain expertise in event planning, food and beverage management, and sustainabili
   {
     id: "bachelor-information-technology",
     major: "Bachelor of Business",
-    name: "Bachelor of Information Technology",
+    name: "Bachelor of Business-Information Technology ",
     slug: slugs.bachelorInformationTechnology,
     description:
-      "The Bachelor of Information Technology program aims to produce graduates who are well-prepared to meet the demands of the digital world. Students will gain a comprehensive understanding of emerging technologies, ethical IT practices, and strategic problem-solving, enabling them to contribute meaningfully to diverse organisations and industries",
+      "Bachelor of Business-Information Technology  program aims to produce graduates who are well-prepared to meet the demands of the digital world. Students will gain a comprehensive understanding of emerging technologies, ethical IT practices, and strategic problem-solving, enabling them to contribute meaningfully to diverse organisations and industries",
     richText: "", // "<ul><li>Learn AI, cloud computing, cybersecurity, and IoT</li><li>Prepare for diverse IT careers</li><li>Curriculum meets industry demands</li></ul>",
     heroImage: "/courses/information-technology/hero.jpg",
     images: ["/courses/information-technology/1.jpg"],
@@ -432,12 +443,12 @@ Gain expertise in event planning, food and beverage management, and sustainabili
         richText: `
 <div class="space-y-6 text-gray-800">
   <p class="leading-relaxed text-base md:text-lg">
-    Students enrolled in the Bachelor of Information Technology program will be able to possess broad and coherent knowledge as well as skills that are transferrable for real-world application to prepare them for their careers, with specific learning outcomes that are in line with the major that they have selected.
+    Students enrolled in the Bachelor of Business-Information Technology  program will be able to possess broad and coherent knowledge as well as skills that are transferrable for real-world application to prepare them for their careers, with specific learning outcomes that are in line with the major that they have selected.
   </p>
 
   <div class="bg-gray-50 border border-gray-200 rounded-2xl p-5 md:p-8 shadow-sm">
     <h3 class="text-lg md:text-xl font-semibold text-gray-900 mb-4">
-      Upon completion of the Bachelor of Information Technology program, students are expected to:
+      Upon completion of the Bachelor of Business-Information Technology  program, students are expected to:
     </h3>
 
     <ol class="list-decimal list-inside space-y-3 text-gray-700 text-sm md:text-base text-start px-4">

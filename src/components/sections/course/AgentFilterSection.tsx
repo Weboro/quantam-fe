@@ -20,8 +20,8 @@ const AgentFilterSection = () => {
             <Heading level={1}>Find Agent</Heading>
             <p className="text-muted">
               Looking for the perfect program? Explore our wide range of
-              undergraduate programs, with postgraduate and research options to
-              be introduced in the future.
+              undergraduate programs designed to help you achieve your academic
+              and career goals.
             </p>
           </div>
 

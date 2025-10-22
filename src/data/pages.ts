@@ -115,7 +115,7 @@ const pages: Ipage[] = [
         icon: "fi fi-rr-workflow-alt",
       },
       {
-        name: "student information material",
+        name: "Student Information Material",
         slug: "student-information-material",
         icon: "fi fi-rr-info-guide",
       },
@@ -144,12 +144,6 @@ const pages: Ipage[] = [
         icon: "fi fi-rr-diary-bookmark-down",
       },
       {
-        slug: slugs.qiheServicesAndFacilities,
-        name: "QIHE Services and Facilities",
-        icon: "fi fi-rr-calendar-star",
-      },
-
-      {
         slug: slugs.forms,
         name: "Forms",
         icon: "fi fi-rr-form",
@@ -159,12 +153,11 @@ const pages: Ipage[] = [
         name: "Student Support",
         icon: "fi fi-rr-headset",
       },
-
-      // {
-      //   slug: slugs.feesandPayments,
-      //   name: "Fees and Payment",
-      //   icon: "fi fi-rr-fee",
-      // },
+      {
+        slug: slugs.feesandPayments,
+        name: "Fees and Payment",
+        icon: "fi fi-rr-fee",
+      },
     ],
   },
   {

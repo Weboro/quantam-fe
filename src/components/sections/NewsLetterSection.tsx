@@ -18,16 +18,12 @@ const NewsLetterSection = () => (
       <div className="absolute inset-0 z-0 bg-gradient-to-r from-brand-primary to-transparent pointer-events-none" />
 
       <div className="relative z-10 w-full h-full px-5 py-4 text-white">
-        <Heading level={4}>Not finding what you need?</Heading>
-
-        <Heading level={4} className="mb-3">
-          No worries!
-        </Heading>
+        <Heading level={4}>Not finding what you need? No worries!</Heading>
 
         <p className="text-gray-200 md:max-w-2xl">
           Ask us a question, call{" "}
           <span className="font-medium">{SITE_PHONE}</span>, or chat with us
-          online.
+          online
         </p>
 
         <div className="flex gap-2 md:items-center flex-col md:flex-row mt-4">
@@ -53,3 +49,19 @@ const NewsLetterSection = () => (
 );
 
 export default NewsLetterSection;
+
+// const HelpSection = () => (
+//   <ContainerLayout size="sm" className="my-6">
+//     <div className="rounded-lg p-6 bg-gray-800 text-white">
+//       <Heading level={4} className="mb-3">
+//         Not finding what you need? No worries!
+//       </Heading>
+//       <p className="text-gray-200 md:max-w-2xl">
+//         Ask us a question, call{" "}
+//         <span className="font-medium"> {SITE_PHONE}</span>, or chat with us
+//         online.
+//       </p>
+//     </div>
+//   </ContainerLayout>
+// );
+// export default HelpSection;

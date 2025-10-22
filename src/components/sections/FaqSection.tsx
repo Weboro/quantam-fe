@@ -7,7 +7,7 @@ const FaqSection: React.FC = () => {
   return (
     <ContainerLayout>
       <Heading level={2} className="w-fit mx-auto text-center">
-        Got Questions about Studying at QIHE ?
+        Got questions about studying at QIHE?
       </Heading>
       <p className="text-muted max-w-xl text-center mx-auto">
         Find answers about admissions, programs, support services, and student

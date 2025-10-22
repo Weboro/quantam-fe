@@ -26,7 +26,7 @@ const HomePage = () => {
       />
       <CoursesSections />
       <AboutUsSection />
-      <KeyDatesSection level={2} />
+      {/* <KeyDatesSection level={2} /> */}
       {/* <HomeNewsSection /> */}
       <QiheCard />/
       <FaqSection />
