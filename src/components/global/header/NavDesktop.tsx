@@ -63,21 +63,32 @@ const NavDesktop = () => {
                               <div className="grid lg:grid-cols-2 gap-y-8 gap-4 max-h-56 overflow-y-scroll">
                                 {page.subHeadings.map((heading) => (
                                   <div key={heading.slug}>
-                                    <h3 className="mb-2 text-lg font-semibold">
-                                      {heading.title}
-                                    </h3>
+                                    <Link
+                                      key={page.slug}
+                                      href={
+                                        heading.pages.length > 1
+                                          ? "#"
+                                          : `/${slugs.programs}/${heading.slug}`
+                                      }
+                                    >
+                                      <h3 className="mb-2 text-lg font-semibold">
+                                        {heading.title}
+                                      </h3>
+                                    </Link>
 
-                                    <div className="space-y-2 mt-2 ml-2">
-                                      {heading.pages.map((page) => (
-                                        <Link
-                                          key={page.slug}
-                                          href={`/${slugs.programs}/${page.slug}`}
-                                          className="block font-medium hover:underline hover:text-brand-primary"
-                                        >
-                                          {page.name}
-                                        </Link>
-                                      ))}
-                                    </div>
+                                    {heading.pages.length > 1 && (
+                                      <div className="space-y-2 mt-2 ml-2">
+                                        {heading.pages.map((page) => (
+                                          <Link
+                                            key={page.slug}
+                                            href={`/${slugs.programs}/${page.slug}`}
+                                            className="block font-medium hover:underline hover:text-brand-primary"
+                                          >
+                                            {page.name}
+                                          </Link>
+                                        ))}
+                                      </div>
+                                    )}
                                   </div>
                                 ))}
                               </div>

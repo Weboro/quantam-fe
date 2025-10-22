@@ -20,6 +20,7 @@ interface ISubpage {
   icon?: string;
   name: string;
   slug: string;
+  quickLink?: boolean;
 }
 
 interface ISeo {
@@ -48,7 +49,7 @@ export const majors = [
   },
   {
     title: "Bachelor in Information Technology",
-    slug: "bit",
+    slug: slugs.bachelorInformationTechnology,
     pages: [
       {
         slug: slugs.bachelorInformationTechnology,
@@ -216,21 +217,25 @@ const pages: Ipage[] = [
         slug: slugs.esosFramework,
         name: "ESOS Framework",
         icon: "fi fi-rr-file-contract",
+        quickLink: true,
       },
       {
         slug: slugs.privacyPolicy,
         name: "Privacy Policy",
         icon: "fi fi-rr-shield-check",
+        quickLink: true,
       },
       {
         slug: slugs.copyright,
         name: "Copyright",
         icon: "fi fi-rr-copyright",
+        quickLink: true,
       },
       {
         slug: slugs.careersAtQihe,
         name: "Careers at QIHE",
         icon: "fi fi-rr-briefcase",
+        quickLink: true,
       },
     ],
   },
