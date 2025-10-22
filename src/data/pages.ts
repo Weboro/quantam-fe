@@ -30,30 +30,30 @@ interface ISeo {
 
 export const majors = [
   {
-    title: "Bachelor in Business",
+    title: "Bachelor of Business",
     slug: "bbus",
     pages: [
       {
         slug: slugs.bachelorBusinessAccounting,
-        name: "Major in Accounting",
+        name: "Accounting",
       },
       {
         slug: slugs.bachelorBusinessInformationSystems,
-        name: "Major in Information Systems",
+        name: "Information Systems",
       },
       {
         slug: slugs.bachelorBusinessHospitality,
-        name: "Major in Hospitality",
+        name: "Hospitality",
       },
     ],
   },
   {
-    title: "Bachelor in Information Technology",
+    title: "Bachelor of Information Technology",
     slug: slugs.bachelorInformationTechnology,
     pages: [
       {
         slug: slugs.bachelorInformationTechnology,
-        name: "Major in Information Technology",
+        name: "Information Technology",
       },
     ],
   },
