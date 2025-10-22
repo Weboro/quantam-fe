@@ -21,7 +21,20 @@ const Footer = () => {
     { title: "Programs", data: programData },
     { title: "Future Students", data: futureStudents },
     { title: "QIHE Students", data: qiheStudents },
-    { title: "Discover QIHE", data: discoverQihe },
+    {
+      title: "Discover QIHE",
+      data: {
+        ...discoverQihe,
+        subPages: discoverQihe?.subPages?.filter((el) => el.quickLink !== true),
+      },
+    },
+    {
+      title: "Quick Links",
+      data: {
+        ...discoverQihe,
+        subPages: discoverQihe?.subPages?.filter((el) => el.quickLink === true),
+      },
+    },
   ];
 
   return (

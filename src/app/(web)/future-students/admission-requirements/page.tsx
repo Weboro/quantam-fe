@@ -169,12 +169,13 @@ const page = () => {
             Alternative English language tests may also be accepted to meet the
             English language requirements. For detailed requirements, including
             possible exemptions, please refer to the{" "}
-            <Link
+            <a
               className="text-brand-primary underline hover:text-brand-blue-4 transition-all"
-              href="#"
+              href="https://www.dropbox.com/scl/fo/ixrq58oyj2yo3ja5g8f9n/AJ-mqWkT5w00G5w_-L9PFRw/Policies%20and%20Procedures?e=1&preview=English+Language+Policy.pdf&rlkey=bt8lvdav3k7x6my0f6khqgfsg&subfolder_nav_tracking=1&dl=0"
+              target="main"
             >
               English Language Policy
-            </Link>
+            </a>
             .
           </p>
         </section>
