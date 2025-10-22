@@ -51,7 +51,7 @@ const page = () => {
           Check your eligibility through Quantum’s{" "}
           <Link
             className="text-brand-primary underline hover:text-brand-blue-4 transition-all"
-            href={`/${slugs.futureStudents}/admission-policy`}
+            href={`/${slugs.futureStudents}/admission-requirements`}
           >
             Admission Requirements
           </Link>{" "}
@@ -161,12 +161,15 @@ const page = () => {
       <section className="mt-4">
         <p>
           For more Information:{" "}
-          <Link
+          <a
+            target="main"
             className="text-brand-primary underline hover:text-brand-blue-4 transition-all"
-            href={`/${slugs.futureStudents}/admission-policy`}
+            href={
+              "https://www.dropbox.com/scl/fo/ixrq58oyj2yo3ja5g8f9n/AJ-mqWkT5w00G5w_-L9PFRw/Policies%20and%20Procedures?e=1&preview=Admission+Policy+and+Procedure.pdf&rlkey=bt8lvdav3k7x6my0f6khqgfsg&subfolder_nav_tracking=1&dl=0"
+            }
           >
             QIHE’s Admission Policy
-          </Link>
+          </a>
         </p>
       </section>
     </ContainerLayout>

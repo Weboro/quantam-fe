@@ -20,7 +20,7 @@ const CopyrightPage = () => {
         <p className="text-gray-700">
           For guidance on copyright, visit:{" "}
           <a
-            href="https://www.copyright.nsw.gov.au/"
+            href="https://www.nsw.gov.au/nsw-government/about-website/copyright"
             target="_blank"
             rel="noopener noreferrer"
             className="text-blue-600 hover:underline"

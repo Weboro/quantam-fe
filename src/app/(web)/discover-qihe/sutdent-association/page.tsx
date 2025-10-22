@@ -80,15 +80,6 @@ const page = () => {
         For further information, please refer to the QIHE Student Association –
         Plan and Terms of Reference.
       </p>
-
-      <p className="mt-4">
-        <Link
-          href="#"
-          className="text-brand-primary underline hover:text-brand-blue-4 transition-all"
-        >
-          Meet the Student Association – Your Voice at QIHE
-        </Link>
-      </p>
     </ContainerLayout>
   );
 };
