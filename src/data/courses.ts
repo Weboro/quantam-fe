@@ -149,10 +149,11 @@ const courses: ICourse[] = [
 </ol>
 
 <p class="mt-4">
-  For full details, see the 
+  For full details, see the<i> 
   <a target="main" href="https://www.dropbox.com/scl/fo/ixrq58oyj2yo3ja5g8f9n/AJ-mqWkT5w00G5w_-L9PFRw/Policies%20and%20Procedures?e=1&preview=Admission+Policy+and+Procedure.pdf&rlkey=bt8lvdav3k7x6my0f6khqgfsg&subfolder_nav_tracking=1&dl=0" 
   class="text-blue-700 hover:underline hover:text-brand-primary transition-all">Admission Policy and Procedure</a>.
-</p>`,
+</i>
+  </p>`,
       },
     ],
   },
@@ -269,9 +270,12 @@ const courses: ICourse[] = [
   <li>Orientation and Enrolment</li>
 </ol>
 
-<p class="mt-4 text-sm text-gray-600">
-  For full details, see the Admission Policy and Procedure.
-</p>`,
+<p class="mt-4">
+  For full details, see the<i> 
+  <a target="main" href="https://www.dropbox.com/scl/fo/ixrq58oyj2yo3ja5g8f9n/AJ-mqWkT5w00G5w_-L9PFRw/Policies%20and%20Procedures?e=1&preview=Admission+Policy+and+Procedure.pdf&rlkey=bt8lvdav3k7x6my0f6khqgfsg&subfolder_nav_tracking=1&dl=0" 
+  class="text-blue-700 hover:underline hover:text-brand-primary transition-all">Admission Policy and Procedure</a>.
+</i>
+  </p>`,
       },
     ],
   },
@@ -394,8 +398,11 @@ const courses: ICourse[] = [
 </ol>
 
 <p class="mt-4">
-  For full details, see the Admission Policy and Procedure.
-</p>
+  For full details, see the<i> 
+  <a target="main" href="https://www.dropbox.com/scl/fo/ixrq58oyj2yo3ja5g8f9n/AJ-mqWkT5w00G5w_-L9PFRw/Policies%20and%20Procedures?e=1&preview=Admission+Policy+and+Procedure.pdf&rlkey=bt8lvdav3k7x6my0f6khqgfsg&subfolder_nav_tracking=1&dl=0" 
+  class="text-blue-700 hover:underline hover:text-brand-primary transition-all">Admission Policy and Procedure</a>.
+</i>
+  </p>
 `,
       },
     ],

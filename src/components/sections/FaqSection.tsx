@@ -10,8 +10,7 @@ const FaqSection: React.FC = () => {
         Got questions about studying at QIHE?
       </Heading>
       <p className="text-muted max-w-xl text-center mx-auto">
-        Find answers about admissions, programs, support services, and student
-        visas to help you succeed.
+Got questions about studying at QIHE? Find answers about admissions, programs, support services, and student visas to help you succeed.
       </p>
       <br />
       <Accordion data={faq} />

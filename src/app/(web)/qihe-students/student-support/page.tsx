@@ -80,9 +80,17 @@ const Page = () => {
           with disabilities. Support is always available, and we provide the
           resources, guidance, and care you need to thrive at QIHE.
         </p>
-        <p className="text-lg text-gray-700 italic mt-6">
+        <p className="text-lg text-gray-700 mt-6">
           For full details, please refer to the{" "}
+                      <a
+              target="main"
+              href={
+                "https://www.dropbox.com/scl/fo/ixrq58oyj2yo3ja5g8f9n/AH3M6gYuVmnkM8lasZmegKw/Policies%20and%20Procedures/Student%20Support%20and%20Consultation%20Policy.pdf?rlkey=bt8lvdav3k7x6my0f6khqgfsg&dl=0"
+              }
+              className="text-brand-primary underline hover:text-brand-blue-4 transition-all italic"
+            >
           <i>Student Support and Consultation Policy</i>.
+          </a>
         </p>
       </div>
     </section>
