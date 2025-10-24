@@ -404,7 +404,7 @@ const courses: ICourse[] = [
   {
     id: "bachelor-information-technology",
     major: "Bachelor of Business",
-    name: "Bachelor of Business-Information Technology ",
+    name: "Bachelor of Information Technology ",
     slug: slugs.bachelorInformationTechnology,
     description:
       "Bachelor of Business-Information Technology  program aims to produce graduates who are well-prepared to meet the demands of the digital world. Students will gain a comprehensive understanding of emerging technologies, ethical IT practices, and strategic problem-solving, enabling them to contribute meaningfully to diverse organisations and industries",
@@ -443,12 +443,12 @@ const courses: ICourse[] = [
         richText: `
 <div class="space-y-6 text-gray-800">
   <p class="leading-relaxed text-base md:text-lg">
-    Students enrolled in the Bachelor of Business-Information Technology  program will be able to possess broad and coherent knowledge as well as skills that are transferrable for real-world application to prepare them for their careers, with specific learning outcomes that are in line with the major that they have selected.
+    Students enrolled in the Bachelor of Information Technology  program will be able to possess broad and coherent knowledge as well as skills that are transferrable for real-world application to prepare them for their careers, with specific learning outcomes that are in line with the major that they have selected.
   </p>
 
   <div class="bg-gray-50 border border-gray-200 rounded-2xl p-5 md:p-8 shadow-sm">
     <h3 class="text-lg md:text-xl font-semibold text-gray-900 mb-4">
-      Upon completion of the Bachelor of Business-Information Technology  program, students are expected to:
+      Upon completion of the Bachelor of Information Technology  program, students are expected to:
     </h3>
 
     <ol class="list-decimal list-inside space-y-3 text-gray-700 text-sm md:text-base text-start px-4">
