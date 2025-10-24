@@ -1,0 +1,48 @@
+
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <style>
+    :root {
+      --color-background: hsl(0 0% 98%);
+      --color-text: hsl(222 40% 15%);
+      --color-muted: #424242;
+      --color-brand-primary: #78256f;
+      --color-brand-primary-black: #111111;
+      --color-brand-blue-4: #255494;
+      --font-primary: 'League Spartan', serif;
+      --font-secondary: 'Poppins', serif;
+    }
+    .font-primary { font-family: var(--font-primary); }
+    .text-brand-primary { color: var(--color-brand-primary); }
+    .text-brand-primary-black { color: var(--color-brand-primary-black); }
+    .border-muted\/50 { border-color: #42424280; }
+  </style>
+
+<body class="bg-[var(--color-background)] text-[var(--color-text)]">
+  <div class="border border-muted/50 shadow rounded-xl overflow-hidden grid sm:grid-cols-5 md:grid-cols-4 max-w-3xl mx-auto my-10">
+    <div class="w-full h-full overflow-hidden sm:col-span-2 md:col-span-1">
+      <img src="/public/courses/information-systems/hero.jpg" alt="Image for Information Systems" width="600" height="600" class="w-full h-full object-cover hover:scale-105 transition-all" />
+    </div>
+    <div class="sm:col-span-3 p-3">
+      <h4 class="font-semibold text-xl mb-2">Study Information Systems at QIHE</h4>
+      <p class="text-muted text-base line-clamp-3 mb-4">Bridges the gap between technology and business, enabling students to harness technology for strategic decision-making.</p>
+      <div class="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-3 gap-4 text-sm my-5">
+        <div><span class="font-bold">Location:</span> Sydney</div>
+        <div><span class="font-bold">Duration:</span> 3 Years</div>
+        <div><span class="font-bold">Delivery Mode:</span> Face-to-Face</div>
+        <div><span class="font-bold">CRICOS Course Code:</span> 123456A</div>
+        <div><span class="font-bold">Intakes:</span> Feb, Jul</div>
+        <div><span class="font-bold">Degree Type:</span> Undergraduate</div>
+      </div>
+      <div class="flex items-center gap-3 mt-4">
+        <a href="/apply" class="flex items-center gap-2 px-4 py-2 rounded-lg bg-gray-200 text-gray-800 font-bold hover:bg-gray-300 transition-all">
+          <span>Apply Now</span>
+          <i class="fi fi-br-arrow-small-right"></i>
+        </a>
+        <a href="/programs/bachelor-business-information-systems" class="flex items-center gap-2 px-4 py-2 rounded-lg bg-brand-primary text-white font-bold hover:bg-brand-blue-4 transition-all">
+          <span>Learn More</span>
+          <i class="fi fi-br-arrow-small-right"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+

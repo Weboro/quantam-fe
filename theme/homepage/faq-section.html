@@ -1,0 +1,70 @@
+<head>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="stylesheet" href="/src/app/globals.css">
+</head>
+<style>
+    :root {
+        --color-background: hsl(0 0% 98%);
+        --color-text: hsl(222 40% 15%);
+        --color-surface: hsl(0 0% 93%);
+        --color-surface-1: hsl(0 0% 87%);
+        --color-surface-2: hsl(0 0% 82%);
+        --color-muted: #424242;
+        --color-error: hsl(0 70% 58%);
+        --color-success: hsl(142 50% 45%);
+        --color-powder-blue: #edf5ff;
+        --color-brand-primary: #78256f;
+        --color-brand-primary-yellow: #f3bd1c;
+        --color-brand-primary-black: #111111;
+        --color-brand-blue-1: #093a73;
+        --color-brand-blue-2: #124380;
+        --color-brand-blue-3: #1d4d8b;
+        --color-brand-blue-4: #255494;
+        --color-brand-yellow-1: #ef7c00;
+        --color-brand-yellow-2: #f2a510;
+        --color-brand-yellow-3: #f3bd1c;
+        --color-brand-yellow-4: #f4d526;
+        --font-primary: 'League Spartan', serif;
+        --font-secondary: 'Poppins', serif;
+    }
+</style>
+<div>
+  <div class="container-md mx-auto">
+    <h2 class="w-fit mx-auto text-center font-primary font-bold text-3xl md:text-4xl mb-3">Frequently Asked Questions</h2>
+    <p class="text-muted max-w-xl text-center mx-auto">
+      Find answers to common questions about admissions, courses, support services, and life at QIHE.
+    </p>
+    <br />
+    <div class="max-w-2xl mx-auto">
+      <!-- FAQ Accordion Example -->
+      <div class="border-b border-muted/50">
+        <button class="w-full flex justify-between items-center py-4 text-left font-medium text-lg focus:outline-none" onclick="this.nextElementSibling.classList.toggle('hidden')">
+          What are the admission requirements?
+          <span class="ml-2"><i class="fi fi-br-angle-small-down"></i></span>
+        </button>
+        <div class="hidden pb-4 text-muted">
+          Admission requirements vary by program. Please visit the Admissions page for detailed information.
+        </div>
+      </div>
+      <div class="border-b border-muted/50">
+        <button class="w-full flex justify-between items-center py-4 text-left font-medium text-lg focus:outline-none" onclick="this.nextElementSibling.classList.toggle('hidden')">
+          How do I apply?
+          <span class="ml-2"><i class="fi fi-br-angle-small-down"></i></span>
+        </button>
+        <div class="hidden pb-4 text-muted">
+          You can apply online through our application portal. See the Apply Now page for step-by-step instructions.
+        </div>
+      </div>
+      <div class="border-b border-muted/50">
+        <button class="w-full flex justify-between items-center py-4 text-left font-medium text-lg focus:outline-none" onclick="this.nextElementSibling.classList.toggle('hidden')">
+          What support services are available?
+          <span class="ml-2"><i class="fi fi-br-angle-small-down"></i></span>
+        </button>
+        <div class="hidden pb-4 text-muted">
+          We offer academic advising, career counseling, and student support services. Visit the Support page for more details.
+        </div>
+      </div>
+      <!-- more -->
+    </div>
+  </div>
+</div>
