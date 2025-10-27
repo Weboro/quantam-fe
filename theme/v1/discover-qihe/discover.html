@@ -1,0 +1,63 @@
+
+	<head>
+		<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+		<link rel="stylesheet" href="/src/app/globals.css">
+	</head>
+	<link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+	<style>
+		:root {
+			--color-background: hsl(0 0% 98%);
+			--color-text: hsl(222 40% 15%);
+			--color-muted: #e5e7eb;
+			--color-brand-primary: #78256f;
+			--color-brand-primary-black: #111111;
+			--color-brand-blue-4: #255494;
+			--font-primary: 'League Spartan', serif;
+			--font-secondary: 'Poppins', serif;
+		}
+		.font-primary { font-family: var(--font-primary); }
+		.text-brand-primary { color: var(--color-brand-primary); }
+		.text-brand-primary-black { color: var(--color-brand-primary-black); }
+		.icon-card { 
+			background: #fff; 
+			border-radius: 1rem; 
+			border: 1px solid var(--color-muted); 
+			padding: 1.5rem 1.5rem; 
+			display: flex; 
+			flex-direction: column; 
+			align-items: flex-start; 
+			justify-content: flex-start;
+			gap: 1rem; 
+			transition: all 0.2s ease; 
+			text-decoration: none;
+			width: 100%;
+			min-height: 120px;
+		}
+		
+		.icon-card-icon { font-size: 2.5rem; color: var(--color-brand-primary); margin-bottom: 0.5rem; }
+		.icon-circle { 
+			width: 4rem; 
+			height: 4rem; 
+			border-radius: 50%; 
+			background: rgba(120, 37, 111, 0.1); 
+			display: flex; 
+			align-items: center; 
+			justify-content: center; 
+			margin-bottom: 0.5rem;
+			flex-shrink: 0;
+		}
+	</style>
+
+
+	<div class="max-w-6xl mx-auto p-6">
+		<h1 class=" text-4xl md:text-5xl font-bold text-brand-primary-black mt-6 mb-2">Discover QIHE</h1>
+		<section class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
+					  <a href="our-core-team.html" class="icon-card">
+						<div class="icon-circle">
+							<i class="fi fi-rr-user text-xl text-brand-primary font-bold"></i>
+						</div>
+						<h4 class=" text-xl font-bold text-left">Our Core Team</h4>
+					</a>
+		</section>
+	</div>
+

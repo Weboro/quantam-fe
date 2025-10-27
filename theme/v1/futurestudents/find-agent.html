@@ -1,0 +1,67 @@
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+<style>
+    :root {
+        --color-background: hsl(0 0% 98%);
+        --color-text: hsl(222 40% 15%);
+        --color-surface: hsl(0 0% 93%);
+        --color-surface-1: hsl(0 0% 87%);
+        --color-surface-2: hsl(0 0% 82%);
+        --color-muted: #424242;
+        --color-error: hsl(0 70% 58%);
+        --color-success: hsl(142 50% 45%);
+        --color-powder-blue: #edf5ff;
+        --color-brand-primary: #78256f;
+        --color-brand-primary-yellow: #f3bd1c;
+        --color-brand-primary-black: #111111;
+        --color-brand-blue-1: #093a73;
+        --color-brand-blue-2: #124380;
+        --color-brand-blue-3: #1d4d8b;
+        --color-brand-blue-4: #255494;
+        --color-brand-yellow-1: #ef7c00;
+        --color-brand-yellow-2: #f2a510;
+        --color-brand-yellow-3: #f3bd1c;
+        --color-brand-yellow-4: #f4d526;
+        --font-primary: 'League Spartan', serif;
+        --font-secondary: 'Poppins', serif;
+    }
+</style>
+<div class="max-w-7xl mx-auto p-6 text-[var(--color-text)]">
+  <div class="flex flex-col md:flex-row md:items-center md:gap-8 gap-6 mb-10">
+    <div class="flex-1 min-w-[320px]">
+      <h1 class="font-primary text-3xl md:text-4xl font-bold text-[var(--color-brand-primary-black)] mb-2">Find Agent</h1>
+      <p class="text-xl text-[var(--color-text)] font-secondary">Looking for the perfect course? Explore from our wide range of undergraduate, postgraduate and research programs.</p>
+    </div>
+    <div class="flex flex-1 gap-4 items-center w-full">
+      <input type="text" placeholder="Search" class="flex-1 rounded-lg border border-gray-300 bg-gray-100 px-6 py-3 text-lg text-gray-500 font-secondary focus:outline-none focus:ring-2 focus:ring-[var(--color-brand-primary)]" />
+      <button class="flex items-center gap-2 px-6 py-3 rounded-lg bg-[var(--color-brand-primary)] text-white font-bold text-lg hover:bg-[var(--color-brand-blue-3)] transition-colors">
+        <i class="fi fi-br-search"></i> Search
+      </button>
+      <button class="flex items-center justify-center px-4 py-3 rounded-lg bg-[var(--color-brand-primary)] text-white text-xl hover:bg-[var(--color-brand-blue-3)] transition-colors">
+        <i class="fi fi-br-filter"></i>
+      </button>
+    </div>
+  </div>
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+    <!-- Agent Card Example -->
+    <div class="p-4 border border-muted/50 shadow rounded-xl overflow-hidden bg-white flex flex-col items-start">
+      <img src="/public/company-logo.png" width="48" height="48" alt="Logo of Quantum Global Education" class="w-12 h-12 object-cover rounded-full mb-2" />
+      <a href="#" target="_blank">
+        <h3 class="font-bold text-lg leading-tight mb-1">Quantum Global Education</h3>
+      </a>
+      <p class="flex items-center gap-1 text-gray-700 font-medium mb-1">
+        <i class="fi fi-br-circle-user flex"></i>
+        <span>John Doe</span>
+      </p>
+      <a href="mailto:info@quantumglobal.com" class="flex items-center gap-1 text-muted hover:text-[var(--color-brand-primary)] transition-all group/link mb-1">
+        <i class="fi fi-br-envelope flex"></i>
+        <span class="group-hover/link:underline">info@quantumglobal.com</span>
+      </a>
+      <a href="tel:+1234567890" class="flex items-center gap-1 text-muted hover:text-[var(--color-brand-primary)] transition-all group/link mb-2">
+        <i class="fi fi-br-phone-flip scale-x-[-1] flex"></i>
+        <span class="group-hover/link:underline">+1 234 567 890</span>
+      </a>
+      
+    </div>
+    <!-- Duplicate the card above for more agents -->
+  </div>
+</div>
