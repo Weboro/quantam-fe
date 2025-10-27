@@ -69,6 +69,34 @@ const page = () => {
             An overview of campus facilities and available support services.
           </li>
         </ul>
+        <>
+          <a
+            target="main"
+            href={
+              "https://www.dropbox.com/scl/fo/ixrq58oyj2yo3ja5g8f9n/AF-HwH0fnWWbpNminvyKYTI/Student%20Information%20Materials?e=1&preview=QIHE+Pre-Arrival+Guide.pdf&rlkey=bt8lvdav3k7x6my0f6khqgfsg&subfolder_nav_tracking=1&dl=0"
+            }
+            rel="noopener noreferrer"
+            className=" gap-2"
+          >
+            {" "}
+            <Button className="mt-6">
+              <svg
+                className="w-4 h-4"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                />
+              </svg>
+              Pre-Arrival Guide
+            </Button>
+          </a>
+        </>
       </ContainerLayout>
 
       <ContainerLayout className="text-muted">
@@ -113,34 +141,7 @@ const page = () => {
           supported by the Student Services Officer, will guide you through this
           program to ensure you feel fully informed and supported from day one.
         </p>
-        <>
-          <a
-            target="main"
-            href={
-              "https://www.dropbox.com/scl/fo/ixrq58oyj2yo3ja5g8f9n/AF-HwH0fnWWbpNminvyKYTI/Student%20Information%20Materials?e=1&preview=QIHE+Pre-Arrival+Guide.pdf&rlkey=bt8lvdav3k7x6my0f6khqgfsg&subfolder_nav_tracking=1&dl=0"
-            }
-            rel="noopener noreferrer"
-            className="flex items-center justify-center gap-2"
-          >
-            {" "}
-            <Button className="mt-6">
-              <svg
-                className="w-4 h-4"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
-                />
-              </svg>
-              Pre-Arrival Guide
-            </Button>
-          </a>
-        </>
+
       </ContainerLayout>
     </div>
   );

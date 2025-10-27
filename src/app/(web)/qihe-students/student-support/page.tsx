@@ -50,10 +50,8 @@ const Page = () => {
           access to resources designed for success. Our services are safe,
           reliable, and regularly updated.
         </p>
-        <p className="text-lg text-gray-700 italic mt-6">
+        <p className="text-lg text-gray-700 mt-6">
           For full details, please refer to the{" "}
-          <p>
-            For more details, see our{" "}
             <a
               target="main"
               href={
@@ -64,7 +62,6 @@ const Page = () => {
               ICT Services and Library Facilities Policy
             </a>
             .
-          </p>
         </p>
       </div>
 

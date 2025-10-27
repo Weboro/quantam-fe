@@ -82,7 +82,7 @@ const courses: ICourse[] = [
         richText: `
 <div class="list-decimal list-outside  space-y-2  flex flex-col gap-2 py-2">
   <p>Students enrolled in the Bachelor of Business program will be able to possess broad and coherent knowledge as well as skills that are transferrable for real-world application to prepare them for their careers, with specific learning outcomes that are in line with the major that they have selected.</p>
- <div><h3 class="text-lg font-semibold text-blue-800 mt-6 mb-2"> Upon completion of the Bachelor of Business – Accounting program, students are expected to: </h3>
+ <div><h3 class="text-lg font-semibold text-brand-primary mt-6 mb-2"> Upon completion of the Bachelor of Business – Accounting program, students are expected to: </h3>
     <ul class="list-decimal   text-md px-4 sm:px-6 list-inside text-sm space-y-1  mt-1">
       <li>Demonstrate a broad and coherent understanding of business and accounting principles, theories, and practices across diverse industry contexts.</li>
       <li>Critically analyse and solve complex problems to develop innovative and sustainable solutions in professional business environments.</li>
@@ -117,7 +117,7 @@ const courses: ICourse[] = [
   We welcome students who show strong academic ability and a genuine passion for accounting and finance.
 </p>
 
-<h3 class="text-lg font-semibold text-blue-800 mt-6 mb-2">Minimum Entry Requirements</h3>
+<h3 class="text-lg font-semibold text-brand-primary mt-6 mb-2">Minimum Entry Requirements</h3>
 
 <h4 class="text-base font-medium text-gray-700 mt-4 mb-1">Domestic Students</h4>
 <ul class="list-disc list-outside space-y-1 text-start px-4">
@@ -131,14 +131,14 @@ const courses: ICourse[] = [
   <li>English Requirements (if prior studies weren’t in English)</li>
 </ul>
 
-<h3 class="text-lg font-semibold text-blue-800 mt-6 mb-2">Alternative Pathways</h3>
+<h3 class="text-lg font-semibold text-brand-primary mt-6 mb-2">Alternative Pathways</h3>
 <ul class="list-disc list-outside space-y-1 text-start px-4">
   <li>Aboriginal & Torres Strait Islander students</li>
   <li>Mature age applicants</li>
   <li>Students from disadvantaged or under-represented backgrounds</li>
 </ul>
 
-<h3 class="text-lg font-semibold text-blue-800 mt-6 mb-2">Admission Process</h3>
+<h3 class="text-lg font-semibold text-brand-primary mt-6 mb-2">Admission Process</h3>
 <ol class="list-decimal list-inside space-y-1 px-1">
   <li>Check Eligibility</li>
   <li>Submit Application</li>
@@ -151,7 +151,7 @@ const courses: ICourse[] = [
 <p class="mt-4">
   For full details, see the<i> 
   <a target="main" href="https://www.dropbox.com/scl/fo/ixrq58oyj2yo3ja5g8f9n/AJ-mqWkT5w00G5w_-L9PFRw/Policies%20and%20Procedures?e=1&preview=Admission+Policy+and+Procedure.pdf&rlkey=bt8lvdav3k7x6my0f6khqgfsg&subfolder_nav_tracking=1&dl=0" 
-  class="text-blue-700 hover:underline hover:text-brand-primary transition-all">Admission Policy and Procedure</a>.
+  class="italic underline text-brand-primary">Admission Policy and Procedure</a>.
 </i>
   </p>`,
       },
@@ -205,7 +205,7 @@ const courses: ICourse[] = [
   </p>
 
   <div class="bg-gray-50 border border-gray-200 rounded-2xl p-5 md:p-8 shadow-sm">
-    <h3 class="text-lg md:text-xl font-semibold text-blue-800 mb-4">
+    <h3 class="text-lg md:text-xl font-semibold text-brand-primary mb-4">
       Upon completion of the Bachelor of Business - Information Systems program, students are expected to:
     </h3>
 
@@ -240,11 +240,11 @@ const courses: ICourse[] = [
   This program is ideal for students who enjoy technology, data, and finding smart solutions for business challenges.
 </p>
 
-<h3 class="text-lg font-semibold text-blue-800 mt-6 mb-2">Minimum Entry Requirements</h3>
+<h3 class="text-lg font-semibold text-brand-primary mt-6 mb-2">Minimum Entry Requirements</h3>
 
 <h4 class="text-base font-medium text-gray-700 mt-4 mb-1">Domestic Students</h4>
 <ul class="list-disc list-outside space-y-1 text-start px-4">
-  <li>Year 12 (Australia) or ATAR 55 or AQF Level 5 Diploma</li>
+  <li class='font-bold'>Year 12 (Australia) or ATAR 55 or AQF Level 5 Diploma</li>
 </ul>
 
 <h4 class="text-base font-medium text-gray-700 mt-4 mb-1">International Students</h4>
@@ -253,14 +253,14 @@ const courses: ICourse[] = [
   <li>English Requirements (if prior studies weren’t in English)</li>
 </ul>
 
-<h3 class="text-lg font-semibold text-blue-800 mt-6 mb-2">Alternative Pathways</h3>
+<h3 class="text-lg font-semibold text-brand-primary mt-6 mb-2">Alternative Pathways</h3>
 <ul class="list-disc list-outside space-y-1 text-start px-4">
   <li>Aboriginal & Torres Strait Islander students</li>
   <li>Mature age applicants</li>
   <li>Students from disadvantaged or under-represented backgrounds</li>
 </ul>
 
-<h3 class="text-lg font-semibold text-blue-800 mt-6 mb-2">Admission Process</h3>
+<h3 class="text-lg font-semibold text-brand-primary mt-6 mb-2">Admission Process</h3>
 <ol class="list-decimal list-inside space-y-1 px-4">
   <li>Check Eligibility</li>
   <li>Submit Application</li>
@@ -273,7 +273,7 @@ const courses: ICourse[] = [
 <p class="mt-4">
   For full details, see the<i> 
   <a target="main" href="https://www.dropbox.com/scl/fo/ixrq58oyj2yo3ja5g8f9n/AJ-mqWkT5w00G5w_-L9PFRw/Policies%20and%20Procedures?e=1&preview=Admission+Policy+and+Procedure.pdf&rlkey=bt8lvdav3k7x6my0f6khqgfsg&subfolder_nav_tracking=1&dl=0" 
-  class="text-blue-700 hover:underline hover:text-brand-primary transition-all">Admission Policy and Procedure</a>.
+  class="italic underline text-brand-primary">Admission Policy and Procedure</a>.
 </i>
   </p>`,
       },
@@ -327,7 +327,7 @@ const courses: ICourse[] = [
   </p>
 
   <div class="bg-gray-50 border border-gray-200 rounded-2xl p-5 md:p-8 shadow-sm">
-    <h3 class="text-lg md:text-xl font-semibold text-blue-800 mb-4">
+    <h3 class="text-lg md:text-xl font-semibold text-brand-primary mb-4">
       Upon completion of the Bachelor of Business – Hospitality program, students are expected to:
     </h3>
 
@@ -367,11 +367,11 @@ const courses: ICourse[] = [
   This program is designed to equip students with leadership, hospitality, and event management skills for a sustainable and dynamic industry.
 </p>
 
-<h3 class="text-lg font-semibold text-blue-800 mt-6 mb-2">Minimum Entry Requirements</h3>
+<h3 class="text-lg font-semibold text-brand-primary mt-6 mb-2">Minimum Entry Requirements</h3>
 
 <h4 class="text-base font-medium text-gray-700 mt-4 mb-1">Domestic Students</h4>
 <ul class="list-disc list-outside space-y-1 text-start px-4">
-  <li>Year 12 (Australia) or ATAR 55 or AQF Level 5 Diploma</li>
+  <li class='font-bold'>Year 12 (Australia) or ATAR 55 or AQF Level 5 Diploma</li>
 </ul>
 
 <h4 class="text-base font-medium text-gray-700 mt-4 mb-1">International Students</h4>
@@ -380,14 +380,14 @@ const courses: ICourse[] = [
   <li>English Requirements (if prior studies weren’t in English)</li>
 </ul>
 
-<h3 class="text-lg font-semibold text-blue-800 mt-6 mb-2">Alternative Pathways</h3>
+<h3 class="text-lg font-semibold text-brand-primary mt-6 mb-2">Alternative Pathways</h3>
 <ul class="list-disc list-outside space-y-1 text-start px-4">
   <li>Aboriginal & Torres Strait Islander students</li>
   <li>Mature age applicants</li>
   <li>Students from disadvantaged or under-represented backgrounds</li>
 </ul>
 
-<h3 class="text-lg font-semibold text-blue-800 mt-6 mb-2">Admission Process</h3>
+<h3 class="text-lg font-semibold text-brand-primary mt-6 mb-2">Admission Process</h3>
 <ol class="list-decimal list-inside space-y-1 px-1">
   <li>Check Eligibility</li>
   <li>Submit Application</li>
@@ -400,7 +400,7 @@ const courses: ICourse[] = [
 <p class="mt-4">
   For full details, see the<i> 
   <a target="main" href="https://www.dropbox.com/scl/fo/ixrq58oyj2yo3ja5g8f9n/AJ-mqWkT5w00G5w_-L9PFRw/Policies%20and%20Procedures?e=1&preview=Admission+Policy+and+Procedure.pdf&rlkey=bt8lvdav3k7x6my0f6khqgfsg&subfolder_nav_tracking=1&dl=0" 
-  class="text-blue-700 hover:underline hover:text-brand-primary transition-all">Admission Policy and Procedure</a>.
+  class="italic underline text-brand-primary">Admission Policy and Procedure</a>.
 </i>
   </p>
 `,
@@ -493,23 +493,23 @@ const courses: ICourse[] = [
 <p class="mb-4">
   This program is designed for students who are innovative thinkers, enjoy solving complex problems, and have a passion for technology.
 </p>
-<h3 class="text-lg font-semibold text-blue-800 mt-6 mb-2">Minimum Entry Requirements</h3>
+<h3 class="text-lg font-semibold text-brand-primary mt-6 mb-2">Minimum Entry Requirements</h3>
 <h4 class="text-base font-medium text-gray-700 mt-4 mb-1">Domestic Students</h4>
 <ul class="list-disc list-outside space-y-1 text-start px-4">
-  <li>Year 12 (Australia) or ATAR 55 or AQF Level 5 Diploma</li>
+  <li class='font-bold'>Year 12 (Australia) or ATAR 55 or AQF Level 5 Diploma</li>
 </ul>
 <h4 class="text-base font-medium text-gray-700 mt-4 mb-1">International Students</h4>
 <ul class="list-disc list-outside space-y-1 text-start px-4">
   <li>Year 12 equivalent or IB Diploma (24+ points)</li>
   <li>English Requirements (if prior studies weren’t in English)</li>
 </ul>
-<h3 class="text-lg font-semibold text-blue-800 mt-6 mb-2">Alternative Pathways</h3>
+<h3 class="text-lg font-semibold text-brand-primary mt-6 mb-2">Alternative Pathways</h3>
 <ul class="list-disc list-outside space-y-1 text-start px-4">
   <li>Aboriginal & Torres Strait Islander students</li>
   <li>Mature Age applicants</li>
   <li>Students from disadvantaged or under-represented backgrounds</li>
 </ul>
-<h3 class="text-lg font-semibold text-blue-800 mt-6 mb-2">Admission Process</h3>
+<h3 class="text-lg font-semibold text-brand-primary mt-6 mb-2">Admission Process</h3>
 <ol class="list-decimal list-inside space-y-1 px-1">
   <li>Check Eligibility</li>
   <li>Submit Application</li>
@@ -519,7 +519,8 @@ const courses: ICourse[] = [
   <li>Orientation and Enrolment</li>
 </ol>
 <p class="mt-4 text-gray-700">
-  For full details, see <em>Admission Policy and Procedure</em>.
+  For full details, see 
+  <a href="https://www.dropbox.com/scl/fo/ixrq58oyj2yo3ja5g8f9n/AJ-mqWkT5w00G5w_-L9PFRw/Policies%20and%20Procedures?dl=0&preview=Admission+Policy+and+Procedure.pdf&rlkey=bt8lvdav3k7x6my0f6khqgfsg&subfolder_nav_tracking=1" class="italic underline text-brand-primary">Admission Policy and Procedure</a>.
 </p>
  `,
       },

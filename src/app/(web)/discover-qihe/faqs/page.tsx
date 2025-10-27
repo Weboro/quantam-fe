@@ -11,14 +11,14 @@ import Accordion from "@/components/accordion";
 export const generateMetadata = (): Metadata => ({
   title: `Frequently Asked Questions`,
   description:
-    "Find answers to common questions about Quantum Institute, courses, admissions, campus life, and more to help you make informed decisions.",
+    "Got questions about studying at QIHE? Find answers about admissions, programs, support services, and student visas to help you succeed",
   alternates: {
     canonical: `${SITE_URL}/${slugs.discoverQihe}/${slugs.faqs}`,
   },
   openGraph: {
     title: `Frequently Asked Questions`,
     description:
-      "Find answers to common questions about Quantum Institute, courses, admissions, campus life, and more to help you make informed decisions.",
+      "Got questions about studying at QIHE? Find answers about admissions, programs, support services, and student visas to help you succeed",
     url: `${SITE_URL}/${slugs.discoverQihe}/${slugs.faqs}`,
     siteName: SITE_TITLE,
   },
@@ -26,7 +26,7 @@ export const generateMetadata = (): Metadata => ({
     card: "summary_large_image",
     title: `Frequently Asked Questions`,
     description:
-      "Find answers to common questions about Quantum Institute, courses, admissions, campus life, and more to help you make informed decisions.",
+      "Got questions about studying at QIHE? Find answers about admissions, programs, support services, and student visas to help you succeed",
   },
 });
 
@@ -38,8 +38,7 @@ const FaqPage = () => {
       </Heading>
 
       <p className="text-muted max-w-xl text-center mx-auto">
-        Find answers to common questions about admissions, courses, support
-        services, and life at QIHE.
+        Got questions about studying at QIHE? Find answers about admissions, programs, support services, and student visas to help you succeed
       </p>
 
       <Accordion data={faq} />
