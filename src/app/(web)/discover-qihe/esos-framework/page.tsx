@@ -59,7 +59,7 @@ const ESOSFrameworkPage = () => {
             href="https://www.education.gov.au/esos-framework"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-blue-600 hover:underline"
+            className="italic underline text-brand-primary"
           >
             ESOS Framework
           </a>

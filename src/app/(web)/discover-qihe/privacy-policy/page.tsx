@@ -25,7 +25,7 @@ const PrivacyPolicyPage = () => {
             href="https://www.ipc.nsw.gov.au/privacy"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-blue-600 hover:underline"
+            className="italic underline text-brand-primary"
           >
             NSW Privacy Resources
           </a>

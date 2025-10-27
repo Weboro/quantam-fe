@@ -23,7 +23,7 @@ const CopyrightPage = () => {
             href="https://www.nsw.gov.au/nsw-government/about-website/copyright"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-blue-600 hover:underline"
+            className="italic underline text-brand-primary"
           >
             NSW Copyright Resources
           </a>

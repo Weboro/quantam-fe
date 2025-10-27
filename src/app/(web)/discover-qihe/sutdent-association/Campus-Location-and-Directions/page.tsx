@@ -59,7 +59,7 @@ const GettingToCampusPage = () => {
               <strong>Email:</strong>{" "}
               <a
                 href="mailto:admin@qinstitute.com.au"
-                className="text-blue-600 hover:underline"
+                className="italic underline text-brand-primary"
               >
                 admin@qinstitute.com.au
               </a>
@@ -68,7 +68,7 @@ const GettingToCampusPage = () => {
               <strong>Website:</strong>{" "}
               <a
                 href="https://qinstitute.com.au"
-                className="text-blue-600 hover:underline"
+                className="italic underline text-brand-primary"
               >
                 qinstitute.com.au
               </a>

@@ -28,13 +28,41 @@ const Footer = () => {
         subPages: discoverQihe?.subPages?.filter((el) => el.quickLink !== true),
       },
     },
-    {
-      title: "Quick Links",
-      data: {
-        ...discoverQihe,
-        subPages: discoverQihe?.subPages?.filter((el) => el.quickLink === true),
+{
+  title: "Quick Links",
+  data: {
+    slug: slugs.discoverQihe, // base prefix
+    subPages: [
+      {
+        slug: slugs.esosFramework,      // ← no discoverQihe prefix here
+        name: "ESOS Framework",
+        icon: "fi fi-rr-file-contract",
+        quickLink: true,
       },
-    },
+      {
+        slug: slugs.privacyPolicy,      // ← relative
+        name: "Privacy Policy",
+        icon: "fi fi-rr-shield-check",
+        quickLink: true,
+      },
+      {
+        slug: slugs.copyright,          // ← relative
+        name: "Copyright",
+        icon: "fi fi-rr-copyright",
+        quickLink: true,
+      },
+      {
+        slug: slugs.careersAtQihe,      // ← relative
+        name: "Careers at QIHE",
+        icon: "fi fi-rr-briefcase",
+        quickLink: true,
+      },
+    ],
+  },
+},
+
+
+
   ];
 
   return (

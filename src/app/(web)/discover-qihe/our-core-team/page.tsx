@@ -20,7 +20,7 @@ const CareersAtQihePage = () => {
 
         <p className="text-gray-700">
           For open positions and application information, please visit our{" "}
-          <a href="#" className="text-blue-600 hover:underline">
+          <a href="#" className="italic underline text-brand-primary">
             Careers Portal
           </a>
           .
