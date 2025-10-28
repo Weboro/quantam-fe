@@ -245,26 +245,23 @@ export default function CampusPage() {
               </h2>
             </div>
 
-            <ul className="mt-3 space-y-3">
+            <ul className="mt-2 space-y-2">
               {emergencyContacts.contacts.map((c, i) => (
-                <li key={i} className="text-gray-800">
-                  <div className="flex items-start justify-between gap-4">
-                    <div>
-                      <div className="font-medium">{c.name}</div>
-                      {c.description && (
-                        <div className="text-gray-700 text-sm">{c.description}</div>
-                      )}
-                    </div>
-                    <div
-                      className="font-semibold"
-                      style={{ color: c.emergency ? "#b91c1c" : accent }}
-                    >
-                      {c.number}
-                    </div>
+                <li key={i} className="text-gray-800 text-justify">
+                  <div className="font-medium">{c.name}</div>
+                  {c.description && (
+                    <div className="text-sm text-gray-700">{c.description}</div>
+                  )}
+                  <div
+                    className="font-semibold mt-0.5"
+                    style={{ color: c.emergency ? "#b91c1c" : accent }}
+                  >
+                    {c.number}
                   </div>
                 </li>
               ))}
             </ul>
+
           </div>
 
           {/* Local Services */}
@@ -287,7 +284,7 @@ export default function CampusPage() {
                       <li key={j} className="text-gray-800 text-justify">
                         <div className="font-medium">{s.name}</div>
                         <div className="text-sm text-gray-700">{s.address}</div>
-                        <div className="text-sm mt-0.5" style={{ color: accent }}>
+                        <div className="font-semibold mt-0.5" style={{ color: accent }}>
                           {s.phone}
                         </div>
                       </li>

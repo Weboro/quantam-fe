@@ -41,11 +41,11 @@ export const topLinks: ITopLink[] = [
     url: `/${slugs.futureStudents}/${slugs.findAgent}`,
     redirect: false,
   },
-  {
-    name: "News",
-    url: `/${slugs.news}`,
-    redirect: false,
-  },
+  // {
+  //   name: "News",
+  //   url: `/${slugs.news}`,
+  //   redirect: false,
+  // },
   {
     name: "Contact QIHE",
     url: `/${slugs.contact}`,
