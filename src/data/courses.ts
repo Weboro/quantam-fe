@@ -243,7 +243,7 @@ const courses: ICourse[] = [
 
 <h4 class="text-base font-medium text-gray-700 mt-4 mb-1">Domestic Students</h4>
 <ul class="list-disc list-outside space-y-1 text-start px-4">
-  <li class='font-bold'>Year 12 (Australia) or ATAR 55 or AQF Level 5 Diploma</li>
+  <li class=''>Year 12 (Australia) or ATAR 55 or AQF Level 5 Diploma</li>
 </ul>
 
 <h4 class="text-base font-medium text-gray-700 mt-4 mb-1">International Students</h4>
@@ -370,7 +370,7 @@ const courses: ICourse[] = [
 
 <h4 class="text-base font-medium text-gray-700 mt-4 mb-1">Domestic Students</h4>
 <ul class="list-disc list-outside space-y-1 text-start px-4">
-  <li class='font-bold'>Year 12 (Australia) or ATAR 55 or AQF Level 5 Diploma</li>
+  <li class=''>Year 12 (Australia) or ATAR 55 or AQF Level 5 Diploma</li>
 </ul>
 
 <h4 class="text-base font-medium text-gray-700 mt-4 mb-1">International Students</h4>
@@ -495,7 +495,7 @@ const courses: ICourse[] = [
 <h3 class="text-lg text-brand-primary mt-6 mb-2">Minimum Entry Requirements</h3>
 <h4 class="text-base font-medium text-gray-700 mt-4 mb-1">Domestic Students</h4>
 <ul class="list-disc list-outside space-y-1 text-start px-4">
-  <li class='font-bold'>Year 12 (Australia) or ATAR 55 or AQF Level 5 Diploma</li>
+  <li class=''>Year 12 (Australia) or ATAR 55 or AQF Level 5 Diploma</li>
 </ul>
 <h4 class="text-base font-medium text-gray-700 mt-4 mb-1">International Students</h4>
 <ul class="list-disc list-outside space-y-1 text-start px-4">
