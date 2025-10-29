@@ -69,7 +69,7 @@ const courses: ICourse[] = [
       {
         title: "Why Choose This Program?",
         richText: `
-<ul class="list-disc list-outside space-y-1 text-start p-2">
+<ul>
   <li>Gain essential business knowledge and skills in accounting</li>
   <li>Gain expertise to analyse financial data and create value for stakeholders.</li>
   <li>Prepare for professional certifications with CPA Australia and CAANZ eligibility.</li>
@@ -80,10 +80,10 @@ const courses: ICourse[] = [
       {
         title: "Learning Outcomes",
         richText: `
-<div class="list-decimal list-outside  space-y-2  flex flex-col gap-2 py-2">
+<div>
   <p>Students enrolled in the Bachelor of Business program will be able to possess broad and coherent knowledge as well as skills that are transferrable for real-world application to prepare them for their careers, with specific learning outcomes that are in line with the major that they have selected.</p>
- <div><h3 class="text-lg text-brand-primary mt-6 mb-2"> Upon completion of the Bachelor of Business – Accounting program, students are expected to: </h3>data
-    <ul class="list-decimal   text-md px-4 sm:px-6 list-inside text-sm space-y-1  mt-1">
+ <div><h3> Upon completion of the Bachelor of Business – Accounting program, students are expected to: </h3>data
+    <ul>
       <li>Demonstrate a broad and coherent understanding of business and accounting principles, theories, and practices across diverse industry contexts.</li>
       <li>Critically analyse and solve complex problems to develop innovative and sustainable solutions in professional business environments.</li>
       <li>Communicate effectively and professionally with diverse audiences using a range of traditional and digital platforms.</li>
@@ -97,7 +97,7 @@ const courses: ICourse[] = [
       {
         title: "Career Outcomes",
         richText: `
-<ul class="list-disc list-outside space-y-1 text-start p-2">
+<ul>
   <li>Professional Accountant</li>
   <li>Business Analyst</li>
   <li>Finance Manager</li>
@@ -113,32 +113,32 @@ const courses: ICourse[] = [
       {
         title: "Admission Requirements",
         richText: `
-<p class="mb-4">
+<p>
   We welcome students who show strong academic ability and a genuine passion for accounting and finance.
 </p>
 
-<h3 class="text-lg text-brand-primary mt-6 mb-2">Minimum Entry Requirements</h3>
+<h3>Minimum Entry Requirements</h3>
 
-<h4 class="text-base font-medium text-gray-700 mt-4 mb-1">Domestic Students</h4>
-<ul class="list-disc list-outside space-y-1 text-start px-4">
+<h4>Domestic Students</h4>
+<ul>
   <li>Year 12 (Australia) or ATAR 55 or AQF Level 5 Diploma</li>
 </ul>
 
-<h4 class="text-base font-medium text-gray-700 mt-4 mb-1">International Students</h4>
-<ul class="list-disc list-outside space-y-1 text-start px-4">
+<h4>International Students</h4>
+<ul>
   <li>Year 12 equivalent or IB Diploma (24+ points)</li>
   <li>English Requirements (if prior studies weren’t in English)</li>
 </ul>
 
-<h3 class="text-lg text-brand-primary mt-6 mb-2">Alternative Pathways</h3>
-<ul class="list-disc list-outside space-y-1 text-start px-4">
+<h3>Alternative Pathways</h3>
+<ul>
   <li>Aboriginal & Torres Strait Islander students</li>
   <li>Mature age applicants</li>
   <li>Students from disadvantaged or under-represented backgrounds</li>
 </ul>
 
-<h3 class="text-lg text-brand-primary mt-6 mb-2">Admission Process</h3>
-<ol class="list-decimal list-inside space-y-1 px-1">
+<h3>Admission Process</h3>
+<ol>
   <li>Check Eligibility</li>
   <li>Submit Application</li>
   <li>Provide Supporting Documents</li>
@@ -147,10 +147,10 @@ const courses: ICourse[] = [
   <li>Orientation and Enrolment</li>
 </ol>
 
-<p class="mt-4">
+<p>
   For full details, see the<i> 
   <a target="main" href="https://www.dropbox.com/scl/fo/ixrq58oyj2yo3ja5g8f9n/AJ-mqWkT5w00G5w_-L9PFRw/Policies%20and%20Procedures?e=1&preview=Admission+Policy+and+Procedure.pdf&rlkey=bt8lvdav3k7x6my0f6khqgfsg&subfolder_nav_tracking=1&dl=0" 
-  class="italic underline text-brand-primary">Admission Policy and Procedure</a>.
+>Admission Policy and Procedure</a>.
 </i>
   </p>`,
       },
@@ -187,7 +187,7 @@ const courses: ICourse[] = [
       {
         title: "Why Choose This Program?",
         richText: `
-<ul class="list-disc list-outside space-y-1 text-start pl-5 text-gray-700">
+<ul>
   <li>Gain essential business knowledge and skills in information systems.</li>
   <li>Gain skills in software development, cybersecurity, data management, and analysis.</li>
   <li>Prepare for diverse roles in the digital economy.</li>
@@ -198,17 +198,17 @@ const courses: ICourse[] = [
       {
         title: "Program Learning Outcomes",
         richText: `
-<div class="space-y-6 text-gray-800">
-  <p class="leading-relaxed text-base md:text-lg">
+<div>
+  <p>
     Students enrolled in the Bachelor of Business program will be able to possess broad and coherent knowledge as well as skills that are transferrable for real-world application to prepare them for their careers, with specific learning outcomes that are in line with the major that they have selected.
   </p>
 
-  <div class="bg-gray-50 border border-gray-200 rounded-2xl p-5 md:p-8 shadow-sm">
-    <h3 class="text-lg md:text-xl text-brand-primary mb-4">
+  <div>
+    <h3>
       Upon completion of the Bachelor of Business - Information Systems program, students are expected to:
     </h3>
 
-    <ol class="list-decimal list-inside space-y-3 text-gray-700 text-sm md:text-base text-start px-4">
+    <ol>
       <li>Demonstrate a broad and coherent understanding of business and information systems principles, theories, and practices across diverse industry contexts.</li>
       <li>Critically analyse and solve complex problems to develop innovative and sustainable solutions, integrating emerging technologies, information systems applications, and entrepreneurial approaches within diverse global and cultural business environments.</li>
       <li>Communicate effectively and professionally with diverse audiences using a range of traditional and digital platforms.</li>
@@ -221,7 +221,7 @@ const courses: ICourse[] = [
       {
         title: "Career Outcomes",
         richText: `
-<ul class="list-disc list-outside space-y-1 text-start pl-5 text-gray-700">
+<ul>
   <li>Information Systems Manager</li>
   <li>System Analyst</li>
   <li>Data Analyst</li>
@@ -235,32 +235,32 @@ const courses: ICourse[] = [
       {
         title: "Admission Requirements",
         richText: `
-<p class="mb-4">
+<p>
   This program is ideal for students who enjoy technology, data, and finding smart solutions for business challenges.
 </p>
 
-<h3 class="text-lg text-brand-primary mt-6 mb-2">Minimum Entry Requirements</h3>
+<h3>Minimum Entry Requirements</h3>
 
-<h4 class="text-base font-medium text-gray-700 mt-4 mb-1">Domestic Students</h4>
-<ul class="list-disc list-outside space-y-1 text-start px-4">
+<h4>Domestic Students</h4>
+<ul>
   <li class=''>Year 12 (Australia) or ATAR 55 or AQF Level 5 Diploma</li>
 </ul>
 
-<h4 class="text-base font-medium text-gray-700 mt-4 mb-1">International Students</h4>
-<ul class="list-disc list-outside space-y-1 text-start px-4">
+<h4>International Students</h4>
+<ul>
   <li>Year 12 equivalent or IB Diploma (24+ points)</li>
   <li>English Requirements (if prior studies weren’t in English)</li>
 </ul>
 
-<h3 class="text-lg text-brand-primary mt-6 mb-2">Alternative Pathways</h3>
-<ul class="list-disc list-outside space-y-1 text-start px-4">
+<h3>Alternative Pathways</h3>
+<ul>
   <li>Aboriginal & Torres Strait Islander students</li>
   <li>Mature age applicants</li>
   <li>Students from disadvantaged or under-represented backgrounds</li>
 </ul>
 
-<h3 class="text-lg text-brand-primary mt-6 mb-2">Admission Process</h3>
-<ol class="list-decimal list-inside space-y-1 px-4">
+<h3>Admission Process</h3>
+<ol>
   <li>Check Eligibility</li>
   <li>Submit Application</li>
   <li>Provide Supporting Documents</li>
@@ -269,10 +269,10 @@ const courses: ICourse[] = [
   <li>Orientation and Enrolment</li>
 </ol>
 
-<p class="mt-4">
+<p>
   For full details, see the<i> 
   <a target="main" href="https://www.dropbox.com/scl/fo/ixrq58oyj2yo3ja5g8f9n/AJ-mqWkT5w00G5w_-L9PFRw/Policies%20and%20Procedures?e=1&preview=Admission+Policy+and+Procedure.pdf&rlkey=bt8lvdav3k7x6my0f6khqgfsg&subfolder_nav_tracking=1&dl=0" 
-  class="italic underline text-brand-primary">Admission Policy and Procedure</a>.
+>Admission Policy and Procedure</a>.
 </i>
   </p>`,
       },
@@ -308,7 +308,7 @@ const courses: ICourse[] = [
       {
         title: "Why Choose This Program?",
         richText: `
-<ul class="list-disc list-outside space-y-1 text-start p-2">
+<ul>
   <li>Gain essential business knowledge and skills in hospitality.</li>
   <li>Build essential management and customer service skills.</li>
   <li>Learn to navigate the global hospitality industry.</li>
@@ -320,17 +320,17 @@ const courses: ICourse[] = [
       {
         title: "Learning Outcomes",
         richText: `
-<div class="space-y-6 text-gray-800">
-  <p class="leading-relaxed text-base md:text-lg">
+<div>
+  <p>
     Students enrolled in the Bachelor of Business program will be able to possess broad and coherent knowledge as well as skills that are transferrable for real-world application to prepare them for their careers, with specific learning outcomes that are in line with the major that they have selected.
   </p>
 
-  <div class="bg-gray-50 border border-gray-200 rounded-2xl p-5 md:p-8 shadow-sm">
-    <h3 class="text-lg md:text-xl text-brand-primary mb-4">
+  <div>
+    <h3>
       Upon completion of the Bachelor of Business – Hospitality program, students are expected to:
     </h3>
 
-    <ol class="list-decimal list-inside space-y-3 text-gray-700 text-sm md:text-base text-start px-4">
+    <ol>
       <li>Demonstrate a broad and coherent understanding of business and hospitality principles, theories, and practices across diverse industry contexts.</li>
       <li>Critically analyse and solve complex problems to develop innovative and sustainable solutions in professional business environments.</li>
       <li>Communicate effectively and professionally with diverse audiences using a range of traditional and digital platforms.</li>
@@ -345,7 +345,7 @@ const courses: ICourse[] = [
       {
         title: "Career Outcomes",
         richText: `
-<ul class="list-disc list-outside space-y-1 text-start p-2">
+<ul>
   <li>Hotel Manager</li>
   <li>Event Planner</li>
   <li>Restaurant Manager</li>
@@ -362,32 +362,32 @@ const courses: ICourse[] = [
       {
         title: "Admission Requirements",
         richText: `
-<p class="mb-4">
+<p>
   This program is designed to equip students with leadership, hospitality, and event management skills for a sustainable and dynamic industry.
 </p>
 
-<h3 class="text-lg text-brand-primary mt-6 mb-2">Minimum Entry Requirements</h3>
+<h3>Minimum Entry Requirements</h3>
 
-<h4 class="text-base font-medium text-gray-700 mt-4 mb-1">Domestic Students</h4>
-<ul class="list-disc list-outside space-y-1 text-start px-4">
+<h4>Domestic Students</h4>
+<ul>
   <li class=''>Year 12 (Australia) or ATAR 55 or AQF Level 5 Diploma</li>
 </ul>
 
-<h4 class="text-base font-medium text-gray-700 mt-4 mb-1">International Students</h4>
-<ul class="list-disc list-outside space-y-1 text-start px-4">
+<h4>International Students</h4>
+<ul>
   <li>Year 12 equivalent or IB Diploma (24+ points)</li>
   <li>English Requirements (if prior studies weren’t in English)</li>
 </ul>
 
-<h3 class="text-lg text-brand-primary mt-6 mb-2">Alternative Pathways</h3>
-<ul class="list-disc list-outside space-y-1 text-start px-4">
+<h3>Alternative Pathways</h3>
+<ul>
   <li>Aboriginal & Torres Strait Islander students</li>
   <li>Mature age applicants</li>
   <li>Students from disadvantaged or under-represented backgrounds</li>
 </ul>
 
-<h3 class="text-lg text-brand-primary mt-6 mb-2">Admission Process</h3>
-<ol class="list-decimal list-inside space-y-1 px-1">
+<h3>Admission Process</h3>
+<ol>
   <li>Check Eligibility</li>
   <li>Submit Application</li>
   <li>Provide Supporting Documents</li>
@@ -396,10 +396,10 @@ const courses: ICourse[] = [
   <li>Orientation and Enrolment</li>
 </ol>
 
-<p class="mt-4">
+<p>
   For full details, see the<i> 
   <a target="main" href="https://www.dropbox.com/scl/fo/ixrq58oyj2yo3ja5g8f9n/AJ-mqWkT5w00G5w_-L9PFRw/Policies%20and%20Procedures?e=1&preview=Admission+Policy+and+Procedure.pdf&rlkey=bt8lvdav3k7x6my0f6khqgfsg&subfolder_nav_tracking=1&dl=0" 
-  class="italic underline text-brand-primary">Admission Policy and Procedure</a>.
+>Admission Policy and Procedure</a>.
 </i>
   </p>
 `,
@@ -437,7 +437,7 @@ const courses: ICourse[] = [
       {
         title: "Why Choose This Program?",
         richText: `
-<ul class="list-disc list-outside space-y-1 text-start p-2">
+<ul>
   <li>Acquire up-to-date knowledge of emerging technologies such as AI, cloud computing, cybersecurity, and IoT.</li>
   <li>Build transferable skills to address real-world business and technology challenges.</li>
   <li>Develop ethical and sustainable practices aligned with professional IT roles.</li>
@@ -447,17 +447,17 @@ const courses: ICourse[] = [
       {
         title: "Learning Outcomes",
         richText: `
-<div class="space-y-6 text-gray-800">
-  <p class="leading-relaxed text-base md:text-lg">
+<div>
+  <p>
     Students enrolled in the Bachelor of Information Technology  program will be able to possess broad and coherent knowledge as well as skills that are transferrable for real-world application to prepare them for their careers, with specific learning outcomes that are in line with the major that they have selected.
   </p>
 
-  <div class="bg-gray-50 border border-gray-200 rounded-2xl p-5 md:p-8 shadow-sm">
-    <h3 class="text-lg md:text-xl font-semibold text-gray-900 mb-4">
+  <div>
+    <h3>
       Upon completion of the Bachelor of Information Technology  program, students are expected to:
     </h3>
 
-    <ol class="list-decimal list-inside space-y-3 text-gray-700 text-sm md:text-base text-start px-4">
+    <ol>
       <li>Demonstrate broad and coherent theoretical and technical knowledge of information technology relevant to diverse business contexts and communities.</li>
       <li>Perform core professional obligations, ethical principles promoting equity and inclusion, enabling a sustainable future facilitated through information technologies.</li>
       <li>Integrate current and emerging information technologies to build innovative solutions, enable digital transformations and address information systems challenges.</li>
@@ -471,7 +471,7 @@ const courses: ICourse[] = [
       {
         title: "Career Outcomes",
         richText: `
-<ul class="list-disc list-outside space-y-1 text-start p-2">
+<ul>
   <li>IT Business Analyst</li>
   <li>Systems Analyst or Administrator</li>
   <li>IT Manager</li>
@@ -489,27 +489,27 @@ const courses: ICourse[] = [
       {
         title: "Admission Requirements",
         richText: `
-<p class="mb-4">
+<p>
   This program is designed for students who are innovative thinkers, enjoy solving complex problems, and have a passion for technology.
 </p>
-<h3 class="text-lg text-brand-primary mt-6 mb-2">Minimum Entry Requirements</h3>
-<h4 class="text-base font-medium text-gray-700 mt-4 mb-1">Domestic Students</h4>
-<ul class="list-disc list-outside space-y-1 text-start px-4">
+<h3>Minimum Entry Requirements</h3>
+<h4>Domestic Students</h4>
+<ul>
   <li class=''>Year 12 (Australia) or ATAR 55 or AQF Level 5 Diploma</li>
 </ul>
-<h4 class="text-base font-medium text-gray-700 mt-4 mb-1">International Students</h4>
-<ul class="list-disc list-outside space-y-1 text-start px-4">
+<h4>International Students</h4>
+<ul>
   <li>Year 12 equivalent or IB Diploma (24+ points)</li>
   <li>English Requirements (if prior studies weren’t in English)</li>
 </ul>
-<h3 class="text-lg text-brand-primary mt-6 mb-2">Alternative Pathways</h3>
-<ul class="list-disc list-outside space-y-1 text-start px-4">
+<h3>Alternative Pathways</h3>
+<ul>
   <li>Aboriginal & Torres Strait Islander students</li>
   <li>Mature Age applicants</li>
   <li>Students from disadvantaged or under-represented backgrounds</li>
 </ul>
-<h3 class="text-lg text-brand-primary mt-6 mb-2">Admission Process</h3>
-<ol class="list-decimal list-inside space-y-1 px-1">
+<h3>Admission Process</h3>
+<ol>
   <li>Check Eligibility</li>
   <li>Submit Application</li>
   <li>Provide Supporting Documents</li>
@@ -517,9 +517,9 @@ const courses: ICourse[] = [
   <li>Accept Offer</li>
   <li>Orientation and Enrolment</li>
 </ol>
-<p class="mt-4 text-gray-700">
+<p>
   For full details, see 
-  <a href="https://www.dropbox.com/scl/fo/ixrq58oyj2yo3ja5g8f9n/AJ-mqWkT5w00G5w_-L9PFRw/Policies%20and%20Procedures?dl=0&preview=Admission+Policy+and+Procedure.pdf&rlkey=bt8lvdav3k7x6my0f6khqgfsg&subfolder_nav_tracking=1" class="italic underline text-brand-primary">Admission Policy and Procedure</a>.
+  <a href="https://www.dropbox.com/scl/fo/ixrq58oyj2yo3ja5g8f9n/AJ-mqWkT5w00G5w_-L9PFRw/Policies%20and%20Procedures?dl=0&preview=Admission+Policy+and+Procedure.pdf&rlkey=bt8lvdav3k7x6my0f6khqgfsg&subfolder_nav_tracking=1">Admission Policy and Procedure</a>.
 </p>
  `,
       },

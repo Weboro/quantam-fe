@@ -31,10 +31,8 @@ export const generateMetadata = (): Metadata => ({
 
 const page = () => {
   return (
-    <ContainerLayout className="mt-6 text-muted">
-      <Heading className="text-brand-primary-black mt-4 mb-2" level={1}>
-        QIHE Student Association
-      </Heading>
+    <ContainerLayout className="rich_text_container">
+      <h1>QIHE Student Association</h1>
 
       <p>
         The Quantum Institute of Higher Education (QIHE) Student Association is
@@ -44,11 +42,9 @@ const page = () => {
         between students, management, and governance bodies.
       </p>
 
-      <p className="mt-4">
-        The Association enhances academic, social, and cultural life by:
-      </p>
+      <p>The Association enhances academic, social, and cultural life by:</p>
 
-      <ul className="list-disc list-inside mt-2 space-y-1">
+      <ul>
         <li>
           Representing students in governance, planning, and quality assurance
           processes.
@@ -67,7 +63,7 @@ const page = () => {
         </li>
       </ul>
 
-      <p className="mt-4">
+      <p>
         All enrolled students are automatically members of the Student
         Association, giving them the opportunity to participate in elections,
         attend meetings, and contribute to student-led initiatives. Through this

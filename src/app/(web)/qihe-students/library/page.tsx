@@ -38,22 +38,15 @@ export const metadata: Metadata = {
 
 const page = () => {
   return (
-    <ContainerLayout className="text-muted mt-6">
-      <Heading className="text-brand-primary-black mb-2" level={1}>
-        Library
-      </Heading>
+    <ContainerLayout className="rich_text_container">
+      <h1>Library</h1>
       <p>
         Access a wide range of academic resources, including textbooks,
         journals, and e-resources, through our on-campus library and online
         portal. The library staff is here to support your learning needs.
       </p>
-      <p className="mt-2">
-        <Link
-          href={slugs.eLibrary}
-          className="text-brand-primary underline hover:text-brand-blue-4 transition-all"
-        >
-          Access the E-Library
-        </Link>
+      <p>
+        <Link href={slugs.eLibrary}>Access the E-Library</Link>
       </p>
 
       <p>
@@ -63,7 +56,6 @@ const page = () => {
           href={
             "https://www.dropbox.com/scl/fo/ixrq58oyj2yo3ja5g8f9n/AJ-mqWkT5w00G5w_-L9PFRw/Policies%20and%20Procedures?dl=0&e=1&preview=ICT+Services+and+Library+Facilities+Policy.pdf&rlkey=bt8lvdav3k7x6my0f6khqgfsg&subfolder_nav_tracking=1"
           }
-          className="text-brand-primary underline hover:text-brand-blue-4 transition-all italic"
         >
           ICT Services and Library Facilities Policy
         </Link>

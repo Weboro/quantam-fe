@@ -33,13 +33,14 @@ export const generateMetadata = (): Metadata => ({
 const FaqPage = () => {
   return (
     <ContainerLayout className="">
-      <Heading level={1} className="w-fit mx-auto text-center">
-        Frequently Asked Questions
-      </Heading>
+      <div className="rich_text_container max-w-2xl mx-auto text-center mb-6">
+        <h1>Frequently Asked Questions</h1>
 
-      <p className="text-muted max-w-xl text-center mx-auto">
-        Got questions about studying at QIHE? Find answers about admissions, programs, support services, and student visas to help you succeed
-      </p>
+        <p className="">
+          Got questions about studying at QIHE? Find answers about admissions,
+          programs, support services, and student visas to help you succeed
+        </p>
+      </div>
 
       <Accordion data={faq} />
     </ContainerLayout>

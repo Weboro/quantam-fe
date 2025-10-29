@@ -35,12 +35,6 @@ const Tabbed: React.FC<TabbedProps> = ({ tabbedPaneData }) => {
 
         <div className="rounded-lg p-4 bg-surface">
           <div className="space-y-6">
-            <div>
-              <h2 className="text-2xl font-medium text-brand-primary-black mb-4">
-                {tabbedPaneData.find((item) => item.title === activeTab)?.title}
-              </h2>
-            </div>
-
             <div className="space-y-3">
               <div
                 dangerouslySetInnerHTML={{

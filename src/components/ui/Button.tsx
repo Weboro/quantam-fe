@@ -8,24 +8,21 @@ type Variant =
   | "primaryAlt"
   | "secondaryAlt";
 
-interface ButtonProps {
+interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   variant?: Variant;
-  disabled?: boolean;
   icon?: string;
-  className?: string;
-  children?: React.ReactNode;
   interaction?: boolean;
-  onClick?: () => void;
 }
 
 const Button: React.FC<ButtonProps> = ({
   variant = "primary",
   disabled = false,
-  icon = null,
+  icon,
   children,
-  className,
+  className = "",
   interaction = true,
   onClick,
+  ...rest
 }) => {
   const baseClasses =
     "flex items-center gap-2 px-4 py-2 rounded text-sm transition-colors duration-200 font-medium cursor-pointer leading-4.5";
@@ -63,19 +60,19 @@ const Button: React.FC<ButtonProps> = ({
     `,
   };
 
-  const buttonClasses = `${baseClasses} ${variantClasses[variant]}`
+  const buttonClasses = `${baseClasses} ${variantClasses[variant]} ${className}`
     .replace(/\s+/g, " ")
     .trim();
 
   return (
     <button
-      className={`${buttonClasses} ${className}`}
+      className={buttonClasses}
       disabled={disabled}
       onClick={onClick}
+      {...rest}
     >
       {icon && <i className={`${icon} flex`} />}
-
-      {children && children}
+      {children}
     </button>
   );
 };

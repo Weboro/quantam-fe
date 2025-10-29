@@ -4,24 +4,20 @@ import Heading from "@/components/ui/Heading";
 
 const GettingToCampusPage = () => {
   return (
-    <ContainerLayout>
-      <div className="py-12">
-        <Heading level={1} className="text-3xl md:text-4xl font-bold mb-6">
-          Getting to QIHE – Your Campus in the Heart of Parramatta
-        </Heading>
+    <ContainerLayout className="rich_text_container">
+      <div>
+        <h1>Getting to QIHE – Your Campus in the Heart of Parramatta</h1>
 
-        <p className="text-gray-700 mb-6">
+        <p>
           QIHE’s campus is located in the vibrant heart of Parramatta, one of
           Western Sydney’s busiest and most exciting areas. The campus is just a
           5-minute walk from Parramatta Train Station, making it easy for
           students to get here using public transport.
         </p>
 
-        <div className="mb-8">
-          <Heading level={2} className="text-2xl font-semibold mb-4">
-            Getting to Campus
-          </Heading>
-          <ul className="list-disc list-inside space-y-2 text-gray-700">
+        <div>
+          <h2>Getting to Campus</h2>
+          <ul>
             <li>
               <strong>By Train:</strong> Arrive at Parramatta Station and enjoy
               a short, easy walk to campus.
@@ -43,11 +39,9 @@ const GettingToCampusPage = () => {
           </ul>
         </div>
 
-        <div className="mb-8">
-          <Heading level={2} className="text-2xl font-semibold mb-4">
-            Contact & Address
-          </Heading>
-          <div className="text-gray-700 space-y-1">
+        <div>
+          <h2>Contact & Address</h2>
+          <div>
             <p>
               <strong>Address:</strong> Level 4, 16-18 Wentworth Street,
               Parramatta NSW 2150
@@ -57,21 +51,13 @@ const GettingToCampusPage = () => {
             </p>
             <p>
               <strong>Email:</strong>{" "}
-              <a
-                href="mailto:admin@qinstitute.com.au"
-                className="italic underline text-brand-primary"
-              >
+              <a href="mailto:admin@qinstitute.com.au">
                 admin@qinstitute.com.au
               </a>
             </p>
             <p>
               <strong>Website:</strong>{" "}
-              <a
-                href="https://qinstitute.com.au"
-                className="italic underline text-brand-primary"
-              >
-                qinstitute.com.au
-              </a>
+              <a href="https://qinstitute.com.au">qinstitute.com.au</a>
             </p>
           </div>
         </div>

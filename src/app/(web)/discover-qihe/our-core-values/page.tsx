@@ -30,12 +30,10 @@ export const generateMetadata = (): Metadata => ({
 
 const page = () => {
   return (
-    <ContainerLayout className="mt-6 text-muted">
-      <Heading className="text-brand-primary-black mt-4 mb-2" level={1}>
-        Our Core Values
-      </Heading>
+    <ContainerLayout className="rich_text_container">
+      <h1>Our Core Values</h1>
 
-      <ul className="list-decimal pl-6 space-y-2 text-justify leading-relaxed">
+      <ul>
         <li>
           <strong>Academic Excellence:</strong> QIHE strives for academic
           excellence in order to provide education that will empower students
@@ -89,7 +87,7 @@ const page = () => {
         </li>
       </ul>
 
-      <p className="mt-4 text-justify leading-relaxed">
+      <p>
         QIHE’s programs are thoughtfully designed to uphold the Institute’s
         overarching vision, mission, and core values.
       </p>

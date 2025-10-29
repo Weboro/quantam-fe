@@ -1,7 +1,4 @@
-import Breadcrumbs from "@/components/global/Breadcrumbs";
 import ContainerLayout from "@/components/layouts/ContainerLayout";
-import FaqSection from "@/components/sections/FaqSection";
-import NewsLetterSection from "@/components/sections/NewsLetterSection";
 import Heading from "@/components/ui/Heading";
 
 const page = () => {
@@ -47,11 +44,6 @@ const page = () => {
           </p>
         </div>
       </ContainerLayout>
-
-      <div className="space-y-40 mt-40">
-        <FaqSection />
-        <NewsLetterSection />
-      </div>
     </>
   );
 };

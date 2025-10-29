@@ -1,8 +1,5 @@
 import type { Metadata } from "next";
-import "./globals.css";
-import Header from "@/components/global/header";
-import Footer from "@/components/global/footer";
-import ScrollToTop from "@/components/global/ScrollToTop";
+import "./css/globals.css";
 import { SITE_TITLE, SITE_URL } from "@/extra/siteDetails";
 
 export const metadata: Metadata = {

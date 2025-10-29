@@ -59,7 +59,7 @@ export const slugs = {
   ourCoreTeam: "our-core-team",
   academicTeam: "academic-team",
   supportTeam: "support-team",
-  studentAssociation: "sutdent-association",
+  studentAssociation: "student-association",
   faqs: "faqs",
   esosFramework: "esos-framework",
   privacyPolicy: "privacy-policy",

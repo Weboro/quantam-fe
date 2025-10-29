@@ -1,35 +1,29 @@
 "use client";
 import React from "react";
 import ContainerLayout from "@/components/layouts/ContainerLayout";
-import Heading from "@/components/ui/Heading";
 
 const CopyrightPage = () => {
   return (
-    <ContainerLayout>
-      <div className="py-12">
-        <Heading level={1} className="text-3xl md:text-4xl font-bold mb-6">
-          Copyright Information
-        </Heading>
+    <ContainerLayout className="rich_text_container">
+      <h1>Copyright Information</h1>
 
-        <p className="text-gray-700 mb-4">
-          QIHE respects copyright laws and intellectual property rights. We
-          acknowledge and protect the creative works of authors, artists, and
-          institutions that contribute to our educational resources.
-        </p>
+      <p>
+        QIHE respects copyright laws and intellectual property rights. We
+        acknowledge and protect the creative works of authors, artists, and
+        institutions that contribute to our educational resources.
+      </p>
 
-        <p className="text-gray-700">
-          For guidance on copyright, visit:{" "}
-          <a
-            href="https://www.nsw.gov.au/nsw-government/about-website/copyright"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="italic underline text-brand-primary"
-          >
-            NSW Copyright Resources
-          </a>
-          .
-        </p>
-      </div>
+      <p>
+        For guidance on copyright, visit:{" "}
+        <a
+          href="https://www.nsw.gov.au/nsw-government/about-website/copyright"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          NSW Copyright Resources
+        </a>
+        .
+      </p>
     </ContainerLayout>
   );
 };

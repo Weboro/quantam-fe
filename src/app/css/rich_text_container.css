@@ -1,0 +1,130 @@
+.rich_text_container {
+  font-family: var(--font-secondary);
+  line-height: 1.7;
+  color: var(--color-text, #111);
+}
+
+/* ---------------- Headings ---------------- */
+.rich_text_container h1,
+.rich_text_container h2,
+.rich_text_container h3,
+.rich_text_container h4,
+.rich_text_container h5,
+.rich_text_container h6 {
+  font-weight: bold;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  line-height: 1.3;
+}
+
+.rich_text_container h1 { font-size: 2.25rem; }
+.rich_text_container h2 { font-size: 1.875rem; }
+.rich_text_container h3 { font-size: 1.5rem; }
+.rich_text_container h4 { font-size: 1.25rem; }
+.rich_text_container h5 { font-size: 1.125rem; }
+.rich_text_container h6 { font-size: 1rem; }
+
+/* Remove top margin when heading is first element */
+.rich_text_container h1:first-child,
+.rich_text_container h2:first-child,
+.rich_text_container h3:first-child,
+.rich_text_container h4:first-child,
+.rich_text_container h5:first-child,
+.rich_text_container h6:first-child {
+  margin-top: 0;
+}
+
+/* ---------------- Text ---------------- */
+.rich_text_container p {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.rich_text_container a {
+  color: var(--color-brand-primary);
+  text-decoration: underline;
+}
+
+.rich_text_container strong,
+.rich_text_container b {
+  font-weight: bold;
+}
+
+.rich_text_container em,
+.rich_text_container i {
+  font-style: italic;
+}
+
+/* ---------------- Lists ---------------- */
+.rich_text_container ul,
+.rich_text_container ol {
+  padding-left: 1.5rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.rich_text_container ul {
+  list-style-type: disc;
+}
+
+.rich_text_container ol {
+  list-style-type: decimal;
+}
+
+.rich_text_container li {
+  margin-bottom: 0.5rem;
+}
+
+/* ---------------- Tables ---------------- */
+.rich_text_container .table_wrapper {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.rich_text_container table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  font-size: 0.95rem;
+}
+
+.rich_text_container caption {
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.rich_text_container th,
+.rich_text_container td {
+  border: 1px solid #ddd;
+  padding: 0.75rem;
+  vertical-align: top;
+}
+
+.rich_text_container th {
+  background-color: #f9fafb;
+  font-weight: 600;
+  text-align: center;
+}
+
+.rich_text_container tbody tr:nth-child(even) {
+  background-color: #fdfdfd;
+}
+
+.rich_text_container .section {
+  background: #eef4ff;
+  font-weight: 700;
+  text-align: left;
+}
+
+/* ---------------- Responsive ---------------- */
+@media (max-width: 640px) {
+  .rich_text_container h1 { font-size: 1.75rem; }
+  .rich_text_container h2 { font-size: 1.5rem; }
+  .rich_text_container h3 { font-size: 1.25rem; }
+  .rich_text_container h4 { font-size: 1.125rem; }
+  .rich_text_container h5 { font-size: 1rem; }
+  .rich_text_container h6 { font-size: 0.95rem; }
+}

@@ -38,38 +38,26 @@ export const metadata: Metadata = {
 
 const page = () => {
   return (
-    <ContainerLayout className="text-muted mt-6">
-      <Heading className="text-gray-800 mt-6 mb-2" level={1}>
-        Admissions
-      </Heading>
+    <ContainerLayout className="rich_text_container">
+      <h1>Admissions</h1>
 
-      <section className="mt-4">
-        <Heading className="text-gray-800 mt-6 mb-2" level={3}>
-          Step 1: Admission Eligibility
-        </Heading>
+      <section>
+        <h3>Step 1: Admission Eligibility</h3>
         <p>
           Check your eligibility through Quantum’s{" "}
-          <Link
-            className="text-brand-primary underline hover:text-brand-blue-4 transition-all"
-            href={`/${slugs.futureStudents}/admission-requirements`}
-          >
+          <Link href={`/${slugs.futureStudents}/admission-requirements`}>
             Admission Requirements
           </Link>{" "}
           for undergraduate courses.
         </p>
       </section>
 
-      <section className="mt-4">
-        <Heading className="text-gray-800 mt-6 mb-2" level={3}>
-          Step 2: Admission Application Form
-        </Heading>
+      <section>
+        <h3>Step 2: Admission Application Form</h3>
         <p>
           To allow ample time to arrange your respective Australian Visa, we
           encourage you to apply at the earliest. You can find the{" "}
-          <Link
-            className="text-brand-primary underline hover:text-brand-blue-4 transition-all"
-            href={slugs.onlineApplication}
-          >
+          <Link href={slugs.onlineApplication}>
             Quantum’s Online Application Form
           </Link>{" "}
           or apply through an education agent. Please ensure your application is
@@ -77,15 +65,13 @@ const page = () => {
         </p>
       </section>
 
-      <section className="mt-4">
-        <Heading className="text-gray-800 mt-6 mb-2" level={3}>
-          Step 3: Supplementary Documents
-        </Heading>
+      <section>
+        <h3>Step 3: Supplementary Documents</h3>
         <p>
           The below supporting documents must be certified by an accredited
           body:
         </p>
-        <ul className="list-disc pl-6 space-y-1">
+        <ul>
           <li>Academic transcripts and testamurs/completion certificates;</li>
           <li>Proof of English language proficiency;</li>
           <li>Passport copy;</li>
@@ -102,16 +88,14 @@ const page = () => {
         </ul>
       </section>
 
-      <section className="mt-4">
-        <Heading className="text-gray-800 mt-6 mb-2" level={3}>
-          Step 4: Admission Outcome
-        </Heading>
+      <section>
+        <h3>Step 4: Admission Outcome</h3>
         <p>
           After successful completion of the outlined criteria, the application
           outcome is typically released within five working days and may include
           one of the following:
         </p>
-        <ul className="list-disc pl-6 space-y-1">
+        <ul>
           <li>A Letter of Offer</li>
           <li>
             A Conditional Letter of Offer, outlining any conditions that must be
@@ -125,12 +109,10 @@ const page = () => {
         </ul>
       </section>
 
-      <section className="mt-4">
-        <Heading className="text-gray-800 mt-6 mb-2" level={3}>
-          Step 5: Acceptance of Offer
-        </Heading>
+      <section>
+        <h3>Step 5: Acceptance of Offer</h3>
         <p>The Confirmation of Enrolment (CoE) will be issued when:</p>
-        <ul className="list-disc pl-6 space-y-1">
+        <ul>
           <li>Entry admission requirements are satisfied;</li>
           <li>The Letter of Offer is signed and dated;</li>
           <li>
@@ -143,10 +125,8 @@ const page = () => {
         </ul>
       </section>
 
-      <section className="mt-4">
-        <Heading className="text-gray-800 mt-6 mb-2" level={3}>
-          Step 6: Student Orientation and Enrolment
-        </Heading>
+      <section>
+        <h3>Step 6: Student Orientation and Enrolment</h3>
 
         <p>
           We warmly welcome you to the Quantum Institute of Higher Education!
@@ -158,12 +138,11 @@ const page = () => {
         </p>
       </section>
 
-      <section className="mt-4">
+      <section>
         <p>
           For more details, please refer to the{" "}
           <Link
             target="main"
-            className="text-brand-primary underline italic hover:text-brand-blue-4 transition-all"
             href={
               "https://www.dropbox.com/scl/fo/ixrq58oyj2yo3ja5g8f9n/AJ-mqWkT5w00G5w_-L9PFRw/Policies%20and%20Procedures?e=1&preview=Admission+Policy+and+Procedure.pdf&rlkey=bt8lvdav3k7x6my0f6khqgfsg&subfolder_nav_tracking=1&dl=0"
             }

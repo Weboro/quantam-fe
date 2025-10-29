@@ -38,28 +38,21 @@ export const metadata: Metadata = {
 
 const page = () => {
   return (
-    <ContainerLayout className="text-muted mt-6">
-      <Heading className="text-brand-primary-black mb-2" level={1}>
-        Learning Platform
-      </Heading>
+    <ContainerLayout className="rich_text_container">
+      <h1>Learning Platform</h1>
       <p>
         The QIHE Learnjng Management System(LMS) is your central hub for
         managing your studies.
       </p>
-      <br />
+
       <p>
         Access learning materials, submit assessments, view grades, and stay
         informed with important announcements and updates.
       </p>
 
-      <p className="mt-2">
-        <Link
-          href={slugs.studentPlatformLogin}
-          className="text-brand-primary underline hover:text-brand-blue-4 transition-all"
-        >
-          Login to the Learning Platform
-        </Link>
-      </p>
+      <Link href={slugs.studentPlatformLogin}>
+        Login to the Learning Platform
+      </Link>
     </ContainerLayout>
   );
 };
