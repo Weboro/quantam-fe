@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { Metadata } from "next";
 //
-import { slugs } from "@/extra/slugs";
+import { files, slugs } from "@/extra/slugs";
 import { SITE_TITLE, SITE_URL } from "@/extra/siteDetails";
 //
 import ContainerLayout from "@/components/layouts/ContainerLayout";
@@ -86,6 +86,7 @@ const page = () => {
       <Heading className="text-gray-800 mt-6 mb-2" level={3}>
         Personalised and Learning Support
       </Heading>
+
       <ul className="list-disc pl-6 space-y-1">
         <li>
           <strong className="text-gray-800">Small Class Sizes:</strong> Students
@@ -97,17 +98,10 @@ const page = () => {
           support for academic guidance, career planning, and personal
           development. Please refer to the{" "}
           <Link
-            className="text-brand-primary underline hover:text-brand-blue-4 transition-all"
-            href={slugs.studentSupport}
-          >
-            Student Support
-          </Link>{" "}
-          and{" "}
-          <Link
-            className="text-brand-primary underline hover:text-brand-blue-4 transition-all"
+            className="text-brand-primary italic underline hover:text-brand-blue-4 transition-all"
             href={slugs.consultation}
           >
-            Consultation Policy
+            Student Support and Consultation Policy
           </Link>{" "}
           for more information.
         </li>
@@ -121,6 +115,7 @@ const page = () => {
       <Heading className="text-gray-800 mt-6 mb-2" level={3}>
         Dedicated Educators
       </Heading>
+
       <p>
         Our academic staff bring a wealth of experience from academia and
         industry, ensuring that students receive practical and relevant
@@ -131,14 +126,16 @@ const page = () => {
         Convenient Location
       </Heading>
       <p>
-        Our campus is conveniently located at Level 4, 16-18 Wentworth Street, Parramatta NSW 2150, providing
-        students with easy access to public transport, nearby amenities, and
-        opportunities to engage with the local community.
+        Our campus is conveniently located at Level 4, 16-18 Wentworth Street,
+        Parramatta NSW 2150, providing students with easy access to public
+        transport, nearby amenities, and opportunities to engage with the local
+        community.
       </p>
 
       <Heading className="text-gray-800 mt-6 mb-2" level={3}>
         Inclusive and Supportive Environment
       </Heading>
+
       <p>
         QIHE values diversity and fosters an inclusive atmosphere where students
         from all backgrounds feel welcome and supported.
@@ -147,14 +144,14 @@ const page = () => {
       <p>
         <Link
           className="text-brand-primary underline hover:text-brand-blue-4 transition-all"
-          href={slugs.prospectus}
+          href={files.prospectus}
         >
           Find our Prospectus here
         </Link>
         . <br />
         <Link
           className="text-brand-primary underline hover:text-brand-blue-4 transition-all"
-          href={slugs.apply}
+          href={`/${slugs.apply}`}
         >
           Apply here
         </Link>

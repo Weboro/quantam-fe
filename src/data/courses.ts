@@ -82,7 +82,7 @@ const courses: ICourse[] = [
         richText: `
 <div class="list-decimal list-outside  space-y-2  flex flex-col gap-2 py-2">
   <p>Students enrolled in the Bachelor of Business program will be able to possess broad and coherent knowledge as well as skills that are transferrable for real-world application to prepare them for their careers, with specific learning outcomes that are in line with the major that they have selected.</p>
- <div><h3 class="text-lg text-brand-primary mt-6 mb-2"> Upon completion of the Bachelor of Business – Accounting program, students are expected to: </h3>
+ <div><h3 class="text-lg text-brand-primary mt-6 mb-2"> Upon completion of the Bachelor of Business – Accounting program, students are expected to: </h3>data
     <ul class="list-decimal   text-md px-4 sm:px-6 list-inside text-sm space-y-1  mt-1">
       <li>Demonstrate a broad and coherent understanding of business and accounting principles, theories, and practices across diverse industry contexts.</li>
       <li>Critically analyse and solve complex problems to develop innovative and sustainable solutions in professional business environments.</li>

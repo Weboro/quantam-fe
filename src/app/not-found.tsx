@@ -21,7 +21,7 @@ const NotFound = () => {
             </p>
 
             <Heading level={4} className="font-medium text-center">
-              Page Not Found!
+              ProQuest-TBA
             </Heading>
 
             <Link href={"/"} className="block mt-4">

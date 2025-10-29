@@ -160,16 +160,16 @@ const page = () => {
 
       <section className="mt-4">
         <p>
-          For more Information:{" "}
-          <a
+          For more details, please refer to the{" "}
+          <Link
             target="main"
-            className="text-brand-primary underline hover:text-brand-blue-4 transition-all"
+            className="text-brand-primary underline italic hover:text-brand-blue-4 transition-all"
             href={
               "https://www.dropbox.com/scl/fo/ixrq58oyj2yo3ja5g8f9n/AJ-mqWkT5w00G5w_-L9PFRw/Policies%20and%20Procedures?e=1&preview=Admission+Policy+and+Procedure.pdf&rlkey=bt8lvdav3k7x6my0f6khqgfsg&subfolder_nav_tracking=1&dl=0"
             }
           >
-            QIHE’s Admission Policy
-          </a>
+            Admission Policy and Procedure
+          </Link>
         </p>
       </section>
     </ContainerLayout>

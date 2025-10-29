@@ -75,11 +75,6 @@ const page = () => {
         community, and contributes to continuous improvement of the student
         learning experience.
       </p>
-
-      <p className="mt-4">
-        For further information, please refer to the QIHE Student Association –
-        Plan and Terms of Reference.
-      </p>
     </ContainerLayout>
   );
 };

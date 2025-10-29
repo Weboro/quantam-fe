@@ -1,14 +1,17 @@
-import Breadcrumbs from "@/components/global/Breadcrumbs";
-import React from "react";
+// import Breadcrumbs from "@/components/global/Breadcrumbs";
+import { files } from "@/extra/slugs";
+import { redirect, RedirectType } from "next/navigation";
 
 const page = () => {
-  return (
-    <>
-      <Breadcrumbs />
+  redirect(files.applyForm, RedirectType.replace);
 
-      <div className="my-32 text-center">TBA</div>
-    </>
-  );
+  // return (
+  //   <>
+  //     <Breadcrumbs />
+
+  //     <div className="my-32 text-center">TBA</div>
+  //   </>
+  // );
 };
 
 export default page;

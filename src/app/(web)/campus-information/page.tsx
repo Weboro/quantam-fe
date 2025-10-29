@@ -17,13 +17,8 @@ import {
 } from "lucide-react";
 
 export default function CampusPage() {
-  const {
-    location,
-    safety,
-    emergencyContacts,
-    localServices,
-    supportServices,
-  } = campusData;
+  const { location, emergencyContacts, localServices, supportServices } =
+    campusData;
 
   const accent = "#78256f";
 
@@ -50,8 +45,13 @@ export default function CampusPage() {
           <h1 className="text-3xl font-semibold" style={{ color: accent }}>
             Campus Information
           </h1>
-          <p className="text-sm text-gray-600 mt-1">QIHE Campus - Parramatta NSW</p>
-          <hr className="mt-4 border-t" style={{ borderColor: `${accent}1A` }} />
+          <p className="text-sm text-gray-600 mt-1">
+            QIHE Campus - Parramatta NSW
+          </p>
+          <hr
+            className="mt-4 border-t"
+            style={{ borderColor: `${accent}1A` }}
+          />
         </header>
 
         {/* Location & Directions */}
@@ -74,10 +74,14 @@ export default function CampusPage() {
                 {location.transport.map((method, idx) => (
                   <li key={idx} className="text-gray-800 text-justify">
                     <div className="flex items-start gap-2">
-                      <span className="mt-1">{getTransportIcon(method.icon)}</span>
+                      <span className="mt-1">
+                        {getTransportIcon(method.icon)}
+                      </span>
                       <div>
                         <div className="font-medium">{method.title}</div>
-                        <div className="text-gray-700">{method.description}</div>
+                        <div className="text-gray-700">
+                          {method.description}
+                        </div>
                       </div>
                     </div>
                   </li>
@@ -92,7 +96,11 @@ export default function CampusPage() {
               </h3>
               <ul className="mt-3 space-y-2 text-gray-800">
                 <li className="flex items-start gap-2">
-                  <MapPin className="h-4 w-4 mt-1" style={{ color: accent }} aria-hidden />
+                  <MapPin
+                    className="h-4 w-4 mt-1"
+                    style={{ color: accent }}
+                    aria-hidden
+                  />
                   <span>{location.address}</span>
                 </li>
                 <li className="flex items-start gap-2">
@@ -131,11 +139,11 @@ export default function CampusPage() {
             Your safety and wellbeing are our top priority. QIHE maintains a
             safe and healthy campus through clear policies, regular training,
             and rapid response to risks or incidents. We provide clear health
-            and safety information during orientation, display procedures
-            across campus, and encourage early reporting so issues are managed
-            quickly and confidentially. Our commitment includes compliance
-            with national standards, critical incident support, and a culture
-            where everyone shares responsibility for safety.
+            and safety information during orientation, display procedures across
+            campus, and encourage early reporting so issues are managed quickly
+            and confidentially. Our commitment includes compliance with national
+            standards, critical incident support, and a culture where everyone
+            shares responsibility for safety.
           </p>
 
           <p className="text-gray-700 mt-3">
@@ -157,9 +165,8 @@ export default function CampusPage() {
             </h3>
             <ul className="mt-2 list-disc list-inside text-gray-700 space-y-1 text-justify">
               <li>
-                QIHE is committed to maintaining a safe and healthy
-                environment for all students, staff, and visitors in line with
-                the{" "}
+                QIHE is committed to maintaining a safe and healthy environment
+                for all students, staff, and visitors in line with the{" "}
                 <a
                   href="https://legislation.nsw.gov.au/view/html/inforce/current/act-2011-010"
                   className="underline"
@@ -169,8 +176,8 @@ export default function CampusPage() {
                 and related regulations.
               </li>
               <li>
-                The Institute has a Critical Incident Management Plan to
-                respond quickly and effectively to emergencies such as serious
+                The Institute has a Critical Incident Management Plan to respond
+                quickly and effectively to emergencies such as serious
                 accidents, natural disasters, medical emergencies, or security
                 threats.
               </li>
@@ -211,7 +218,10 @@ export default function CampusPage() {
 
           {/* Evacuation Plan Section */}
           <div className="mt-6">
-            <h3 className="text-base font-semibold mb-2" style={{ color: accent }}>
+            <h3
+              className="text-base font-semibold mb-2"
+              style={{ color: accent }}
+            >
               Evacuation Plan
             </h3>
             <div className="flex flex-col items-center gap-3">
@@ -261,13 +271,16 @@ export default function CampusPage() {
                 </li>
               ))}
             </ul>
-
           </div>
 
           {/* Local Services */}
           <div>
             <div className="flex items-center gap-2">
-              <Building className="h-5 w-5" style={{ color: accent }} aria-hidden />
+              <Building
+                className="h-5 w-5"
+                style={{ color: accent }}
+                aria-hidden
+              />
               <h2 className="text-xl font-semibold" style={{ color: accent }}>
                 {localServices.title}
               </h2>
@@ -276,7 +289,10 @@ export default function CampusPage() {
             <div className="mt-3 space-y-6">
               {localServices.sections.map((section, idx) => (
                 <div key={idx}>
-                  <h3 className="text-base font-semibold" style={{ color: accent }}>
+                  <h3
+                    className="text-base font-semibold"
+                    style={{ color: accent }}
+                  >
                     {section.title}
                   </h3>
                   <ul className="mt-2 space-y-2">
@@ -284,7 +300,10 @@ export default function CampusPage() {
                       <li key={j} className="text-gray-800 text-justify">
                         <div className="font-medium">{s.name}</div>
                         <div className="text-sm text-gray-700">{s.address}</div>
-                        <div className="font-semibold mt-0.5" style={{ color: accent }}>
+                        <div
+                          className="font-semibold mt-0.5"
+                          style={{ color: accent }}
+                        >
                           {s.phone}
                         </div>
                       </li>
@@ -311,10 +330,15 @@ export default function CampusPage() {
             {supportServices.services.map((service, idx) => (
               <li key={idx} className="text-gray-800 text-justify">
                 <div className="font-medium">{service.name}</div>
-                <div className="text-base font-semibold" style={{ color: accent }}>
+                <div
+                  className="text-base font-semibold"
+                  style={{ color: accent }}
+                >
                   {service.number}
                 </div>
-                <div className="text-sm text-gray-700">{service.description}</div>
+                <div className="text-sm text-gray-700">
+                  {service.description}
+                </div>
               </li>
             ))}
           </ul>

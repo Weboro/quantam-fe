@@ -1,5 +1,10 @@
 const underConstruction = "under-construction";
 
+export const files = {
+  prospectus: `https://www.dropbox.com/scl/fo/ixrq58oyj2yo3ja5g8f9n/AF-HwH0fnWWbpNminvyKYTI/Student%20Information%20Materials?e=1&preview=QIHE%20Prospectus.pdf&rlkey=bt8lvdav3k7x6my0f6khqgfsg&subfolder_nav_tracking=1&dl=0`,
+  applyForm: `https://www.dropbox.com/scl/fo/ixrq58oyj2yo3ja5g8f9n/ABpcZ03eVACUmpsqkooYkxU/Forms?dl=0&preview=Admission%20Application%20Form.pdf&rlkey=bt8lvdav3k7x6my0f6khqgfsg&subfolder_nav_tracking=1`,
+};
+
 export const slugs = {
   apply: "apply",
   news: "news",

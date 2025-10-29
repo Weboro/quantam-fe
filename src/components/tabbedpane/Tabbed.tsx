@@ -48,6 +48,7 @@ const Tabbed: React.FC<TabbedProps> = ({ tabbedPaneData }) => {
                     tabbedPaneData.find((item) => item.title === activeTab)
                       ?.richText || "",
                 }}
+                className="rich_text_container"
               />
             </div>
           </div>

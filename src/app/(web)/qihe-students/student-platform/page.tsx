@@ -8,11 +8,11 @@ import ContainerLayout from "@/components/layouts/ContainerLayout";
 import Heading from "@/components/ui/Heading";
 
 export const metadata: Metadata = {
-  title: "Student Platform",
+  title: "Learning Platform",
   description:
-    "Access the Quantum Institute student platform for course materials, announcements, grades, and communication with faculty and staff.",
+    "Access the Quantum Institute Learning Platform for course materials, announcements, grades, and communication with faculty and staff.",
   keywords: [
-    "student platform",
+    "Learning Platform",
     "Quantum Institute portal",
     "course materials",
     "student announcements",
@@ -22,17 +22,17 @@ export const metadata: Metadata = {
     canonical: `${SITE_URL}/${slugs.qiheStudents}/${slugs.studentPlatform}`,
   },
   openGraph: {
-    title: "Student Platform",
+    title: "Learning Platform",
     description:
-      "Access the Quantum Institute student platform for course materials, announcements, grades, and communication with faculty and staff.",
+      "Access the Quantum Institute Learning Platform for course materials, announcements, grades, and communication with faculty and staff.",
     url: `${SITE_URL}/${slugs.qiheStudents}/${slugs.studentPlatform}`,
     siteName: SITE_TITLE,
   },
   twitter: {
     card: "summary_large_image",
-    title: "Student Platform",
+    title: "Learning Platform",
     description:
-      "Access the Quantum Institute student platform for course materials, announcements, grades, and communication with faculty and staff.",
+      "Access the Quantum Institute Learning Platform for course materials, announcements, grades, and communication with faculty and staff.",
   },
 };
 
@@ -40,12 +40,16 @@ const page = () => {
   return (
     <ContainerLayout className="text-muted mt-6">
       <Heading className="text-brand-primary-black mb-2" level={1}>
-        Student Platform
+        Learning Platform
       </Heading>
       <p>
-        The QIHE Student Platform is your hub for managing your studies. Access
-        course materials, submit assignments, view grades, and stay updated with
-        important announcements.
+        The QIHE Learnjng Management System(LMS) is your central hub for
+        managing your studies.
+      </p>
+      <br />
+      <p>
+        Access learning materials, submit assessments, view grades, and stay
+        informed with important announcements and updates.
       </p>
 
       <p className="mt-2">
@@ -53,7 +57,7 @@ const page = () => {
           href={slugs.studentPlatformLogin}
           className="text-brand-primary underline hover:text-brand-blue-4 transition-all"
         >
-          Login to the Student Platform
+          Login to the Learning Platform
         </Link>
       </p>
     </ContainerLayout>
