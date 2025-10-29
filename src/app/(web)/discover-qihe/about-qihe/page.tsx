@@ -32,13 +32,13 @@ export const generateMetadata = (): Metadata => ({
 const page = () => {
   return (
     <div className="space-y-32">
-      <ContainerLayout className="mt-6 grid md:grid-cols-2 gap-4">
+      <ContainerLayout className="">
         <div className="text-muted">
           <Heading className="mt-4 mb-2" level={1}>
             About QIHE
           </Heading>
 
-          <p className="text-justify max-w-3xl mx-auto leading-relaxed">
+          <p className="text-justify leading-relaxed">
             At QIHE, we are driven by a mission to create an empowering
             educational ecosystem where every student is inspired to pursue
             their dreams and make a meaningful impact through education.
@@ -52,7 +52,7 @@ const page = () => {
             perspective.
           </p>
           <br />
-          <p className="text-justify max-w-3xl mx-auto leading-relaxed">
+          <p className="text-justify leading-relaxed">
             Our Institute brings together a dedicated team of educators with
             diverse expertise and qualifications, united by a shared passion for
             fostering student achievement. At QIHE, our focus extends beyond
@@ -61,21 +61,21 @@ const page = () => {
             their chosen fields.
           </p>
         </div>
-        <div className="bg-brand-primary/10 grid place-items-center text-brand-primary rounded-lg">
+        {/* <div className="bg-brand-primary/10 grid place-items-center text-brand-primary rounded-lg">
           IMAGE HERE
-        </div>
+        </div> */}
       </ContainerLayout>
 
-      <ContainerLayout className="mt-4 grid md:grid-cols-2 gap-4 text-muted">
-        <div className="bg-brand-primary/10 grid place-items-center text-brand-primary rounded-lg">
+      <ContainerLayout className="text-muted">
+        {/* <div className="bg-brand-primary/10 grid place-items-center text-brand-primary rounded-lg">
           IMAGE OF CHAIRPERSON HERE
-        </div>
+        </div> */}
 
         <div className="">
           <Heading className="mt-4 mb-2" level={2}>
             Welcome to Quantum Institute of Higher Education (QIHE)
           </Heading>
-          <p className="text-justify max-w-3xl mx-auto leading-relaxed">
+          <p className="text-justify  leading-relaxed">
             At QIHE, we believe that education is not just about acquiring
             knowledge — it’s about unlocking potential, fostering innovation,
             and shaping future leaders. Our institution is built on a commitment
@@ -94,7 +94,7 @@ const page = () => {
             nurtured, your potential is realised, and your success is
             celebrated.
           </p>
-          <p className="text-justify max-w-3xl mx-auto leading-relaxed mt-4">
+          <p className="text-justify  leading-relaxed mt-4">
             We look forward to welcoming you to our community and being a part
             of your academic and personal growth.
           </p>
