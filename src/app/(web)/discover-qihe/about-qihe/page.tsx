@@ -73,7 +73,7 @@ const page = () => {
 
         <div className="">
           <Heading className="mt-4 mb-2" level={2}>
-            Welcome to Quantum Institute of Higher Education (QIHE)!
+            Welcome to Quantum Institute of Higher Education (QIHE)
           </Heading>
           <p className="text-justify max-w-3xl mx-auto leading-relaxed">
             At QIHE, we believe that education is not just about acquiring
