@@ -413,7 +413,7 @@ const courses: ICourse[] = [
     name: "Bachelor of Information Technology ",
     slug: slugs.bachelorInformationTechnology,
     description:
-      "Bachelor of Business-Information Technology  program aims to produce graduates who are well-prepared to meet the demands of the digital world. Students will gain a comprehensive understanding of emerging technologies, ethical IT practices, and strategic problem-solving, enabling them to contribute meaningfully to diverse organisations and industries",
+      "Bachelor of Information Technology  program aims to produce graduates who are well-prepared to meet the demands of the digital world. Students will gain a comprehensive understanding of emerging technologies, ethical IT practices, and strategic problem-solving, enabling them to contribute meaningfully to diverse organisations and industries",
     richText: "", // "<ul><li>Learn AI, cloud computing, cybersecurity, and IoT</li><li>Prepare for diverse IT careers</li><li>Curriculum meets industry demands</li></ul>",
     heroImage: "/courses/information-technology/hero.jpg",
     images: ["/courses/information-technology/1.jpg"],
