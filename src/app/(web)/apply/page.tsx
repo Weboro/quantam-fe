@@ -6,7 +6,7 @@ const page = () => {
     <>
       <Breadcrumbs />
 
-      <div className="my-32 text-center">TBD</div>
+      <div className="my-32 text-center">TBA</div>
     </>
   );
 };
