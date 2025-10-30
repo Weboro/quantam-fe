@@ -121,12 +121,13 @@ const page = () => {
           Find our Prospectus here
         </Link>
         . <br />
-        <Link
+        <a
           className="text-brand-primary underline hover:text-brand-blue-4 transition-all"
           href={`/${slugs.apply}`}
+          target="_blank"
         >
           Apply here
-        </Link>
+        </a>
         .
       </p>
     </ContainerLayout>

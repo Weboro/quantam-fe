@@ -16,7 +16,7 @@ export const slugs = {
   prospectus: underConstruction,
   onlineApplication: underConstruction,
   studentSupport: "student-support",
-  consultation: underConstruction,
+  consultation: "https://www.dropbox.com/scl/fo/ixrq58oyj2yo3ja5g8f9n/AJ-mqWkT5w00G5w_-L9PFRw/Policies%20and%20Procedures?dl=0&preview=Student+Support+and+Consultation+Policy.pdf&rlkey=bt8lvdav3k7x6my0f6khqgfsg&subfolder_nav_tracking=1",
   feesandPayments: "fees-and-payment",
   feeRefundPolicy: underConstruction,
   eLibrary: underConstruction,

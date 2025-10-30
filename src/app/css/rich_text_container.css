@@ -43,6 +43,7 @@
 .rich_text_container a {
   color: var(--color-brand-primary);
   text-decoration: underline;
+  font-style: italic;
 }
 
 .rich_text_container strong,

@@ -8,11 +8,11 @@ import ContainerLayout from "@/components/layouts/ContainerLayout";
 import Heading from "@/components/ui/Heading";
 
 export const metadata: Metadata = {
-  title: "Learning Platform",
+  title: "Learning Management System (LMS)",
   description:
-    "Access the Quantum Institute Learning Platform for course materials, announcements, grades, and communication with faculty and staff.",
+    "Access the Quantum Institute Learning Management System (LMS) for course materials, announcements, grades, and communication with faculty and staff.",
   keywords: [
-    "Learning Platform",
+    "Learning Management System (LMS)",
     "Quantum Institute portal",
     "course materials",
     "student announcements",
@@ -22,26 +22,26 @@ export const metadata: Metadata = {
     canonical: `${SITE_URL}/${slugs.qiheStudents}/${slugs.studentPlatform}`,
   },
   openGraph: {
-    title: "Learning Platform",
+    title: "Learning Management System (LMS)",
     description:
-      "Access the Quantum Institute Learning Platform for course materials, announcements, grades, and communication with faculty and staff.",
+      "Access the Quantum Institute Learning Management System (LMS) for course materials, announcements, grades, and communication with faculty and staff.",
     url: `${SITE_URL}/${slugs.qiheStudents}/${slugs.studentPlatform}`,
     siteName: SITE_TITLE,
   },
   twitter: {
     card: "summary_large_image",
-    title: "Learning Platform",
+    title: "Learning Management System (LMS)",
     description:
-      "Access the Quantum Institute Learning Platform for course materials, announcements, grades, and communication with faculty and staff.",
+      "Access the Quantum Institute Learning Management System (LMS) for course materials, announcements, grades, and communication with faculty and staff.",
   },
 };
 
 const page = () => {
   return (
     <ContainerLayout className="rich_text_container">
-      <h1>Learning Platform</h1>
+      <h1>Learning Management System (LMS)</h1>
       <p>
-        The QIHE Learnjng Management System(LMS) is your central hub for
+        The QIHE Learning Management System(LMS) is your central hub for
         managing your studies.
       </p>
 
@@ -51,7 +51,7 @@ const page = () => {
       </p>
 
       <Link href={slugs.studentPlatformLogin}>
-        Login to the Learning Platform
+        Login to the Learning Management System (LMS)
       </Link>
     </ContainerLayout>
   );

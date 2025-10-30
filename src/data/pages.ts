@@ -136,7 +136,7 @@ const pages: Ipage[] = [
     subPages: [
       {
         slug: slugs.studentPlatform,
-        name: "Student Platform",
+        name: "Learning Management System (LMS)",
         icon: "fi fi-rr-student-alt",
       },
       {
