@@ -185,24 +185,24 @@ const pages: Ipage[] = [
       },
       {
         slug: slugs.ourCoreValues,
-        name: "Our Core Values",
+        name: "Our Core Values and Core Team",
         icon: "fi fi-rr-gem",
       },
-      {
-        slug: slugs.ourCoreTeam,
-        name: "Our Core Team",
-        icon: "fi fi-rr-lead-management",
-      },
+      // {
+      //   slug: slugs.ourCoreTeam,
+      //   name: "Our Core Team",
+      //   icon: "fi fi-rr-lead-management",
+      // },
       {
         slug: slugs.academicTeam,
-        name: "Academic Team",
+        name: "Academic and Support Team",
         icon: "fi fi-rr-hr-person",
       },
-      {
-        slug: slugs.supportTeam,
-        name: "Support Team",
-        icon: "fi fi-rr-heart-partner-handshake",
-      },
+      // {
+      //   slug: slugs.supportTeam,
+      //   name: "Support Team",
+      //   icon: "fi fi-rr-heart-partner-handshake",
+      // },
       {
         slug: slugs.faqs,
         name: "Frequently Asked Questions",
@@ -213,6 +213,7 @@ const pages: Ipage[] = [
         name: "Student Association",
         icon: "fi fi-rr-employees-woman-man",
       },
+
       // {
       //   slug: slugs.esosFramework,
       //   name: "ESOS Framework",

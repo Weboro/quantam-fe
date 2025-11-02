@@ -7,14 +7,14 @@ import ContainerLayout from "@/components/layouts/ContainerLayout";
 import Heading from "@/components/ui/Heading";
 
 export const generateMetadata = (): Metadata => ({
-  title: `Our Core Values`,
+  title: `Our Core Values and Core Team`,
   description:
     "Discover the core values that guide Quantum Institute of Higher Education (QIHE) in fostering integrity, inclusivity, innovation, and academic excellence.",
   alternates: {
     canonical: `${SITE_URL}/${slugs.discoverQihe}/${slugs.ourCoreValues}`,
   },
   openGraph: {
-    title: `Our Core Values`,
+    title: `Our Core Values and Core Team`,
     description:
       "Discover the core values that guide Quantum Institute of Higher Education (QIHE) in fostering integrity, inclusivity, innovation, and academic excellence.",
     url: `${SITE_URL}/${slugs.discoverQihe}/${slugs.ourCoreValues}`,
@@ -22,7 +22,7 @@ export const generateMetadata = (): Metadata => ({
   },
   twitter: {
     card: "summary_large_image",
-    title: `Our Core Values`,
+    title: `Our Core Values and Core Team`,
     description:
       "Discover the core values that guide Quantum Institute of Higher Education (QIHE) in fostering integrity, inclusivity, innovation, and academic excellence.",
   },
@@ -91,6 +91,22 @@ const page = () => {
         QIHE’s programs are thoughtfully designed to uphold the Institute’s
         overarching vision, mission, and core values.
       </p>
+
+    <h1 className="text-3xl md:text-4xl font-bold mb-6 text-gray-900">
+      Careers at QIHE
+    </h1>
+
+    <p className="text-gray-700 mb-4">
+      Join QIHE and be part of a dynamic, student-focused higher education
+      community. We offer opportunities to grow professionally, contribute to
+      innovative learning, and support student success in a collaborative and
+      inclusive environment.
+    </p>
+
+    <p className="text-gray-700">
+      For open positions and application information, please visit our
+      <a href="#" className="italic underline text-brand-primary"> Careers Portal</a>.
+    </p>
     </ContainerLayout>
   );
 };
