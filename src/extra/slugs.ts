@@ -55,8 +55,8 @@ export const slugs = {
   // Discover QIHE subpages
   aboutQihe: "about-qihe",
   missionAndVision: "mission-and-vision",
-  ourCoreValues: "our-core-values",
-  ourCoreTeam: "our-core-team",
+  ourCoreValues: "our-core-values-and-team",
+  // ourCoreTeam: "our-core-team",
   academicTeam: "academic-team",
   supportTeam: "support-team",
   studentAssociation: "student-association",
@@ -65,4 +65,7 @@ export const slugs = {
   privacyPolicy: "privacy-policy",
   copyright: "copyright",
   careersAtQihe: "careers-at-qihe",
+
+  governanceChart:"governance-chart",
+  organisationChart:"organisation-chart",
 };

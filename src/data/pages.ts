@@ -213,6 +213,16 @@ const pages: Ipage[] = [
         name: "Student Association",
         icon: "fi fi-rr-employees-woman-man",
       },
+      {
+        slug: slugs.governanceChart,
+        name: "Governance Chart",
+        icon: "fi fi-rr-employees-woman-man",
+      },
+      {
+        slug: slugs.organisationChart,
+        name: "Organisation Chart",
+        icon: "fi fi-rr-employees-woman-man",
+      },
 
       // {
       //   slug: slugs.esosFramework,
