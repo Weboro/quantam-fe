@@ -67,5 +67,5 @@ export const slugs = {
   careersAtQihe: "careers-at-qihe",
 
   governanceChart:"governance-chart",
-  organisationChart:"organisation-chart",
+  organisationChart:"organisational-chart",
 };

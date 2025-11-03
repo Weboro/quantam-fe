@@ -30,13 +30,27 @@ const NavDesktop = () => {
                           <div className="lg:col-span-2">
                             <div className="lg:grid lg:grid-cols-2 gap-1">
                               {page.subPages.map((subPage) => (
-                                <Link
-                                  href={`/${page.slug}/${subPage.slug}`}
-                                  key={subPage.slug}
-                                  className="block font-medium hover:underline py-1"
-                                >
-                                  {subPage.name}
-                                </Link>
+                                <React.Fragment key={subPage.slug}>
+                                  {subPage.link ? (
+                                    // External link, open in new tab
+                                    <a
+                                      href={subPage.link}
+                                      target="_blank"
+                                      rel="noopener noreferrer"
+                                      className="block font-medium hover:underline py-1"
+                                    >
+                                      {subPage.name}
+                                    </a>
+                                  ) : (
+                                    // Internal link
+                                    <Link
+                                      href={`/${page.slug}/${subPage.slug}`}
+                                      className="block font-medium hover:underline py-1"
+                                    >
+                                      {subPage.name}
+                                    </Link>
+                                  )}
+                                </React.Fragment>
                               ))}
                             </div>
                           </div>

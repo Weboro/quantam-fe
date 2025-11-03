@@ -17,6 +17,7 @@ interface ISubHeading {
 }
 
 interface ISubpage {
+  link?:string;
   icon?: string;
   name: string;
   slug: string;
@@ -135,6 +136,7 @@ const pages: Ipage[] = [
     },
     subPages: [
       {
+        link: "https://lms.qinstitute.com.au/",
         slug: slugs.studentPlatform,
         name: "Learning Management System (LMS)",
         icon: "fi fi-rr-student-alt",
@@ -220,7 +222,7 @@ const pages: Ipage[] = [
       },
       {
         slug: slugs.organisationChart,
-        name: "Organisation Chart",
+        name: "Organisational Chart",
         icon: "fi fi-rr-employees-woman-man",
       },
 

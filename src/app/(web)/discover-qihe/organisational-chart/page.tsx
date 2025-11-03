@@ -10,14 +10,14 @@ import ContainerLayout from "@/components/layouts/ContainerLayout";
 import Heading from "@/components/ui/Heading";
 
 export const generateMetadata = (): Metadata => ({
-  title: `Organisation Chart`,
+  title: `Organisational Chart`,
   description:
     "The Quantum Institute of Higher Education (QIHE) Student Association is the formally recognised body representing the interests, needs, and welfare of all students.",
   alternates: {
     canonical: `${SITE_URL}/${slugs.discoverQihe}/${slugs.studentAssociation}`,
   },
   openGraph: {
-    title: `Organisation Chart`,
+    title: `Organisational Chart`,
     description:
       "The Quantum Institute of Higher Education (QIHE) Student Association is the formally recognised body representing the interests, needs, and welfare of all students.",
     url: `${SITE_URL}/${slugs.discoverQihe}/${slugs.studentAssociation}`,
@@ -25,7 +25,7 @@ export const generateMetadata = (): Metadata => ({
   },
   twitter: {
     card: "summary_large_image",
-    title: `Organisation Chart`,
+    title: `Organisational Chart`,
     description:
       "The Quantum Institute of Higher Education (QIHE) Student Association is the formally recognised body representing the interests, needs, and welfare of all students.",
   },
@@ -34,7 +34,7 @@ export const generateMetadata = (): Metadata => ({
 const page = () => {
   return (
     <ContainerLayout className="rich_text_container">
-      <h1>Organisation Chart</h1>
+      <h1>Organisational Chart</h1>
 
       <Image src={organisation} alt="" />
           

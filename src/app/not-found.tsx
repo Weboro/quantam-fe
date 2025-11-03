@@ -16,9 +16,6 @@ const NotFound = () => {
       <div className="space-y-32">
         <ContainerLayout>
           <div className="flex items-center flex-col py-20 my-8 rounded-2xl bg-brand-primary/5">
-            <p className="w-20 aspect-square bg-brand-primary/25 rounded-full grid place-items-center mb-4">
-              <i className="fi fi-rr-404 text-brand-primary flex text-5xl" />
-            </p>
 
             <Heading level={4} className="font-medium text-center">
               ProQuest-TBA
