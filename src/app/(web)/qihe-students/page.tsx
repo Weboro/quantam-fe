@@ -18,17 +18,28 @@ const page = () => {
         QIHE Students
       </Heading>
 
-      <section className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-4 mt-8">
-        {items?.subPages?.map((item, index) => (
-          <FadeUp delay={index * 0.1} key={item.slug}>
-            <Link href={`${slugs.qiheStudents}/${item.slug}`}>
-              <IconCard icon={item.icon}>
-                <Heading level={4}>{item.name} </Heading>
-              </IconCard>
-            </Link>
-          </FadeUp>
-        ))}
-      </section>
+<section className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-4 mt-8">
+  {items?.subPages?.map((item, index) => (
+    <FadeUp delay={index * 0.1} key={item.slug}>
+      {item.link ? (
+        // External Link
+        <a href={item.link} target="_blank" rel="noopener noreferrer">
+          <IconCard icon={item.icon}>
+            <Heading level={4}>{item.name}</Heading>
+          </IconCard>
+        </a>
+      ) : (
+        // Internal Link
+        <Link href={`${slugs.qiheStudents}/${item.slug}`}>
+          <IconCard icon={item.icon}>
+            <Heading level={4}>{item.name}</Heading>
+          </IconCard>
+        </Link>
+      )}
+    </FadeUp>
+  ))}
+</section>
+
     </ContainerLayout>
   );
 };

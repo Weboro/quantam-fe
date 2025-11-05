@@ -92,7 +92,7 @@ const page = () => {
         overarching vision, mission, and core values.
       </p>
 
-    <h1 className="text-3xl md:text-4xl font-bold mb-6 text-gray-900">
+    {/* <h1 className="text-3xl md:text-4xl font-bold mb-6 text-gray-900">
       Careers at QIHE
     </h1>
 
@@ -106,7 +106,7 @@ const page = () => {
     <p className="text-gray-700">
       For open positions and application information, please visit our
       <a href="#" className="italic underline text-brand-primary"> Careers Portal</a>.
-    </p>
+    </p> */}
     </ContainerLayout>
   );
 };

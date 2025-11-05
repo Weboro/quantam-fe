@@ -187,7 +187,7 @@ const pages: Ipage[] = [
       },
       {
         slug: slugs.ourCoreValues,
-        name: "Our Core Values and Core Team",
+        name: "Our Core Values",
         icon: "fi fi-rr-gem",
       },
       // {

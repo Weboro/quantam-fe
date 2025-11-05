@@ -65,22 +65,23 @@ const page = () => {
             An overview of campus facilities and available support services.
           </li>
         </ul>
-        <>
+        <div className="mb-5">
           <a
             target="main"
             href={
               "https://www.dropbox.com/scl/fo/ixrq58oyj2yo3ja5g8f9n/AF-HwH0fnWWbpNminvyKYTI/Student%20Information%20Materials?e=1&preview=QIHE+Pre-Arrival+Guide.pdf&rlkey=bt8lvdav3k7x6my0f6khqgfsg&subfolder_nav_tracking=1&dl=0"
             }
             rel="noopener noreferrer"
+            className="not-italic"
           >
             {" "}
             <Button>Pre-Arrival Guide</Button>
           </a>
-        </>
+        </div>
       </ContainerLayout>
 
       <ContainerLayout>
-        <h2>Student Orientation Program</h2>
+        <h2 className="mt-5">Student Orientation Program</h2>
         <p>
           The Student Orientation Program is an integral part of your journey at
           QIHE, designed to help you settle into campus life and understand what
@@ -113,6 +114,17 @@ const page = () => {
           supported by the Student Services Officer, will guide you through this
           program to ensure you feel fully informed and supported from day one.
         </p>
+
+          <a
+            target="main"
+            href={
+              "https://www.dropbox.com/scl/fo/ixrq58oyj2yo3ja5g8f9n/AF-HwH0fnWWbpNminvyKYTI/Student%20Information%20Materials?dl=0&preview=Student+Orientation+PPT.pdf&rlkey=bt8lvdav3k7x6my0f6khqgfsg&subfolder_nav_tracking=1"
+            }
+            rel="noopener noreferrer"
+          >
+            {" "}
+            <Button>Student Orientation</Button>
+          </a>
       </ContainerLayout>
     </div>
   );
