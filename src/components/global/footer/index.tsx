@@ -104,11 +104,7 @@ const Footer = () => {
                 key={title}
                 title={title}
                 baseSlug={data.slug}
-                pages={data.subPages?.map((subPage) => ({
-                  ...subPage,
-                  // Logic change: Use 'link' if exists, otherwise construct the path from baseSlug and slug
-                  link: subPage.link || `/${data.slug}/${subPage.slug}`,
-                }))}
+                pages={data.subPages}
               />
             ) : null
           )}

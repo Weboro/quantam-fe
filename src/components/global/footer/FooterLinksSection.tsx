@@ -3,7 +3,7 @@ import Link from "next/link";
 const FooterLinksSection: React.FC<{
   title: string;
   baseSlug?: string;
-  pages?: { name: string; slug: string }[];
+  pages?: { name: string; slug: string; link?: string }[];
 }> = ({ title, baseSlug = "", pages = [] }) => {
   if (!pages.length) return null;
 
@@ -14,15 +14,27 @@ const FooterLinksSection: React.FC<{
       </h4>
 
       <nav className="space-y-1">
-        {pages.map((page) => (
-          <Link
-            key={page.slug}
-            className="block py-0.5 pl-1 hover:text-brand-primary transition-all hover:underline"
-            href={`/${baseSlug}/${page.slug}`.replace("//", "/")}
-          >
-            {page.name}
-          </Link>
-        ))}
+        {pages.map((page) => {
+          const href =
+            page.link ??
+            `/${[baseSlug, page.slug].filter(Boolean).join("/")}`.replace(
+              "//",
+              "/"
+            );
+          const isExternal = /^https?:\/\//i.test(page.link ?? "");
+
+          return (
+            <Link
+              key={page.slug}
+              className="block py-0.5 pl-1 hover:text-brand-primary transition-all hover:underline"
+              href={href}
+              target={isExternal ? "_blank" : undefined}
+              rel={isExternal ? "noreferrer" : undefined}
+            >
+              {page.name}
+            </Link>
+          );
+        })}
       </nav>
     </div>
   );
