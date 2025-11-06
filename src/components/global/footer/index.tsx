@@ -28,41 +28,38 @@ const Footer = () => {
         subPages: discoverQihe?.subPages?.filter((el) => el.quickLink !== true),
       },
     },
-{
-  title: "Quick Links",
-  data: {
-    slug: slugs.discoverQihe, // base prefix
-    subPages: [
-      {
-        slug: slugs.esosFramework,      // ← no discoverQihe prefix here
-        name: "ESOS Framework",
-        icon: "fi fi-rr-file-contract",
-        quickLink: true,
+    {
+      title: "Quick Links",
+      data: {
+        slug: slugs.discoverQihe, // base prefix
+        subPages: [
+          {
+            slug: slugs.esosFramework,
+            name: "ESOS Framework",
+            icon: "fi fi-rr-file-contract",
+            quickLink: true,
+          },
+          {
+            slug: slugs.privacyPolicy,
+            name: "Privacy Policy",
+            icon: "fi fi-rr-shield-check",
+            quickLink: true,
+          },
+          {
+            slug: slugs.copyright,
+            name: "Copyright",
+            icon: "fi fi-rr-copyright",
+            quickLink: true,
+          },
+          {
+            slug: slugs.careersAtQihe,
+            name: "Careers at QIHE",
+            icon: "fi fi-rr-briefcase",
+            quickLink: true,
+          },
+        ],
       },
-      {
-        slug: slugs.privacyPolicy,      // ← relative
-        name: "Privacy Policy",
-        icon: "fi fi-rr-shield-check",
-        quickLink: true,
-      },
-      {
-        slug: slugs.copyright,          // ← relative
-        name: "Copyright",
-        icon: "fi fi-rr-copyright",
-        quickLink: true,
-      },
-      {
-        slug: slugs.careersAtQihe,      // ← relative
-        name: "Careers at QIHE",
-        icon: "fi fi-rr-briefcase",
-        quickLink: true,
-      },
-    ],
-  },
-},
-
-
-
+    },
   ];
 
   return (
@@ -101,16 +98,19 @@ const Footer = () => {
             ]}
           />
 
-          {footerSections.map(
-            ({ title, data }) =>
-              data && (
-                <FooterLinksSection
-                  key={title}
-                  title={title}
-                  baseSlug={data.slug}
-                  pages={data.subPages}
-                />
-              )
+          {footerSections.map(({ title, data }) =>
+            data ? (
+              <FooterLinksSection
+                key={title}
+                title={title}
+                baseSlug={data.slug}
+                pages={data.subPages?.map((subPage) => ({
+                  ...subPage,
+                  // Logic change: Use 'link' if exists, otherwise construct the path from baseSlug and slug
+                  link: subPage.link || `/${data.slug}/${subPage.slug}`,
+                }))}
+              />
+            ) : null
           )}
         </ContainerLayout>
       </div>

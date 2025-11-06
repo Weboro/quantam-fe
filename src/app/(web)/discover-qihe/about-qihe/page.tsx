@@ -67,7 +67,8 @@ const page = () => {
         </div> */}
 
         <div>
-          <h2>Welcome to Quantum Institute of Higher Education (QIHE)</h2>
+          <h2>Message from the Chair of the Governing Council</h2>
+          <h3>Welcome to Quantum Institute of Higher Education (QIHE)</h3>
           <p>
             At QIHE, we believe that education is not just about acquiring
             knowledge — it’s about unlocking potential, fostering innovation,
@@ -95,8 +96,7 @@ const page = () => {
             <b>Warm Regards,</b>
           </p>
           <p>
-            <strong>Emeritus Professor Jim Psaros</strong>
-            Chair of the Governing Council Quantum Institute of Higher Education
+            <strong>Chair of the Governing Council</strong> <br></br>Chair of the Governing Council Quantum Institute of Higher Education
           </p>
         </div>
       </ContainerLayout>

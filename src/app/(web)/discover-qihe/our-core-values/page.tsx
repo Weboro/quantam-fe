@@ -7,14 +7,14 @@ import ContainerLayout from "@/components/layouts/ContainerLayout";
 import Heading from "@/components/ui/Heading";
 
 export const generateMetadata = (): Metadata => ({
-  title: `Our Core Values and Core Team`,
+  title: `Our Core Values`,
   description:
     "Discover the core values that guide Quantum Institute of Higher Education (QIHE) in fostering integrity, inclusivity, innovation, and academic excellence.",
   alternates: {
     canonical: `${SITE_URL}/${slugs.discoverQihe}/${slugs.ourCoreValues}`,
   },
   openGraph: {
-    title: `Our Core Values and Core Team`,
+    title: `Our Core Values`,
     description:
       "Discover the core values that guide Quantum Institute of Higher Education (QIHE) in fostering integrity, inclusivity, innovation, and academic excellence.",
     url: `${SITE_URL}/${slugs.discoverQihe}/${slugs.ourCoreValues}`,
@@ -22,7 +22,7 @@ export const generateMetadata = (): Metadata => ({
   },
   twitter: {
     card: "summary_large_image",
-    title: `Our Core Values and Core Team`,
+    title: `Our Core Values`,
     description:
       "Discover the core values that guide Quantum Institute of Higher Education (QIHE) in fostering integrity, inclusivity, innovation, and academic excellence.",
   },
