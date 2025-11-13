@@ -21,7 +21,7 @@ export const slugs = {
   feeRefundPolicy: underConstruction,
   eLibrary: underConstruction,
   libraryFacilitiesPolicy: underConstruction,
-  studentPlatformLogin: "https://lms.qinstitute.com.au",
+  studentPlatformLogin: "https://lms.qinstitute.com.au/login/index.php",
 
   //
   programs: "programs",

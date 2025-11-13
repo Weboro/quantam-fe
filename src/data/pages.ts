@@ -136,7 +136,7 @@ const pages: Ipage[] = [
     },
     subPages: [
       {
-        link: "https://lms.qinstitute.com.au/",
+        link: "https://lms.qinstitute.com.au/login/index.php",
         slug: slugs.studentPlatform,
         name: "Learning Management System (LMS)",
         icon: "fi fi-rr-student-alt",
