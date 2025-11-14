@@ -33,19 +33,19 @@ const faq: IFaq[] = [
     id: 5,
     question: "Does QIHE recognise prior learning or work experience?",
     answer:
-      "<p>Yes. Students may apply for Advanced Standing or Credit Transfer based on relevant prior learning, work experience, or qualifications that align with course outcomes. Decisions are made in accordance with AQF level descriptors to ensure equivalency in knowledge, skills, and application. </p> <br> <p>For further details, please refer to the <a href='https://www.dropbox.com/scl/fo/ixrq58oyj2yo3ja5g8f9n/AJ-mqWkT5w00G5w_-L9PFRw/Policies%20and%20Procedures?e=1&preview=Advanced+Standing%2C+Credit+Transfer+and+Articulation+Policy.pdf&rlkey=bt8lvdav3k7x6my0f6khqgfsg&subfolder_nav_tracking=1&dl=0'  class='italic underline text-brand-primary ' ><i>Advanced Standing, Credit Transfer and Articulation Policy</i></a>, or <a href='/contact' class='italic underline text-brand-primary'>Contact Us </a> for further assistance.</p>",
+      "<p>Yes. Students may apply for Advanced Standing or Credit Transfer based on relevant prior learning, work experience, or qualifications that align with course outcomes. Decisions are made in accordance with AQF level descriptors to ensure equivalency in knowledge, skills, and application. </p> <br> <p>For further details, please refer to the <a href='/policies-and-procedures/Advanced%20Standing%2C%20Credit%20Transfer%20and%20Articulation%20Policy.pdf'  class='italic underline text-brand-primary ' ><i>Advanced Standing, Credit Transfer and Articulation Policy</i></a>, or <a href='/contact' class='italic underline text-brand-primary'>Contact Us </a> for further assistance.</p>",
   },
   {
     id: 6,
     question: "What support services are available at QIHE?",
     answer:
-      "<p>QIHE provides academic and non-academic support services to help students succeed in their studies, wellbeing, and personal development.</p> <br> <p>For more information, please refer to the <a href='https://www.dropbox.com/scl/fo/ixrq58oyj2yo3ja5g8f9n/AJ-mqWkT5w00G5w_-L9PFRw/Policies%20and%20Procedures?e=2&preview=Student+Support+and+Consultation+Policy.pdf&rlkey=bt8lvdav3k7x6my0f6khqgfsg&subfolder_nav_tracking=1&dl=0' class='italic underline text-brand-primary'>Student Support and Consultation <i>Policy</i></a>, or <a href='/contact' class='italic underline text-brand-primary'>Contact Us</a> for further assistance.</p>",
+      "<p>QIHE provides academic and non-academic support services to help students succeed in their studies, wellbeing, and personal development.</p> <br> <p>For more information, please refer to the <a href='/policies-and-procedures/Student%20Support%20and%20Consultation%20Policy.pdf' class='italic underline text-brand-primary'>Student Support and Consultation <i>Policy</i></a>, or <a href='/contact' class='italic underline text-brand-primary'>Contact Us</a> for further assistance.</p>",
   },
   {
     id: 7,
     question: "How does the admission process work at QIHE?",
     answer:
-      "<p>Applicants must submit a completed Admission Application Form along with certified documents. Admission outcomes are issued in writing and may include a full or conditional Letter of Offer.</p>  <br>  <p>For more information, please refer to the <a href='https://www.dropbox.com/scl/fo/ixrq58oyj2yo3ja5g8f9n/AJ-mqWkT5w00G5w_-L9PFRw/Policies%20and%20Procedures?e=1&preview=Assessment+Policy+and+Procedure.pdf&rlkey=bt8lvdav3k7x6my0f6khqgfsg&subfolder_nav_tracking=1&dl=0' class='italic underline text-brand-primary'><i> Assessment Policy and Procedure</i></a>, or <a href='/contact' class='italic underline text-brand-primary'>Contact Us</a> for further assistance.</p>",
+      "<p>Applicants must submit a completed Admission Application Form along with certified documents. Admission outcomes are issued in writing and may include a full or conditional Letter of Offer.</p>  <br>  <p>For more information, please refer to the <a href='/policies-and-procedures/Assessment%20Policy%20and%20Procedure.pdf' class='italic underline text-brand-primary'><i> Assessment Policy and Procedure</i></a>, or <a href='/contact' class='italic underline text-brand-primary'>Contact Us</a> for further assistance.</p>",
   },
   {
     id: 8,
@@ -68,3 +68,4 @@ const faq: IFaq[] = [
 ];
 
 export default faq;
+

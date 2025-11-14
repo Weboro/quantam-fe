@@ -7,6 +7,9 @@ import { Metadata } from "next";
 import { slugs } from "@/extra/slugs";
 import { SITE_TITLE, SITE_URL } from "@/extra/siteDetails";
 
+const policyPdf = (filename: string) =>
+  encodeURI(`/policies-and-procedures/${filename}`);
+
 export const metadata: Metadata = {
   title: `Admissions`,
   description:
@@ -144,9 +147,7 @@ const page = () => {
           <Link
             target="main"
             className="italic"
-            href={
-              "https://www.dropbox.com/scl/fo/ixrq58oyj2yo3ja5g8f9n/AJ-mqWkT5w00G5w_-L9PFRw/Policies%20and%20Procedures?e=1&preview=Admission+Policy+and+Procedure.pdf&rlkey=bt8lvdav3k7x6my0f6khqgfsg&subfolder_nav_tracking=1&dl=0"
-            }
+            href={policyPdf("Admission Policy and Procedure.pdf")}
           >
             Admission Policy and Procedure
           </Link>

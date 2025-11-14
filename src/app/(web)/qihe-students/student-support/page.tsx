@@ -4,6 +4,9 @@ import { slugs } from "@/extra/slugs";
 import Link from "next/link";
 import ContainerLayout from "@/components/layouts/ContainerLayout";
 
+const policyPdf = (filename: string) =>
+  encodeURI(`/policies-and-procedures/${filename}`);
+
 export const metadata: Metadata = {
   title: "QIHE Services and Facilities | Student Support",
   description:
@@ -53,9 +56,7 @@ const Page = () => {
           For full details, please refer to the{" "}
           <a
             target="main"
-            href={
-              "https://www.dropbox.com/scl/fo/ixrq58oyj2yo3ja5g8f9n/AJ-mqWkT5w00G5w_-L9PFRw/Policies%20and%20Procedures?dl=0&e=1&preview=ICT+Services+and+Library+Facilities+Policy.pdf&rlkey=bt8lvdav3k7x6my0f6khqgfsg&subfolder_nav_tracking=1"
-            }
+            href={policyPdf("ICT Services and Library Facilities Policy.pdf")}
           >
             ICT Services and Library Facilities Policy
           </a>
@@ -77,9 +78,7 @@ const Page = () => {
           For full details, please refer to the{" "}
           <a
             target="main"
-            href={
-              "https://www.dropbox.com/scl/fo/ixrq58oyj2yo3ja5g8f9n/AH3M6gYuVmnkM8lasZmegKw/Policies%20and%20Procedures/Student%20Support%20and%20Consultation%20Policy.pdf?rlkey=bt8lvdav3k7x6my0f6khqgfsg&dl=0"
-            }
+            href={policyPdf("Student Support and Consultation Policy.pdf")}
           >
             <i>Student Support and Consultation Policy</i>.
           </a>

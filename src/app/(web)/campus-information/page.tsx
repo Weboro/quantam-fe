@@ -16,6 +16,9 @@ import {
   Globe,
 } from "lucide-react";
 
+const policyPdf = (filename: string) =>
+  encodeURI(`/policies-and-procedures/${filename}`);
+
 export default function CampusPage() {
   const { location, emergencyContacts, localServices, supportServices } =
     campusData;
@@ -150,7 +153,7 @@ export default function CampusPage() {
             For full details, please refer to the{" "}
             <a
               target="main"
-              href="https://www.dropbox.com/scl/fo/ixrq58oyj2yo3ja5g8f9n/AJ-mqWkT5w00G5w_-L9PFRw/Policies%20and%20Procedures?e=1&preview=Health+and+Safety+Policy.pdf&rlkey=bt8lvdav3k7x6my0f6khqgfsg&subfolder_nav_tracking=1&dl=0"
+              href={policyPdf("Health and Safety Policy.pdf")}
               className="underline italic"
               style={{ color: accent }}
             >
@@ -196,21 +199,23 @@ export default function CampusPage() {
 
           <p className="text-gray-700 mt-3">
             For further information, please refer to the{" "}
-            <a
-              target="main"
-              href="https://www.dropbox.com/scl/fo/ixrq58oyj2yo3ja5g8f9n/AJ-mqWkT5w00G5w_-L9PFRw/Policies%20and%20Procedures?e=1&preview=Health+and+Safety+Policy.pdf&rlkey=bt8lvdav3k7x6my0f6khqgfsg&subfolder_nav_tracking=1&dl=0"
-              className="underline italic"
-              style={{ color: accent }}
-            >
+                <a
+                  target="main"
+                  href={policyPdf("Health and Safety Policy.pdf")}
+                  className="underline italic"
+                  style={{ color: accent }}
+                >
               Health and Safety Policy
             </a>{" "}
             and the{" "}
-            <a
-              target="main"
-              href="https://www.dropbox.com/scl/fo/ixrq58oyj2yo3ja5g8f9n/AJ-mqWkT5w00G5w_-L9PFRw/Policies%20and%20Procedures?e=1&preview=Emergency+and+Critical+Incident+Management+Policy.pdf&rlkey=bt8lvdav3k7x6my0f6khqgfsg&subfolder_nav_tracking=1&dl=0"
-              className="underline italic"
-              style={{ color: accent }}
-            >
+                <a
+                  target="main"
+                  href={policyPdf(
+                    "Emergency and Critical Incident Management Policy.pdf",
+                  )}
+                  className="underline italic"
+                  style={{ color: accent }}
+                >
               Emergency and Critical Incident Management Policy
             </a>
             .

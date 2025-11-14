@@ -149,7 +149,7 @@ const courses: ICourse[] = [
 
 <p>
   For full details, see the<i> 
-  <a target="main" href="https://www.dropbox.com/scl/fo/ixrq58oyj2yo3ja5g8f9n/AJ-mqWkT5w00G5w_-L9PFRw/Policies%20and%20Procedures?e=1&preview=Admission+Policy+and+Procedure.pdf&rlkey=bt8lvdav3k7x6my0f6khqgfsg&subfolder_nav_tracking=1&dl=0" 
+  <a target="main" href="/policies-and-procedures/Admission%20Policy%20and%20Procedure.pdf" 
 >Admission Policy and Procedure</a>.
 </i>
   </p>`,
@@ -271,7 +271,7 @@ const courses: ICourse[] = [
 
 <p>
   For full details, see the<i> 
-  <a target="main" href="https://www.dropbox.com/scl/fo/ixrq58oyj2yo3ja5g8f9n/AJ-mqWkT5w00G5w_-L9PFRw/Policies%20and%20Procedures?e=1&preview=Admission+Policy+and+Procedure.pdf&rlkey=bt8lvdav3k7x6my0f6khqgfsg&subfolder_nav_tracking=1&dl=0" 
+  <a target="main" href="/policies-and-procedures/Admission%20Policy%20and%20Procedure.pdf" 
 >Admission Policy and Procedure</a>.
 </i>
   </p>`,
@@ -398,7 +398,7 @@ const courses: ICourse[] = [
 
 <p>
   For full details, see the<i> 
-  <a target="main" href="https://www.dropbox.com/scl/fo/ixrq58oyj2yo3ja5g8f9n/AJ-mqWkT5w00G5w_-L9PFRw/Policies%20and%20Procedures?e=1&preview=Admission+Policy+and+Procedure.pdf&rlkey=bt8lvdav3k7x6my0f6khqgfsg&subfolder_nav_tracking=1&dl=0" 
+  <a target="main" href="/policies-and-procedures/Admission%20Policy%20and%20Procedure.pdf" 
 >Admission Policy and Procedure</a>.
 </i>
   </p>
@@ -519,7 +519,7 @@ const courses: ICourse[] = [
 </ol>
 <p>
   For full details, see 
-  <a href="https://www.dropbox.com/scl/fo/ixrq58oyj2yo3ja5g8f9n/AJ-mqWkT5w00G5w_-L9PFRw/Policies%20and%20Procedures?dl=0&preview=Admission+Policy+and+Procedure.pdf&rlkey=bt8lvdav3k7x6my0f6khqgfsg&subfolder_nav_tracking=1">Admission Policy and Procedure</a>.
+  <a href="/policies-and-procedures/Admission%20Policy%20and%20Procedure.pdf">Admission Policy and Procedure</a>.
 </p>
  `,
       },
@@ -528,3 +528,4 @@ const courses: ICourse[] = [
 ];
 
 export default courses;
+

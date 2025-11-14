@@ -6,6 +6,9 @@ import { Metadata } from "next";
 import { SITE_TITLE, SITE_URL } from "@/extra/siteDetails";
 import { slugs } from "@/extra/slugs";
 
+const policyPdf = (filename: string) =>
+  encodeURI(`/policies-and-procedures/${filename}`);
+
 export const metadata: Metadata = {
   title: `Admission Requirements`,
   description:
@@ -147,10 +150,7 @@ const page = () => {
           Alternative English language tests may also be accepted to meet the
           English language requirements. For detailed requirements, including
           possible exemptions, please refer to the{" "}
-          <a
-            href="https://www.dropbox.com/scl/fo/ixrq58oyj2yo3ja5g8f9n/AJ-mqWkT5w00G5w_-L9PFRw/Policies%20and%20Procedures?e=1&preview=English+Language+Policy.pdf&rlkey=bt8lvdav3k7x6my0f6khqgfsg&subfolder_nav_tracking=1&dl=0"
-            target="main"
-          >
+          <a href={policyPdf("English Language Policy.pdf")} target="main">
             English Language Policy
           </a>
           .
@@ -180,7 +180,11 @@ const page = () => {
         </ul>
         <p>
           For full details, see the{" "}
-          <a href="https://www.dropbox.com/scl/fo/ixrq58oyj2yo3ja5g8f9n/AJ-mqWkT5w00G5w_-L9PFRw/Policies%20and%20Procedures?dl=0&preview=Advanced+Standing%2C+Credit+Transfer+and+Articulation+Policy.pdf&rlkey=bt8lvdav3k7x6my0f6khqgfsg&subfolder_nav_tracking=1">
+          <a
+            href={policyPdf(
+              "Advanced Standing, Credit Transfer and Articulation Policy.pdf",
+            )}
+          >
             Advanced Standing, Credit Transfer and Articulation Policy
           </a>
           .

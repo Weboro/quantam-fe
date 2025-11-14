@@ -5,6 +5,10 @@ import { SITE_TITLE, SITE_URL } from "@/extra/siteDetails";
 import { slugs } from "@/extra/slugs";
 import Button from "@/components/ui/Button";
 
+const resourcePdf = (filename: string) => encodeURI(`/resources/${filename}`);
+const PRE_ARRIVAL_GUIDE = resourcePdf("pre arrival guide.pdf");
+const STUDENT_ORIENTATION = resourcePdf("student orientation.pdf");
+
 export const metadata: Metadata = {
   title: `Orientation & Pre-Arrival Guide`,
   description:
@@ -68,9 +72,7 @@ const page = () => {
         <div className="mb-5">
           <a
             target="main"
-            href={
-              "https://www.dropbox.com/scl/fo/ixrq58oyj2yo3ja5g8f9n/AF-HwH0fnWWbpNminvyKYTI/Student%20Information%20Materials?e=1&preview=QIHE+Pre-Arrival+Guide.pdf&rlkey=bt8lvdav3k7x6my0f6khqgfsg&subfolder_nav_tracking=1&dl=0"
-            }
+            href={PRE_ARRIVAL_GUIDE}
             rel="noopener noreferrer"
             className="not-italic"
           >
@@ -117,13 +119,11 @@ const page = () => {
 
           <a
             target="main"
-            href={
-              "https://www.dropbox.com/scl/fo/ixrq58oyj2yo3ja5g8f9n/AF-HwH0fnWWbpNminvyKYTI/Student%20Information%20Materials?dl=0&preview=Student+Orientation+PPT.pdf&rlkey=bt8lvdav3k7x6my0f6khqgfsg&subfolder_nav_tracking=1"
-            }
+            href={STUDENT_ORIENTATION}
             rel="noopener noreferrer"
           >
             {" "}
-            <Button>Student Orientation</Button>
+            <Button>Student Orientation</Button>
           </a>
       </ContainerLayout>
     </div>
@@ -131,3 +131,6 @@ const page = () => {
 };
 
 export default page;
+
+
+

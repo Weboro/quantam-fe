@@ -5,6 +5,8 @@ import Image from "next/image";
 import Button from "../ui/Button";
 import Link from "next/link";
 
+const resourcePdf = (filename: string) => encodeURI(`/resources/${filename}`);
+
 export default function QiheCard() {
   const documents = [
     {
@@ -12,21 +14,21 @@ export default function QiheCard() {
       image: "/image/img1.webp",
       description:
         "An essential guide covering all programs, courses, and admission procedures at QIHE. Perfect for prospective students seeking a complete overview. Includes important academic policies and resources.",
-      url: "https://www.dropbox.com/scl/fo/ixrq58oyj2yo3ja5g8f9n/AF-HwH0fnWWbpNminvyKYTI/Student%20Information%20Materials?dl=0&preview=QIHE+Prospectus.pdf&rlkey=bt8lvdav3k7x6my0f6khqgfsg&subfolder_nav_tracking=1",
+      url: resourcePdf("QIHE prospectus.pdf"),
     },
     {
       title: "QIHE Student Handbook",
       image: "/image/img2.webp",
       description:
         "A practical guide for current students, detailing campus rules, student services, and academic support. Helps navigate daily life at QIHE effectively. Includes tips and contact info for key departments.",
-      url: "https://www.dropbox.com/scl/fo/ixrq58oyj2yo3ja5g8f9n/AF-HwH0fnWWbpNminvyKYTI/Student%20Information%20Materials?dl=0&preview=QIHE+Student+Handbook.pdf&rlkey=bt8lvdav3k7x6my0f6khqgfsg&subfolder_nav_tracking=1",
+      url: resourcePdf("student handbook.pdf"),
     },
     {
       title: "Student Orientation PPT",
       image: "/image/img3.webp",
       description:
         "A visual presentation designed to introduce new students to QIHE’s campus, resources, and programs. Highlights essential information for a smooth start. Engaging slides make orientation easy to follow.",
-      url: "https://www.dropbox.com/scl/fo/ixrq58oyj2yo3ja5g8f9n/AF-HwH0fnWWbpNminvyKYTI/Student%20Information%20Materials?dl=0&preview=Student+Orientation+PPT.pdf&rlkey=bt8lvdav3k7x6my0f6khqgfsg&subfolder_nav_tracking=1",
+      url: resourcePdf("student orientation.pdf"),
     },
   ];
 

@@ -1,8 +1,12 @@
 const underConstruction = "under-construction";
+const resourcePdf = (filename: string) => encodeURI(`/resources/${filename}`);
+const formPdf = (filename: string) => encodeURI(`/forms/${filename}`);
+const policyPdf = (filename: string) =>
+  encodeURI(`/policies-and-procedures/${filename}`);
 
 export const files = {
-  prospectus: `https://www.dropbox.com/scl/fo/ixrq58oyj2yo3ja5g8f9n/AF-HwH0fnWWbpNminvyKYTI/Student%20Information%20Materials?e=1&preview=QIHE%20Prospectus.pdf&rlkey=bt8lvdav3k7x6my0f6khqgfsg&subfolder_nav_tracking=1&dl=0`,
-  applyForm: `https://www.dropbox.com/scl/fo/ixrq58oyj2yo3ja5g8f9n/ABpcZ03eVACUmpsqkooYkxU/Forms?dl=0&preview=Admission%20Application%20Form.pdf&rlkey=bt8lvdav3k7x6my0f6khqgfsg&subfolder_nav_tracking=1`,
+  prospectus: resourcePdf("QIHE prospectus.pdf"),
+  applyForm: formPdf("Admission Application Form.pdf"),
 };
 
 export const slugs = {
@@ -14,9 +18,9 @@ export const slugs = {
   majors: "courses",
   //
   prospectus: underConstruction,
-  onlineApplication: "https://www.dropbox.com/scl/fo/ixrq58oyj2yo3ja5g8f9n/ABpcZ03eVACUmpsqkooYkxU/Forms?dl=0&preview=Admission+Application+Form.pdf&rlkey=bt8lvdav3k7x6my0f6khqgfsg&subfolder_nav_tracking=1",
+  onlineApplication: formPdf("Admission Application Form.pdf"),
   studentSupport: "student-support",
-  consultation: "https://www.dropbox.com/scl/fo/ixrq58oyj2yo3ja5g8f9n/AJ-mqWkT5w00G5w_-L9PFRw/Policies%20and%20Procedures?dl=0&preview=Student+Support+and+Consultation+Policy.pdf&rlkey=bt8lvdav3k7x6my0f6khqgfsg&subfolder_nav_tracking=1",
+  consultation: policyPdf("Student Support and Consultation Policy.pdf"),
   feesandPayments: "fees-and-payment",
   feeRefundPolicy: underConstruction,
   eLibrary: underConstruction,
